@@ -1,0 +1,41 @@
+name: Build and Push Docker Image to GitHub Container Registry
+
+on:
+  push:
+    branches:
+      - main  # Roda o pipeline ao fazer push na branch 'main'
+  pull_request:
+    branches:
+      - main  # Roda o pipeline em PRs para a branch 'main'
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build-and-push-image:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout do código
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Test GHCR Login
+      run: |
+        echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+        docker info 
+      
+    # Log in to GitHub Container Registry
+    - name: Log in to GitHub Container Registry
+      run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+    # Build da imagem Docker
+    - name: Build Docker image
+      run: |
+        docker build f "Solutions\dockers\MohidWater\dockerfile" -t ghcr.io/${{ github.repository }}/mohidwater:latest .
+
+    # Push da imagem para o GitHub Container Registry
+    - name: Push Docker image
+      run: |
+        docker push ghcr.io/${{ github.repository }}/mohidwater:latest

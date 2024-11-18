@@ -28,10 +28,8 @@ If you prefer to customize the Docker images or if the public images are not yet
 ### Models
 - **MOHID Water**
  > docker build -f "Solutions\dockers\MohidWater\dockerfile" -t mohidwater:latest "."
-
 - **MOHID Land**
- > docker build -f "Solutions\dockers\MohidLand\dockerfile" -t mohidland:latest "."
- 
+ > docker build -f "Solutions\dockers\MohidLand\dockerfile" -t mohidland:latest "." 
  
  ### Tools
  - **Compare2HDFfiles**
