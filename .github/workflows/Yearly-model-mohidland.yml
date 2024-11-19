@@ -12,7 +12,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  DOCKER_IMAGE_NAME: mohid/mohidland
+  IMAGE_NAME: ${{ github.repository }}
+  DOCKER_IMAGE_NAME: model/mohidland
 
 
 jobs:
