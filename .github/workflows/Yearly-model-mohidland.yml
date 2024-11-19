@@ -1,14 +1,10 @@
 name: Docker
 
 on:
-  schedule:
-    - cron: '17 2 * * *'
-  push:
-    branches: [ "master" ]
-    # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ "master" ]
+  # schedule:
+  #   - cron: '0 0 1 1 *'
+  workflow_dispatch:       # Permite execução manual do workflow
+
 
 env:
   IMAGE_NAME: model/mohidland
