@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build the Docker image
-        run: docker build . --file Solutions/dockers/MohidLand/dockerfile --tag ghcr.io/${{ github.repository }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.TAG }}
+        run: docker build . --file Solutions/dockers/MohidLand/dockerfile --tag ghcr.io/${{ env.repository }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.TAG }}
 
       - name: Push Docker image to GitHub Container Registry
-        run: docker push ghcr.io/${{ github.repository }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.TAG }}
+        run: docker push ghcr.io/${{ env.repository }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.TAG }}
