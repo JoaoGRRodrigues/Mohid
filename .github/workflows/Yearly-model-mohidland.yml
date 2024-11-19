@@ -11,9 +11,10 @@ on:
     branches: [ "master" ]
 
 env:
-  IMAGE_NAME: model/mohidland:24.11
+  IMAGE_NAME: model/mohidland
+  TAG: 24.11
   REPOSITORY: ${{ github.repository }}
-  DOCKER_IMAGE_NAME: ghcr.io/${{ github.repository }}/model/mohidland:24.11
+  DOCKER_IMAGE_NAME: ghcr.io/${{ github.repository }}/model/mohidland
 jobs:
   build:
 
@@ -74,6 +75,6 @@ jobs:
       - name: Sign the published Docker image
         if: ${{ github.event_name != 'pull_request' }}
         env:
-          TAGS: ${{ env.IMAGE_NAME }}:24.11
+          TAGS: ${{ env.IMAGE_NAME }}:${{ env.TAG }}
           DIGEST: ${{ steps.build-and-push.outputs.digest }}
         run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
