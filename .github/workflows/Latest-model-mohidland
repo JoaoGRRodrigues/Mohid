@@ -13,7 +13,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  DOCKER_IMAGE_NAME: ${{ github.repository }}/model/mohidland
+  DOCKER_IMAGE_NAME: ${{ github.REGISTRY }}/model/mohidland
 
 
 jobs:
@@ -26,8 +26,18 @@ jobs:
       id-token: write
 
     steps:
+
+      - name: Read Image NAME
+      run: echo "The Docker image name is $IMAGE_NAME"
+      
+      - name: Use Docker image name
+      run: echo "The Docker image name is $DOCKER_IMAGE_NAME"
+      
       - name: Delete huge unnecessary tools folder
         run: rm -rf /opt/hostedtoolcache
+        
+      - name: Set Docker image name to lowercase
+        run: echo "DOCKER_IMAGE_NAME=${{ env.REGISTRY }}/model/mohidland" | tr '[:upper:]' '[:lower:]' >> $GITHUB_ENV
         
       - name: Checkout repository
         uses: actions/checkout@v4
