@@ -37,3 +37,14 @@ MOHID is a three-dimensional water modelling system developed by MARETEC (Instit
 ## Contributing
 
 Pages are plain Markdown: edit them in place and open a pull request against the `docs/manual-migration` branch. Keep one topic per page and link related pages instead of duplicating content.
+
+## Publishing
+
+This folder is the **source of truth**. The GitHub wiki is generated from it by
+[`scripts/wiki_sync.py`](../../scripts/wiki_sync.py) and the
+[`Sync wiki`](../../.github/workflows/wiki-sync.yml) workflow, which flattens the
+tree into one wiki page per document and rebuilds `Home`, `_Sidebar` and `_Footer`.
+
+Do not edit the wiki tab directly: the next sync overwrites it. The workflow needs a
+`WIKI_TOKEN` secret (a classic personal access token with the `repo` scope), because
+the automatic `GITHUB_TOKEN` cannot push to the wiki repository.

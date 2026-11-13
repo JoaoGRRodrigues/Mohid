@@ -1,0 +1,63 @@
+name: Sync wiki
+
+# Mirrors docs/manual/ into the GitHub wiki (<repo>.wiki.git).
+#
+# The wiki is generated: edit docs/manual/ in the repository, never the wiki tab.
+# Requires a repository secret WIKI_TOKEN: a classic PAT with the "repo" scope.
+# GITHUB_TOKEN cannot push to the wiki repository, it is scoped to this repo.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/manual/**"
+      - "scripts/wiki_sync.py"
+      - ".github/workflows/wiki-sync.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wiki-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate wiki pages
+        run: python scripts/wiki_sync.py --out "$RUNNER_TEMP/wiki"
+
+      - name: Push to wiki
+        env:
+          WIKI_TOKEN: ${{ secrets.WIKI_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [ -z "${WIKI_TOKEN:-}" ]; then
+            echo "::error::Missing WIKI_TOKEN secret (classic PAT with repo scope)."
+            exit 1
+          fi
+          git clone --depth 1 "https://x-access-token:${WIKI_TOKEN}@github.com/${REPO}.wiki.git" wiki
+          find wiki -maxdepth 1 -name '*.md' -delete
+          rm -rf wiki/images
+          cp -R "$RUNNER_TEMP/wiki/." wiki/
+          cd wiki
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Wiki already up to date."
+            exit 0
+          fi
+          git commit -m "docs: sync wiki from ${GITHUB_SHA::7}"
+          git push origin HEAD:master
