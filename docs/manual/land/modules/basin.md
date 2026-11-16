@@ -169,35 +169,35 @@ If they are used, Potential transpiration computed in Module Basin is given to M
 
 ### .srb TimeSeries
 
-water\_column\_\[m\] - runoff water column height in top of soil (height from soil surface)
+water_column_\[m\] - runoff water column height in top of soil (height from soil surface)
 
-water\_level\_\[m\] - runoff water altitude (in reference to mean sea level)
+water_level_\[m\] - runoff water altitude (in reference to mean sea level)
 
-Infil.\_Rate\_\[mm/hour\] - infiltration rate in the selected cell
+Infil._Rate_\[mm/hour\] - infiltration rate in the selected cell
 
-Precipitation\_Rate\_\[mm/hour\] - precipitation rate in the selected cell
+Precipitation_Rate_\[mm/hour\] - precipitation rate in the selected cell
 
-Throughfall\_Rate\_\[mm/hour\] - precipitation rate that arrives to soil surface (after leaf interception) in the selected cell
+Throughfall_Rate_\[mm/hour\] - precipitation rate that arrives to soil surface (after leaf interception) in the selected cell
 
-Canopy\_Capacity\_\[m\] - leaf capacity to accumulate water (in height) in the selected cell
+Canopy_Capacity_\[m\] - leaf capacity to accumulate water (in height) in the selected cell
 
-Canopy\_Storage\_\[m\] - leaf accumulated water (in height) in the selected cell
+Canopy_Storage_\[m\] - leaf accumulated water (in height) in the selected cell
 
-Canopy\_Drainage\_\[m\] - leaf dip water (in height) in the selected cell
+Canopy_Drainage_\[m\] - leaf dip water (in height) in the selected cell
 
-Reference\_Evapotranspiration\_\[mm/h\] - reference evapotranspiration (computed by Penman Motheith or given by the user)
+Reference_Evapotranspiration_\[mm/h\] - reference evapotranspiration (computed by Penman Motheith or given by the user)
 
-Potential\_Crop\_EVTP\_\[mm/h\] - reference evapotranspiration \* Kc
+Potential_Crop_EVTP_\[mm/h\] - reference evapotranspiration \* Kc
 
-Potential\_Evaporation\_\[mm/h\] - potential crop EVTP separated in evaporation (potential as may not occur depending on soil water availability)
+Potential_Evaporation_\[mm/h\] - potential crop EVTP separated in evaporation (potential as may not occur depending on soil water availability)
 
-Potential\_Transpiration\_\[mm/h\] - potential crop EVTP separated in transpiration (potential as may not occur depending on soil water availability)
+Potential_Transpiration_\[mm/h\] - potential crop EVTP separated in transpiration (potential as may not occur depending on soil water availability)
 
-EvapoTranspiration\_Rate\_\[mm/hour\] - actual evapotranspiration in the selected cell (the effevtive water removed)
+EvapoTranspiration_Rate_\[mm/hour\] - actual evapotranspiration in the selected cell (the effevtive water removed)
 
-Actual\_Evaporation\_\[mm/h\] - effective evaporation removed (from potential evaporation) - in surface soil
+Actual_Evaporation_\[mm/h\] - effective evaporation removed (from potential evaporation) - in surface soil
 
-Actual\_Transpiration\_\[mm/h\] - effective transpiration removed (from potential transpiration) - along vegetation roots
+Actual_Transpiration_\[mm/h\] - effective transpiration removed (from potential transpiration) - along vegetation roots
 
 [Check Mohid Land Heights and Levels to understand the difference between level and height results](http://screencast.com/t/I8We0B4j2uJ)
 
@@ -224,7 +224,7 @@ OL_Volume_To_Channels_m3/s              - flow from runoff to river (positive fr
 GW_Volume_To_Channels_m3/s              - flow from porous media to river (positive from porousmedia to river, negative from river to porousmedia)
 ```
 
-The accumulation in the watershed would be a difference between the inputs to the watershed and outputs from the watershed Accumulation = Sum ((In – Out)\*LocalTimeStep) In -> Rain (Rain\_Above\_Leafs) + Discharges IN (there is no global output of the discharges, if you have input discharges you have to compute it with the values inserted) Out-> Water loss from soil or surface - Evapotranspiration (Evap\_From\_Vegetation + Evap\_From\_Ground + Evap\_From\_Soil) plus water lost from river (Out\_Volume\_Channel) pus water lost from runoff (Out\_Volume\_Overland)
+The accumulation in the watershed would be a difference between the inputs to the watershed and outputs from the watershed Accumulation = Sum ((In – Out)\*LocalTimeStep) In -> Rain (Rain_Above_Leafs) + Discharges IN (there is no global output of the discharges, if you have input discharges you have to compute it with the values inserted) Out-> Water loss from soil or surface - Evapotranspiration (Evap_From_Vegetation + Evap_From_Ground + Evap_From_Soil) plus water lost from river (Out_Volume_Channel) pus water lost from runoff (Out_Volume_Overland)
 
 Note: Negative discharges in river or discharges in runoff are not yet accounted in the mass balance (for mass error results). All that discharges have to be accounted if doing the accumulation computation yourself.
 

@@ -42,7 +42,7 @@ Glossary, bibliography and the index of every page.
 - [Get NASA DEM for SWAT](get-nasa-dem-for-swat.md) — This is a 3 step task and for simplification a structure as the one in \\\\Datacenter\\Albufeiras\Eutrofizacao\\ComoFazer\\EstruturaDirectoriasAlbufei…
 - [Get Rain For SWAT](get-rain-for-swat.md) — Check video ComoObterPrecipitcaoParaSWAT.swf in \\\\datacenter\\Albufeiras\Eutrofizacao\\Produtos\\Apresentacoes\\Videos
 - [GFS](gfs.md) — This article is about GFS data conversion, data can be accessed from http://nomads.ncep.noaa.gov/.
-- [Goto](goto.md) — 1. Copy the goto.php extension in the extensions/goto.php of your <goto>mediawiki</goto> installation.
+- [Goto](goto.md) — 1. Copy the goto.php extension in the extensions/goto.php of your mediawiki installation.
 - [Grids](grids.md) — Mohid uses a Arakawa type C grid as described here
 - [Heavy metals](heavy-metals.md) — In MOHID the distribution of contaminants is parameterized by using the ratio between the adsorbed particulate concentration and the dissolved concent…
 - [IIS](iis.md) — Should the web-page refuse to execute some command-line script, then it is likely that the "cmd.exe" doesn't has permissions for the IIS user session…
@@ -62,14 +62,13 @@ Glossary, bibliography and the index of every page.
 - [Pong](pong.md) — program pong
 - [Properties names](properties-names.md)
 - [Relative position of a particle in a cell](relative-position-of-a-particle-in-a-cell.md) — A fundamental in the "MOHID system" lagrangian approach is to know the relative position of the tracer in the hydrodynamic cell to speed up the interp…
-- [Relative position of particle](relative-position-of-particle.md) — A fundamental in the "MOHID system" lagrangian approach is to know the relative position of the tracer in the hydrodynamic cell to speed up the interp…
+- [Relative position of particle](relative-position-of-a-particle-in-a-cell.md) — A fundamental in the "MOHID system" lagrangian approach is to know the relative position of the tracer in the hydrodynamic cell to speed up the interp…
 - [Residual](residual.md) — MohidWater may calculate time averages on certain hydrodynamic parameters at the end of each run. The variables whose time averages are calculated are…
 - [Run SWAT Model - ArcView Interface](run-swat-model-arcview-interface.md) — 1. Run ArcView
 - [Run SWAT Model - MapWindow Interface](run-swat-model-mapwindow-interface.md) — Before running the MWSWAT it is suggested to perform some modifications in the MWSwat database (mwswat.mdb) located in the subfolder ..\\Plugins\\MWSW…
 - [Runtime short notice](runtime-short-notice.md) — the GNU page, [\[1\]](http://www.gnu.org/copyleft/gpl.html#SEC3), recomends that if the program is interactive, a short notice like this should apear…
 - [SeaDAS](seadas.md) — SeaDAS (SeaWiFS Data Analysis System) is a sattelite image processing package developed by GSFC/NASA.
 - [Settling velocity](settling-velocity.md) — The FreeVerticalMovement is used to add to the vertical flow a vertical movement. Presently the module is prepared to impose a constant settling veloc…
-- [Sign up](sign-up.md) — Please send an email to one of the following addresses, and we'll provide you with an account for this wiki. It'll allow you to edit. Note that this a…
 - [SmoothBatimCoefs](smoothbatimcoefs.md) — This program creates smoothing coefficients for a bathimetry to allow a smooth transition in the boundary between the the bathymetry and a larger scal…
 - [SNIRH Meteorological Stations](snirh-meteorological-stations.md) — One useful source of meteorological data (to Portugal) to use as input on Mohid is \[SNIRH\] website. There are many stations with historical data ava…
 - [SPH](sph.md) — Because of the lagrangian-tracer nature of SPH, it has been successfully parallelized in both MPI and GPU architectures, with performance increases in…
@@ -78,10 +77,6 @@ Glossary, bibliography and the index of every page.
 - [Templates](templates.md) — Templates allow to include pre-set wiki text inside an article. It can be useful to insert complex html data.
 - [Texmaker](texmaker.md) — Here's what I did to add a custom build command that would include the bibtex command: Options --> Configure Texmaker --> Quick Build --> User
 - [Tomcat startup file](tomcat-startup-file.md) — tomcat>
-- [Tool Online NBA All-World Unlimited AW-Cash por7](tool-online-nba-all-world-unlimited-aw-cash-por7.md) — ✨
-- [Tool Online Rescue Cop Unlimited Gold Cash owwv137](tool-online-rescue-cop-unlimited-gold-cash-owwv137.md) — You ’ ve just unlocked the most up‑to‑date, player‑tested hub for Rescue Cop Gold – the premium currency that separates rookies from elect SWAT comman…
-- [Tool Online Sqube Darkness Unlimited Cube-Points 20l5tu](tool-online-sqube-darkness-unlimited-cube-points-20l5tu.md) — ✨
-- [Tool Online The Island Castaway Unlimited Pearls Emeralds ec640a0](tool-online-the-island-castaway-unlimited-pearls-emeralds-ec640a0.md) — ✨
 - [User manual](user-manual.md) — To use MohidReservoirOptimization you need to create a working environment consisting of:
 - [Valida4D](valida4d.md) — Valida (from validation) 4D (space + time).
 - [VARIABLEDT](variabledt.md) — To activate a variable time step bounded between a minimum and maximum DT, in configuration file Model\x.dat
@@ -96,9 +91,9 @@ Glossary, bibliography and the index of every page.
 
 ### Choose a semi-implicit approach
 
-#### WaterProperties\_x.dat
+#### WaterProperties_x.dat
 
-For each property is possible to define a explicit or semi-implicit approach to compute the horizontal transport. By default is assumed a explicit one (ADVECTION\_H\_IMP\_EXP : 1 ).
+For each property is possible to define a explicit or semi-implicit approach to compute the horizontal transport. By default is assumed a explicit one (ADVECTION_H_IMP_EXP : 1 ).
 
 ```
     <beginproperty>
@@ -108,9 +103,9 @@ For each property is possible to define a explicit or semi-implicit approach to 
 
 ### Choose the model time step
 
-#### Model\_x.dat
+#### Model_x.dat
 
-In the model\_x.dat input file is defined the model time step
+In the model_x.dat input file is defined the model time step
 
 ```
 DT : 30
@@ -121,7 +116,7 @@ DT : 30
 - 
 
 $$
-\\sum^{(p)} = \\underbrace{ \\sum \\circ \\sum \\circ \\ldots \\circ \\sum }\_{p-\\text{times}}
+\\sum^{(p)} = \\underbrace{ \\sum \\circ \\sum \\circ \\ldots \\circ \\sum }_{p-\\text{times}}
 $$
 
 ,
@@ -135,7 +130,7 @@ $$
 - 
 
 $$
-\\sum^{n,\\,(p)}\_{\\alpha\_{i+1}=1,\\,(i)} = \\underbrace{ \\sum^{n}\_{\\alpha\_2=1} \\circ \\sum^{n}\_{\\alpha\_3=1} \\circ \\ldots \\circ \\sum^{n}\_{\\alpha\_{p+1}=1} }\_{p-\\text{times}}
+\\sum^{n,\\,(p)}_{\\alpha_{i+1}=1,\\,(i)} = \\underbrace{ \\sum^{n}_{\\alpha_2=1} \\circ \\sum^{n}_{\\alpha_3=1} \\circ \\ldots \\circ \\sum^{n}_{\\alpha_{p+1}=1} }_{p-\\text{times}}
 $$
 
 ,
@@ -169,7 +164,7 @@ Afin de regrouper toutes les pages francophones relatives au MOHID, nous proposo
 
 The application **HydrodynamicAnalyser** calculates hydrodynamic properties from hydrodynamic data in one HDF5 file.
 
-Running options for this application are specified in an input file named [**HydrodynamicAnalyser.dat**](README.md#hydrodynamicanalyser#hydrodynamicanalyser)
+Running options for this application are specified in an input file named [**HydrodynamicAnalyser.dat**](README.md#hydrodynamicanalyser)
 
 ### Hyperslab
 

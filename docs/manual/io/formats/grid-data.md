@@ -13,9 +13,9 @@ FILL_VALUE         : -9.9e15
 TYPE_ZUV           : z
 ```
 
-FILL\_VALUE specifies a value for points with no data.
+FILL_VALUE specifies a value for points with no data.
 
-TYPE\_ZUV specifies if the data is located in the center of the grid cell or referenced to the faces of the grid cell. It can be **z** for centered data, **u** for east-west faces or **v** for north-south faces.
+TYPE_ZUV specifies if the data is located in the center of the grid cell or referenced to the faces of the grid cell. It can be **z** for centered data, **u** for east-west faces or **v** for north-south faces.
 
 ## Data Section
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-ModuleNETCDF is an interface module between the [netcdf](../../archive/linux/netcdf.md) libraries and [Mohid Framework](../../development/programming/README.md#mohid-framework#mohid-framework), and it was developed in order to read and write netcdf files in a managed and straighforward way.
+ModuleNETCDF is an interface module between the [netcdf](../../archive/linux/netcdf.md) libraries and [Mohid Framework](../../development/programming/README.md#mohid-framework), and it was developed in order to read and write netcdf files in a managed and straighforward way.
 
 ## Using ModuleNETCDF to write a netcdf file
 

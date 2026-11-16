@@ -16,7 +16,7 @@ On January 2009, we held a workshop lectured by [Conexa](http://conexa.pt) on [X
 
 #### RAID types
 
-There hardware RAID controllers and software RAID controllers. The latter aren't that worthy since all is lost when the mainboard fails. Hardware RAIDS are great, as long as the controller is a separate board from the mainboard. If not, if the mainboard fails and if you can't find exactly the same mainboard, byebye data. [Conexa](http://conexa.pt) recommends <goto>3Ware RAID controller boards</goto>.
+There hardware RAID controllers and software RAID controllers. The latter aren't that worthy since all is lost when the mainboard fails. Hardware RAIDS are great, as long as the controller is a separate board from the mainboard. If not, if the mainboard fails and if you can't find exactly the same mainboard, byebye data. [Conexa](http://conexa.pt) recommends 3Ware RAID controller boards.
 
 RAID 0
 
@@ -242,7 +242,7 @@ Drivers: network interface, hard-disk. Critical for performance in windows envir
 
 ## Miscelaneous notes
 
-- <goto>Bacula</goto> --> best backup system.
+- Bacula --> best backup system.
 - For security and reliability better buy entreprise hard-disks rather than non-entreprise hard-disks.
 - Windows 2008 server is apparently GREAT when used as a VM. If you need to install several copies of the same windows VM then you must change the SID.
 

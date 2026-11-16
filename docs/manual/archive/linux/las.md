@@ -19,7 +19,7 @@
 1. Open your favorite web-browser and write down [http://data.mohid.com:8080/las/servlets/dataset](http://data.mohid.com:8080/las/servlets/dataset).
 2. Select a dataset.
 3. Select variables then clik *next*.
-4. Select a region with the interactive map, a time window and a [ROI](../../reference/README.md#roi#roi) (or view).
+4. Select a region with the interactive map, a time window and a [ROI](../../reference/README.md#roi) (or view).
 5. Select the desired output. It can be in binary or ascii format, or it can be a color plot.
 6. Click *next* and you should get in a few moments the results.
 
@@ -37,8 +37,8 @@ This guide is intended to intranet users only.
 
 Sometimes the [tomcat](tomcat.md) server may be down even if you made a clean reboot. You have then to initialize it manually. To do so, perform the start command below.
 
-- start: /home/guillaume/public\_html/las/startserver.pl
-- stop: /home/guillaume/public\_html/las/stopserver.pl
+- start: /home/guillaume/public_html/las/startserver.pl
+- stop: /home/guillaume/public_html/las/stopserver.pl
 
 Or you could initialize it from the [http://data.mohid.com/las.xml](http://data.mohid.com/las.xml) page.
 
@@ -84,7 +84,7 @@ Alias /las-output/ /home/guillaume/public_html/las/server/output/
 ```
 
 - Restart the las tomcat
-- Perform a simple test from */home/guillaume/public\_html/las*:
+- Perform a simple test from */home/guillaume/public_html/las*:
 
 ```
 > ./bin/lasget.pl  -x -10:10 -y -30:-20 -z 0 -f txt -o salt.txt
@@ -140,7 +140,7 @@ Key files:
 
 Actions:
 
-1. \> source /usr/local/ferret\_paths
+1. \> source /usr/local/ferret_paths
 2. \> cd $lasroot/server
 3. Edit the las.xml and catex.xml at will. See the [LAS documentation](http://ferret.pmel.noaa.gov/LASdoc/serve/cache/33.html).
 4. \> touch las.xml
@@ -156,7 +156,7 @@ Key file:
 
 Actions:
 
-1. \> source /usr/local/ferret\_paths
+1. \> source /usr/local/ferret_paths
 2. \> cd $lasroot/server
 3. Edit the options.xml at will. See the [LAS documentation](http://ferret.wrc.noaa.gov/Ferret/LAS/Documentation/manual/xmlconfig.html).
 4. \> touch las.xml
@@ -165,7 +165,7 @@ Actions:
 
 ### How to change Ferret default properties
 
-Here's how to change the default value in the options ui for the ferret land\_fill option (you can see this [document](http://ferret.wrc.noaa.gov/Ferret/LAS/Documentation/manual/customize.html#Ferret_properties)). Edit the *las.xml* and add the properties tag
+Here's how to change the default value in the options ui for the ferret land_fill option (you can see this [document](http://ferret.wrc.noaa.gov/Ferret/LAS/Documentation/manual/customize.html#Ferret_properties)). Edit the *las.xml* and add the properties tag
 
 ```
 <lasdata>

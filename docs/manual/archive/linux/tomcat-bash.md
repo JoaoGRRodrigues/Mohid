@@ -6,13 +6,13 @@
 
 3. ./Tomcat5.sh
 
-JAVA\_HOME=/usr/java/latest CATALINA\_HOME=/home/guillaume/Software/las7/tomcat/tomcat DAEMON\_HOME=/home/guillaume/Software/las7/tomcat/tomcat TOMCAT\_USER=guillaume
+JAVA_HOME=/usr/java/latest CATALINA_HOME=/home/guillaume/Software/las7/tomcat/tomcat DAEMON_HOME=/home/guillaume/Software/las7/tomcat/tomcat TOMCAT_USER=guillaume
 
 1. for multi instances adapt those lines.
 
-TMP\_DIR=/home/guillaume/Software/las7/tomcat/tomcat/var/tmp PID\_FILE=/home/guillaume/Software/las7/tomcat/tomcat/var/run/jsvc.pid CATALINA\_BASE=/home/guillaume/Software/las7/tomcat/tomcat
+TMP_DIR=/home/guillaume/Software/las7/tomcat/tomcat/var/tmp PID_FILE=/home/guillaume/Software/las7/tomcat/tomcat/var/run/jsvc.pid CATALINA_BASE=/home/guillaume/Software/las7/tomcat/tomcat
 
-CATALINA\_OPTS="-Djava.awt.headless=true -Xms256M -Xmx256M" CLASSPATH=\\ $JAVA\_HOME/lib/tools.jar:\\ $CATALINA\_HOME/bin/commons-daemon.jar:\\ $CATALINA\_HOME/bin/bootstrap.jar
+CATALINA_OPTS="-Djava.awt.headless=true -Xms256M -Xmx256M" CLASSPATH=\\ $JAVA_HOME/lib/tools.jar:\\ $CATALINA_HOME/bin/commons-daemon.jar:\\ $CATALINA_HOME/bin/bootstrap.jar
 
 case "$1" in
 

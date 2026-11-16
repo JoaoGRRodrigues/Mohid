@@ -2,7 +2,7 @@
 
 ## User's manual
 
-To activate a variable time step bounded between a minimum and maximum DT, in configuration file Model\_x.dat
+To activate a variable time step bounded between a minimum and maximum DT, in configuration file Model_x.dat
 
 ```
 VARIABLEDT  : 1
@@ -10,7 +10,7 @@ DT          : 10.
 MAXDT       : 100.
 ```
 
-A log file DTLog.txt is stored in the results folder */res* of the main domain if the option DT\_LOG is set in the nomfich.dat file in */exe* folder of the main domain. Such a log file is useful to trace which cell of which property is the weakest link that could generate an instability.
+A log file DTLog.txt is stored in the results folder */res* of the main domain if the option DT_LOG is set in the nomfich.dat file in */exe* folder of the main domain. Such a log file is useful to trace which cell of which property is the weakest link that could generate an instability.
 
 ```
 DT_LOG                    : ..\res\DT_Log_2.log
@@ -47,7 +47,7 @@ An excerpt of a log file looks like this (Iterartion number, dt, i, j, k, model 
 
 The main idea to compute an ideal time-step is to choose the largest time-step above which the numerical model iteration would overshoot. This is equivalent to making sure that no cell in any property can deplete more than its property mass in one time-step, given that it has a net flux with positive divergence. Mathematically speaking this would be equivalent to:
 
-** \\Delta t = \\min\_{p\\;ijk} \\left( \\frac{ m }{ \\Phi } \\right) \\quad\\;\\;\\;\\; \\text{if}\\quad\\;\\;\\Phi \\gt 0** .
+** \\Delta t = \\min_{p\\;ijk} \\left( \\frac{ m }{ \\Phi } \\right) \\quad\\;\\;\\;\\; \\text{if}\\quad\\;\\;\\Phi \\gt 0** .
 
 where $m$ and $\Phi$ are, respectively, the mass ($kg\,m^{-3}$) and the net massic flow ($kg\,m^{-3}\,s^{-1}$) of the property $p$ at the cell indexed by $i,\,j,\,k$.
 
@@ -55,4 +55,4 @@ This takes into account only advective and diffusive fluxes but disregards sourc
 
 ## See also
 
-- [Module Time](../water/modules/README.md#module-time#module-time)
+- [Module Time](../water/modules/README.md#module-time)

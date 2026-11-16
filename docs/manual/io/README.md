@@ -14,7 +14,6 @@ Every input and output file format used by the models, plus the keyword database
 - [Input Data Errors](input-data-errors.md) — User input data errors in Mohid can be estimated coarsely in near 90% of total execution errors, and can have two origins: user distraction or user un…
 - [InterfaceSedimentWater.dat](interfacesedimentwater-dat.md)
 - [Land boundary condition](land-boundary-condition.md) — The land boundary presently in the MOHID system is imposed in the form of water and mass fluxes.
-- [Land boundary condition;](land-boundary-condition.md) — The land boundary presently in the MOHID system is imposed in the form of water and mass fluxes.
 - [Nomfich.dat file](nomfich-dat-file.md) — A nomfich.dat file is a file commonly used in the MOHID Framework to indicate to a MOHID program the name and path of the input (instructions) file(s)…
 - [Outputs.dat](outputs-dat.md) — SWAT\WITH\CHANGES  : 1
 - [Sediment.dat](sediment-dat.md)
@@ -27,7 +26,7 @@ Every input and output file format used by the models, plus the keyword database
 
 ### Imposing baroclinic radiation
 
-Hydrodynamic\_x.dat
+Hydrodynamic_x.dat
 
 ```
 !ON = 1, OFF = 0

@@ -6,7 +6,7 @@ Module Sediment allows simulating the dynamics of sediments in natural systems u
 
 ## Main options
 
-In order to consider Module Sediment in [MOHID Water](../mohid-water.md) simulations, the following keyword must be activated in the [Module Model](README.md#module-model#module-model) input data file:
+In order to consider Module Sediment in [MOHID Water](../mohid-water.md) simulations, the following keyword must be activated in the [Module Model](README.md#module-model) input data file:
 
 ```
 SEDIMENT : 1
@@ -14,7 +14,7 @@ SEDIMENT : 1
 
 The options of Module Sediment are defined in the input file ([Sediment.dat](../../io/sediment-dat.md)).
 
-The geometry of the sediment column is given in a different file ([SedimentGeometry.dat](../../io/README.md#sedimentgeometry-dat#sedimentgeometry-dat)).
+The geometry of the sediment column is given in a different file ([SedimentGeometry.dat](../../io/README.md#sedimentgeometry-dat)).
 
 Other modules must be modified: ([InterfaceSedimentWater.dat](../../io/interfacesedimentwater-dat.md)) ([WaterProperties.dat](../../io/waterproperties-dat.md)) ([Free Vertical Movement.dat](../../io/free-vertical-movement-dat.md))
 

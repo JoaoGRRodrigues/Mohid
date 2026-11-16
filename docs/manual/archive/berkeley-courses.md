@@ -12,7 +12,7 @@ cs267 Spring 2009
 
 #### Videocasts
 
-1. [mms://media.citris.berkeley.edu/cs267\_1-21-08](mms://media.citris.berkeley.edu/cs267_1-21-08)
+1. [mms://media.citris.berkeley.edu/cs267_1-21-08](mms://media.citris.berkeley.edu/cs267_1-21-08)
 
 #### Presentations
 

@@ -152,56 +152,39 @@ FILE_IN_TIME            : NONE
 
 Light energy reaching the water surface, I0 (Wm-2), can be estimated by MOHID based on a set of coordinates (Lat, Long) or imposed with a time-series. Light is divided into a shortwave component S and a longwave component L, so that . The short wave component of the light is used by the photosynthetic organisms and represents the 40-60% of the incoming radiation I0. In MOHID, long wave and shortwave radiation are calculated separately and can have different extinction coefficients. The model assumes that the light extinction in depth follows the decay given by Lambert-Beer’s law (Figure 4 1), which states that light intensity at depth z is:
 
-```
- 
-
 $$
 {{I}_{z}}={{I}_{0}}\,{{e}^{\left( -k\,z \right)}}
 $$
-          Equation 1
-```
+
+*Equation 1*
 
 where Io is the incident radiation at the surface, Iz the available radiation at depth z and k the extinction coefficient. This law is applied to both shortwave and longwave radiation, so that Equation 3 can be rewritten as:
-
-```
-  
 
 $$
 {{S}_{z}}={{S}_{0}}\,{{e}^{\left( -{{k}_{s}}z \right)}}
 $$
  for shortwave radiation     Equation 2
-```
-
-```
-  
 
 $$
 {{L}_{z}}={{L}_{0}}\,{{e}^{\left( -{{k}_{l}}z \right)}}
 $$
  for longwave radiation      Equation 3
-```
 
 where ks and kl are the shortwave radiation extinction coefficient and the long wave radiation extinction coefficient, respectively, S0 the shortwave radiation component and L0 is the long wave radiation component at the sea surface. These, in turn, are expressed as:
-
-```
- 
 
 $$
 {{S}_{0}}\,=SW\times {{I}_{0}}
 $$
-       Equation 4
-```
 
-```
- 
+*Equation 4*
 
 $$
 {{L}_{0}}\,=LW\times {{I}_{0}}
 $$
-       Equation 5
-```
 
-LW and SW are percentages and their sum must be 1. In MOHID, the percentages LW and SW are defined in the input file WaterProperties\_x.dat, by means of the two keywords LW\_PERCENTAGE and SW\_PERCENTAGE (Table 4 1). Because of their distinct characteristics, longwave and the shortwave components of the radiation can have different extinction coefficients. Both are calculated by ModuleLightExtinction. In order to activate the exchanges of heat at the interface water-air, it is necessary to activate the keyword SURFACE\_FLUXES in the file WaterProperties\_x.dat for the property Temperature, as shown in Table 4 2.
+*Equation 5*
+
+LW and SW are percentages and their sum must be 1. In MOHID, the percentages LW and SW are defined in the input file WaterProperties_x.dat, by means of the two keywords LW_PERCENTAGE and SW_PERCENTAGE (Table 4 1). Because of their distinct characteristics, longwave and the shortwave components of the radiation can have different extinction coefficients. Both are calculated by ModuleLightExtinction. In order to activate the exchanges of heat at the interface water-air, it is necessary to activate the keyword SURFACE_FLUXES in the file WaterProperties_x.dat for the property Temperature, as shown in Table 4 2.
 
 *Figure 4 1 Light attenuation in the water column estimated according to Lambert-Beer’s law for optimal conditions (clear water). Water absorption coefficient = 0.04; Io = 300 W m-2.*
 
@@ -246,7 +229,7 @@ OUTPUT_HDF               : 0
 
 ### Longwave radiation
 
-Longwave radiation fluxes (upward longwave radiation ﬂux emitted by the sea surface to the atmosphere, and downward longwave radiation ﬂux reaching the sea from the atmosphere) play a major role in the thermal structure of the water body. Unlike shortwave radiation, long wave radiation is not used as an energy source for primary producers, and does not have the same penetrative effect on the water. However, the information given by the longwave radiation is used for the calculation of the temperature in the water. As such, there are only a few options available for longwave radiation extinction in MOHID, specified by the value of keyword LW\_EXTINCTION\_TYPE (Table 4 3).
+Longwave radiation fluxes (upward longwave radiation ﬂux emitted by the sea surface to the atmosphere, and downward longwave radiation ﬂux reaching the sea from the atmosphere) play a major role in the thermal structure of the water body. Unlike shortwave radiation, long wave radiation is not used as an energy source for primary producers, and does not have the same penetrative effect on the water. However, the information given by the longwave radiation is used for the calculation of the temperature in the water. As such, there are only a few options available for longwave radiation extinction in MOHID, specified by the value of keyword LW_EXTINCTION_TYPE (Table 4 3).
 
 *Table 4 3 Options for the longwave radiation extinction coefficient in MOHID.*
 
@@ -258,7 +241,7 @@ Ascii file	5	Value of the extinction coefficient defined in a time series files
 
 ### Shortwave radiation
 
-Longwave radiation, alongside with evaporation and conduction, are all surface heat transfer effects that heat occur only at the surface of the water. Shortwave radiation, on the other hand, is a penetrative effect that distributes its heat through a significant range of the water column. Depending on the vertical geometry of the modelled domain (2D or 3D setting), the model estimates the extinction of shortwave radiation within each layer. Since the model uses the control volume approach, the available light for each control volume (or cell) is calculated separately. To calculate the specific amount of solar radiation available for a control volume the model estimates the absorption of light in the water column above (layers) and within the control volume itself, as in Figure 4 2, where the curve represents the extinction of light along the water column according to the Lambert-Beer’s law. This is obtained knowing the total absorption coefficient and the height of the water column above. If the control volume is on the surface, then the incident radiation is considered. There are six methods to calculate shortwave extinction coefficient in MOHID (Table 4 4). The method can be selected by specifying the value of the keyword SW\_EXTINCTION\_TYPE in the file WaterProperties\_x.dat (see Table 4 1). The comparison between the analytical solution of each method and the estimations made by the model in setups with different vertical resolution (number of layers) is plotted in Figure 4 3. The results show that the model is able to reproduce radiation decay in depth satisfactorily. However, users must be aware that low vertical resolution will lead to greater deviation from the analytical solution, meaning that in application where light ambient in the top layers is crucial (e.g., focus on ecological processes), the number of layer must be increased if feasible in terms of computational time.
+Longwave radiation, alongside with evaporation and conduction, are all surface heat transfer effects that heat occur only at the surface of the water. Shortwave radiation, on the other hand, is a penetrative effect that distributes its heat through a significant range of the water column. Depending on the vertical geometry of the modelled domain (2D or 3D setting), the model estimates the extinction of shortwave radiation within each layer. Since the model uses the control volume approach, the available light for each control volume (or cell) is calculated separately. To calculate the specific amount of solar radiation available for a control volume the model estimates the absorption of light in the water column above (layers) and within the control volume itself, as in Figure 4 2, where the curve represents the extinction of light along the water column according to the Lambert-Beer’s law. This is obtained knowing the total absorption coefficient and the height of the water column above. If the control volume is on the surface, then the incident radiation is considered. There are six methods to calculate shortwave extinction coefficient in MOHID (Table 4 4). The method can be selected by specifying the value of the keyword SW_EXTINCTION_TYPE in the file WaterProperties_x.dat (see Table 4 1). The comparison between the analytical solution of each method and the estimations made by the model in setups with different vertical resolution (number of layers) is plotted in Figure 4 3. The results show that the model is able to reproduce radiation decay in depth satisfactorily. However, users must be aware that low vertical resolution will lead to greater deviation from the analytical solution, meaning that in application where light ambient in the top layers is crucial (e.g., focus on ecological processes), the number of layer must be increased if feasible in terms of computational time.
 
 *Table 4 4 Methods to calculate shortwave light extinction coefficient in MOHID.*
 
@@ -281,7 +264,7 @@ Chla = chlorophyll-a concentration (converted from phytoplankton carbon biomass 
 
 #### Constant
 
-A constant value for the extinction factor is used during the entire simulation period. In this case, the WaterProperties input file will have the information described in Table 4 5. The keyword SW\_EXTINCTION\_COEF is the shortwave radiation extinction coefficient in the water (m-1). If the value of the coefficient is not defined, MOHID uses a default value equal to 0.05 m-1. The keyword LW\_EXTINCTION\_COEF is the longwave radiation extinction coefficient in the water (m-1). If the value of the coefficient is not defined, MOHID uses a default value equal to 0.33 m-1. The keywords SW\_PERCENTAGE (dimensionless) and LW\_PERCENTAGE (dimensionless) described in Section 4, if not specified, are set by default to 0.6 and 0.4, respectively.
+A constant value for the extinction factor is used during the entire simulation period. In this case, the WaterProperties input file will have the information described in Table 4 5. The keyword SW_EXTINCTION_COEF is the shortwave radiation extinction coefficient in the water (m-1). If the value of the coefficient is not defined, MOHID uses a default value equal to 0.05 m-1. The keyword LW_EXTINCTION_COEF is the longwave radiation extinction coefficient in the water (m-1). If the value of the coefficient is not defined, MOHID uses a default value equal to 0.33 m-1. The keywords SW_PERCENTAGE (dimensionless) and LW_PERCENTAGE (dimensionless) described in Section 4, if not specified, are set by default to 0.6 and 0.4, respectively.
 
 *Table 4 5 Example of keyword definition to use in WaterProperties.dat input file to implement a constant value for the light extinction coefficient in the water column.*
 
@@ -316,11 +299,11 @@ OUTPUT_HDF               : 1
 
 #### Parsons Ocean
 
-The formulation for this method is taken from Parson et al. \[1\]. Only absorption by water molecules and chlorophyll pigments is considered. In this case, in the WaterProperties input file it is necessary to define also the water property phytoplankton as shown in Table 4 6. The constant (0.04) is close to the average extinction coefficient for visible light in clean water. To use this equation in other ambient where dissolved and particulate materials are important to the light extinction, which are not directly related to chlorophyll, the default value of this constant can be changed with the SW\_EXTINCTION\_COEF keyword. A typical value of 0.3 m-1 for reservoirs is described by Chapra \[2\].
+The formulation for this method is taken from Parson et al. \[1\]. Only absorption by water molecules and chlorophyll pigments is considered. In this case, in the WaterProperties input file it is necessary to define also the water property phytoplankton as shown in Table 4 6. The constant (0.04) is close to the average extinction coefficient for visible light in clean water. To use this equation in other ambient where dissolved and particulate materials are important to the light extinction, which are not directly related to chlorophyll, the default value of this constant can be changed with the SW_EXTINCTION_COEF keyword. A typical value of 0.3 m-1 for reservoirs is described by Chapra \[2\].
 
-Since the Parsons formula accepts values of Chl expressed in mgChla/m3, but the model uses the concentration of phytoplankton expressed as mgC/l, a unit conversion from mgC/l to mg Chla/m3 is done in the model by using a default ratio C:Chla equal to 60. This ratio varies between about 10 and 100 for total phytoplankton \[1\], with 10 corresponding to low light intensities and high temperatures, and 100 corresponding to high light intensities and low temperatures. The default value can be changed using the RATIO\_C\_CHLA keyword in the ModuleWaterProperties.
+Since the Parsons formula accepts values of Chl expressed in mgChla/m3, but the model uses the concentration of phytoplankton expressed as mgC/l, a unit conversion from mgC/l to mg Chla/m3 is done in the model by using a default ratio C:Chla equal to 60. This ratio varies between about 10 and 100 for total phytoplankton \[1\], with 10 corresponding to low light intensities and high temperatures, and 100 corresponding to high light intensities and low temperatures. The default value can be changed using the RATIO_C_CHLA keyword in the ModuleWaterProperties.
 
-*Table 4 6 Example of keyword definition to use in WaterProperties\_x.dat input file to implement the Parsons Ocean shortwave radiation extinction coefficient in the water column (in this case the longwave radiation extinction coefficient is constant).*
+*Table 4 6 Example of keyword definition to use in WaterProperties_x.dat input file to implement the Parsons Ocean shortwave radiation extinction coefficient in the water column (in this case the longwave radiation extinction coefficient is constant).*
 
 ```
 LIGHT_EXTINCTION:1
@@ -367,7 +350,7 @@ PARTICULATE                  : 0
 
 This method uses a site-specific formula derived from a model calibration with field data from the Tagus estuary, Portugal \[3\]. User must be aware that this method can be adequate for estuaries with similar characteristics, and may be used critically to other sites. Only cohesive sediments and water absorption of radiation is taken into account. Please notice that cohesive sediments are assumed to be suspended particulate matter (SPM) as appear in the formulation. In this case, in the WaterProperties input file it is necessary to define also the water properties phytoplankton and cohesive sediment, as shown in Table 4 7, otherwise the model will stop and give an error message.
 
-*Table 4 7 Example of keyword definition to use in WaterProperties\_x.dat input file to implement the Portela-Tagus estuary shortwave radiation extinction coefficient in the water column (in this case the longwave radiation extinction coefficient is constant).*
+*Table 4 7 Example of keyword definition to use in WaterProperties_x.dat input file to implement the Portela-Tagus estuary shortwave radiation extinction coefficient in the water column (in this case the longwave radiation extinction coefficient is constant).*
 
 ```
 LIGHT_EXTINCTION:1
@@ -423,9 +406,9 @@ This method combines the formulation of the Parsons Ocean and Portela – Tagus 
 
 #### Ascii file
 
-This option enables the user to define the extinction coefficient by using a single value (constant for the entire simulation) or a time-series with variable values (temporal resolution also defined by the user). In this case it is necessary to define the path of the input file by using a keyword SW\_LW\_EXTINCTION\_FILE. In the file the time series will be organized in column and the column where the shortwave radiation extinction coefficient is present, should be defined with the keyword SW\_EXTINCTION\_COLUMN. The column where the longwave radiation extinction coefficient is present should be defined with the keyword LW\_EXTINCTION\_COLUMN see Table 4 8
+This option enables the user to define the extinction coefficient by using a single value (constant for the entire simulation) or a time-series with variable values (temporal resolution also defined by the user). In this case it is necessary to define the path of the input file by using a keyword SW_LW_EXTINCTION_FILE. In the file the time series will be organized in column and the column where the shortwave radiation extinction coefficient is present, should be defined with the keyword SW_EXTINCTION_COLUMN. The column where the longwave radiation extinction coefficient is present should be defined with the keyword LW_EXTINCTION_COLUMN see Table 4 8
 
-*Table 4 8 Example of keyword definition to use in WaterProperties\_x.dat input file to use known values for the shortwave radiation extinction coefficient in the water column (in the example the longwave radiation extinction coefficient is constant).*
+*Table 4 8 Example of keyword definition to use in WaterProperties_x.dat input file to use known values for the shortwave radiation extinction coefficient in the water column (in the example the longwave radiation extinction coefficient is constant).*
 
 ```
 LIGHT_EXTINCTION:1
@@ -460,7 +443,7 @@ OUTPUT_HDF               : 1
 
 #### Multiparameter
 
-The multiparameter approach to estimate the extinction coefficient has been developed specifically for ModuleLife \[4\], but can be used with ModuleWaterProperties and ModuleWaterQuality. The rationale in this method consists in summing up the individual contribution of each component that may affect light (cohesive sediments, DOC, POC, etc.). These components (state-variables) are defined by the user, by means of keywords for activating the property (LIGHT\_EXTINCTION) and for defining its specific extinction coefficient (EXTINCTION\_PARAMETER) (see example in Table 4 9). There must be a matching in units of the state-variables and respective extinction coefficients must be the same, for example, mg/L and m-1 / mg/L, respectively.
+The multiparameter approach to estimate the extinction coefficient has been developed specifically for ModuleLife \[4\], but can be used with ModuleWaterProperties and ModuleWaterQuality. The rationale in this method consists in summing up the individual contribution of each component that may affect light (cohesive sediments, DOC, POC, etc.). These components (state-variables) are defined by the user, by means of keywords for activating the property (LIGHT_EXTINCTION) and for defining its specific extinction coefficient (EXTINCTION_PARAMETER) (see example in Table 4 9). There must be a matching in units of the state-variables and respective extinction coefficients must be the same, for example, mg/L and m-1 / mg/L, respectively.
 
 *Table 4 9 Example of keyword definition (in blue) to use multiparameter option in WaterProperties.dat input file (to use with ModuleLife).*
 
@@ -502,25 +485,19 @@ The ecological models that are built-in in MOHID have two rather different appro
 
 Phytoplankton growth (μ) in this model is a function of a maximum growth rate (μmax) and the limitation imposed by light, nutrient and temperature, according to:
 
-```
- 
-
 $$
 \mu ={{\mu }_{\max }}\,{{\Omega }_{T}}\,{{\Omega }_{N}}\,{{\Omega }_{L}}\,
 $$
-       Equation 6
-```
+
+*Equation 6*
 
 The dimensionless limitation factors vary between 0 (total limitation) and 1 (no limitation). The light limitation factor (ΩL) defines the relationship between the ambient light levels and primary producers’ photosynthetic rate. The photosynthetic rate increases with the light intensity until a maximum photosynthetic rate Pmax is reached (at optimal shortwave radiation Sopt). For values higher than Sopt, the photosynthetic rate decreases. The photosynthetic response to the light is given by the Steele’s formula:
-
-```
- 
 
 $$
 \frac{P}{{{P}_{\max }}}=\frac{{{S}_{z}}}{{{S}_{opt}}}{{e}^{\left[ 1-\frac{{{S}_{z}}}{{{S}_{opt}}} \right]}}
 $$
-       Equation 7
-```
+
+*Equation 7*
 
 where P is the photosynthetic rate (d-1), Pmax the maximum photosynthetic rate (d-1), Sz the shortwave radiation (Wm-2) at depth z (m). From this, the light limiting factor (ΩL) is calculated according to Equation 8 in function PhytoLightLimitationFactor inside ModuleFunction, being called by ModuleWater Quality.
 
@@ -561,14 +538,11 @@ In this module the phytoplankton growth rates (C-fixation) are determined by ava
 
 As mentioned before, the shortwave radiation Sz at the depth z is calculated with the Lambert-Beer law (Equation 2). By replacing in Equation 7 we get:
 
-```
- 
-
 $$
 \frac{P}{{{P}_{\max }}}=\frac{{{S}_{0}}\,{{e}^{-{{k}_{s}}z}}}{{{S}_{opt}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}
 $$
-       Equation 9
-```
+
+*Equation 9*
 
 The average value of the limiting factor at a depth z is given by the ratio between the integral of P/Pmax and z:
 
@@ -584,19 +558,13 @@ The solution of the integral leads to the expression in Equation 8.
 
 To solve the integral in Equation 10 we start by calculating the solution of the indefinite integral,
 
-```
- 
-
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\int\limits_{{}}^{{}}{\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}dz}
 $$
-       Equation 11
-```
+
+*Equation 11*
 
 and then multiply and divide the expression inside the integral by –ks,
-
-```
- 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}
@@ -606,13 +574,10 @@ $$
 $$
 =\int\limits_{{}}^{{}}{\frac{-{{k}_{s}}}{-{{k}_{s}}}\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}dz}
 $$
-       Equation 12
-```
+
+*Equation 12*
 
 By applying the rules for integration by parts, we can replace:
-
-```
- 
 
 $$
 u={{e}^{-{{k}_{s}}z}}
@@ -627,24 +592,18 @@ $$
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\int\limits_{{}}^{{}}{-\frac{{{S}_{0}}}{{{k}_{s}}{{S}_{opt}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}u \right)}}du}
 $$
-        Equation 13
-```
+
+*Equation 13*
 
 Being a constant ks can be brought outside the integral,
-
-```
- 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\frac{1}{{{k}_{s}}}\int\limits_{{}}^{{}}{-\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}u \right)}}du}
 $$
-       Equation 14
-```
+
+*Equation 14*
 
 and by applying the rules for integration by parts, it is possible to replace:
-
-```
- 
 
 $$
 s=1-\frac{{{S}_{0}}}{Sopt}u
@@ -659,35 +618,26 @@ $$
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\frac{1}{{{k}_{s}}}\int\limits_{{}}^{{}}{{{e}^{s}}ds}
 $$
-      Equation 15
-```
+
+*Equation 15*
 
 Considering that the integral of es is es :
-
-```
- 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\frac{1}{{{k}_{s}}}{{e}^{s}}
 $$
-       Equation 16
-```
+
+*Equation 16*
 
 By substituting and we obtain:
-
-```
- 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\frac{1}{{{k}_{s}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}
 $$
-       Equation 17
-```
+
+*Equation 17*
 
 Finally, the definite integral between the surface (z=0) and the depth z can be calculated as:
-
-```
- 
 
 $$
 \int\limits_{z}^{0}{\frac{P}{{{P}_{\max }}}dz}
@@ -713,5 +663,5 @@ $$
 $$
 =\frac{{{e}^{1}}}{{{k}_{s}}}\left[ {{e}^{\left( -\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}-{{e}^{\left( -\frac{{{S}_{0}}}{Sopt} \right)}} \right]
 $$
-       Equation 18
-```
+
+*Equation 18*

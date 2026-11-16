@@ -31,13 +31,13 @@ ex: sudo /sbin/lvcreate -n \[Name of LV\] -L \[size of LV\] \[Volume group where
 
 It was created a config file based on [vmmrtsrv06-1.0.cfg](vmmrtsrv06-1-0.md) and adapted to ISO file and LV created.
 
-- [vmmrtsrv08\_1.cfg](vmmrtsrv08-1.md)
+- [vmmrtsrv08_1.cfg](vmmrtsrv08-1.md)
 
 It was used command vi to edit the file
 
 ### Created the Virtual Machine (VM) and started it
 
-in /home/maretec/xen\_configs the config file was used to create the VM
+in /home/maretec/xen_configs the config file was used to create the VM
 
 ```
 >sudo /usr/sbin/xm new -F VMMRTSRV08_1.cfg
@@ -75,7 +75,7 @@ In the VM first was installed the OS and then configured.
 
 ### Accessed the domain via a console with VNC
 
-Access the domain with a VNC client, such as <goto>TightVNC</goto>. The domain console access port with VNC is **192.168.20.125:5904**.
+Access the domain with a VNC client, such as TightVNC. The domain console access port with VNC is **192.168.20.125:5904**.
 
 ### OS Installation - in the console
 

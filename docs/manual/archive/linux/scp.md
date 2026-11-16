@@ -62,7 +62,7 @@ Your public key has been saved in ...
 
 Note the name and location of the public key just generated. It always ends in .pub.
 
-Copy the public key just generated to all of your remote Linux boxes. You can use scp or FTP or whatever to make the copy. Assuming you're using root--again, see my warning in step 1--the key must be contained in the file /root/.ssh/authorized\_keys. Or, if you are logging in as a user, for example, clyde, it would be in /home/clyde/authorized\_keys. Notice that the authorized\_keys file can contain keys from other PCs. So, if the file already exists and contains text, you need to append the contents of your public key file to what already is there.
+Copy the public key just generated to all of your remote Linux boxes. You can use scp or FTP or whatever to make the copy. Assuming you're using root--again, see my warning in step 1--the key must be contained in the file /root/.ssh/authorized_keys. Or, if you are logging in as a user, for example, clyde, it would be in /home/clyde/authorized_keys. Notice that the authorized_keys file can contain keys from other PCs. So, if the file already exists and contains text, you need to append the contents of your public key file to what already is there.
 
 Now, with a little luck, you should be able to scp a file to the remote box without needing to use a password. So let's test it by trying our first example again. Copy a file named xyz.tgz from your local PC to the /tmp dir of a remote PC called bozo:
 

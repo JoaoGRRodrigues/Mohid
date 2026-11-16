@@ -2,7 +2,7 @@
 
 ## Overview
 
-Module HDF5 is an interface between [Mohid Water Modelling System](../overview/README.md#mohid-water-modelling-system#mohid-water-modelling-system) and [HDF5](../tools/hdf5.md) library that reads and writes matricial data into HDF5 format.
+Module HDF5 is an interface between [Mohid Water Modelling System](../overview/README.md#mohid-water-modelling-system) and [HDF5](../tools/hdf5.md) library that reads and writes matricial data into HDF5 format.
 
 The advantages of HDF5 are that the files can store much more data, the file access is much faster and the files can be read even if the run does not reach the end.
 

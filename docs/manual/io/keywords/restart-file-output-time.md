@@ -2,11 +2,11 @@
 
 ## Overview
 
-**RESTART\_FILE\_OUTPUT\_TIME** is a [keyword](keywords.md) which is used to create an image of the state of a given MOHID run. The image of the state is used as input when performing a continuation of calculation. Thus, it allows to start a new MOHID run with the [CONTINUOUS](continuous.md) keyword. The image of the state of a MOHID run is a set of up to 5 `.fin` files. One per Module. Each file contains the module name and eventually the date-time of the state coded in the filename. Example: `WaterProperties_1_20070516-120000.fin5`
+**RESTART_FILE_OUTPUT_TIME** is a [keyword](keywords.md) which is used to create an image of the state of a given MOHID run. The image of the state is used as input when performing a continuation of calculation. Thus, it allows to start a new MOHID run with the [CONTINUOUS](continuous.md) keyword. The image of the state of a MOHID run is a set of up to 5 `.fin` files. One per Module. Each file contains the module name and eventually the date-time of the state coded in the filename. Example: `WaterProperties_1_20070516-120000.fin5`
 
 ## Usage
 
-This keyword enables to read an array of numbers which specify the output times and frequency. The first number represents the time (in seconds) after the beginning of the simulation in which the first output will be written. The following numbers represent the second, third, fourth...(and so on) times (in seconds) after the beginning of the simulation in which the second, third, fourth...(and so on) outputs will be written. The last number represents the time step (in seconds) with which the following outputs will be made. The outputs can yield a date suffix of the type `YYYYMMDD-hhmmss.fin` if [RESTART\_FILE\_OVERWRITE](restart-file-overwrite.md) is set to false. Otherwise, by default, the outputs are overwritten. Thus, at the end of the run, only the last output is available.
+This keyword enables to read an array of numbers which specify the output times and frequency. The first number represents the time (in seconds) after the beginning of the simulation in which the first output will be written. The following numbers represent the second, third, fourth...(and so on) times (in seconds) after the beginning of the simulation in which the second, third, fourth...(and so on) outputs will be written. The last number represents the time step (in seconds) with which the following outputs will be made. The outputs can yield a date suffix of the type `YYYYMMDD-hhmmss.fin` if [RESTART_FILE_OVERWRITE](restart-file-overwrite.md) is set to false. Otherwise, by default, the outputs are overwritten. Thus, at the end of the run, only the last output is available.
 
 ### Syntax
 
@@ -48,12 +48,12 @@ In order to overwrite the outputs, thus keeping only the last output, insert the
 RESTART_FILE_OVERWRITE   : 1
 ```
 
-If that value is set to 0 then the name of the file would have the following format modulename\_runnumber\_date\_time.fin. In the other hand when this keyword had the value of 1 it would be named as modulename\_runnumber.fin. To find the corresponding date and time for the last saved instant, it should be checked the file Display\_Runnumber.log in the exe folder.
+If that value is set to 0 then the name of the file would have the following format modulename_runnumber_date_time.fin. In the other hand when this keyword had the value of 1 it would be named as modulename_runnumber.fin. To find the corresponding date and time for the last saved instant, it should be checked the file Display_Runnumber.log in the exe folder.
 
 ## See also
 
 Here's a list of related keywords
 
-- [RESTART\_FILE\_OVERWRITE](restart-file-overwrite.md)
+- [RESTART_FILE_OVERWRITE](restart-file-overwrite.md)
 - [CONTINUOUS](continuous.md)
-- [OUTPUT\_TIME](output-time.md)
+- [OUTPUT_TIME](output-time.md)

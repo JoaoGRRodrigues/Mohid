@@ -36,9 +36,9 @@ You can specify the input manually by entering them in the following way:
 
 **Output**
 
-The program will write an TA\_data.mat file to the output directory that includes:
+The program will write an TA_data.mat file to the output directory that includes:
 
-- TA\_data.mat: the amplitude and phase matrix which is has dimensions ixjxh, with the harmonic components as h.
+- TA_data.mat: the amplitude and phase matrix which is has dimensions ixjxh, with the harmonic components as h.
 
 And it will write in the output directory:
 
@@ -48,10 +48,10 @@ And it will write in the output directory:
 
 **Execution time**
 
-The program takes 3hours to analyse a 250\*436\*736 matrix, mainly due to harmonic analysis on each cell using T\_TIDE package.
+The program takes 3hours to analyse a 250\*436\*736 matrix, mainly due to harmonic analysis on each cell using T_TIDE package.
 
-**T\_TIDE: Tide analysis**
+**T_TIDE: Tide analysis**
 
-A t\_tide package has to be installed in order to use this script.
+A t_tide package has to be installed in order to use this script.
 
-The 'T\_TIDE' package from Rich Pawlowicz, can be obtained [here](http://www2.ocgy.ubc.ca/~rich/#T_Tide). It is based on the classic FORTRAN tidal analysis packages written by Mike Foreman [here](http://www.pac.dfo-mpo.gc.ca/sci/osap/projects/tidpack/tidpack_e.htm\)).
+The 'T_TIDE' package from Rich Pawlowicz, can be obtained [here](http://www2.ocgy.ubc.ca/~rich/#T_Tide). It is based on the classic FORTRAN tidal analysis packages written by Mike Foreman [here](http://www.pac.dfo-mpo.gc.ca/sci/osap/projects/tidpack/tidpack_e.htm\)).

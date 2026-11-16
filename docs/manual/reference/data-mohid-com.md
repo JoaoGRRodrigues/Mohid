@@ -7,17 +7,17 @@
 Automated LAS update of the Mercator-IST models was implemented:
 
 - On the host machine:
-    -   *mercator\_genLas.pl YYYYMMDD* model property will create the xml from root\_model\_property.xml templates, as well as it will update the las.xml file.
-    -   *mercator\_sync\_daplas.pl* will synchronize information between the datalist.xml maintained at [http://data.mohid.com/data.xml](http://data.mohid.com/data.xml) and the Las regarding the mercator-IST pre-operational model, thus synchronizing the Opendap and the LAS registry.
+    -   *mercator_genLas.pl YYYYMMDD* model property will create the xml from root_model_property.xml templates, as well as it will update the las.xml file.
+    -   *mercator_sync_daplas.pl* will synchronize information between the datalist.xml maintained at [http://data.mohid.com/data.xml](http://data.mohid.com/data.xml) and the Las regarding the mercator-IST pre-operational model, thus synchronizing the Opendap and the LAS registry.
 - On the web server machine:
     -   "las.php" basically updates the Opendap registry (datalist.xml) as well as synchronizes with the LAS registry, regarding the Mercator-IST models. It also updates the LAS database and reboots the tomcat server.
-    -   "mercator\_genlas.php" simply updates one Mercator-IST dataset into the LAS, performing the full LAS regeneration (consisting of updating the xml files, followed by the LAS database and a tomcat server reboot).
+    -   "mercator_genlas.php" simply updates one Mercator-IST dataset into the LAS, performing the full LAS regeneration (consisting of updating the xml files, followed by the LAS database and a tomcat server reboot).
 
 ### 20061104
 
 Worked out the LAS:
 
-- Copied the full las tree to */home/guillaume/public\_html/las*
+- Copied the full las tree to */home/guillaume/public_html/las*
 - Reconfigured the las
 - Added the following lines to *httpd.conf*:
 
@@ -54,7 +54,7 @@ Alias /las-output/ /home/guillaume/public_html/las/server/output/
 ```
 
 - Restarted the las tomcat
-- Performed a simple test from */home/guillaume/public\_html/las*:
+- Performed a simple test from */home/guillaume/public_html/las*:
 
 ```
 > bin/lasget.pl  -x -10:10 -y -30:-20 -z 0 -f txt -o salt.txt http://data.mohid.com/las-bin/LASserver.pl levitus_climatology_cdf salt
@@ -101,7 +101,7 @@ Installed the following software:
     -   compat-libstdc++-33
     -   xorg-X11-deprecated-libs
 
-Changed the following line in the *ferret\_paths* script with next one:
+Changed the following line in the *ferret_paths* script with next one:
 
 ```
 export PATH="$PATH $FER_DIR/bin"

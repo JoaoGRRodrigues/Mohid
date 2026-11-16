@@ -6,7 +6,7 @@ The X server allows different clients to display their X applications on it. X a
 
 ## Example
 
-In this example we will pop up a windowed clock on a X server based system whose ip address is*server\_ip*:
+In this example we will pop up a windowed clock on a X server based system whose ip address is*server_ip*:
 
 ### X server side
 

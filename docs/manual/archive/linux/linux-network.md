@@ -2,7 +2,7 @@
 
 This wiki gives a couple of hints on configuring a working network with DHCP.
 
-## [Network restart](README.md#linux-network-restart#linux-network-restart)
+## [Network restart](README.md#linux-network-restart)
 
 Remember to restart the network server for changes to take effect!
 
@@ -30,9 +30,9 @@ This informs Linux of local systems on the network which are not handled by the 
 
 #cat /etc/hosts
 127.0.0.1 localhost.localdomain localhost
-192.168.20.160 dual\_64.maretec.ist.utl.pt dual\_64
+192.168.20.160 dual_64.maretec.ist.utl.pt dual_64
 
-Note when adding hosts to this file, place the fully qualified name first. (It helps sendmail identify your server correctly) i.e: dual\_64.maretec.ist.utl.pt.
+Note when adding hosts to this file, place the fully qualified name first. (It helps sendmail identify your server correctly) i.e: dual_64.maretec.ist.utl.pt.
 
 ## Network configuration
 

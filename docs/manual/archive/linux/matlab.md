@@ -110,7 +110,7 @@ This installation is described only for the R2007a to R2007b versions of Matlab:
 - Prerequisites:
     -   [mexnc R2007a or R2007b](http://mexcdf.sourceforge.net/downloads/)
     -   [snctools](http://mexcdf.sourceforge.net/downloads/), (here for [snctools](../../tools/gui/snctools.md) wiki article),
-    -   [m\_map](../web/m-map.md)
+    -   [m_map](../web/m-map.md)
 - Steps:
     1.  Download all the above packages,
     2.  Transfer the netcdf.dll shipped with mexnc to the windows system path,
@@ -119,10 +119,10 @@ This installation is described only for the R2007a to R2007b versions of Matlab:
     5.  Open Matlab,
     6.  \[OPTIONAL\]: to enable opendap, you must install the netcdf [toolsUI jar file](ftp://ftp.unidata.ucar.edu/pub/netcdf-java/v4.0/). Installation instructions are available [here](http://mexcdf.sourceforge.net/tutorial/ch02.html).
     7.  \[OPTIONAL\]: add the path and filename of toolsUI jar file in the classpath.txt in the /toolbox/local directory of your matlab installation,
-    8.  Go to the tests folder in snctools and launch test\_snctools.m,
+    8.  Go to the tests folder in snctools and launch test_snctools.m,
     9.  That's it!
 
-For the m\_map package instructions go to [http://www.eos.ubc.ca/~rich/private/mapug.html](http://www.eos.ubc.ca/~rich/private/mapug.html). For the high-res coastline and bathymetry datasets goto [http://www.eos.ubc.ca/~rich/private/mapug.html#p9](http://www.eos.ubc.ca/~rich/private/mapug.html#p9).
+For the m_map package instructions go to [http://www.eos.ubc.ca/~rich/private/mapug.html](http://www.eos.ubc.ca/~rich/private/mapug.html). For the high-res coastline and bathymetry datasets goto [http://www.eos.ubc.ca/~rich/private/mapug.html#p9](http://www.eos.ubc.ca/~rich/private/mapug.html#p9).
 
 NOTE: You can check [http://mexcdf.sourceforge.net/tutorial/ch02.html](http://mexcdf.sourceforge.net/tutorial/ch02.html) for a quick alternative netcdf installation...
 
@@ -140,22 +140,22 @@ This installation is described only for the R12 to R14 versions of Matlab:
     -   [libdap-prerequisites3.7.3](http://www.opendap.org/download/libdap++.html)
     -   [ml-structs](http://www.opendap.org/download/ml-structs.html)
     -   [mexnc R14 or R12](http://mexcdf.sourceforge.net/downloads/)
-    -   [matlab\_netCDF\_OPeNDAP](http://www.marine.csiro.au/sw/matlab-netcdf.html#Installation)
-    -   [m\_map](http://www.eos.ubc.ca/~rich/private/mapug.html)
+    -   [matlab_netCDF_OPeNDAP](http://www.marine.csiro.au/sw/matlab-netcdf.html#Installation)
+    -   [m_map](http://www.eos.ubc.ca/~rich/private/mapug.html)
 - Steps:
     1.  Download all the above packages,
     2.  Copy the dll files from libdap-prerequisites3.7.3 to the ml-structs folder.
-    3.  Add in the matlab path setup the paths to ml-structs, matlab\_netCDF\_OPeNDAP and mexnc R14 or R12,
+    3.  Add in the matlab path setup the paths to ml-structs, matlab_netCDF_OPeNDAP and mexnc R14 or R12,
     4.  Save and restart matlab,
-    5.  Open Matlab, go to the tests folder in mexnc R14 or R12 and launch test\_mexnc.m,
-    6.  Next, go to the tests folder in matlab\_netCDF\_OPeNDAP and launch test\_all.m,
+    5.  Open Matlab, go to the tests folder in mexnc R14 or R12 and launch test_mexnc.m,
+    6.  Next, go to the tests folder in matlab_netCDF_OPeNDAP and launch test_all.m,
     7.  That's it!
 
-Check out this page for more detailed instructions: [http://www.marine.csiro.au/sw/matlab-netcdf.html](http://www.marine.csiro.au/sw/matlab-netcdf.html). For the m\_map package instructions go to [http://www.eos.ubc.ca/~rich/private/mapug.html](http://www.eos.ubc.ca/~rich/private/mapug.html). For the high-res coastline and bathymetry datasets goto [http://www.eos.ubc.ca/~rich/private/mapug.html#p9](http://www.eos.ubc.ca/~rich/private/mapug.html#p9).
+Check out this page for more detailed instructions: [http://www.marine.csiro.au/sw/matlab-netcdf.html](http://www.marine.csiro.au/sw/matlab-netcdf.html). For the m_map package instructions go to [http://www.eos.ubc.ca/~rich/private/mapug.html](http://www.eos.ubc.ca/~rich/private/mapug.html). For the high-res coastline and bathymetry datasets goto [http://www.eos.ubc.ca/~rich/private/mapug.html#p9](http://www.eos.ubc.ca/~rich/private/mapug.html#p9).
 
 NOTE: If using Matlab R13, then use the mexnc R12 release and not the mexnc R14 release!
 
-NOTE: If the following error occur during the test\_all.m, then edit the compare\_mats\_getnc.m file at line 45 and replace {} with (). Rerun the test\_all.m. That should do it!
+NOTE: If the following error occur during the test_all.m, then edit the compare_mats_getnc.m file at line 45 and replace {} with (). Rerun the test_all.m. That should do it!
 
 ```
 Error: File: C:\MATLAB6p5\toolbox\matlab_netCDF_OPeNDAP\test\compare_mats_getnc.m Line: 45 Column: 59
@@ -231,7 +231,7 @@ Finally add the *matlab/toolbox/mexnc* path to the matlab environment.
 
 #### [snctools](../../tools/gui/snctools.md)
 
-##### nc\_dump
+##### nc_dump
 
 ```
  NC_DUMP:  a Matlab counterpart to the NetCDF utility 'ncdump'.
@@ -240,7 +240,7 @@ Finally add the *matlab/toolbox/mexnc* path to the matlab environment.
      named VARNAME.
 ```
 
-##### nc\_varget
+##### nc_varget
 
 ```
  NC_VARGET:  Retrieve data from a netCDF variable.
@@ -302,7 +302,7 @@ Finally add the *matlab/toolbox/mexnc* path to the matlab environment.
 - [Matlab samples](../../tools/gui/matlab-samples.md)
 - [Netcdf](netcdf.md)
 - [OpenDAP](opendap.md)
-- [M\_map](../web/m-map.md)
+- [M_map](../web/m-map.md)
 
 ## External References
 

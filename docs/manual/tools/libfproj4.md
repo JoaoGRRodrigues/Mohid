@@ -8,7 +8,7 @@ libfproj4 it's a library build on top of [PROJ4](proj4.md). It can se used dynam
 
 - Download libfproj4 source code from [\[1\]](http://forge.nesc.ac.uk/download.php/10/libfproj4-1.0.tar.gz) or \\\\kepler\\Software\\PROJ4\\libfproj4-1.0.tar.
 - Download proj4 source code from [\[2\]](http://download.osgeo.org/proj/proj-4.7.0.tar.gz) or \\\\kepler\\Software\\PROJ4\\proj-4.7.0.tar.
-- Extract all contents to a place in your computer, from now referred to as ROOT\_DIR.
+- Extract all contents to a place in your computer, from now referred to as ROOT_DIR.
 
 ### Windows
 
@@ -18,19 +18,19 @@ libfproj4 it's a library build on top of [PROJ4](proj4.md). It can se used dynam
 
 1. New project W32 static lib
 2. Add fort-proj.c (from libfproj4-1.0.tar.gz) and all \*.c files (from proj4 source), except all that have main function : css2css, geod, nad2bin, nad2nad, proj.c.
-3. Project Settings / C/C++ / General / Preprocessor definitions : VISUAL\_CPLUSPLUS ou IFORT
+3. Project Settings / C/C++ / General / Preprocessor definitions : VISUAL_CPLUSPLUS ou IFORT
 4. Project Settings / C/C++ / Preprocessor / include : whatever\\proj-4.6.0\\src (the folder that has projects.h, because of directives #include <projects.h>)
 
 #### Visual Studio 2008 with Intel Fortran
 
 (Already compiled in [\[3\]](http://mohid.codeplex.com) ExternalLibs/Proj4)
 
-1. Open Visual Studio and select File/New/Project/Visual C++/W32/Win32 Console Application. Name it libfproj4, and select location as $ROOT\_DIR\\libfproj4-1.0. Click ok.
+1. Open Visual Studio and select File/New/Project/Visual C++/W32/Win32 Console Application. Name it libfproj4, and select location as $ROOT_DIR\\libfproj4-1.0. Click ok.
 2. In the wizard, click Next and then choose "Console application" and "Empty project" in the following window. Then click Finish.
 3. Go to Project / Properties / Configuration Properties / Configuration Type and select "Static Library (.lib)". Click ok. (we don't choose this type in the project creation because if so VS2008 automatic header files that we don't want).
-4. Go to Project / Add Existing Item. Add $ROOT\_DIR\\libfproj4-1.0\\fort-proj.c.
-5. Go to Project / Add Existing Item. Add all \*.c files in $ROOT\_DIR\\proj-4.7.0\\src except the ones that have the main function: cs2cs.c, geod.c, nad2bin.c, nad2nad.c, proj.c.
-6. Rename proj\_config.h.in to proj\_config.h in ROOT\_DIR\\proj-4.7.0\\src
+4. Go to Project / Add Existing Item. Add $ROOT_DIR\\libfproj4-1.0\\fort-proj.c.
+5. Go to Project / Add Existing Item. Add all \*.c files in $ROOT_DIR\\proj-4.7.0\\src except the ones that have the main function: cs2cs.c, geod.c, nad2bin.c, nad2nad.c, proj.c.
+6. Rename proj_config.h.in to proj_config.h in ROOT_DIR\\proj-4.7.0\\src
 7. Go to Project / libfproj4 Properties:
     -   C/C++ / General / Additional Include Directories: ..\\..\\..\\proj-4.7.0\\src (where the \*.h files are)
     -   C/C++ / Preprocessor / Preprocessor Definitions: IFORT
@@ -77,10 +77,10 @@ cp libfproj4-1.0/proj4.inc include
 
 ### Windows
 
-1. Create $ROOT\_DIR\\teste
-2. Copy test-proj.f90, proj4.f90 and proj4.inc from $ROOT\_DIR\\libfproj4-1.0 to $ROOT\_DIR\\teste.
-3. Copy libfproj4.lib from $ROOT\_DIR\\libfproj4-1.0\\libfproj4\\Debug to $ROOT\_DIR\\teste.
-4. Open Visual Studio and select File/New/Project/Intel(R) Visual Fortran / Console Application / Empty Project. Name it teste and select location as $ROOT\_DIR\\teste. Click ok.
+1. Create $ROOT_DIR\\teste
+2. Copy test-proj.f90, proj4.f90 and proj4.inc from $ROOT_DIR\\libfproj4-1.0 to $ROOT_DIR\\teste.
+3. Copy libfproj4.lib from $ROOT_DIR\\libfproj4-1.0\\libfproj4\\Debug to $ROOT_DIR\\teste.
+4. Open Visual Studio and select File/New/Project/Intel(R) Visual Fortran / Console Application / Empty Project. Name it teste and select location as $ROOT_DIR\\teste. Click ok.
 5. Project / Add Existing Item: Add test-proj.f90 and proj4.f90
 6. Project / Properties:
     -   Linker / General / Additional Library Directories: ..\\..\\..\\teste (or where libfproj4.lib file is).

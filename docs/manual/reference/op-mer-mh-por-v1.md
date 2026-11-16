@@ -8,7 +8,7 @@ NOTE: this article has been discontinued and is no longer maintained
 
 **a**, **b**, **c**, **d** and **M** nested domains, corresponding respectively to **S**, **C**, **N**, **WI** and **M-O**.
 
-Operational model of the Portuguese coast using MOHID forced with Mercator and MM5 from 20060607 to 20070607. The baseline data come from the ETOPO2 bathymetry. The external models data come from Mercator-Océan, from JDD\_MM5 and from [Fes2004](../tools/fes2004.md) or Fes95. There are 2 levels of nested domains:
+Operational model of the Portuguese coast using MOHID forced with Mercator and MM5 from 20060607 to 20070607. The baseline data come from the ETOPO2 bathymetry. The external models data come from Mercator-Océan, from JDD_MM5 and from [Fes2004](../tools/fes2004.md) or Fes95. There are 2 levels of nested domains:
 
 1. **P** - Western Iberia coastal domain
     1.  **N** - North Portugal domain
@@ -18,7 +18,7 @@ Operational model of the Portuguese coast using MOHID forced with Mercator and M
 And there are 3 external models:
 
 1. **M-O** - the Mercator solution
-2. **MM5** - the JDD\_MM5 atmospheric solution
+2. **MM5** - the JDD_MM5 atmospheric solution
 3. **WI** - a barotropic tidal solution using MOHID and the [Fes2004](../tools/fes2004.md) or Fes95 solution
 
 The nested domain have the same baseline information for the bathymetry (from ETOPO2) and the transition is extremely [smooth](../tools/smoothbatimnesting.md). Thus, the first level domain acts as a buffer for the Mercator data to pass to the lower level and inconsistent forcing, rising from inconsistent bathymetries, is avoided.

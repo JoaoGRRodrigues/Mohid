@@ -33,7 +33,7 @@ All points where:
 All faces which, which simultaneously:
 
 - on both sides have Waterpoints
-- at least one of the Waterpoints have a waterlevel above H\_Min
+- at least one of the Waterpoints have a waterlevel above H_Min
 - are NO face between boundary points
 
 ### ExteriorBoundaryFaces

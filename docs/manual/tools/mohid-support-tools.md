@@ -19,7 +19,7 @@ Old version of MOHID GUI (2009). No support is provided. Available at: [MOHID GU
 - [AssimilationPreProcessor](../reference/assimilationpreprocessor.md)
 - [AssimilationZones](assimilationzones.md)
 - BasinDelimiter
-- [Box2GridData](README.md#box2griddata#box2griddata)
+- [Box2GridData](README.md#box2griddata)
 - [ConvertToHDF5](converttohdf5.md)
 - [ConvertToXYZ](converttoxyz.md)
 - [CopyMohidProject](copymohidproject.md)
@@ -30,7 +30,7 @@ Old version of MOHID GUI (2009). No support is provided. Available at: [MOHID GU
 - [Fes2012](../reference/fes2012.md)
 - [FilterBathymetry](filterbathymetry.md)
 - [GenerateGrid](generategrid.md)
-- [HydrodynamicAnalyser](../reference/README.md#hydrodynamicanalyser#hydrodynamicanalyser)
+- [HydrodynamicAnalyser](../reference/README.md#hydrodynamicanalyser)
 - [InvertedBarometer](invertedbarometer.md)
 - [Kml2Mohid](../development/programming/kml2mohid.md)
 - [NOAAnetcdfTOhdf5](noaanetcdftohdf5.md)
@@ -52,7 +52,7 @@ Old version of MOHID GUI (2009). No support is provided. Available at: [MOHID GU
 
 - [HDF5Extractor](hdf5extractor.md)
 - [HDF5Exporter](hdf5exporter.md)
-- [HDF5Operator](README.md#hdf5operator#hdf5operator)
+- [HDF5Operator](README.md#hdf5operator)
 - [HDF5Statistics](hdf5statistics.md)
 
 ## [MatLab](../archive/linux/matlab.md) Tools
@@ -69,8 +69,8 @@ Old version of MOHID GUI (2009). No support is provided. Available at: [MOHID GU
 ## Others
 
 - CoordTrans
-- [MohidReservoirOptimization](README.md#mohidreservoiroptimization#mohidreservoiroptimization)
-- [SWAT Link](../reference/README.md#swat-link#swat-link)
+- [MohidReservoirOptimization](README.md#mohidreservoiroptimization)
+- [SWAT Link](../reference/README.md#swat-link)
 
 ## Not developed by the MOHID team
 

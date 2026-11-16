@@ -230,7 +230,7 @@ Add one new disk. Adding a disk is not diferent from extending a disk since you 
 >mkfs.ext4 /dev/sdb1
 ```
 
-- Initialise the partition for use as a physical volume in lvm and add it to vg\_opendap2
+- Initialise the partition for use as a physical volume in lvm and add it to vg_opendap2
 
 ```
 >pvcreate /dev/sdb1

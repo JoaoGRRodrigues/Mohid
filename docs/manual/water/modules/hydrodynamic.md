@@ -54,7 +54,7 @@ where $k$ is von Karman constant and $z^{b}_{0}$ is the bottom roughness length.
 
 #### Momentum
 
-Diffusive flux of momentum is imposed explicitly by means of a [wind surface stress](../../reference/README.md#wind-surface-stress#wind-surface-stress), $\tau_{ w}$:
+Diffusive flux of momentum is imposed explicitly by means of a [wind surface stress](../../reference/README.md#wind-surface-stress), $\tau_{ w}$:
 
 #### Mass
 
@@ -88,7 +88,7 @@ Usually the user wants to impose information with a sub-inertial frequency (or l
 
 The exterior solution can be imposed using three different ways. **1 - file :** this is off-line definition of the exterior solution. It is used to define an exterior solution based in external data sources other models or solutions based in field data (eg. Levitus); **2 - nesting :** this the on-line way to define an exterior solution. This done running several nesting levels and the higher levels are interpolated automaticly to the lower ones; **3 - tidal gauges:** this is specific of the sea level and is used to impose the sea level along the open boundary based in the definition of the sea level is several localized points. The sea level in each point can be defined using a time serie or tidal harmonics.
 
-The options to define the exterior solution via file (option 1) are described in detail in [Module\_FillMatrix#Overview](../../base/module-fillmatrix.md) .
+The options to define the exterior solution via file (option 1) are described in detail in [Module_FillMatrix#Overview](../../base/module-fillmatrix.md) .
 
 #### Baroclinic radiation
 
@@ -121,7 +121,7 @@ The MOHID model has a quite generic approach to the open boundary conditions def
  c)exterior solution : higher  nested level;
 ```
 
-**See examples [Boundary conditions input examples](../../io/README.md#boundary-conditions-input-examples#boundary-conditions-input-examples)**
+**See examples [Boundary conditions input examples](../../io/README.md#boundary-conditions-input-examples)**
 
 ### Moving boundaries (Drying and flooding)
 
@@ -316,13 +316,13 @@ ORIGINAL_Y                    :  38.67641
 <EndTimeSerie>
 ```
 
-The output will be time series with extension ".srh" i.e. Station\_0.srh
+The output will be time series with extension ".srh" i.e. Station_0.srh
 
 ### Box integration
 
 ### Maps (HDF5 format)
 
-To write 3D results use keyword [OUTPUT\_TIME](../../io/keywords/output-time.md) and define keyword:
+To write 3D results use keyword [OUTPUT_TIME](../../io/keywords/output-time.md) and define keyword:
 
 ```
 OUTPUT_HDF           : 1
@@ -330,7 +330,7 @@ OUTPUT_HDF           : 1
 
 in each property that you whish to write results.
 
-To write results only in the surface use keyword [SURFACE\_OUTPUT\_TIME](../../io/keywords/surface-output-time.md) and define keyword:
+To write results only in the surface use keyword [SURFACE_OUTPUT_TIME](../../io/keywords/surface-output-time.md) and define keyword:
 
 ```
 OUTPUT_SURFACE_HDF   : 1
@@ -340,7 +340,7 @@ in each property that you which to write results. Surface results can be written
 
 ### Window Area (HDF5 format)
 
-When this block is present, a HDF5 output is created with a selected model results window at a certain time step, the output is found at the res folder with the name Hydrodynamic\_wX.hdf5. X corresponds to the number of window ordered by the position at the file. Typically used for [Imposed Solution evolution](../imposedsolution.md).
+When this block is present, a HDF5 output is created with a selected model results window at a certain time step, the output is found at the res folder with the name Hydrodynamic_wX.hdf5. X corresponds to the number of window ordered by the position at the file. Typically used for [Imposed Solution evolution](../imposedsolution.md).
 
 ```
 <beginoutput>

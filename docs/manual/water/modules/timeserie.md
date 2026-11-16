@@ -59,7 +59,7 @@ LOCALIZATION_K   :  - grid cell layer location
 <EndTimeSerie>
 ```
 
-The [time series](../../io/formats/time-series.md) output format is described in [http://wiki.mohid.com/wiki/index.php?title=Time\_Series](../../io/formats/time-series.md)
+The [time series](../../io/formats/time-series.md) output format is described in [http://wiki.mohid.com/wiki/index.php?title=Time_Series](../../io/formats/time-series.md)
 
 Example of definition of the time series output
 

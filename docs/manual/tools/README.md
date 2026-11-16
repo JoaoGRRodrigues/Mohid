@@ -32,7 +32,6 @@ Pre- and post-processing programs, graphical interfaces and helper utilities.
 - [HDF5Exporter](hdf5exporter.md) — The application HDF5Exporter produces time series from data contained in HDF5 files in MOHID format .
 - [HDF5Extractor](hdf5extractor.md) — The application HDF5Extractor extracts from an HDF5 file data to produce one or more smaller HDF5 files.
 - [HDF5Statistics](hdf5statistics.md) — The application HDF5Statistics produces time statistics in HDF5 format from data existent in HDF5 files.
-- [Hudson](hudson.md) — Hudson allows automatic daily builds and daily tests with a reporting system on top. Good to use with MOHID.
 - [InvertedBarometer](invertedbarometer.md) — This application creates water level time series for tide gauge locations according with the inverted (inverse) barometer effect.
 - [JoinTimeSeries](jointimeseries.md) — JoinTimeSeries is a MOHID support tool designed to join several time series files in a single file.
 - [Libfproj4](libfproj4.md) — libfproj4 is a Fortran wrapper for PROJ4 library. It was developed as of the GLIMMER project and can be found in libfproj4-1.0.tar.gz. This wrapper is…
@@ -41,10 +40,8 @@ Pre- and post-processing programs, graphical interfaces and helper utilities.
 - [Ncdump](ncdump.md) — ASCII dumps the datafile header only:
 - [NOAAnetcdfTOhdf5](noaanetcdftohdf5.md) — The NOAAnetcdfTOhdf5 is an application which allows the conversion of NOAA meteorological reanalysis files in NetCDF format to HDF5 format readable by…
 - [PROJ4](proj4.md) — This page explains what is PROJ4 library and how to use it from the command line, in Windows and in Linux.
-- [RapidSvn](rapidsvn.md) — RapidSVN is a cross-platform GUI front-end for the Subversion revision system written in C++ using the wxWidgets framework. This project also includes…
 - [SmoothBatimNesting](smoothbatimnesting.md) — Animation consisting of three frames showing respectively i) the father bathymetry, ii) the son bathym, iii) and the interpolated bathym.
 - [Tide Preview](tide-preview.md) — Configuration of the TidePrevInput.dat file:
-- [TortoiseSvn](tortoisesvn.md) — Simply install presto the tortoise svn Tortoise svn. You can also see video screencasts instead of the picture-only tutorial below...
 - [WOAnetcdfTOhdf5](woanetcdftohdf5.md) — This program converts the NetCDF files of the World Ocean Atlas 2005 (WOA05) into HDF5, it allows to create HDF5 files for Mohid using the Module LIFE…
 
 ## Short entries
@@ -88,8 +85,4 @@ HDFView is java based (cross-platform) HDF4 and HDF5 viewer and editor. It allow
 MohidReservoirOptimization is part of Mohid system. It is used to create bathymetries to be used with the CEQUAL-W2 EPA's program. It is writen in FORTRAN95.
 
 - [User manual](../reference/user-manual.md).
-- [Technical manual](../reference/README.md#technical-manual#technical-manual).
-
-### Search
-
-<table style="padding:1em"><tbody><tr><td width="15%"></td><td width="17%"><a href="http://wiki.mohid.com/wikisearch.html"><img id="mohid" src="images/Mohid.gif" alt="google"></a></td><td width="33%"><input type="text" name="q" size="40"></td><td width="10%"><input type="submit" name="sa" value="Search"></td><td width="15%"></td></tr></tbody></table>
+- [Technical manual](../reference/README.md#technical-manual).

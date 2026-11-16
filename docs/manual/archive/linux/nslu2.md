@@ -103,7 +103,7 @@ or
 
 8\. Use smbpasswd -a to create the Samba users you need (skip if you do not want to enable security on your share)
 
-9\. Edit /etc/samba/user\_smb.conf file as neeeded (at the very least you will need to create a share)
+9\. Edit /etc/samba/user_smb.conf file as neeeded (at the very least you will need to create a share)
 
 ```
   [USB-DRIVE]
@@ -115,7 +115,7 @@ or
 
 Please note the above share has no security, it is writeable by everyone, to enable security, see www.samba.org
 
-10\. Copy /etc/samba/smbpasswd, /etc/samba/smb.conf and /etc/samba/user\_smb.conf files to /opt/etc
+10\. Copy /etc/samba/smbpasswd, /etc/samba/smb.conf and /etc/samba/user_smb.conf files to /opt/etc
 
 11\. Reboot NSLU (type "reboot" without the quotes and hit enter)
 

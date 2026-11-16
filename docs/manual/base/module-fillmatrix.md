@@ -16,7 +16,7 @@ ModuleFillMatrix works based on a client/server philosophy, where the client mod
 
 The first operation ModuleFillMatrix does is to check whether the array is only to be initialized or if it is to be modified during the simulation from information stored in a file.
 
-This option is given by keyword FILE\_IN\_TIME.
+This option is given by keyword FILE_IN_TIME.
 
 ### Time series file
 
@@ -52,7 +52,7 @@ DEFAULTVALUE          : 5
 
 ## Initialization methods
 
-This option is given by keyword INITIALIZATION\_METHOD.
+This option is given by keyword INITIALIZATION_METHOD.
 
 ### Constant
 
@@ -170,7 +170,7 @@ DEFAULTVALUE          : 10
 
 ### Sponge
 
-Creates a matrix of numbers with the size of the domain, constant inside the domain, and varying exponentially near the open-boundary with a width defined by SPONGE\_CELLS. Default value of **SPONGE\_OUT** is 1e5 s ~1 day. This value assumes that usually the reference solution has one instant per day. **This value should be equal to frequency of the external solution**. The default value of SPONGE\_CELLS is 10.
+Creates a matrix of numbers with the size of the domain, constant inside the domain, and varying exponentially near the open-boundary with a width defined by SPONGE_CELLS. Default value of **SPONGE_OUT** is 1e5 s ~1 day. This value assumes that usually the reference solution has one instant per day. **This value should be equal to frequency of the external solution**. The default value of SPONGE_CELLS is 10.
 
 ```
 FILE_IN_TIME          : NONE
@@ -180,7 +180,7 @@ SPONGE_OUT            : 1e5
 SPONGE_CELLS          : 10
 ```
 
-If **a** and **b** are respectively the SPONGE\_OUT and the DEFAULTVALUE values then, if **N** and **i** are respectively the SPONGE\_CELLS and the distance from the open boundary in unit cells, the sponge algorithm will compute the coefficient **C(i)** according to the following formula:
+If **a** and **b** are respectively the SPONGE_OUT and the DEFAULTVALUE values then, if **N** and **i** are respectively the SPONGE_CELLS and the distance from the open boundary in unit cells, the sponge algorithm will compute the coefficient **C(i)** according to the following formula:
 
 $C(i) = a^{\frac{N-i}{N-1}}b^{\frac{i-1}{N-1}}\quad$ if $1 \leq i \leq N$
 
@@ -192,7 +192,7 @@ In particular, for i = 1 and for i = N or higher, $C(1) = a$ and $C(N^+) = b$.
 
 Keyword DEFAULTVALUE has **always** to be present. This insures that the user must be aware of the initialization option.
 
-Keyword REMAIN\_CONSTANT defines whether the property will remain unaltered during the simulation. By default this boolean keyword is FALSE, which means that the model will dynamically compute the property values (e.g. current velocities) or it will read them from a file (e.g. wind speed and direction). If it's TRUE this means that the property values will remain constant throughout the simulation (e.g. constant wind speed and direction in a scenario simulation).
+Keyword REMAIN_CONSTANT defines whether the property will remain unaltered during the simulation. By default this boolean keyword is FALSE, which means that the model will dynamically compute the property values (e.g. current velocities) or it will read them from a file (e.g. wind speed and direction). If it's TRUE this means that the property values will remain constant throughout the simulation (e.g. constant wind speed and direction in a scenario simulation).
 
 ## List of properties which are handled by Module FillMatrix
 

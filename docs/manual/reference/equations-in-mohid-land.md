@@ -117,7 +117,7 @@ $\rho g$ gravity force
 
 where:
 H: Water column level = Channel/Topography Bottom level (z) + water column height (h) (L)
-x\_i: spatial direction (L)
+x_i: spatial direction (L)
 $f = \rho \times g \times Vol \times S_f$
 Ro: density (M.L-3)
 g: gravity force (L.T-2)
@@ -244,9 +244,9 @@ $f$ frictional resistance in porous media
 $\rho g$ gravity force
 
 where:
-H: Hydraulic head = level (z) + suction head (h\_s) (L)
-h\_s: suction head (L)
-x\_i: spatial direction
+H: Hydraulic head = level (z) + suction head (h_s) (L)
+h_s: suction head (L)
+x_i: spatial direction
 g: gravity force (L.T-2)
 $f = \rho \times g \times Vol \times \frac {\nu v}{g k}$
 v: average velocity (L.T-1)

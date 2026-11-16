@@ -44,10 +44,8 @@ POLYGONS_FILE : **** - polygon file name. If the specify this keyword the area 
 MASK_GRID : *** - grid data file name where for each cell is given an integer value that is use to associate each cell to a specific timer serie
 ```
 
-```
 In the block use to define the location of each time serie the user must link each time serie with the polygons or grid data cells id's.
 The user needs also to specify the correspondent layer (in the 3D cases).
-```
 
 ```
 <BeginTimeSerie>

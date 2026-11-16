@@ -106,7 +106,7 @@ Janeiro J, Fernandes E, Martins F, Fernandes R. Wind and freshwater influence ov
 
 Leitão P C (1996). *Modelo de Dispersão Lagrangeano Tridimensional*. MSc dissertation Technical University of Lisbon.
 
-Leitão P, Coelho H, Santos a, Neves R. Modelling the main features of the Algarve coastal circulation during July 2004: A downscaling approach. Journal of Atmospheric & Ocean Science. 2005;10(4):421-462. Available at: [http://www.informaworld.com/openurl?genre=article&doi=10.1080/17417530601127704&magic=crossref%7C%7CD404A21C5BB053405B1A640AFFD44AE3](http://www.informaworld.com/openurl?genre=article&doi=10.1080/17417530601127704&magic=crossref%7C%7CD404A21C5BB053405B1A640AFFD44AE3).
+Leitão P, Coelho H, Santos a, Neves R. Modelling the main features of the Algarve coastal circulation during July 2004: A downscaling approach. Journal of Atmospheric & Ocean Science. 2005;10(4):421-462. Available at: [http://www.informaworld.com/openurl?genre=article&doi=10.1080/17417530601127704&magic=crossref%7C%7CD404A21C5BB053405B1A640AFFD44AE3](http://www.informaworld.com/openurl?genre=article&doi=10.1080/17417530601127704&magic=crossref%7CD404A21C5BB053405B1A640AFFD44AE3).
 
 Leitão J C, Leitão P C, Braunschweig F, Fernandes R, Neves R J J, Montero P (2003a). *Emergency activities support by an operational forecast system – The Prestige accident*. 4th Seminar of the Marine Environment. Sociedade Brasileira de Engenharia Naval. Rio de Janeiro.
 
@@ -120,7 +120,7 @@ Martins F, Leitão P, Neves R. Simulating vertical water mixing in homogeneous e
 
 Martins F, Leitão P, Silva A, Neves R. 3D modelling in the Sado estuary using a new generic vertical discretization approach. Oceanologica Acta. 2001;24(Supplement 1):51-62. Available at: [http://dx.doi.org/10.1016/S0399-1784(01)00092-5](http://dx.doi.org/10.1016/S0399-1784\(01\)00092-5).
 
-Montero P, Gómez-Gesteira M, Taboada JJ, et al. On residual circulation of the Ria of Vigo , using a 3-D baroclinic model. Bol. Inst. Esp. Oceanogr. 1999;15(1-4):31-38. Available at: [http://digital.csic.es/bitstream/10261/25134/1/15\_031-038.pdf](http://digital.csic.es/bitstream/10261/25134/1/15_031-038.pdf).
+Montero P, Gómez-Gesteira M, Taboada JJ, et al. On residual circulation of the Ria of Vigo , using a 3-D baroclinic model. Bol. Inst. Esp. Oceanogr. 1999;15(1-4):31-38. Available at: [http://digital.csic.es/bitstream/10261/25134/1/15_031-038.pdf](http://digital.csic.es/bitstream/10261/25134/1/15_031-038.pdf).
 
 Nobre A, Ferreira J, Newton A, et al. Management of coastal eutrophication: Integration of field data, ecosystem-scale simulations and screening models. Journal of Marine Systems. 2005;56(3-4):375-390. Available at: [http://linkinghub.elsevier.com/retrieve/pii/S0924796305000400](http://linkinghub.elsevier.com/retrieve/pii/S0924796305000400).
 

@@ -2,7 +2,7 @@
 
 Two modified versions of the [SWAT model](http://swatmodel.tamu.edu/) were developed, based on the three SWAT releases (SWAT2000, SWAT2005 and SWAT 2012). You can download the package with all the MOHID SWAT releases [HERE](http://maretec.mohid.com/PublicData/products/Software/SWAT%20Package%20V3.rar). The functionalities described herein are equal in both versions. So we refer to this modified versions as SWAT-MOHID. This executable has to main functions: i)To help explore SWAT outputs; ii) To Couple SWAT and [MRN](mohid-river-network.md). You can get the source code from MOHID download area in [www.mohid.com](http://www.mohid.com). SWAT-MOHID uses the following MOHID modules:
 
-- [Module Time](../water/modules/README.md#module-time#module-time)
+- [Module Time](../water/modules/README.md#module-time)
 - [Module TimeSerie](../water/modules/timeserie.md)
 - [Module EnterData](../base/module-enterdata.md)
 - [Module HDF5](../base/module-hdf5.md)
@@ -35,7 +35,7 @@ A first modification was the implementation of time series outputs. The modified
 - GLB – results related with overall watershed
     -   GlobalWater.glb - results related with the global water
     -   GlobalNutrient.glb – Results related with global sediment budgets
-    -   Average\_Basin\_kg\_ha.glb – Results related with global model pathways
+    -   Average_Basin_kg_ha.glb – Results related with global model pathways
 
 ### Animated map results (HDF)
 
@@ -94,7 +94,7 @@ Folder structure for simulation
 
 #### Step 3
 
-Get the latest SWAT-MOHID package (**SWAT-MOHID V2**) from [www.mohid.com](http://www.mohid.com) ([downloads](http://www.mohid.com/MembersArea/Downloads.asp)). If you are not registered jet, please do it to download the software. Copy the ascii file named “nomfich.dat” (which is inside the SWAT-MOHID package in the folder **..\\SWAT Package\\txtinout\\**) in to the folder **..\\scenarios\\default\\res\\\[SimulationName\]\\txtinout** and edit the ascii file to '**ROOT\_SRT : ..\\Output\\**
+Get the latest SWAT-MOHID package (**SWAT-MOHID V2**) from [www.mohid.com](http://www.mohid.com) ([downloads](http://www.mohid.com/MembersArea/Downloads.asp)). If you are not registered jet, please do it to download the software. Copy the ascii file named “nomfich.dat” (which is inside the SWAT-MOHID package in the folder **..\\SWAT Package\\txtinout\\**) in to the folder **..\\scenarios\\default\\res\\\[SimulationName\]\\txtinout** and edit the ascii file to '**ROOT_SRT : ..\\Output\\**
 
 #### Step 4
 
@@ -102,17 +102,17 @@ Copy the executable SWAT.EXE to the **..\\scenarios\\default\\res\\\[SimulationN
 
 #### Step 5
 
-Copy all the ascii files from **..\\SWAT Package\\res\\** into folder **..\\scenarios\\default\\res\\\[SimulationName\]\\res**. These files include [outputs.dat](../io/outputs-dat.md), ts\_global.dat, ts\_subbasin.dat, etc…
+Copy all the ascii files from **..\\SWAT Package\\res\\** into folder **..\\scenarios\\default\\res\\\[SimulationName\]\\res**. These files include [outputs.dat](../io/outputs-dat.md), ts_global.dat, ts_subbasin.dat, etc…
 
 Edit this ascii file for the subbasins and HRU that you want to output. In most of the cases it would be needed an output file for each branch of the network, if you want to couple with Mohid River Network. If you just want to explore SWAT results, just oyt put in Subbasins and HRU you want to analyse.
 
-In file TS\_SubBasin.dat the keyword LOCALIZATION\_I is the number of the Subbasin to which is desired the output:
+In file TS_SubBasin.dat the keyword LOCALIZATION_I is the number of the Subbasin to which is desired the output:
 
 ![](../assets/images/SWAT_MOHID_Subsbasin.png)
 
 In which subbasin (river station) do you want to produce timeserie outputs and which names will be given
 
-The TS\_HRU.dat the keyword LOCALIZATION\_I is the number of HRU (to get this number go to SWAT file ..\\Watershed\\text\\HRULandUseSoilsReport.txt is the numbers on the right) the keyword LOCALIZATION\_J is the number of the Subbasin. This two numbers define the HRU that will return the output:
+The TS_HRU.dat the keyword LOCALIZATION_I is the number of HRU (to get this number go to SWAT file ..\\Watershed\\text\\HRULandUseSoilsReport.txt is the numbers on the right) the keyword LOCALIZATION_J is the number of the Subbasin. This two numbers define the HRU that will return the output:
 
 ![](../assets/images/SWAT_MOHID_Hru.png)
 
@@ -144,4 +144,4 @@ Chambel-Leitao P, Braunschweig F, Obermann M, Trancoso R, Galvao P, Lo Porto, A 
 
 - [How to Install SWAT](../tools/gui/install-swat-interface.md)
 
-- [How to Run SWAT](../tools/gui/README.md#run-swat-model#run-swat-model)
+- [How to Run SWAT](../tools/gui/README.md#run-swat-model)

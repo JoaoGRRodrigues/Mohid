@@ -10,7 +10,14 @@ Boolean values are used in variables which can have a TRUE or FALSE value. To mi
 
 Dates in MOHID are defined by a 1D array with fixed dimension (6 values). The order of the values is year, month, day, hour, minute and second. The six values are separated by blank spaces.
 
-<table class="wikitable" style="text-align:center"><tbody><tr><th>DENSITY_METHOD</th><td>2</td><td>Integer</td><td>Method to compute water density</td></tr><tr><th>DT</th><td>30</td><td>Real</td><td>Model time step (in seconds)</td></tr><tr><th>TIDE</th><td>1</td><td>Boolean</td><td>Activates/Deactivates tide calculation</td></tr><tr><th>NAME</th><td>temperature</td><td>Character string</td><td>Name of a water property</td></tr><tr><th>BOXES_VALUES</th><td>3.4 4.5 2.1 6.2</td><td>1D array real</td><td>Values defined for an array defined by 4 boxes</td></tr><tr><th>START</th><td>2006 1 1 0 0 0</td><td>Date</td><td>Initial date of the simulation (see <a href="Mohid-Time-format" class="mw-redirect">Mohid Time format</a>)</td></tr></tbody></table>
+|  |  |  |  |
+| --- | --- | --- | --- |
+| DENSITY_METHOD | 2 | Integer | Method to compute water density |
+| DT | 30 | Real | Model time step (in seconds) |
+| TIDE | 1 | Boolean | Activates/Deactivates tide calculation |
+| NAME | temperature | Character string | Name of a water property |
+| BOXES_VALUES | 3.4 4.5 2.1 6.2 | 1D array real | Values defined for an array defined by 4 boxes |
+| START | 2006 1 1 0 0 0 | Date | Initial date of the simulation (see [Mohid Time format](../formats/README.md#mohid-time-format)) |
 
 The detection algorithm of a keyword and its correspondent value is made by scanning all the lines from top to bottom of the file. When a match occurs the file is not scanned anymore. This means that if a keyword is present twice in the file, only the first match is accounted. A keyword can be searched from the entire file, or it can be searched from a defined part of the file, e.g. from a [block](blocks.md). This allows the hierarchical ordering of the file, increasing the complexity of information provided in it.
 
@@ -19,4 +26,4 @@ The detection algorithm of a keyword and its correspondent value is made by scan
 ## Related links
 
 - [MOHID Keyword Database](keyword-list.md)
-- [New\_Keyword](new-keyword.md)
+- New_Keyword

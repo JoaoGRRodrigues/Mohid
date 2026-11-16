@@ -1,10 +1,10 @@
 # Atmospheric boundary condition
 
-For each water property the user needs to define if it want or not to impose atmospheric fluxes. Here's an example of atmospheric properties that need to be defined -if the user wants to compute heat fluxes with standard bulk formulas-. The atmospheric properties are defined in the Atmospheric\_x.dat input file. The heat (bulk formulas), mass and momentum fluxes are defined in the InterfaceWaterAir\_x.dat. The example of an input file InterfaceWaterAir\_x.dat is presented below.
+For each water property the user needs to define if it want or not to impose atmospheric fluxes. Here's an example of atmospheric properties that need to be defined -if the user wants to compute heat fluxes with standard bulk formulas-. The atmospheric properties are defined in the Atmospheric_x.dat input file. The heat (bulk formulas), mass and momentum fluxes are defined in the InterfaceWaterAir_x.dat. The example of an input file InterfaceWaterAir_x.dat is presented below.
 
-## WaterProperties\_x.dat
+## WaterProperties_x.dat
 
-For each property it's possible to impose an atmospheric (or surface) boundary condition. By default no atmospheric boundary condition is imposed (SURFACE\_FLUXES : 0).
+For each property it's possible to impose an atmospheric (or surface) boundary condition. By default no atmospheric boundary condition is imposed (SURFACE_FLUXES : 0).
 
 ```
     <beginproperty>
@@ -12,7 +12,7 @@ For each property it's possible to impose an atmospheric (or surface) boundary c
     <endproperty>
 ```
 
-## Atmospheric\_x.dat
+## Atmospheric_x.dat
 
 It's important to have the output of the atmospheric properties fields so the user can confirm what is being imposed
 
@@ -143,7 +143,7 @@ Cloud cover
    <endproperty>
 ```
 
-## InterfaceWaterAir\_x.dat
+## InterfaceWaterAir_x.dat
 
 Zonal wind stress
 

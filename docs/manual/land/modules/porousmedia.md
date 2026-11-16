@@ -82,15 +82,12 @@ The user may define a water content initialization or choose the model to comput
 Once determined the aquifer level (**water table**) the water content is associated at each cells by the following criteria:
 
   
-{\|
 
 - If the cell is located above the water table $\theta=\theta_{s}$
 
-\|-
 
 - If the cell is located over the water table $\theta=\theta_{ns}$
 
-\|}
 
 where:
 
@@ -441,31 +438,31 @@ Theta - is water content of selected cell (vol water/ vol soil)
 
 relative_water_content - content in selected cell. between zero and one (zero is residual water content and one is saturated water content)
 
-VelW\_[m/s] - vertical velocity in the bottom face of the selected cell
+VelW_[m/s] - vertical velocity in the bottom face of the selected cell
 
-VelW_Corr\_[m/s] - vertical velocity in the bottom face of the selected cell that may be corrected if oversaturation occurs. if no correction occurs is the same as previous.
+VelW_Corr_[m/s] - vertical velocity in the bottom face of the selected cell that may be corrected if oversaturation occurs. if no correction occurs is the same as previous.
 
-InF_Vel\_[m/s] - infiltration velocity (in the soil surface)
+InF_Vel_[m/s] - infiltration velocity (in the soil surface)
 
-Head\_[m] - Suction in selected cell
+Head_[m] - Suction in selected cell
 
-Conductivity\_[m/s] - Conductivity in selected cell
+Conductivity_[m/s] - Conductivity in selected cell
 
-level_water_table\_[m] - water table altitude
+level_water_table_[m] - water table altitude
 
-water_table_depth\_[m] - water table depth (from soil surface)
+water_table_depth_[m] - water table depth (from soil surface)
 
-Hydro_Pressure\_[m] - hydrostatic pressure in selected cell
+Hydro_Pressure_[m] - hydrostatic pressure in selected cell
 
-Final_Head\_[m] - Soil water charge in selected cell
+Final_Head_[m] - Soil water charge in selected cell
 
 [Check Mohid Land Heights and Levels to understand some of the outputs]
 
-GW_flow_to_river_total\_[m3/s] - Ground water flow to river if it is a river point
+GW_flow_to_river_total_[m3/s] - Ground water flow to river if it is a river point
 
-Surface_Evaporation_Flux\_[m3/s] - evaporation flux (in the soil surface)
+Surface_Evaporation_Flux_[m3/s] - evaporation flux (in the soil surface)
 
-Transpiration_Flux\_[m3/s] - transpiration flux in selected cell
+Transpiration_Flux_[m3/s] - transpiration flux in selected cell
 
 [Check Mohid Land Heights and Levels to understand the difference between level and height results](http://screencast.com/t/I8We0B4j2uJ)
 

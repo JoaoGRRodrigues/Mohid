@@ -1,5 +1,6 @@
 # ModuleMPImanagement
 
+```fortran
 !------------------------------------------------------------------------------ ! IST/MARETEC, Water Modelling Group, Mohid modelling system !------------------------------------------------------------------------------
 
 !
@@ -52,15 +53,10 @@
 
 module moduleMPImanagement
 
-```
    implicit none
-```
 
-```
    private
-```
 
-```
    integer, parameter :: msgPlayBall1Tag = 11111
    integer, parameter :: msgPlayBall2Tag = 11122
    integer, parameter :: msgPlayBall3Tag = 33333
@@ -68,13 +64,9 @@ module moduleMPImanagement
    integer, parameter :: msgMyMPITag     = 22222
    integer, parameter :: msgEndGameTag   = 34232
    integer, parameter :: msgMsgIDTag     = 34555
-```
 
-```
    !Subroutines---------------------------------------------------------------
-```
 
-```
    public  :: getMsgPlayBall1Tag
    public  :: getMsgPlayBall2Tag
    public  :: getMsgPlayBall3Tag
@@ -82,52 +74,36 @@ module moduleMPImanagement
    public  :: getMsgMyMPITag
    public  :: getMsgEndGameTag
    public  :: getMsgIDTag
-```
 
-```
    contains
-```
 
-```
    integer function getMsgPlayBall1Tag()
        getMsgPlayBall1Tag = msgPlayBall1Tag
    end function getMsgPlayBall1Tag
-```
 
-```
    integer function getMsgPlayBall2Tag()
        getMsgPlayBall2Tag = msgPlayBall2Tag
    end function getMsgPlayBall2Tag
-```
 
-```
    integer function getMsgPlayBall3Tag()
        getMsgPlayBall3Tag = msgPlayBall3Tag
    end function getMsgPlayBall3Tag
-```
 
-```
    integer function getMsgPlayBall4Tag()
        getMsgPlayBall4Tag = msgPlayBall4Tag
    end function getMsgPlayBall4Tag
-```
 
-```
    integer function getMsgMyMPITag()
        getMsgMyMPITag = msgMyMPITag
    end function getMsgMyMPITag
-```
 
-```
    integer function getMsgEndGameTag()
        getMsgEndGameTag = msgEndGameTag
    end function getMsgEndGameTag
-```
 
-```
    integer function getMsgIDTag()
        getMsgIDTag = msgMsgIDTag
    end function getMsgIDTag
-```
 
 end module moduleMPImanagement
+```

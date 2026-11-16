@@ -203,7 +203,7 @@ Each catalog is open (only threddsconfig.xml needs to be open) in vim to replace
 vim>:%s/apache-tomcat-6.0.18/apache-tomcat-7.0.23/g
 ```
 
-Create the links in /opendap/pcoms/scripts and /opendap/new\_opendap/.../scripts to the scripts in thredds folder (see in opendap.mohid.com which files
+Create the links in /opendap/pcoms/scripts and /opendap/new_opendap/.../scripts to the scripts in thredds folder (see in opendap.mohid.com which files
 
 ```
 go to each each script folder in terminal

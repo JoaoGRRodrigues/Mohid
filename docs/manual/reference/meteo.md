@@ -14,15 +14,15 @@ MM5 meteorological surface forecasts are automatically being delivered to MARETE
 
 Recent files can be found in [ftp://ftp.mohid.com/](ftp://ftp.mohid.com/) (meteoIST:mm5) where:
 
-1. **[ftp://ftp.mohid.com/mm5\_6h](ftp://ftp.mohid.com/mm5_6h)** stored in **\\\\alexandria\\public\\modelos\\Meteo\_IST\\mm5\_6h**
+1. **[ftp://ftp.mohid.com/mm5_6h](ftp://ftp.mohid.com/mm5_6h)** stored in **\\\\alexandria\\public\\modelos\\Meteo_IST\\mm5_6h**
     -   Each file has the 2nd 6 hours of simulation. When glued, you can have a combination of the most recent available forecast.
     -   simulation 00h : files have outputs from 7:00 to 12:00
     -   simulation 06h : files have outputs from 13:00 to 18:00
     -   simulation 12h : files have outputs from 19:00 to 00:00
     -   simulation 18h : files have outputs from 1:00 to 6:00
-2. **[ftp://ftp.mohid.com/mm5\_7d](ftp://ftp.mohid.com/mm5_7d)** stored in **\\\\alexandria\\public\\modelos\\Meteo\_IST\\mm5\_7d**
+2. **[ftp://ftp.mohid.com/mm5_7d](ftp://ftp.mohid.com/mm5_7d)** stored in **\\\\alexandria\\public\\modelos\\Meteo_IST\\mm5_7d**
     -   Simulation 00h with 7 days forecasts. This is only delivered at Friday's to run MOHID Portuguese Coast Operational Model.
-3. **[ftp://ftp.mohid.com/SIGEL/mm5\_3d](ftp://ftp.mohid.com/SIGEL/mm5_3d)** (not being stored)
+3. **[ftp://ftp.mohid.com/SIGEL/mm5_3d](ftp://ftp.mohid.com/SIGEL/mm5_3d)** (not being stored)
     -   Four daily simulations with 3 days forecasts.
 
 ### References to MM5-IST configuration
@@ -40,32 +40,32 @@ Recent files can be found in [ftp://ftp.mohid.com/](ftp://ftp.mohid.com/) (meteo
 Here's the unexhaustive list of MM5 data outputs in hdf5 at Maretec data servers. There are three type of domains: D1 (~90 km), D2 (~30 km) and D3 (~10 km). However the domains changed during 2006/2007 and so there are the new D1, D2, D3 and the old D1, D2, D3.
 
 - 20060601 - 20061020:
-    -   D1, D2, D3 \\\\alexandria\\public\\modelos\\Meteo\_IST\\mm5\_7d\\7d\_old
+    -   D1, D2, D3 \\\\alexandria\\public\\modelos\\Meteo_IST\\mm5_7d\\7d_old
 
 - 20061020 - 20061124:
-    -   D1, D2, D3 \\\\alexandria\\public\\modelos\\Meteo\_IST\\mm5\_3d
+    -   D1, D2, D3 \\\\alexandria\\public\\modelos\\Meteo_IST\\mm5_3d
 
 - 20061124 - 20061201:
-    -   D2 \\\\alexandria\\public\\modelos\\Meteo\_IST\\mm5\_7d
+    -   D2 \\\\alexandria\\public\\modelos\\Meteo_IST\\mm5_7d
 
 - 20061201 - 20070103:
-    -   D2 \\\\alexandria\\public\\modelos\\Meteo\_IST\\mm5\_7d
-    -   D3 \\\\alexandria\\public\\modelos\\Meteo\_IST\\Dezembro2006
+    -   D2 \\\\alexandria\\public\\modelos\\Meteo_IST\\mm5_7d
+    -   D3 \\\\alexandria\\public\\modelos\\Meteo_IST\\Dezembro2006
 
 - 20070103 - 20070706:
-    -   D2 \\\\alexandria\\public\\modelos\\Meteo\_IST\\mm5\_7d
+    -   D2 \\\\alexandria\\public\\modelos\\Meteo_IST\\mm5_7d
 
 - 20070706 - 20080509:
-    -   D2, D3 \\\\alexandria\\public\\modelos\\Meteo\_IST\\mm5\_7d
+    -   D2, D3 \\\\alexandria\\public\\modelos\\Meteo_IST\\mm5_7d
 
 ### GFS wind files
 
-1. **\\\\alexandria\\public\\modelos\\Meteo\_IST\\GFS\\**
+1. **\\\\alexandria\\public\\modelos\\Meteo_IST\\GFS\\**
     -   Daily 1 day wind forecasts(from 0h00 to 21h00) from GFS model covering the North Atlantic
-2. **\\\\alexandria\\public\\modelos\\Meteo\_IST\\GFS\\latest\\**
+2. **\\\\alexandria\\public\\modelos\\Meteo_IST\\GFS\\latest\\**
     -   Daily 7 days wind forecasts from GFS model covering the North Atlantic
 
 ## Related Pages
 
-- [Module\_InterfaceWaterAir](../water/modules/interfacewaterair.md)
+- [Module_InterfaceWaterAir](../water/modules/interfacewaterair.md)
 - [ConvertToHDF5](../tools/converttohdf5.md)

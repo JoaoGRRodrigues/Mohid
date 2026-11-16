@@ -36,7 +36,7 @@ Origins can be grouped together in Groups. Origins which belong to the same grou
 
 ### Water quality processes
 
-To use the Water Quality processes in the lagrangian module it is necessary to define a WaterQuality.dat file different from the one used for the eulerian calculations. Defining its location by the keyword WQM\_DATA\_FILE.
+To use the Water Quality processes in the lagrangian module it is necessary to define a WaterQuality.dat file different from the one used for the eulerian calculations. Defining its location by the keyword WQM_DATA_FILE.
 
 The waterquality files need to include the different parameters separately in two files in the case that both waterquality processes are calculated.
 

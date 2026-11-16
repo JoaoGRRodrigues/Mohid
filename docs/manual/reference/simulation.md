@@ -33,7 +33,7 @@ It contains all the configuration files of all the runs. Here's the full list of
 - MacroAlgae.dat
 - Life.dat
 - SedimentProperties.dat
-- [SedimentGeometry.dat](../io/README.md#sedimentgeometry-dat#sedimentgeometry-dat)
+- [SedimentGeometry.dat](../io/README.md#sedimentgeometry-dat)
 - Consolidation.dat
 - Assimilation.dat
 - HydrodynamicFile.dat

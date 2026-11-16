@@ -514,7 +514,7 @@ Camargo MJ, Otero LJ, Higgins AE. Dynamics of the turbidity maximum zone and its
 
 Choi HS, Jang JH, Choi WJ. Ship navigation optimization using detailed oceanographic information based on the S-100 standards. Sensors and Materials. 2026; 38(7):4231-4244. Available at: [Download](https://doi.org/10.18494/SAM6188).
 
-Diego S, Ianla R, Alejo P, Perez J, Michelle J, Pablo E, Mónica F. PronUy\_RPFM: A modular architecture system for prototype development in operational forecasting of the Río de la Plata and continental shelf. Digital Water. 2026;4(1). Available at: [Download](https://doi.org/10.1080/28375807.2026.2725907).
+Diego S, Ianla R, Alejo P, Perez J, Michelle J, Pablo E, Mónica F. PronUy_RPFM: A modular architecture system for prototype development in operational forecasting of the Río de la Plata and continental shelf. Digital Water. 2026;4(1). Available at: [Download](https://doi.org/10.1080/28375807.2026.2725907).
 
 Garbossa LHP, Franz G, Lapa KR, Ávila-Simas SR, Neves R. Design and robustness of an operational coastal modeling system: a case study in Santa Catarina. SSRN. Available at: [Download](https://doi.org/10.2139/ssrn.6878623).
 

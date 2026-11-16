@@ -41,9 +41,9 @@ This is very important for the following rules:
 
 In particular, the gnumake program is very well documented [here](http://www.gnu.org/software/make/manual/make.html).
 
-### [Mohid\_Base\_1](../../water/README.md#mohid-base-1#mohid-base-1)
+### [Mohid_Base_1](../../water/README.md#mohid-base-1)
 
-The source code of a sample **Makefile** is given bellow: `[makefile,Y]`
+The source code of a sample **Makefile** is given bellow:
 
 ```
 #
@@ -278,7 +278,7 @@ adcp_avu_this.$(O) : readstring.$(H)
 
 ### Mururoa
 
-Here's another sample [makefile](http://en.wikipedia.org/wiki/Make) made for \\\\guillaume\\projects\\mururoa based on [\*NIX\_platforms](../../archive/linux/nix-platforms.md) and on [this](http://www.eng.hawaii.edu/Tutor/Make/index.html) tutorial.
+Here's another sample [makefile](http://en.wikipedia.org/wiki/Make) made for \\\\guillaume\\projects\\mururoa based on [\*NIX_platforms](../../archive/linux/nix-platforms.md) and on [this](http://www.eng.hawaii.edu/Tutor/Make/index.html) tutorial.
 
 ```
 SHELL = /bin/sh

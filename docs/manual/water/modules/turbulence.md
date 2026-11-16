@@ -38,7 +38,7 @@ Burchard et al, 1999 – ([http://www.gotm.net](http://www.gotm.net)), a turbule
 
 ### Maps (HDF5 format)
 
-To write 3D results use the keyword [OUTPUT\_TIME](../../io/keywords/output-time.md) and define keyword:
+To write 3D results use the keyword [OUTPUT_TIME](../../io/keywords/output-time.md) and define keyword:
 
 ```
 OUTPUT_HDF           : 1

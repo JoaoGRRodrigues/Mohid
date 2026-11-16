@@ -4,7 +4,7 @@
 
 ## Source-safe whereabouts
 
-The latest source code is in the [codeplex](../archive/web/codeplex.md) inside the "SmallTools\\DrawFluxesInHDF5" folder. An older source code is in the **Mohid\_V4** repository, inside the **SmallTools\\DrawFluxesInHDF5** folder.
+The latest source code is in the [codeplex](../archive/web/codeplex.md) inside the "SmallTools\\DrawFluxesInHDF5" folder. An older source code is in the **Mohid_V4** repository, inside the **SmallTools\\DrawFluxesInHDF5** folder.
 
 ## Configuration
 
@@ -67,7 +67,7 @@ Here's a sample of the indexes file:
 
 **Q: Too many columns?**
 
-A: Add the following preprocessor directives in Module [Mohid Base 1](../water/README.md#mohid-base-1#mohid-base-1):
+A: Add the following preprocessor directives in Module [Mohid Base 1](../water/README.md#mohid-base-1):
 
 ```
 _BIG_MAX_COLUMNS,_EXTRA_LONG_LINE_LENGTH

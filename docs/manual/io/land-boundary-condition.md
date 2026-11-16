@@ -2,15 +2,15 @@
 
 The land boundary presently in the MOHID system is imposed in the form of water and mass fluxes.
 
-## Hydrodynamic\_x.dat
+## Hydrodynamic_x.dat
 
-In the hydrodynamic input data it's necessary to turn on the water discharge option. By default no water discharge is imposed (WATER\_DISCHARGES : 0).
+In the hydrodynamic input data it's necessary to turn on the water discharge option. By default no water discharge is imposed (WATER_DISCHARGES : 0).
 
 ```
 WATER_DISCHARGES : 1
 ```
 
-## WaterProperties\_x.dat
+## WaterProperties_x.dat
 
 For each property is possible to impose a mass discharge. By default no mass discharge is imposed (DISCHARGES : 0).
 
@@ -20,7 +20,7 @@ For each property is possible to impose a mass discharge. By default no mass dis
     <endproperty>
 ```
 
-## Discharges\_x.dat
+## Discharges_x.dat
 
 Here's an example on how to define a river discharge. More than one river discharges can be defined. For each discharge corresponds a <begindischarge> / <enddischarge> block.
 

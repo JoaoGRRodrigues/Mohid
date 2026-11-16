@@ -56,11 +56,11 @@ This is the general framework which reads the turbulence namelists to initialize
 
 ##### Initialise the model
 
-The model is initialised by the subroutine init\_gotm( )which reads the turbulence namelists and specialised subroutines.
+The model is initialised by the subroutine init_gotm( )which reads the turbulence namelists and specialised subroutines.
 
 ##### Manage globale time - stepping
 
-The routine subroutine time\_loop( ) contains the heart of the code, It contains the main time-loop inside of which all routines required during the time step are called.
+The routine subroutine time_loop( ) contains the heart of the code, It contains the main time-loop inside of which all routines required during the time step are called.
 
 Because of this routine following steps are triggered:
 
@@ -76,7 +76,7 @@ Because of this routine following steps are triggered:
 
 - Results are written in the output files
 
-After this the the subroutine clean\_up( )will be called. This function is just a wrapper for the external routine close\_output(). All open files will be closed after this call.
+After this the the subroutine clean_up( )will be called. This function is just a wrapper for the external routine close_output(). All open files will be closed after this call.
 
 ##### Mean Flow Model
 

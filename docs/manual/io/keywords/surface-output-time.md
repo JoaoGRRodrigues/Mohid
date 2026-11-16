@@ -2,7 +2,7 @@
 
 ## Overview
 
-SURFACE\_OUTPUT\_TIME is a [keyword](keywords.md) which is used to identify the frequency of results outputs in [HDF5](../../tools/hdf5.md) format **for the surface layer**. It must be defined in the [Hydrodynamic](../../water/modules/hydrodynamic.md) file.
+SURFACE_OUTPUT_TIME is a [keyword](keywords.md) which is used to identify the frequency of results outputs in [HDF5](../../tools/hdf5.md) format **for the surface layer**. It must be defined in the [Hydrodynamic](../../water/modules/hydrodynamic.md) file.
 
 ## Usage
 
@@ -39,6 +39,6 @@ Here is a list of modules in which this keyword can be used in the correspondent
 
 Here's a list of related keywords
 
-- [OUTPUT\_TIME](output-time.md)
-- [RESTART\_FILE\_OUTPUT\_TIME](restart-file-output-time.md)
-- [RESTART\_FILE\_OVERWRITE](restart-file-overwrite.md)
+- [OUTPUT_TIME](output-time.md)
+- [RESTART_FILE_OUTPUT_TIME](restart-file-output-time.md)
+- [RESTART_FILE_OVERWRITE](restart-file-overwrite.md)

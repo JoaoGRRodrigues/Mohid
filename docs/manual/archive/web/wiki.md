@@ -13,14 +13,14 @@ Here's the list of available extensions, exclusively developed for Mohid wiki.
 ### List of
 
 - [maps](maps.md)
-- [charts](../../building/chart.md)
+- [charts](chart.md)
 - [feeds](rss.md)
-- [images](../../building/README.md#webimage#webimage)
+- images
 - [videos](blog.md)
 - [music](xspf.md)
 - [search](google.md)
 - [generic html](html.md)
-- [math](../../project/README.md#mathtex#mathtex)
+- [math](../../project/README.md#mathtex)
 
 ### RSS feeds
 
@@ -73,7 +73,7 @@ This will use the google charts equations api to render on-the-fly png images of
 
 #### Syntax Highlight extension
 
-Check out this page [Syntax\_highlighter](../../project/syntax-highlighter.md) to install syntax highlighter.
+Check out this page [Syntax_highlighter](../../project/syntax-highlighter.md) to install syntax highlighter.
 
 #### Biblio extension
 
@@ -94,7 +94,7 @@ That's it!
 
 #### MySQL troubles
 
-If you're using MySQL version 4 or later, chances are you get errors when running the wiki initialize script. Since version 4 of mySQL, passwords are encrypted in 16 bytes strings. Whereas before, they were encrypted in 8 bytes strings. The solution is proposed in the following [page](http://dev.mysql.com/doc/refman/4.1/en/old-client.html). Run the mysql command line and reset the root password with the OLD\_PASSWORD command. Then, re-run the wiki initialize script and it should work fine.
+If you're using MySQL version 4 or later, chances are you get errors when running the wiki initialize script. Since version 4 of mySQL, passwords are encrypted in 16 bytes strings. Whereas before, they were encrypted in 8 bytes strings. The solution is proposed in the following [page](http://dev.mysql.com/doc/refman/4.1/en/old-client.html). Run the mysql command line and reset the root password with the OLD_PASSWORD command. Then, re-run the wiki initialize script and it should work fine.
 
 #### LaTex troublesTemplate:Anchor
 
@@ -207,7 +207,7 @@ That should do the trick. Remember prior to change the *AdminSettings.sample* fi
 
 ## Backup scheme
 
-The mysql database is located in **\\\\einstein**. The backup system is implemented from the MySql administrator service located in **\\\\kepler**. It performs a daily, a weekly and a monthly database dump inside **\\\\kepler\\Backup\_Servers\\einstein\\mySQL**. Also, a backup of the wiki configuration and images is performed regularly using the script below. The script is scheduled to be launched from **\\\\Davinci\\projectos\\wikiBup**.
+The mysql database is located in **\\\\einstein**. The backup system is implemented from the MySql administrator service located in **\\\\kepler**. It performs a daily, a weekly and a monthly database dump inside **\\\\kepler\\Backup_Servers\\einstein\\mySQL**. Also, a backup of the wiki configuration and images is performed regularly using the script below. The script is scheduled to be launched from **\\\\Davinci\\projectos\\wikiBup**.
 
 ### Backup script
 

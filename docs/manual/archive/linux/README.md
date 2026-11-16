@@ -240,7 +240,7 @@ The **rdesktop** allows to connect remotely to windows systems:
 > rdesktop -u Administrator -d MARETEC Einstein
 ```
 
-To access to fedora@dual\_64 type.
+To access to fedora@dual_64 type.
 
 ```
 $ vncviewer dual_64.maretec.ist.utl.pt:0

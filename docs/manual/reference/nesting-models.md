@@ -38,9 +38,9 @@ Only if these keywords are activated will the assimilation be read!.
 
 In the submodel assimilation file (assimilation.dat):
 
-If the Keywords SUBMODEL, BRFORCE and DATA\_ASSIMILATION are active and LOCAL\_SOLUTION is 2 then the block <<begin\_field>> will not be read because the assimilation will be done using the father model results.
+If the Keywords SUBMODEL, BRFORCE and DATA_ASSIMILATION are active and LOCAL_SOLUTION is 2 then the block <<begin_field>> will not be read because the assimilation will be done using the father model results.
 
-Example with LOCAL\_SOLUTION = 5
+Example with LOCAL_SOLUTION = 5
 
 ```
 <beginproperty>

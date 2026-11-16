@@ -55,7 +55,7 @@ One or more gauge files (tidal components files), in MOHID format, containing in
 
 [Time series](../io/formats/time-series.md) files of water level for each gauge location provided by the supplied gauge files. Besides water level values each time serie have a column for covered/uncovered information, as required by MOHID Water; every time data is assumed covered (valued 1.0).
 
-In case there are gauge locations outside the provided HDF5 grid those locations' coordinates and gauge file are saved in a Noinformation.dat file in the directory provided in ROOT\_SRT in [nomfich.dat file](../io/nomfich-dat-file.md).
+In case there are gauge locations outside the provided HDF5 grid those locations' coordinates and gauge file are saved in a Noinformation.dat file in the directory provided in ROOT_SRT in [nomfich.dat file](../io/nomfich-dat-file.md).
 
 Optionally can also be produced new tide gauge files: a copy of the input tide gauge files with extra keywords connecting to the water level time series. These files can be readily used in MOHID Water as tidal components files with time variable gauge mean water level. For the gauge locations outside the HDF5 grid area the original gauge block is maintained in the new tide gauge file with no additional keywords.
 

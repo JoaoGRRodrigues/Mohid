@@ -4,13 +4,13 @@ The idea behind the imposed solution, is the ability to load pre-calculated hydr
 
 ## Sample configuration
 
-The geometry\_X.dat should correspond to the one found in the HDF5 file, and in case that the window file does not include a bottom layer then a keyword should be included in the file indicating that is a window file
+The geometry_X.dat should correspond to the one found in the HDF5 file, and in case that the window file does not include a bottom layer then a keyword should be included in the file indicating that is a window file
 
 ```
 WINDOW                    : 0/1   (Default 0, if 1 does not check the consistency of the bottom layer)
 ```
 
-In addition, the hydrodynamic, interface sediment water and water properties data file should be configured following the inditacions below. A typical file for the hydrodyamic\_x.dat would be similar to:
+In addition, the hydrodynamic, interface sediment water and water properties data file should be configured following the inditacions below. A typical file for the hydrodyamic_x.dat would be similar to:
 
 ```
 EVOLUTION                 : Imposed Solution
@@ -46,7 +46,7 @@ FILENAME                  : ...        (location of the hdf5 file to be imposed
 <end_velocity_v>
 ```
 
-The InterfaceSedimentWater\_X.dat should be configured as:
+The InterfaceSedimentWater_X.dat should be configured as:
 
 ```
 <begin_rugosity>
@@ -54,7 +54,7 @@ DEFAULTVALUE              : 0.0
 <end_rugosity>
 ```
 
-The Waterproperties\_X.dat file has to be configured using the following indications for each property:
+The Waterproperties_X.dat file has to be configured using the following indications for each property:
 
 ```
 <beginproperty>

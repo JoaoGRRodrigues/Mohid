@@ -157,7 +157,7 @@ $(MAIN).$(Z) : \
 
 ## Latex DAG diagram
 
-http://farm3.static.flickr.com/2176/2245479238\_b750fcf7e3.jpg?v=0
+http://farm3.static.flickr.com/2176/2245479238_b750fcf7e3.jpg?v=0
 
 ## See also
 

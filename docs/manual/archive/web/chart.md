@@ -1,6 +1,6 @@
 # Chart
 
-[Google](http://www.google.com) released circa October 2007 a cool charting tool called **charts**. Since we need to deliver operational outputs of timeseries, this could be a killer tool for us. Here's a small study on how to use this tool. See more [here](http://code.google.com/apis/chart/). You can paste them in this [wiki](../archive/web/wiki.md) too.
+[Google](http://www.google.com) released circa October 2007 a cool charting tool called **charts**. Since we need to deliver operational outputs of timeseries, this could be a killer tool for us. Here's a small study on how to use this tool. See more [here](http://code.google.com/apis/chart/). You can paste them in this [wiki](wiki.md) too.
 
 ## Examples
 

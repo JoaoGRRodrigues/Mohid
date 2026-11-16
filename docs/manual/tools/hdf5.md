@@ -20,7 +20,7 @@ To compile Mohid it is mandatory to have the HDF5 [\[1\]](http://hdf.ncsa.uiuc.e
 6. `> make check`
 7. `> make install`
 
-Libraries may be found in ./hdf5/lib/ and, typically, in /opt/hdf5/hdf5/lib. Detailed information may be found in file ./release\_docs/INSTALL.
+Libraries may be found in ./hdf5/lib/ and, typically, in /opt/hdf5/hdf5/lib. Detailed information may be found in file ./release_docs/INSTALL.
 
 #### Zlib libraries
 

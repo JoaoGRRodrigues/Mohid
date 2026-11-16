@@ -1,6 +1,6 @@
 # Advection numerical scheme
 
-## WaterProperties\_x.dat
+## WaterProperties_x.dat
 
 1 - First order upwind is the more robust but the less precise;
 

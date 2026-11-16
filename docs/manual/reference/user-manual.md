@@ -10,20 +10,20 @@ To use MohidReservoirOptimization you need to create a working environment consi
 
 To run MohidReservoirOptimization you must place in the executable's directory a text file named nomfich.dat. nomfich.dat must contain the following keywords:
 
-- IN\_MODEL - path and file name of the [data file](data-file.md);
-- W2\_BATHYMETRY - bathymetry data file, it can either be in [free form](free-form.md) or in [CQUAL-W2's format](../io/formats/cqual-w2-s-format.md);
-- W2\_BATHYMETRY\_MODIFIED - the resulting CQUAL-W2 bathymetry file;
-- RESERVOIR\_DATA - path and file name of the file with [acomulated volumes](acomulated-volumes.md);
-- W2\_CONTROL\_FILE - path to CQUAL-W2's control file.
+- IN_MODEL - path and file name of the [data file](data-file.md);
+- W2_BATHYMETRY - bathymetry data file, it can either be in [free form](free-form.md) or in [CQUAL-W2's format](../io/formats/cqual-w2-s-format.md);
+- W2_BATHYMETRY_MODIFIED - the resulting CQUAL-W2 bathymetry file;
+- RESERVOIR_DATA - path and file name of the file with [acomulated volumes](acomulated-volumes.md);
+- W2_CONTROL_FILE - path to CQUAL-W2's control file.
 
 Sample nomfich.dat file:
 
 ---
 
-IN\_MODEL  : ../../../barragens/W2/inic/Alqueva/ReservoirOptimization.Alqueva.dat
-W2\_BATHYMETRY  : ../../../barragens/W2/inic/Alqueva/Bth\_Alqueva.npt
-RESERVOIR\_DATA  : ../../../barragens/W2/inic/Alqueva/Fill\_Alqueva.txt
-W2\_BATHYMETRY\_MODIFIED  : ../../../barragens/W2/modified/Alqueva/Bth\_Alqueva.Modified.npt
-W2\_CONTROL\_FILE  : ../../../barragens/W2/inic/Alqueva/W2\_conAlqueva.npt
+IN_MODEL  : ../../../barragens/W2/inic/Alqueva/ReservoirOptimization.Alqueva.dat
+W2_BATHYMETRY  : ../../../barragens/W2/inic/Alqueva/Bth_Alqueva.npt
+RESERVOIR_DATA  : ../../../barragens/W2/inic/Alqueva/Fill_Alqueva.txt
+W2_BATHYMETRY_MODIFIED  : ../../../barragens/W2/modified/Alqueva/Bth_Alqueva.Modified.npt
+W2_CONTROL_FILE  : ../../../barragens/W2/inic/Alqueva/W2_conAlqueva.npt
 
 ---

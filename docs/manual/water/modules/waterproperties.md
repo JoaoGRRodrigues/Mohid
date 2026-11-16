@@ -2,7 +2,7 @@
 
 ## Overview
 
-Module WaterProperties is the 3D eulerian transport module included in MOHID. Module WaterProperties is responsible for computing the properties evolution in the water column. To do so, this module uses other modules, responsible for specific processes like [Module AdvectionDiffusion](README.md#module-advectiondiffusion#module-advectiondiffusion), which computes properties transport, or [Module WaterQuality](waterquality.md) which is one of the three available modules to compute biogeochemical processes, and so on. MOHID is prepared to simulate properties such temperature, salinity, cohesive sediments, phytoplankton, nutrients, contaminants, etc. These properties can either be dissolved in the water, therefore following the currents, or in a particulate phase or adsorbed on to particulate matter, thus being subjected to one more transport variable: the settling velocity.
+Module WaterProperties is the 3D eulerian transport module included in MOHID. Module WaterProperties is responsible for computing the properties evolution in the water column. To do so, this module uses other modules, responsible for specific processes like [Module AdvectionDiffusion](README.md#module-advectiondiffusion), which computes properties transport, or [Module WaterQuality](waterquality.md) which is one of the three available modules to compute biogeochemical processes, and so on. MOHID is prepared to simulate properties such temperature, salinity, cohesive sediments, phytoplankton, nutrients, contaminants, etc. These properties can either be dissolved in the water, therefore following the currents, or in a particulate phase or adsorbed on to particulate matter, thus being subjected to one more transport variable: the settling velocity.
 
 ## Concepts
 
@@ -99,7 +99,7 @@ SUBMODEL_EXTRAPOLATE         : 0/1     (Property values are extrapolated from a
 
 ### Maps (HDF5 format)
 
-To write 3D results use keyword [OUTPUT\_TIME](../../io/keywords/output-time.md) and define keyword:
+To write 3D results use keyword [OUTPUT_TIME](../../io/keywords/output-time.md) and define keyword:
 
 ```
 OUTPUT_HDF           : 1
@@ -107,7 +107,7 @@ OUTPUT_HDF           : 1
 
 in each property that you whish to write results.
 
-To write results only in the surface use keyword [SURFACE\_OUTPUT\_TIME](../../io/keywords/surface-output-time.md) and define keyword:
+To write results only in the surface use keyword [SURFACE_OUTPUT_TIME](../../io/keywords/surface-output-time.md) and define keyword:
 
 ```
 OUTPUT_SURFACE_HDF   : 1
@@ -134,7 +134,7 @@ C_CHLA_OUTPUT : 60.0
 
 ### Window Area (HDF5 format)
 
-When this block is present, a HDF5 output is created with a selected model results window at a certain time step, the output is found at the res folder with the name Waterproperties\_wX.hdf5. X corresponds to the number of window ordered by the position at the file. Typically used for [Imposed Solution evolution](../imposedsolution.md).
+When this block is present, a HDF5 output is created with a selected model results window at a certain time step, the output is found at the res folder with the name Waterproperties_wX.hdf5. X corresponds to the number of window ordered by the position at the file. Typically used for [Imposed Solution evolution](../imposedsolution.md).
 
 ```
 <beginoutput>

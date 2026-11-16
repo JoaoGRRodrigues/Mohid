@@ -10,25 +10,25 @@ This means that each configuration MOHIDWater or MOHIDLand (or any other MOHID t
 
 Hence, here's the current list of configuration/platforms suffixes:
 
-- debug\_single
-- debug\_double
-- debug\_single\_openmp
-- debug\_double\_openmp
-- debug\_single\_openmi
-- debug\_double\_phreeqc
-- release\_single
-- release\_double
-- release\_single\_openmp
-- release\_double\_openmp
-- release\_double\_openmp\_phreeqc
-- x64\_debug\_single
-- x64\_debug\_double
-- x64\_debug\_single\_openmp
-- x64\_debug\_double\_openmp
-- x64\_debug\_single\_openmi
-- x64\_debug\_double\_phreeqc
-- x64\_release\_single
-- x64\_release\_double
-- x64\_release\_single\_openmp
-- x64\_release\_double\_openmp
-- x64\_release\_double\_openmp\_phreeqc
+- debug_single
+- debug_double
+- debug_single_openmp
+- debug_double_openmp
+- debug_single_openmi
+- debug_double_phreeqc
+- release_single
+- release_double
+- release_single_openmp
+- release_double_openmp
+- release_double_openmp_phreeqc
+- x64_debug_single
+- x64_debug_double
+- x64_debug_single_openmp
+- x64_debug_double_openmp
+- x64_debug_single_openmi
+- x64_debug_double_phreeqc
+- x64_release_single
+- x64_release_double
+- x64_release_single_openmp
+- x64_release_double_openmp
+- x64_release_double_openmp_phreeqc

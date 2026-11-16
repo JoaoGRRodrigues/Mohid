@@ -179,7 +179,7 @@ POMPOOLS          : 1     !activates POM pools dynamics in the sediment
 
 ## Lagrangian Larvae WaterQuality Definitions
 
-In order to run the waterquality module for lagrangian larvae it is mandatory to define the location of the waterquality file with the keyword WQM\_DATA\_FILE. For example:
+In order to run the waterquality module for lagrangian larvae it is mandatory to define the location of the waterquality file with the keyword WQM_DATA_FILE. For example:
 
 ```
 WQM_DATA_FILE         : ..\..\Test\data\WaterQuality_3.dat

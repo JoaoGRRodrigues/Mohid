@@ -85,7 +85,7 @@ To dredge a river the algorithm needs:
 
 - an original bathymetry (to be dredged).
 - an area of original bathymetry to apply the dredging - this can be obtained in GUI by creating a polygon.
-- points collection where each pair defines section begin and end (z is not read if SECTION\_MIDDLE\_POINT\_METHOD : 1 or is read and defines middle point Z if SECTION\_MIDDLE\_POINT\_METHOD : 2) - this collection can be obtained in GUI by creating points with any Z (it will be computed).
+- points collection where each pair defines section begin and end (z is not read if SECTION_MIDDLE_POINT_METHOD : 1 or is read and defines middle point Z if SECTION_MIDDLE_POINT_METHOD : 2) - this collection can be obtained in GUI by creating points with any Z (it will be computed).
 
 ```
 Remember: the first two consecutive points need to belong to one section (one for section start and the other for end) and the next two
@@ -95,12 +95,12 @@ Remember: if using the option to create more margin points from original points 
 to one margin and the second points of each pair need to belong to the other.
 ```
 
-- middle point height (or depth) in relation to section start point - read if SECTION\_MIDDLE\_POINT\_METHOD : 1.
+- middle point height (or depth) in relation to section start point - read if SECTION_MIDDLE_POINT_METHOD : 1.
 - section shape (if linear the section will be "V" shape, if root will be "U" shape and if power will be "hearts" with flat plain and fast decrease to section center).
 
 ### Assumptions
 
-The method assumes that the lower point of the section is exactly at middle between start and end and uses a unique value for all sections (the height of the middle point in relation to first point or section start) if SECTION\_MIDDLE\_POINT\_METHOD : 1. If the user wants to give middle point Z (if SECTION\_MIDDLE\_POINT\_METHOD : 2) define it in GUI when creating the file (define Z of first point of each pair) or after creation, editing xyz file.
+The method assumes that the lower point of the section is exactly at middle between start and end and uses a unique value for all sections (the height of the middle point in relation to first point or section start) if SECTION_MIDDLE_POINT_METHOD : 1. If the user wants to give middle point Z (if SECTION_MIDDLE_POINT_METHOD : 2) define it in GUI when creating the file (define Z of first point of each pair) or after creation, editing xyz file.
 
 ### Process
 

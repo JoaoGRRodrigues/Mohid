@@ -58,7 +58,7 @@ VARIABLEDT                    : 1
 MAXDT                         : 3600.0
 ```
 
-## Drainage\_Network data file
+## Drainage_Network data file
 
 - A drainage network file containing nodes and cross sections is needed. See [How to create a drainage network](../water/modules/drainagenetwork.md).
 

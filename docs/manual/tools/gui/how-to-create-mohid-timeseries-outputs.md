@@ -109,7 +109,7 @@ If all is correctly configured, and all the input files are double-checked, we c
 
 - Select *Tools* from menu, then *Launch Mohid...*
 
-- Select the *Run\_1*, then select *Run Mohid*, then select *Launch after Ok*, then click on *Ok*
+- Select the *Run_1*, then select *Run Mohid*, then select *Launch after Ok*, then click on *Ok*
 
 - Supervise the screen-outputs to check for any error, or to simply read the estimated end time of simulation
 

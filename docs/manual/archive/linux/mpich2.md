@@ -4,7 +4,7 @@
 
 MPICH2 allows to manage processes in cluster nix-based machines. It also allows the MPI being implemented in code.
 
-## [Dual\_64](dual-64.md) quick start
+## [Dual_64](dual-64.md) quick start
 
 ```
 >export PATH=/home/fedora/Software/mpich2-1.0.3/bin:$PATH

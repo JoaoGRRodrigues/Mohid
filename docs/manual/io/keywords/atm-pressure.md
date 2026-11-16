@@ -2,12 +2,12 @@
 
 ## Overview
 
-**ATM\_PRESSURE** defines whether to include or not an reference level pressure field.
+**ATM_PRESSURE** defines whether to include or not an reference level pressure field.
 
 ## Usage
 
 - Activate Atmospheric pressure **keyword** in the [module Hydrodynamic](../../water/modules/hydrodynamic.md),
-- Active [ATM\_PRESSURE\_TYPE](atm-pressure-type.md) keyword in the [module Hydrodynamic](../../water/modules/hydrodynamic.md),
+- Active [ATM_PRESSURE_TYPE](atm-pressure-type.md) keyword in the [module Hydrodynamic](../../water/modules/hydrodynamic.md),
 - Include a new property in the [module Atmosphere](../../water/modules/atmosphere.md) called **atmospheric pressure** or
 
 **mslp**, or both (though only one will actually be used). The new property can an ASCII file, a constant value, an HDF file, ...
@@ -29,7 +29,7 @@ Where value can be
 
 ### Type
 
-**ATM\_PRESSURE** is a logical/boolean parameter.
+**ATM_PRESSURE** is a logical/boolean parameter.
 
 ### Default value
 
@@ -51,9 +51,9 @@ Here some other related modules:
 
 ### Dependent keywords
 
-Here's a list of mandatory keywords to use with the **ATM\_PRESSURE** keyword:
+Here's a list of mandatory keywords to use with the **ATM_PRESSURE** keyword:
 
-- [ATM\_PRESSURE\_TYPE](atm-pressure-type.md)
+- [ATM_PRESSURE_TYPE](atm-pressure-type.md)
 
 ## Sample
 
@@ -101,9 +101,9 @@ NOTE: Only one of the above properties will actually be used. They were written 
 
 ## See also
 
-- [ATM\_PRESSURE\_TYPE](atm-pressure-type.md)
+- [ATM_PRESSURE_TYPE](atm-pressure-type.md)
 - WIND
-- WIND\_SMOOTH\_PERIOD
+- WIND_SMOOTH_PERIOD
 - RAMP
-- INERTIAL\_PERIODS
+- INERTIAL_PERIODS
 - [Mohid Keywords Online DataBase](http://www.mohid.com/IHS)

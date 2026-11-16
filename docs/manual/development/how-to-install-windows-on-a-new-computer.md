@@ -1,6 +1,6 @@
 # How to Install Windows on a new computer
 
-### Windows Installation
+## Windows Installation
 
 If the machine is intended to be a server, use windows server; in the other end if the machine is intended for desktop users, or to run use windows 7.
 
@@ -248,7 +248,7 @@ In order to exist only one remote session open (for Server 2003 installations):
 In Windows (not server editions) multiple users logins are not allowed. So to allow them (e.g. administrator, user),
 
 1. Backup the file C:\\Windows\\System32\\termsrv.dll
-2. Go to \\\\davinci\\Software\\RDP\_MultipleSessions
+2. Go to \\\\davinci\\Software\\RDP_MultipleSessions
 3. Extract the zip
 4. Run the 32bit or 64bit exe as Administrator
 5. Patch (it will change the file termsrv.dll)

@@ -79,7 +79,7 @@ This is needed for datacenter.mohid.com
 
 1. In IIS, in folders guadiana, mondego, disable anonymous authentication and enable basic authentication
 2. Add to these folders the permission for the users created (mondego and ucoimbra for folder Mondego) for reading and list folder content.
-3. Add also to this folders the user IIS\_IUSRS with read, list folder and execute.
+3. Add also to this folders the user IIS_IUSRS with read, list folder and execute.
 4. Remove user IUSR if exists.
 
 #### WebServices
@@ -87,7 +87,7 @@ This is needed for datacenter.mohid.com
 The site datacenter.mohid.com has webservices and needs .net 4.0 and .net 3.5. The first was installed from executable adn the second from IIS (features) since the executable did not worked and suggested that in error message.
 
 1. In each webservice folder right click -> "Manage Application" -> "Advanced Settings" -> "Convert to Application" to ASP.NET 4.0
-2. In the case of datacenter it was needed to add the user IIS\_USRS to the root folder with read permissions and list folder contents so that the webservices would work
+2. In the case of datacenter it was needed to add the user IIS_USRS to the root folder with read permissions and list folder contents so that the webservices would work
 3. Do not add the user "everyone" with read permissions because it should not be needed.
 4. The paths in the config files had to be changed and since it uses paths from FTPServer the disk W was mapped from the old server. **The connection has to be linked to the new FTPserver when it is ready.**
 

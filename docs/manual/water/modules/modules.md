@@ -24,7 +24,7 @@
 > -   Module Profile
 > -   [Module SedimentQuality](sedimentquality.md)
 > -   Module StopWatch
-> -   [Module Time](README.md#module-time#module-time)
+> -   [Module Time](README.md#module-time)
 > -   [Module TimeSerie](timeserie.md)
 > -   Module Triangulation
 > -   [Module WaterQuality](waterquality.md)
@@ -35,14 +35,14 @@
 
 **Mohid Base 2 project DAG tree**: Ellipsoids are source files; Quiver arrows are module's dependencies (**use** ModuleXpto). *Sketch made using [yED](http://www.yworks.com/en/index.html)*
 
-> -   [Module AdvectionDiffusion](README.md#module-advectiondiffusion#module-advectiondiffusion)
+> -   [Module AdvectionDiffusion](README.md#module-advectiondiffusion)
 > -   [Module Atmosphere](atmosphere.md)
 > -   Module BasinGeometry
 > -   [Module BoxDif](../../base/module-boxdif.md)
 > -   [Module FillMatrix](../../base/module-fillmatrix.md)
 > -   [Module Geometry](../../base/module-geometry.md)
-> -   [Module GridData](README.md#module-griddata#module-griddata)
-> -   [Module HorizontalGrid](README.md#module-horizontalgrid#module-horizontalgrid)
+> -   [Module GridData](README.md#module-griddata)
+> -   [Module HorizontalGrid](README.md#module-horizontalgrid)
 > -   [Module HorizontalMap](../../base/module-horizontalmap.md)
 > -   Module Interpolation
 > -   [Module Map](../../base/module-map.md)
@@ -54,7 +54,7 @@
 
 **MohidWater project DAG tree**: Ellipsoids are source files; Quiver arrows are module's dependencies (**use** ModuleXpto). *Sketch made using [yED](http://www.yworks.com/en/index.html)*
 
-> -   [Main](../README.md#main#main)
+> -   [Main](../README.md#main)
 > -   [Module Assimilation](assimilation.md)
 > -   [Module Consolidation](consolidation.md)
 > -   [Module FreeVerticalMovement](freeverticalmovement.md)
@@ -66,13 +66,13 @@
 > -   [Module InterfaceWaterAir](interfacewaterair.md)
 > -   [Module Jet](jet.md)
 > -   [Module Lagrangian](lagrangian.md)
-> -   [Module Model](README.md#module-model#module-model)
+> -   [Module Model](README.md#module-model)
 > -   [Module Oil](oil.md)
 > -   Module OpenBoundary
 > -   [Module Sand](sand.md)
 > -   [Module SedimentProperties](sedimentproperties.md)
 > -   Module Toga
-> -   [Module TurbGOTM](README.md#module-turbgotm#module-turbgotm)
+> -   [Module TurbGOTM](README.md#module-turbgotm)
 > -   [Module Turbulence](turbulence.md)
 > -   [Module WaterProperties](waterproperties.md)
 > -   [Module Waves](waves.md)

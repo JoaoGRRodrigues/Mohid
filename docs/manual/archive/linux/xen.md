@@ -67,7 +67,7 @@ How do I know which commands are available with *xm*? 
 
 ### Maretec Xen domains
 
-VMMRTSRV07\_EINSTEIN
+VMMRTSRV07_EINSTEIN
 
 a windows server 2003 web-pages server on the DMZ. Domain name is **einstein.maretec.ist.utl.pt**, IP is **192.168.21.10** and VNC console access is **192.168.20.125:1**.
 
@@ -79,7 +79,7 @@ a windows server 2003 database server on the LAN. Domain name is **copernico.mar
 
 A dedicated [OpenDAP](opendap.md)/[Thredds](thredds.md) server on the DMZ. Domain name is **opendap.mohid.com**, IP is **192.168.21.20** and VNC console access is **192.168.20.125:2**.
 
-[VMMRTSRV08\_FTP](vmmrtsrv08-ftp.md)
+[VMMRTSRV08_FTP](vmmrtsrv08-ftp.md)
 
 A dedicated FTP server on the DMZ. Domain name is **ftpserver.maretec.ist.utl.pt**, IP is **192.168.21.30** and VNC console access is **192.168.20.125:?**.
 
@@ -199,8 +199,8 @@ vim>:q
 
 ## Accessing via VNC
 
-- Install <goto>TightVNC client</goto>.
-- Then access to **192.168.20.125:?** to have console access. You need to determine which port(**?**) is allocated to the VM. You can test values ranging from \[1-9\], or you can check the *xen\_config* directory in the **192.168.20.125** machine (access it with [ssh](ssh.md) or putty).
+- Install TightVNC client.
+- Then access to **192.168.20.125:?** to have console access. You need to determine which port(**?**) is allocated to the VM. You can test values ranging from \[1-9\], or you can check the *xen_config* directory in the **192.168.20.125** machine (access it with [ssh](ssh.md) or putty).
 
 ## How do I know how much space do I have left free?
 
@@ -232,9 +232,9 @@ Suppose you want to create a new LV (Logical Volume) within the VG (Volume Group
 
 ## See also
 
-- [Xen\_workshop](xen-workshop.md)
+- [Xen_workshop](xen-workshop.md)
 - [VMMRTSRV06](vmmrtsrv06.md)
-- [VMMRTSRV08\_FTP -> VM with FTP Server](vmmrtsrv08-ftp.md)
+- [VMMRTSRV08_FTP -> VM with FTP Server](vmmrtsrv08-ftp.md)
 
 ## External references
 

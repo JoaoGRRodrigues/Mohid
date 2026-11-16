@@ -19,7 +19,7 @@ Reference evapotranspiration is an input for MOHID Land and can be provided by u
 
 The above example sets a constant reference evapotranspiration of 0.2 mm/h during the entire simulation period.
 
-To make MOHID Land calculate the reference evapotranspiration, the REMAIN\_CONSTANT keyword must be set to 0 (false) and no input data files should be provided. MOHID Land will then calculate the reference evapotranspiration using a set of properties that must be set in the Atmosphere data file (see **[Module Atmosphere](../water/modules/atmosphere.md)**). Below is an example of the reference evapotranspiration property set to be calculated:
+To make MOHID Land calculate the reference evapotranspiration, the REMAIN_CONSTANT keyword must be set to 0 (false) and no input data files should be provided. MOHID Land will then calculate the reference evapotranspiration using a set of properties that must be set in the Atmosphere data file (see **[Module Atmosphere](../water/modules/atmosphere.md)**). Below is an example of the reference evapotranspiration property set to be calculated:
 
 ```
 <beginproperty>
@@ -74,11 +74,11 @@ DEFAULT_KC_WHEN_LAI_ZERO
 KC_MIN
 ```
 
-The **DEFAULT\_KC\_WHEN\_LAI\_ZERO** keyword tells that Kc must be set to this value when LAI is ZERO. The **KC\_MIN** keyword tells that if the Kc value found is lower than it, so the min value set by user will be used instead. It's a good idea to provide at least a **KC\_MIN** value (usually 0.3 for soil without vegetation).
+The **DEFAULT_KC_WHEN_LAI_ZERO** keyword tells that Kc must be set to this value when LAI is ZERO. The **KC_MIN** keyword tells that if the Kc value found is lower than it, so the min value set by user will be used instead. It's a good idea to provide at least a **KC_MIN** value (usually 0.3 for soil without vegetation).
 
 ## Potencial Evaporation & Potencial Transpiration
 
-If the keyword **EVAPOTRANSPIRATION\_METHOD** in Basin data file was set to 2 (separete evaporation and transpiration), then the crop evapotranspiration will be separated into a Potential Evaporation and a Potencial Transpiration.
+If the keyword **EVAPOTRANSPIRATION_METHOD** in Basin data file was set to 2 (separete evaporation and transpiration), then the crop evapotranspiration will be separated into a Potential Evaporation and a Potencial Transpiration.
 
 This is done using LAI (leaf area index), according with the equations below:
 
@@ -88,11 +88,11 @@ $PotentialEvaporation=CropEvapotrans-PotentialTranspiration$
 
 ## Actual Evapotranspiration
 
-The actual (or real) evapotranspiration is calculated using the crop evapotranspiration (if **EVAPOTRANSPIRATION\_METHOD** = 1) or using the PotentialEvaporation and PotentialTranspiration (if **EVAPOTRANSPIRATION\_METHOD** = 2) and is subjected to the soil water content, stress factors and other limitations (like Head limits).
+The actual (or real) evapotranspiration is calculated using the crop evapotranspiration (if **EVAPOTRANSPIRATION_METHOD** = 1) or using the PotentialEvaporation and PotentialTranspiration (if **EVAPOTRANSPIRATION_METHOD** = 2) and is subjected to the soil water content, stress factors and other limitations (like Head limits).
 
 ## Basin Output Timeserie
 
-Depending on the value of the **EVAPOTRANSPIRATION\_METHOD** keyword, the 2D output timeserie file for basin (extension srb) will have a set or all of the columns listed next:
+Depending on the value of the **EVAPOTRANSPIRATION_METHOD** keyword, the 2D output timeserie file for basin (extension srb) will have a set or all of the columns listed next:
 
 ```
 EvapoTranspiration_Rate_[mm/hour]   => Actual Evapotranspiration rate (actual transpiration + actual evaporation)

@@ -48,7 +48,7 @@ Shared this folders with autheticated users for full control
 
 1. In Server Manager ->Roles->Add Role->Web Server (IIS)->click Next until select FTP Publishing Service->Until Finish
 2. IIS->ClickFTPServer2->RightClick Sites->Add FTPSite
-3. If in last step Add FTP Site option not available (Server2008 st), Install latest FTP publishing service (7.5 at the time) from \\\\davinci\\Software\\FTP7\_ForIIS\_x86 or in [http://www.iis.net/download/FTP](http://www.iis.net/download/FTP)
+3. If in last step Add FTP Site option not available (Server2008 st), Install latest FTP publishing service (7.5 at the time) from \\\\davinci\\Software\\FTP7_ForIIS_x86 or in [http://www.iis.net/download/FTP](http://www.iis.net/download/FTP)
 4. Add IIS service role i) under Management Tools "II6 Management compatibility", and ii) under Security "Basic Security" and "Digest Security" (?? saw in old Ftpserver machine) and iii) FTP Publishing service and iv) management service
 
 ### Add FTP in IIS
@@ -104,9 +104,9 @@ Folder permissions have to be consistent with IIS FTP authorization but less res
 
 **Virtual Directories**
 
-1. Add 4 virtual directories from each FileRecipient folder (Ecomanage, Estorilcoast, Sigel and To\_Weberver)
-2. Under each private folder define **FTP authorization** for the effective users that may read or write to each folder (remove the read for all users and the read and write for all FTP users that was created in the root folder). Besides admins that appears in all, Ecomanage: partner - read; mmateus and francisco - read and write. Estoril Coast: All users - read. Sigel: meteoIST, anatrancoso, luisfernandes - read and write. To\_Webserver: admins - read and write
-3. Added permissions to Ecomanage, EstorilCoast and To\_WebServer folders in FileRecipient to authenticated users for modify, read and write. **This is needed because operational processes use maretec users to access ftp folders (not by ftp but by network).**
+1. Add 4 virtual directories from each FileRecipient folder (Ecomanage, Estorilcoast, Sigel and To_Weberver)
+2. Under each private folder define **FTP authorization** for the effective users that may read or write to each folder (remove the read for all users and the read and write for all FTP users that was created in the root folder). Besides admins that appears in all, Ecomanage: partner - read; mmateus and francisco - read and write. Estoril Coast: All users - read. Sigel: meteoIST, anatrancoso, luisfernandes - read and write. To_Webserver: admins - read and write
+3. Added permissions to Ecomanage, EstorilCoast and To_WebServer folders in FileRecipient to authenticated users for modify, read and write. **This is needed because operational processes use maretec users to access ftp folders (not by ftp but by network).**
 
 #### Other
 

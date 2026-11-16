@@ -265,7 +265,7 @@ In this case the executable to be used will be TagusROFI-OP.exe
 
 ## Running Manually
 
-The batch file to be used will be MOHID\_run - manual.bat and should be edited according to the project, as an example:
+The batch file to be used will be MOHID_run - manual.bat and should be edited according to the project, as an example:
 
 ```
 cd "D:\Aplica\OPSAndre\Portugal_Window\exe"
@@ -290,7 +290,7 @@ and also a location in the dataserver should be created for the storage, i.e.
 
 ## Plots
 
-It is needed to have matlab and m\_map previously installed. The matlab can be found in the computer and the m\_map can be downloaded from [http://www.eos.ubc.ca/~rich/map.html](http://www.eos.ubc.ca/~rich/map.html) and once unzipped it should be placed in the toolbox folder where the Matlab has been installed.
+It is needed to have matlab and m_map previously installed. The matlab can be found in the computer and the m_map can be downloaded from [http://www.eos.ubc.ca/~rich/map.html](http://www.eos.ubc.ca/~rich/map.html) and once unzipped it should be placed in the toolbox folder where the Matlab has been installed.
 
 ```
 To install M_Map as a toolbox accessible to all users this, unpack the files into
@@ -302,7 +302,7 @@ rehash toolboxcache
 You should restart before this take effect.
 ```
 
-In order to plot automatically the mohid results, it will be needed the software MatlabPlot.exe that is configured by the file MatlabPlots.dat and executed by the file make\_plots.bat.
+In order to plot automatically the mohid results, it will be needed the software MatlabPlot.exe that is configured by the file MatlabPlots.dat and executed by the file make_plots.bat.
 
 ```
 make_plots.bat
@@ -464,7 +464,7 @@ PCOMS-BIO2 Life running in pcoms-bio computer
 
 OPTagus3D running in Tagus computer
 
-OPTagus3D\_2010 running in Turbo computer
+OPTagus3D_2010 running in Turbo computer
 
 ## To be done
 

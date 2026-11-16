@@ -1,12 +1,6 @@
 # USB boot drive
 
-Booting a computer is most of the time a seamless task. However, bypassing the default OS is sometimes required in order to perform maintainance operations. To do so, resourcing to a boot disk is the common way to go. However, most modern laptops don't come with floppy drives at all! Thus, booting from a CD or from a USB pen drive seems like the obvious approach. Nevertheless, since ME that the MS OSes don't recognize the
-
-```
-> format X: /S
-```
-
-command, thus it becomes hard to create a DOS bootable CD or pen drive. Hopefully, this wiki will help you to create quickly a DOS bootable usb pen drive.
+Booting a computer is most of the time a seamless task. However, bypassing the default OS is sometimes required in order to perform maintainance operations. To do so, resourcing to a boot disk is the common way to go. However, most modern laptops don't come with floppy drives at all! Thus, booting from a CD or from a USB pen drive seems like the obvious approach. Nevertheless, since ME that the MS OSes don't recognize the `format X: /S` command, thus it becomes hard to create a DOS bootable CD or pen drive. Hopefully, this wiki will help you to create quickly a DOS bootable usb pen drive.
 
 ## How-To
 

@@ -128,7 +128,7 @@ The formats currently convertible to HDF5 in ConvertToHDF5 include the MM5 and t
 
 ##### *ERA40*
 
-This format refers to the European Centre for Medium-Range Weather Forecasts (ECMWF) 40 years re-analysises results, acessed by site [http://data.ecmwf.int/data/d/era40\_daily/](http://data.ecmwf.int/data/d/era40_daily/). This data is available for several meteorological variables with maximum 6 hour periodicity for days in the period from 1957-09-01 to 2002-08-31.
+This format refers to the European Centre for Medium-Range Weather Forecasts (ECMWF) 40 years re-analysises results, acessed by site [http://data.ecmwf.int/data/d/era40_daily/](http://data.ecmwf.int/data/d/era40_daily/). This data is available for several meteorological variables with maximum 6 hour periodicity for days in the period from 1957-09-01 to 2002-08-31.
 
 ERA40 data files are supplied by ECMWF in a NetCDF format and with an user-costumized time window, periodicity (time step range from 6 hours to a day) and meteorological properties set. The ERA40 meteorological properties which are recognized by MOHID are presented bellow together with the correspondent MOHID name:
 
@@ -237,7 +237,7 @@ An HDF5 file with WRF results and a grid data file in MOHID format with the WRF 
 
 **Compilation:**
 
-Caution! [PROJ4](proj4.md) library is needed! See Compile\_ModuleWRFFormat
+Caution! [PROJ4](proj4.md) library is needed! See Compile_ModuleWRFFormat
 
 **ConvertToHDF5 action:** CONVERT WRF FORMAT.
 
@@ -357,7 +357,7 @@ Converts any netcdf file following the CF convention into Mohid HDF5 files. Chec
 
 ##### Seasonde RADAR Data
 
-Converts a list of ascii files from the Seasonde radar data, which measures currents over a given region of space, into an hdf5 file with the MOHID format. Useful to validate coastal and estuarine models where radars are located. ConvertToHDF5 tool must be compiled with the preprocessor variable definition \_SCANLINE\_UNSAFE set in the Mohid Base 1.
+Converts a list of ascii files from the Seasonde radar data, which measures currents over a given region of space, into an hdf5 file with the MOHID format. Useful to validate coastal and estuarine models where radars are located. ConvertToHDF5 tool must be compiled with the preprocessor variable definition _SCANLINE_UNSAFE set in the Mohid Base 1.
 
 ### Input file (ConvertToHDF5Action.dat)
 
@@ -1271,7 +1271,7 @@ DO_NOT_BELIEVE_MAP       : 1
 <end_file>
 ```
 
-Note that the programme may construct a new bathymetry twice. Use this bathymetry only on the AUX\_GRID\_FILENAME keyword.
+Note that the programme may construct a new bathymetry twice. Use this bathymetry only on the AUX_GRID_FILENAME keyword.
 
 #### Convert Hellerman Rosenstein ASCII format to MOHID(.hdf5)
 
@@ -1437,7 +1437,7 @@ IH_GRID_VERSION           : 4
 <end_file>
 ```
 
-Compile the ConvertToHDF5 tool with the preprocessor variable \_SCANLINE\_UNSAFE defined in Mohid Base 1.
+Compile the ConvertToHDF5 tool with the preprocessor variable _SCANLINE_UNSAFE defined in Mohid Base 1.
 
 ### OceanColor modules compilation
 
@@ -1449,8 +1449,8 @@ This is a list of prerequisites to successfully compile the tool:
 
 - Compaq Visual Fortran 6.5 with patch 6.6c,
 - VS .NET 2003 (Vc7 in particular),
-- Hdf5 libraries (**hdf5.lib** **hdf5\_fortran.lib** **hdf5\_hl.lib**),
-- Netcdf libraries (**netcdf.lib** **netcdf\_.lib**),
+- Hdf5 libraries (**hdf5.lib** **hdf5_fortran.lib** **hdf5_hl.lib**),
+- Netcdf libraries (**netcdf.lib** **netcdf_.lib**),
 - Hdf4 libraries (**hd421.lib**, **hm421.lib**),
 - szlib, zlib and jpeg libraries (**szlib.lib**, **zlib.lib** and **libjpeg.lib**),
 - the fortran source files (**ModuleConvertModisL2.F90 ModuleConvertModisL3.F90 ModuleConvertOceanColorL2.F90**),
@@ -1461,7 +1461,7 @@ This is a list of prerequisites to successfully compile the tool:
 1. Configure everything as specified in [Compiling with CVF](../development/build/compiling-with-cvf.md).
 2. Add the source files listed in the prerequisites above to the source files listing.
 3. Go to **Tools-->Options...-->Directories**. There, add the **$DOTNET2K3/Vc7/bin** to the **Executable files'**; the **$DOTNET2K3/Vc7/include** and **$DOTNET2K3/Vc7/PlatformSDK/include** to the **Include files**; and finally, the **$DOTNET2K3/Vc7/lib**, **$DOTNET2K3/Vc7/PlatformSDK/lib** and **$DOTNET2K3/Vc7/PlatformSDK/bin** to the **Library files**.
-4. Go to **Projects-->Settings-->Release-->Link-->Input**. There, add the following libraries: **netcdf.lib netcdf\_.lib hd421.lib hm421.lib libjpeg.lib**. (Make sure the hdf5 libraries as well as the szlib and zlib libraries are already mentioned).
+4. Go to **Projects-->Settings-->Release-->Link-->Input**. There, add the following libraries: **netcdf.lib netcdf_.lib hd421.lib hm421.lib libjpeg.lib**. (Make sure the hdf5 libraries as well as the szlib and zlib libraries are already mentioned).
 
 #### Troubleshoots
 
@@ -1474,7 +1474,7 @@ A: Unresolved external references can come out for two reasons:
 
 That's it, you should now be able to build the [ConvertToHdf5](converttohdf5.md) project successfully.
 
-**Q: I got a message saying the entry point \_NF\_PUT\_ATT\_REAL@28 could not be located in netcdf.dll**
+**Q: I got a message saying the entry point _NF_PUT_ATT_REAL@28 could not be located in netcdf.dll**
 
 A: copy the file netcdf.dll to the exe folder
 
@@ -1485,6 +1485,6 @@ A: copy the file netcdf.dll to the exe folder
 
 ### Links
 
-- [Module\_Atmosphere](../water/modules/atmosphere.md)
-- [Module\_InterfaceWaterAir](../water/modules/interfacewaterair.md)
-- [Coupling\_Water-Atmosphere\_User\_Manual](../water/coupling-water-atmosphere-user-manual.md)
+- [Module_Atmosphere](../water/modules/atmosphere.md)
+- [Module_InterfaceWaterAir](../water/modules/interfacewaterair.md)
+- [Coupling_Water-Atmosphere_User_Manual](../water/coupling-water-atmosphere-user-manual.md)

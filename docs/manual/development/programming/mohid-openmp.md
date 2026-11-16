@@ -28,27 +28,21 @@ Benchmarks must be identified with the processor type (intel, amd), the architec
 
 The benchmark formula is:
 
-```
 Speedup = A / B, where A is time with openmp and B is time without openmp. If Speedup < 1, then speed is up; if Speedup > 1, then speed is down.
-```
 
 ### Official results
 
 #### PCOMS 20100801 quad-core 4 threads
 
-Module SubRoutine Time w/o Time w Speed-up
-
-```
-ModuleModel   RunOneModel  727.679     193.4     0.87
-```
+| Module | SubRoutine | Time w/o | Time w | Speed-up |
+| --- | --- | --- | --- | --- |
+| ModuleModel | RunOneModel | 727.679 | 193.4 | 0.87 |
 
 #### Azores 20100801 six-core 12 threads
 
-Module SubRoutine Time w/o Time w Speed-up
-
-```
-ModuleModel   RunOneModel  8792.656	7627.37   0.27
-```
+| Module | SubRoutine | Time w/o | Time w | Speed-up |
+| --- | --- | --- | --- | --- |
+| ModuleModel | RunOneModel | 8792.656 | 7627.37 | 0.27 |
 
 Obs: the Module Life single loop was successfully parallelized.
 

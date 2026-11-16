@@ -12,7 +12,7 @@
 
 [Module Turbulence](modules/turbulence.md)
 
-[Module AdvectionDiffusion](modules/README.md#module-advectiondiffusion#module-advectiondiffusion)
+[Module AdvectionDiffusion](modules/README.md#module-advectiondiffusion)
 
 [Module Waves](modules/waves.md)
 

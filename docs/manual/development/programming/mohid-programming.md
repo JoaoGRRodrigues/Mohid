@@ -1,6 +1,6 @@
 # Mohid Programming
 
-MOHID is programmed in ANSI FORTRAN 95 using an [object oriented approach](README.md#object-oriented-approach#object-oriented-approach) and [hierarchical structure](../../water/modules/modules.md) which enables consisting of several [modules](../../water/modules/modules.md) to develop several numerical models and [support tools](../../tools/mohid-support-tools.md) with a high level of code re-use. To this structure we call [Mohid Framework](README.md#mohid-framework#mohid-framework).
+MOHID is programmed in ANSI FORTRAN 95 using an [object oriented approach](README.md#object-oriented-approach) and [hierarchical structure](../../water/modules/modules.md) which enables consisting of several [modules](../../water/modules/modules.md) to develop several numerical models and [support tools](../../tools/mohid-support-tools.md) with a high level of code re-use. To this structure we call [Mohid Framework](README.md#mohid-framework).
 
 Due to the high number of developers programming in MOHID, several [programming guidelines](programming-guidelines.md) have been defined in order to [change the code](changing-the-code.md) in a straighforward, systematic and sustentable way.
 
@@ -16,12 +16,10 @@ The Main Module is the responsible for calling the construction, modify and dest
 
 Every Module is responsible to solve specific processes and has the following structure:
 
-```
-Constructor where the data files are read and matrixes are created and initiaalized. This is called only once at the construction phase.
-Modifier that is called each time the time changes and is resposible for updating the matrixes for the new time step.
-Destructor that is where all the matrixes are released and connections between modules destroyed. This is called only once afte the simulation time is finished.
-Selector that is how other modules can get the matrixes values from the Module
-```
+- Constructor where the data files are read and matrixes are created and initiaalized. This is called only once at the construction phase.
+- Modifier that is called each time the time changes and is resposible for updating the matrixes for the new time step.
+- Destructor that is where all the matrixes are released and connections between modules destroyed. This is called only once afte the simulation time is finished.
+- Selector that is how other modules can get the matrixes values from the Module
 
 ## Sequence of Call
 
@@ -47,10 +45,8 @@ To add stuff to the model, the user needs to be aware of the above structure and
 
 The user has at his diposition the two basic features that exist in every programming language:
 
-```
-"do loops" that loop trough the matrixes to compute work for each cell, or loop trough blocks for example when readng data files
-"if statements" and "select case" to distinguish betwwen options
-```
+- "do loops" that loop trough the matrixes to compute work for each cell, or loop trough blocks for example when readng data files
+- "if statements" and "select case" to distinguish betwwen options
 
 ## Related links
 

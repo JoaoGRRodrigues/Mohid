@@ -2,7 +2,7 @@
 
 ## Overview
 
-**RESTART\_FILE\_OVERWRITE** is a [keyword](keywords.md) which is used in conjunction with [RESTART\_FILE\_OUTPUT\_TIME](restart-file-output-time.md) to create an image of the state of a given MOHID run. The image of the state of a MOHID run is a set of up to 5 `.fin` files. One per Module. Each file contains the module name and eventually the date-time of the state coded in the filename. Example: `WaterProperties_1_20070516-120000.fin5`. This keyword in particular states whether to keep a record of every state output by appending a date-time suffix, whether to keep only the last output with no date-time suffix. A date-time suffix is composed like this: *YYYYMMDD-hhmmss*.
+**RESTART_FILE_OVERWRITE** is a [keyword](keywords.md) which is used in conjunction with [RESTART_FILE_OUTPUT_TIME](restart-file-output-time.md) to create an image of the state of a given MOHID run. The image of the state of a MOHID run is a set of up to 5 `.fin` files. One per Module. Each file contains the module name and eventually the date-time of the state coded in the filename. Example: `WaterProperties_1_20070516-120000.fin5`. This keyword in particular states whether to keep a record of every state output by appending a date-time suffix, whether to keep only the last output with no date-time suffix. A date-time suffix is composed like this: *YYYYMMDD-hhmmss*.
 
 ## Usage
 
@@ -38,7 +38,7 @@ Here is a list of modules in which this keyword should be used in the correspond
 
 Here's a list of mandatory keywords
 
-- [RESTART\_FILE\_OUTPUT\_TIME](restart-file-output-time.md)
+- [RESTART_FILE_OUTPUT_TIME](restart-file-output-time.md)
 
 ## Sample
 
@@ -53,6 +53,6 @@ RESTART_FILE_OVERWRITE  : 0
 
 Here's a list of related keywords
 
-- [RESTART\_FILE\_OUTPUT\_TIME](restart-file-output-time.md)
+- [RESTART_FILE_OUTPUT_TIME](restart-file-output-time.md)
 - [CONTINUOUS](continuous.md)
-- [OUTPUT\_TIME](output-time.md)
+- [OUTPUT_TIME](output-time.md)

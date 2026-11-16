@@ -45,7 +45,7 @@ W:\SourceSafe\Websites\srcsafe.ini
 
 ### GetProjectTree
 
-This example gets the Mohid\_v4 project tree at sos.mohid.com
+This example gets the Mohid_v4 project tree at sos.mohid.com
 
 ```
 G:\programs\sos>soscmd -command GetProjectTree -server sos.mohid.com:8890 -name guillaume
@@ -54,7 +54,7 @@ G:\programs\sos>soscmd -command GetProjectTree -server sos.mohid.com:8890 -name 
 
 ### GetFileList
 
-This example gets a file listing of the Mohid\_Base\_1 project served at sos.mohid.com
+This example gets a file listing of the Mohid_Base_1 project served at sos.mohid.com
 
 ```
 G:\programs\sos>soscmd -command GetFileList -server sos.mohid.com:8890 -name guillaume
@@ -64,7 +64,7 @@ G:\programs\sos>soscmd -command GetFileList -server sos.mohid.com:8890 -name gui
 
 ### GetFile
 
-This example gets a file of the Mohid\_Base\_1 project served at sos.mohid.com
+This example gets a file of the Mohid_Base_1 project served at sos.mohid.com
 
 ```
 G:\programs\sos>soscmd -command GetFile -server sos.mohid.com:8890 -name guillaume
@@ -74,7 +74,7 @@ G:\programs\sos>soscmd -command GetFile -server sos.mohid.com:8890 -name guillau
 
 ### GetProject
 
-These examples get the full project and the Mohid\_Base\_1 project served at sos.mohid.com
+These examples get the full project and the Mohid_Base_1 project served at sos.mohid.com
 
 ```
 G:\programs\sos>soscmd -command GetProject -recursive -server sos.mohid.com:8890
@@ -130,7 +130,7 @@ This error appears often. Apparently it is due to a GTK+ library version issue. 
 
 ### Can't connect to server on Einstein
 
-*soscmd -command GetFile -server einstein:8890 -name Admin -password \*\*\*\*\* -database "W:\\SourceSafe\\Mohid\_v4\\srcsafe.ini" -project $ -soshome /home/Projects/Sos -file Makefile* Can't connect to server.. Error: 111 Connection refused Could not connect to server einstein at port 8890. Exiting...
+*soscmd -command GetFile -server einstein:8890 -name Admin -password \*\*\*\*\* -database "W:\\SourceSafe\\Mohid_v4\\srcsafe.ini" -project $ -soshome /home/Projects/Sos -file Makefile* Can't connect to server.. Error: 111 Connection refused Could not connect to server einstein at port 8890. Exiting...
 
 Solution: Go to einstein via remote desktop and restart the source-offsite service.
 

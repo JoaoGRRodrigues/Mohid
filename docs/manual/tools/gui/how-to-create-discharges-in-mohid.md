@@ -70,7 +70,7 @@ Time  Flow     T     S
 
 Then, once you have created a time-serie with the flow discharge, you simply save it in your [MohidWater](../../reference/mohidwater.md) project *GeneralData* folder.
 
-Notes: the time containing column should be composed of integers. Thus, adjust the TIME\_UNITS parameter accordingly. The flow column is mandatory, whereas the T (temperature) and S (salinity) columns in the example are optional.
+Notes: the time containing column should be composed of integers. Thus, adjust the TIME_UNITS parameter accordingly. The flow column is mandatory, whereas the T (temperature) and S (salinity) columns in the example are optional.
 
 ## Step 3 - Configure the Discharges module and run MohidWater
 
@@ -78,7 +78,7 @@ Notes: the time containing column should be composed of integers. Thus, adjust t
 
 - Open the project from the [last tutorial](how-to-configure-a-2d-model-forced-with-tide-with-mohid.md)
 
-- Right-click the *run\_1* and select *Properties*
+- Right-click the *run_1* and select *Properties*
 
 - Select in the *associated modules* the *module discharges*
 
@@ -169,7 +169,7 @@ If all is correctly configured, and all the input files are double-checked, we c
 
 - Select *Tools* from menu, then *Launch Mohid...*
 
-- Select the *Run\_1*, then select *Run Mohid*, then select *Launch after Ok*, then click on *Ok*
+- Select the *Run_1*, then select *Run Mohid*, then select *Launch after Ok*, then click on *Ok*
 
 - Supervise the screen-outputs to check for any error, or to simply read the estimated end time of simulation
 

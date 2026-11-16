@@ -106,21 +106,21 @@ REDUCE_RESOLUTION_STEP      : 2
 
 Other KEYWORDS that can be useful:
 
-IGNORE\_NEGATIVE\_VALUES : 1
+IGNORE_NEGATIVE_VALUES : 1
 
 ignores negative values and these are not written to output file.
 
-ADD\_FACTOR  : xx
+ADD_FACTOR  : xx
 
 adds the xx value to the original z (e.g. units conversion). it can have negative values
 
-MULTIPLY\_FACTOR  : xx
+MULTIPLY_FACTOR  : xx
 
 multiplies the xx value to the original z (e.g. units conversion). it can have negative values
 
 ### SRTM30
 
-*Caution: make sure the ORIGIN\_X and ORIGIN\_Y correspond to the BOTTOM-LEFT origin of the srtm30 original source file! [Here's](http://www.dgadv.com/srtm30/) a map of srtm30 tiles.*
+*Caution: make sure the ORIGIN_X and ORIGIN_Y correspond to the BOTTOM-LEFT origin of the srtm30 original source file! [Here's](http://www.dgadv.com/srtm30/) a map of srtm30 tiles.*
 
 ```
 <begin_window>

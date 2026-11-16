@@ -116,21 +116,11 @@ The Manning coefficient is derived from the land use map. Indeed by using a GIS 
 In the eventuality presence of a river it is possible to obtain two different configurations:
 
   
-{\|
+- Flow to the river when the water level of the river is lower than the soil one.
 
-- Flow to the river when the water level of the river is lower that soil one
-
-\|-
-
-\|- thumb|center|upright=2|Figure 3: Flow to the river \|- \|-
-
-- Flow from the river when the water level is higher than the soil one
-
-\|- \|- thumb|center|upright=2|Figure 4: Flow from the river
+- Flow from the river when the water level is higher than the soil one.
 
 The flow between river and runoff is computed using the same formulation as in runoff cells using the surface gradient between runoff and river.
-
-\|}
 
 ## Boundary Conditions
 
@@ -207,9 +197,11 @@ Options:
 - Define a Manning's grid: One possible option is to associate Manning with land use classes (shape file). In this case can use MOHID GIS going to menu [Tools] $\Longrightarrow$ [Shape to Grid Data] and provide:
 
   
-{\|
+- (i) the grid (model grid)
+- (ii) the land use shape file
+- (iii) the correspondence between land use codes and Manning
 
-\|(i) the grid (model grid) \|- \|ii) the land use shape file \|- \| iii) the corespondence between land use codes and Manning \|} Use Manning inicialization with Module FillMatrix standards in the block:
+Use Manning inicialization with Module FillMatrix standards in the block:
 
 ```
 <BeginOverLandCoefficient>
@@ -225,7 +217,7 @@ FILENAME               : ..\..\GeneralData\Runoff\Mannings200m_v
 
 ## References
 
-- Hubert Chanson\|Chanson, H. (2004), The Hydraulics of Open Channel Flow, Butterworth-Heinemann, Oxford, UK, 2nd edition, 630 pages
+- Chanson, H. (2004), The Hydraulics of Open Channel Flow, Butterworth-Heinemann, Oxford, UK, 2nd edition, 630 pages
 - <http://www.hkh-friend.net.np/rhdc/training/lectures/HEGGEN/Tc_3.pdf>
 
 ## Data File

@@ -179,7 +179,7 @@ Where you define all your macros, custom commands and usepackages. It can be reu
 
 *NOTE: To manage all your citations and references online, I heartily recommend [CiteULike](../citeulike.md).*
 
-Where you keep all your life's references and citations. It is common to reuse always the same up-to-date bibtex file for all your works. It is included in the [tex file](../linux/latex.md). Note that the bibtex file is usually created from a citation manager like [CiteULike](../citeulike.md) or <goto>Endnote</goto>. You can also use it with your [OpenOffice](../linux/openoffice-bibliography.md) documents.
+Where you keep all your life's references and citations. It is common to reuse always the same up-to-date bibtex file for all your works. It is included in the [tex file](../linux/latex.md). Note that the bibtex file is usually created from a citation manager like [CiteULike](../citeulike.md) or Endnote. You can also use it with your [OpenOffice](../linux/openoffice-bibliography.md) documents.
 
 ```
 %Guillaume.bibTemplate:Anchor
@@ -240,7 +240,7 @@ Or, you can use the [latex makefile](../../building/linux/latex-makefile.md) pro
 ## See Also
 
 - [Latex](../linux/latex.md)
-- [Latex\_makefile](../../building/linux/latex-makefile.md)
+- [Latex_makefile](../../building/linux/latex-makefile.md)
 
 ## External references
 

