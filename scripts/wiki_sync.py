@@ -23,6 +23,7 @@ REPO_URL = "https://github.com/Mohid-Water-Modelling-System/Mohid"
 BRANCH = "master"
 
 SECTION_ORDER = [
+    "bibliography",
     "overview",
     "water",
     "land",
@@ -39,6 +40,7 @@ SECTION_ORDER = [
 ]
 SECTION_LABELS = {
     "overview": "Overview",
+    "bibliography": "Bibliography",
     "water": "MOHID Water",
     "land": "MOHID Land",
     "base": "MOHID Base",

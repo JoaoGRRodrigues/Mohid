@@ -4,6 +4,7 @@ MOHID is a three-dimensional water modelling system developed by MARETEC (Instit
 
 ## Start here
 
+- [Bibliography](bibliography/README.md) — peer-reviewed publications on and with MOHID
 - [Overview](overview/README.md) — what MOHID is and how it is built
 - [MOHID Water](water/README.md) — the hydrodynamic and water-quality model
 - [MOHID Land](land/README.md) — watershed and hydrological modelling
@@ -14,6 +15,7 @@ MOHID is a three-dimensional water modelling system developed by MARETEC (Instit
 
 | Section | Pages | What it covers |
 |---|---|---|
+| [Bibliography](bibliography/README.md) | 7 | Journal papers, conference papers, theses, books and reports. |
 | [Overview](overview/README.md) | 13 | What MOHID is, how it is structured, who develops it and where it is used. |
 | [MOHID Water](water/README.md) | 67 | The three-dimensional hydrodynamic and water-quality model for estuaries, coastal seas and reservoirs. |
 | [MOHID Land](land/README.md) | 9 | The watershed and hydrological model: runoff, soil water, aquifers and river networks. |
