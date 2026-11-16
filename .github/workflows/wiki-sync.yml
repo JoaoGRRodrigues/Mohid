@@ -1,0 +1,87 @@
+name: Wiki
+
+# Builds the wiki pages from docs/manual and, when the ref is master, mirrors
+# them into <repo>.wiki.git.
+#
+# Branch pushes only build: the generated pages are uploaded as an artifact so
+# the result can be reviewed before merging. Publishing is restricted to master
+# so unreviewed content never reaches the public wiki.
+#
+# Requires a repository secret WIKI_TOKEN: a classic PAT with the "repo" scope.
+# GITHUB_TOKEN cannot push to the wiki repository, it is scoped to this repo.
+
+on:
+  push:
+    branches: [master, docs/manual-migration]
+    paths:
+      - "docs/manual/**"
+      - "scripts/wiki_sync.py"
+      - ".github/workflows/wiki-sync.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wiki-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build wiki pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate wiki pages
+        run: python scripts/wiki_sync.py --out "$RUNNER_TEMP/wiki"
+
+      - name: Upload pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: wiki-pages
+          path: ${{ runner.temp }}/wiki
+          if-no-files-found: error
+
+  publish:
+    name: Publish to wiki
+    needs: build
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download pages
+        uses: actions/download-artifact@v4
+        with:
+          name: wiki-pages
+          path: ${{ runner.temp }}/wiki
+
+      - name: Push to wiki
+        env:
+          WIKI_TOKEN: ${{ secrets.WIKI_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [ -z "${WIKI_TOKEN:-}" ]; then
+            echo "::error::Missing WIKI_TOKEN secret (classic PAT with repo scope)."
+            exit 1
+          fi
+          git clone --depth 1 "https://x-access-token:${WIKI_TOKEN}@github.com/${REPO}.wiki.git" wiki
+          find wiki -maxdepth 1 -name '*.md' -delete
+          rm -rf wiki/images
+          cp -R "$RUNNER_TEMP/wiki/." wiki/
+          cd wiki
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Wiki already up to date."
+            exit 0
+          fi
+          git commit -m "docs: sync wiki from ${GITHUB_SHA::7}"
+          git push origin HEAD:master
