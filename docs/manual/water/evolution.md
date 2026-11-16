@@ -6,7 +6,7 @@ Here's the list of possible options for this keyword:
 
 1. Solve_Equations : Default value, it solves the Primitive Ocean Equations.
 2. Read_File : Reads the solution from a file
-3. No_hydrodynamic : Doesn't calculates the hydrodynamic at all
+3. No_hydrodynamic : Doesn't calculate the hydrodynamic at all
 4. Residual_hydrodynamic : ??
 5. Run_Off : ??
 6. [ImposedSolution](imposedsolution.md) : Uses a reference solution for U, V and level.

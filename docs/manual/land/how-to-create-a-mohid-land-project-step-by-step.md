@@ -1,33 +1,26 @@
 # How to create a MOHID Land Project Step-by-Step
 
+This page walks through the setup of a MOHID Land watershed project in the MOHID GUI: topography, geometry, the main data files and the model outputs.
+
 ## MOHID Old Interface - MOHID GUI, MOHID GIS and MOHID Time Serie Editor
 
 ### Creating a new GUI Project
 
 1. Run MOHID GUI (usually you can find it in the StartMenu->Programs->MOHID)
 2. Choose Menu **Project** and then **New**
-3. Name the project, the filename and give the project folder (usually in ../Aplica/MohidLand/\[ApplicationName\]/
+3. Name the project, the filename and give the project folder (usually in ../Aplica/MohidLand/\[ApplicationName\]/)
 4. Insert a new simulation right clicking the project icon in the left, as shown in the Figure 1. The simulation aggregates model runs with the same topography.
 5. Define the simulation name (that you can easilly identify) and define MOHID Land radio button defined in Figure 2
 6. Insert a new run right clicking the simulation icon in the left, as shown in the Figure 3. The run is each model simulation.
 7. Define the run name (that you can easilly identify) and couple modules that you need and are not checked (e.g. vegetation) as seen in Figure 4.
 
-- How to create a new simulation and runs
-- ![](../assets/images/InsertSimulation.JPG)
+![Figure 1: How to insert new simulation](../assets/images/InsertSimulation.JPG)
 
-    Figure 1: How to insert new simulation
+![Figure 2: How to insert new simulation, settings](../assets/images/InsertSimulation_2.JPG)
 
-- ![](../assets/images/InsertSimulation_2.JPG)
+![Figure 3: How to insert a new run](../assets/images/InsertRun.JPG)
 
-    Figure 2: How to insert new simulation, settings
-
-- ![](../assets/images/InsertRun.JPG)
-
-    Figure 3: How to insert a new run
-
-- ![](../assets/images/InsertRun_3.JPG)
-
-    Figure 4: How to insert a new run, coupled modules
+![Figure 4: How to insert a new run, coupled modules](../assets/images/InsertRun_3.JPG)
 
 ### Topography
 
@@ -46,7 +39,7 @@ The topography is defined for the simulation and is the same for all runs. As so
 
 1. Click on the simulation name once to select it.
 2. Right click on the simulation name to show the menu
-3. Select <Properties>
+3. Select **Properties**
 4. In the property window in grid data, browse for your topography grid data.
 
 ### Model data file
@@ -288,10 +281,10 @@ Then in each data file that you want time serie output (basin, runoff, drainage 
 TIME_SERIE_LOCATION    : ..\GeneralData\TimeSeries\GenericTimeSeries.dat
 ```
 
-The output will be done in modules basin, runoff, drainage network, porous media for standard properties; for modules vegetation and atmosphere the output will be done for properties with the following keyword connected:
+The time serie output is also done for standard properties in basin, runoff, drainage network and porous media; for vegetation and atmosphere, connect the following keyword in each property:
 
 ```
-TIME_SERIE : 1
+TIME_SERIE : 1
 ```
 
 Check also in [How to define time series outputs in MOHID](../tools/gui/how-to-create-mohid-timeseries-outputs.md) for other details.
@@ -302,7 +295,7 @@ Check Mohid Studio Manual inside Studio
 
 ## Troubleshooting
 
-Frequent Issues
+The most frequent issues are:
 
 1. If Porous Media taking too long to run: Check that you are using last executable. Geometry changes improved model perfomance.
 2. If Porous Media or Drainage Network is taking too long to run and if your project is in Geographic Coordinates, check GEO_CONVERSATION_FACTOR in drainage network data file: it is the metric to degrees relation at your latitude.

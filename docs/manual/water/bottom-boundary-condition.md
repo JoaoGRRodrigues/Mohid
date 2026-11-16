@@ -1,6 +1,6 @@
 # Bottom boundary condition
 
-For each water property the user needs to define if it wants or not to impose sediment-water fluxes of particulate or dissolved matter. An example of a input file InterfaceWaterAir_x.dat where bottom boundary condition is defined is presented below.
+For each water property the user needs to define if it wants or not to impose sediment-water fluxes of particulate or dissolved matter. An example of an input file InterfaceWaterAir_x.dat where bottom boundary condition is defined is presented below.
 
 ## WaterProperties_x.dat
 

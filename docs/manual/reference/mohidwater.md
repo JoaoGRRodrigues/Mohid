@@ -24,7 +24,7 @@ You will probably need to use the following tools:
 
 Also you will need to configure an extensive list of configuration files:
 
-- [/Simulation](simulation.md)
+- [/Simulation](../water/simulation.md)
 
 ## External References
 

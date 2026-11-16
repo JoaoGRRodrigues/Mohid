@@ -1,6 +1,6 @@
 # NCO
 
-They are [netcdf](netcdf.md) files averagers, concateners and renamer operators that act on a netcdf dataset [hyperslab](../../reference/README.md#hyperslab) or an ensemble of netcdf datasets [hyperslabs](../../reference/README.md#hyperslab).
+They are [netcdf](netcdf.md) files averagers, concateners and renamer operators that act on a netcdf dataset [hyperslab](../../reference/hyperslab.md) or an ensemble of netcdf datasets [hyperslabs](../../reference/hyperslab.md).
 
 ## Installing
 

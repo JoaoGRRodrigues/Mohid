@@ -4,9 +4,9 @@ Historical material kept for reference only. Not maintained.
 
 ## Sections
 
-- [Linux](linux/README.md) (117 pages)
-- [Web](web/README.md) (25 pages)
-- [Windows](windows/README.md) (1 pages)
+- [Linux](linux/README.md) (103 pages)
+- [Web](web/README.md) (35 pages)
+- [Windows](windows/README.md) (4 pages)
 
 ## Pages
 
@@ -41,6 +41,7 @@ Historical material kept for reference only. Not maintained.
 - [VPN](vpn.md) — Para aceder a VPN são necessários fazer os seguintes passos:
 - [Xcopy](xcopy.md) — Copies files and directory trees for windows.
 - [Xerox Printer](xerox-printer.md) — 1. Get the drivers in \\\\davinci\\Software\\ImpressoraXerox\Drivers\\Windows 2K XP 03 Vista PS and depending on 32-bit or 64-bit choose the adequate…
+- [Op Mer MH Por v1](op-mer-mh-por-v1.md)
 
 ## Short entries
 

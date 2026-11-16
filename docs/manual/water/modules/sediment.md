@@ -2,11 +2,11 @@
 
 ## Overview
 
-Module Sediment allows simulating the dynamics of sediments in natural systems under the action of waves and currents. It allows to assess the transport of multiple sediment fractions (non-cohesive and cohesive) and associated morphological evolution. The effects of mixed size fractions on sediment motion are taken into account.The bottom column can be divided into several layers to represent bottom stratigraphy. The consolidation of cohesive sediments can increase the bed density, affecting the resistance to erosion, the thickness of the sediment column and the bathymetry. As cohesive sediment form flocs, the diameter of individual particles becomes irrelevant for their transport. Therefore, cohesive sediment was assigned as a unique class, considering flocculation as a function of suspended sediment concentration and turbulence. In contrast, the number of sand classes is unlimited.
+Module Sediment allows simulating the dynamics of sediments in natural systems under the action of waves and currents. It allows to assess the transport of multiple sediment fractions (non-cohesive and cohesive) and associated morphological evolution. The effects of mixed size fractions on sediment motion are taken into account. The bottom column can be divided into several layers to represent bottom stratigraphy. The consolidation of cohesive sediments can increase the bed density, affecting the resistance to erosion, the thickness of the sediment column and the bathymetry. As cohesive sediment form flocs, the diameter of individual particles becomes irrelevant for their transport. Therefore, cohesive sediment was assigned as a unique class, considering flocculation as a function of suspended sediment concentration and turbulence. In contrast, the number of sand classes is unlimited.
 
 ## Main options
 
-In order to consider Module Sediment in [MOHID Water](../mohid-water.md) simulations, the following keyword must be activated in the [Module Model](README.md#module-model) input data file:
+In order to consider Module Sediment in [MOHID Water](../mohid-water.md) simulations, the following keyword must be activated in the [Module Model](../../io/keywords/keyword-list.md#module-model) input data file:
 
 ```
 SEDIMENT : 1

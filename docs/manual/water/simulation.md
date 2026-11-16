@@ -1,13 +1,15 @@
 # /Simulation
 
+This page describes the `/GeneralData` and `/Simulation` folder structure of a MOHID Water simulation.
+
 ## /GeneralData
 
 The /GeneralData is the default folder where to keep model's input baseline data such as bathymetries, S, T, Tide and waterproperties initialization. Usually you'll copy here the files created from [Mohid GIS](../tools/gui/mohid-gis.md).
 
 ## /Simulation
 
-- Here's the [Modules list and DAG tree](../water/modules/modules.md).
-- Here's the [MohidWater](mohidwater.md) /Simulation file structure.
+- Here's the [Modules list and DAG tree](modules/modules.md).
+- Here's the [MohidWater](../reference/mohidwater.md) /Simulation file structure.
 
 ### /data
 
@@ -33,7 +35,7 @@ It contains all the configuration files of all the runs. Here's the full list of
 - MacroAlgae.dat
 - Life.dat
 - SedimentProperties.dat
-- [SedimentGeometry.dat](../io/README.md#sedimentgeometry-dat)
+- [SedimentGeometry.dat](../io/README.md#sedimentgeometrydat)
 - Consolidation.dat
 - Assimilation.dat
 - HydrodynamicFile.dat
@@ -44,7 +46,7 @@ It contains all the configuration files of all the runs. Here's the full list of
 
 ### /exe
 
-Folder containing the [Nomfich.dat](../io/nomfich-dat-file.md) in use. Its the [MohidWater](mohidwater.md) executable home folder.
+Folder containing the [Nomfich.dat](../io/nomfich-dat-file.md) in use. Its the [MohidWater](../reference/mohidwater.md) executable home folder.
 
 ### /figures
 

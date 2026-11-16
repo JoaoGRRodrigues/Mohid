@@ -74,11 +74,15 @@ The parametrization of Hydrolight can be changed by selecting "Change limits"
 
 Then we have to select the most accurate calculation method for calculationg IOP's. The total IOP's of a water body are built up as a sum of IOP's attributable to the various components of a water nody. Thus the total absorption coefficient is given by:
 
+<!-- TODO: formula missing in source -->
+
 Although recent papers have proven that this assumption is no longer essential, Hydrolight distinguishes case 1. waters in with a high concentration of chlorophylle (in comparison to other particles) and case 2. waters in which in organic substances are dominant. The models proposed here will use different calculation methods to calculate the absorption a and the light scattering b. Absorption can be defined as the process in which radient (light) energy is converted into chemical (e.g. photosynthesis) or thermal energy. Lights scattering is the proces wherein the light changes direction (elastic scattering ) and / or wavelength. In case only the wavelength is modified we speak of inelastic scattering (e.g. Raman - scattering , chlorophylle fluorescence). It is thus paramount to understand the behaviour of light in the studied water column before selecting a calculation method and a phase function.
 
 ### ABCONST
 
 The ABCONST - option will consider a fixed total light absorption coefficient a and a fixed light - scattering coefficient b at a single wavelength for a homogeneous water body. This option should only be used in very shallow, homogeneous waters, where we can consider absorption and diffusion as constants (swimming pool case). It is particularly useful for studies in which the depth is measured as non - dimensional optical depth ζ rather than as geometric depth z in meters. When selecting this option we will also have to define a total light - scattering phase function (see also the figure below). Scattering is often modeled by a power law dependence on wavelength:
+
+<!-- TODO: formula missing in source -->
 
 With X the concentration, b,λ, m & n the model parameters. We can choose between:
 
@@ -86,7 +90,7 @@ With X the concentration, b,λ, m & n the model parameters. We can choose betwee
 
 - Pure Water, Raleigh diffusion phase function (elastic scattering of light,diam << λ)
 
-- Average particle, [Petzold phase - function](../reference/README.md#petzold-phase-function)
+- Average particle, [Petzold phase - function](../reference/petzold-phase-function.md)
 
 - USER - SUPPLIED file containing the discretised phase function
 
@@ -96,31 +100,49 @@ Furthermore, we will also have to specify a wavelength which will be used by bot
 
 Then we have to select whether the model has to apply bioluminescence. In the ABCONST we can not chose to apply inelastic scattering in stead of bioluminescence. The equation for the elastic scattering is given by;
 
+<!-- TODO: formula missing in source -->
+
 In the next window we will have to define the Air - Water Surface Boundary Conditions. Whenever entering a new speed, we should press "update values" in order to confirm the newly entered value. The sky - model part will enable us to parametrize the atmospheric effects on solar radiation.
 
 ### ABCASE 1
 
 This model is based on a reformulation (Morel and Maritorena, 2000) of the historical Gordon - Morel Case 1 water model. The absorption coefficient is modeled as the sum of three components:
 
+<!-- TODO: formula missing in source -->
+
 With aw the absorption by pure water and ap the absorption by chlorophyll - bearing particles and ay the absorption by covarying yellow matter (CDOM). The particle absorption is given by:
+
+<!-- TODO: formula missing in source -->
 
 where Chl(z) is the user - specified chlorophyll profile in mg Chl /m3 and Achl(λ) is the non - dimensional chlorophyll - specific absorption coefficient given in Prieur and Sathyentranath (1981). Absorption by yellow matter covaries with particle absorption according to
 
+<!-- TODO: formula missing in source -->
+
 Absorption by chlorophylle is determined by:
+
+<!-- TODO: formula missing in source -->
 
 The phase function consists either of a USER - SUPPLIED routine or is determined by Hydrolight by means of the bb/b - relationship.
 
 The scattering coefficient b for the particles is given by:
 
+<!-- TODO: formula missing in source -->
+
 and the yellow matter is assumed to be non - scattering. In this model, the pure water absorption is taken from Pope and Fry (1997), and the pure water scattering is from Smith and Baker (1981). The user must specify the chlorophyll concentration profile Chl(z) and the scattering phase function for the particles. Note that this model reduces to the pure water case if Chl = 0, which is slightly different than the formulation of Morel and Maritorena (2000), which includes a small amount of yellow matter even in the absence of phytoplankton.
 
 When selecting this option we will also have to define a total light -scattering phase function (see also the figure below). Scattering is often modeled by a power law dependence on wavelength:
+
+<!-- TODO: formula missing in source -->
 
 With X the concentration, b, λ, m & n the model parameters. The Gordon - Morel (1993)for chlorophyll bearing particles is a special case of the power law model with X = Chl, b0 = 0.3, λ0 = 550nm, m = 1 & n = 0.62.
 
 Bioluminescence is included via a USER - SUPPLIED routine and inelastic scattering should be defined in function of the water type; chlorophylle fluorescence for CASE 1 waters, CDOM fluorescence for CASE 2 waters and RAMAN - scattering for very clear water. Raman - scattering is the inelastic scattering of light between 550 & 650 nm by water molecules. It is described by :
 
+<!-- TODO: formula missing in source -->
+
 Raman absorption coefficient and Raman scattering coefficient are given by:
+
+<!-- TODO: formula missing in source -->
 
 Next we will have to define the band of wavelengths. This can be done by either determining the minimum and the maximum wavelength and the wavelength band interval, by manually introducing wavelength band boundaries or by selecting wavelength bands to a particular ocean color sensor. If you want to validate Hydrolight data with satellite data the last option is recommendable.
 

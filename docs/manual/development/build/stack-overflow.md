@@ -15,4 +15,4 @@ You must have installed the following programs
 - [Editbin](../programming/editbin.md)
 - [Dumpbin](../../building/windows/dumpbin.md)
 - [Stacksize](../programming/stacksize.md)
-- [IncrementSizeOfStack](../../reference/incrementsizeofstack.md)
+- [IncrementSizeOfStack](../../building/linux/incrementsizeofstack.md)

@@ -1,6 +1,6 @@
 # Templates
 
-Templates allow to include pre-set wiki text inside an article. It can be useful to insert complex [html](../archive/web/html.md) data.
+Templates allow to include pre-set wiki text inside an article. It can be useful to insert complex [html](html.md) data.
 
 ## List of templates
 

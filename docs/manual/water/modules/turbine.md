@@ -10,17 +10,13 @@ For the moment, the model is thought for horizontal bidirectional turbines, with
 
 ### Forces
 
-$F_T = \frac{1}{2}\rho A_T C_T U^2$
-
-** \\text{P}_{T} = \\frac{1}{2}\\rho A_{T} C_{P} U^{3}**
-
 **Thrust force produced by the turbine rotor due to the energy extraction**
 
-*F_{T} = (1/2)ρA_{T}C_{T}U^{2}*
+$F_T = \frac{1}{2}\rho A_T C_T U^2$
 
-**The power extracting by the turbine**
+**The power extracted by the turbine**
 
-*P_{T}=(1/2)ρA_{T}C_{P}U^{3}*
+$P_T = \frac{1}{2}\rho A_T C_P U^3$
 
 Where *ρ* is the water density, *A_{T}* is the area swept by the blades, *C_{T}* is the thrust coefficient that quantifies the force exerted by the turbine to the flow and *C_{P}* is the power coefficient that quantifies the amount of power extracted from the flow.
 
@@ -50,7 +46,7 @@ Where *A_{T_k}* is the area swept by the blades in layer *k*, *r* is the blade l
 
 The force excreted by the turbine is calculated with the velocity of the flow in each layer while for the power, the velocity is an average value between the layers that contain the turbine. So, the fores can be rewritten as follow:
 
-- ***F_{T_k}**\=(1/2)ρA_{T_k}C_{T}U_{k}**U_{k}***
+- ***F_{T_k}**=(1/2)ρA_{T_k}C_{T}U_{k}**U_{k}***
 
 - *P_{T}=(1/2)ρA_{T}C_{P}U_{AV}^3*
 
@@ -72,10 +68,10 @@ Another limitation derived of the horizontal discretisation is the layout array 
 
 In order to activate the implementation, some modifications need to be done to the main configuration files. Two files need to be changed, the hydrodynamic.dat file and the nomfich.dat. In the hydrodynamic file the keyword TURBINE needs to be written with a value of 1 for activating the implementation. If it is not written or with a value of 0 it will not work.
 
-image
+<!-- image missing in source -->
 
 The file Nomfich.dat is where the routes of the files needed for the simulations are specified. So, in order to make the implementation work and that the model can read the input data of the turbines, this route should be written in this file. The keyword for this file is TURBINE.
 
-image
+<!-- image missing in source -->
 
 ## Thesis link

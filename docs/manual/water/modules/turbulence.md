@@ -2,6 +2,8 @@
 
 ## Overview
 
+Module Turbulence calculates the horizontal and vertical eddy viscosities and diffusivities from different turbulence closures.
+
 ## Concepts
 
 ## Horizontal turbulence

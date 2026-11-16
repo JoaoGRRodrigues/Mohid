@@ -14,9 +14,7 @@ The processes made in the Module Basin can be summarized as following:
 - Update of the water column and send it to ModuleRunoff (the holder of water column)
 - Call of [Module PorousMediaProperties](porousmediaproperties.md) and update of water column concentrations send it to the ModuleRunoffProperties
 - Call of [Module Runoff](runoff.md) giving the remaining water columns to be transported
-- Call of [Module RunoffProperties](runoffproperties.md)
-
-(When Module Runoff and RunoffProperties run as they are the holders of water column and water column concentration, no update is needed).
+- Call of [Module RunoffProperties](runoffproperties.md) (when Module Runoff and RunoffProperties run, they are the holders of the water column and of its concentration, so no update is needed)
 
 - Call of [Module DrainageNetwork](../../water/modules/drainagenetwork.md) to route the water in the river and the new transfered from groundwater and from runoff.
 - Output of the different components of the water and property flux
@@ -123,15 +121,15 @@ $e_a = RH_h * e_{0}(T_h)$
 
 $RH_h$ = Relative Humidity \[-\]
 
-The Penman Montheith Potential Evapotranspiration computation will be active if in basin file
+The Penman-Monteith Potential Evapotranspiration computation will be active if the following keyword is present in the basin file
 
 ```
 EVAPOTRANSPIRATION : 1
 ```
 
-and the property evapotranspiration is not readed from file.
+and the property evapotranspiration is not read from file.
 
-#### If the user is running with vegetation
+### If the user is running with vegetation
 
 than Crop Evapotranspiration is obtained from Potential Evapotranspiration using crop coefficient from Module Vegetation (dependent on crop).
 
@@ -155,15 +153,13 @@ EVAPOTRANSPIRATION_METHOD : 1
 
 there will not be soil evaporation (in Module PorousMedia) and Crop Evapotranspiration is all transpiration (in Module Vegetation).
 
-#### If the user is not running with vegetation
+### If the user is not running with vegetation
 
 than Potential Evapotranspiration is all evaporation in the soil surface and will be done in Module PorousMedia.
 
-#### Fluxes to other modules
+### Fluxes to other modules
 
 If they are used, Potential transpiration computed in Module Basin is given to Module Vegetation to compute the effective transpiration. Potential Evaporation computed in Module Basin is given to Module Porous Media to compute the effective evaporation.
-
-## Other Features
 
 ## Outputs
 
@@ -227,8 +223,6 @@ GW_Volume_To_Channels_m3/s              - flow from porous media to river (posit
 The accumulation in the watershed would be a difference between the inputs to the watershed and outputs from the watershed Accumulation = Sum ((In – Out)\*LocalTimeStep) In -> Rain (Rain_Above_Leafs) + Discharges IN (there is no global output of the discharges, if you have input discharges you have to compute it with the values inserted) Out-> Water loss from soil or surface - Evapotranspiration (Evap_From_Vegetation + Evap_From_Ground + Evap_From_Soil) plus water lost from river (Out_Volume_Channel) pus water lost from runoff (Out_Volume_Overland)
 
 Note: Negative discharges in river or discharges in runoff are not yet accounted in the mass balance (for mass error results). All that discharges have to be accounted if doing the accumulation computation yourself.
-
-## References
 
 ## Data File
 

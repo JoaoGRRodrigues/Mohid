@@ -10,7 +10,7 @@ Module Porous Media is responsible for handling all water fluxes in soil, includ
 
 Porous Media is a 3D domain delimited in its upper limit by topography and lower limit by soil bottom (defined by user). In terms of soil definition it can be defined vertical horizons to correspond to real soil horizons with different hydraulic carachteristics. See the picture below for information.
 
-[![](http://content.screencast.com/users/jovem/folders/Jing/media/b9ef6c79-c1d1-46ea-94f7-623471c15883/MohidLandSoilProfile.png)](http://content.screencast.com/users/jovem/folders/Jing/media/b9ef6c79-c1d1-46ea-94f7-623471c15883/MohidLandSoilProfile.png)
+![MOHID Land soil profile](../../assets/images/mohid-land-soil-profile.png)
 
 ### Water Flow
 
@@ -20,7 +20,6 @@ $v=-K\left ( \theta  \right )\left ( \frac{\partial H}{\partial x_i}  \right )\,
 
 where:
 
-  
 - *v* — the water velocity at the cell interface (m/s)
 - *H* — the hydraulic head (m)
 - *θ* — the water content (m<sup>3</sup>/m<sup>3</sup>)
@@ -33,7 +32,6 @@ $H=h+p+z\,\,\,\,(1.2)$
 
 where:
 
-  
 - *h* — the hydraulic head (m)
 - *p* — hydrostatic pressure (m)
 - *z* — the topography (m)
@@ -43,9 +41,6 @@ When in saturated conditions, hydraulic head is zero and hydrostatic pressure ma
 The soil is a very complex system, made up of a heterogeneous mixture of solid, liquid, and gaseous material. The liquid phase consists of soil water, which fills part or all of the open spaces between the soil particles. Therefore it is possible to divide the soil into two parts:
 
 - Saturated soil $\Longrightarrow$ The soil pores are filled with water
-
-<!-- -->
-
 - Unsaturated one $\Longrightarrow$ The soil pores are filled with water and air
 
 In the first case, the equation of Buckingham Darcy is simplified to the Darcy law and the parameter associated with its resolution are connected with the saturated layer. On the other hand for the resolution of the equation (1.1) a description of the characteristics of the unsaturated layer is needed.
@@ -68,7 +63,6 @@ V_T = V_s + V_v = V_s + V_w + V_a\,\,\,\,(1.4)
 
 where:
 
-  
 - *$\theta$* — water content (m <sup>3</sup>/m <sup>3</sup>)
 - *$V_w$* — the volume of water (m s<sup>3</sup>)
 - *$V_T$* — the total volume (m <sup>3</sup>)
@@ -81,17 +75,12 @@ The user may define a water content initialization or choose the model to comput
 
 Once determined the aquifer level (**water table**) the water content is associated at each cells by the following criteria:
 
-  
-
 - If the cell is located above the water table $\theta=\theta_{s}$
-
 
 - If the cell is located over the water table $\theta=\theta_{ns}$
 
-
 where:
 
-  
 - *$\theta=\theta_{s}$* — the water content in the saturated soil (m<sup>3</sup>/m<sup>3</sup>)
 - *$\theta=\theta_{ns}$* — the water content in the non saturated soil (m<sup>3</sup>/m<sup>3</sup>)
 
@@ -105,10 +94,7 @@ h=-DWZ\cdot 0.5\,\,\,\,for\,\, the\,\, cells\,\, immediately\,\, above\,\, the\,
 h=-(-DZZ-h)\,\,\,\,for\,\, the\,\, other\,\, cells\,\,\,\, (1.6)
 ```
 
-<figure>
-!
-<figcaption>Figure 1: Suction Head Calculation</figcaption>
-</figure>
+<!-- TODO: figure missing in source (caption: Figure 1: Suction Head Calculation) -->
 
 As shown in the picture the suction head is calculated in order to maintain the same total head (H = z + p + h) in the cells in agreement with the field capacity definition.
 
@@ -130,7 +116,6 @@ S_{E}=\frac{\theta-\theta_{r}}{\theta_{s}-\theta_{r}}\,\,\,\,(1.8)
 
 where:
 
-  
 - *$\theta(h)$* — the the water retention curve (m <sup>3</sup>/m <sup>3</sup>)
 - *$\theta_s$* — the saturated water content (m <sup>3</sup>/m <sup>3</sup>)
 - *$\theta_r$* — the residual water content (m <sup>3</sup>/m <sup>3</sup>)
@@ -147,7 +132,6 @@ $K(\theta)=K_{s}\cdot Se^{L}\cdot (1-(1-Se^{1/m})^{m})^{2}$ (1.9)
 
 where:
 
-  
 - *$K(\theta)$* — the unsaturated conductivity (m/s)
 - *$K_{s}$* — the saturated conductivity(m/s)
 - *L* — empirical pore-connectivity (m)
@@ -159,9 +143,11 @@ Some water may be extracted from the soil because of the evaporation and transpi
 
 Potential Evapotranspiration may be modeled using the Penmann Monteith equation. Also, if vegetation exists, a differentiation between Potential Transpiration and Potential Evaporation is done using LAI. These computation are made in Module Basin since this is the module that handles water fluxes in the interface betwen modules.
 
-However, not all of the potential water that can be evaporated or transpired will be in fact removed from the soil. The water that will really leave the soil through these processes is calculated: i) if vegetation exists, effective transpiration is computed in module Vegetation; ii) effective evaporation is computed in the Porous Media module. In Figure below it can be seen that the actual transpiration and evaporation are then used in Porous Media module to compute the new water content. The actual evaporation, which happens only at the soil surface, is calculated based on: i) a pressure head limit or ii) a soil conductivity limit, chosen by the user. It allows the model not to evaporate any surface water, even if it is available, when the soil head gets below the assigned value (i) or limits evaporation velocity to layer unsaturated conductivity (ii).
+However, not all of the potential water that can be evaporated or transpired will be in fact removed from the soil. The water that will really leave the soil through these processes is calculated: i) if vegetation exists, effective transpiration is computed in module Vegetation; ii) effective evaporation is computed in the Porous Media module. The actual transpiration and evaporation are then used in Porous Media module to compute the new water content. The actual evaporation, which happens only at the soil surface, is calculated based on: i) a pressure head limit or ii) a soil conductivity limit, chosen by the user. It allows the model not to evaporate any surface water, even if it is available, when the soil head gets below the assigned value (i) or limits evaporation velocity to layer unsaturated conductivity (ii).
 
-!Evapotranspiration fluxogram in Mohid Land model Remind that Feddes is one option for computing effective transpiration in plants in module Vegetation.
+<!-- TODO: figure missing in source (caption: evapotranspiration fluxogram in MOHID Land) -->
+
+Remind that Feddes is one option for computing effective transpiration in plants in module Vegetation.
 
 ### Iteration Process
 
@@ -193,7 +179,6 @@ $\theta=(\theta\cdot V_{cell}-(UnsatK\cdot Area_{cell}\cdot(1-Imp) \Delta t)\cdo
 
 where:
 
-  
 - *$\theta$* — the water content (m <sup>3</sup>/m <sup>3</sup>)
 - *$V_{cell}$* — the cell volume (m <sup>3</sup>)
 - *$Area_{cell}$* — the cell area (m <sup>2</sup>)
@@ -213,15 +198,11 @@ $(\theta^{'})-(\theta^{new})< Tolerance$ (1.10)
 
 where:
 
-  
 - *$\theta^{'}$* — the water content of the previous iteration (m <sup>3</sup>/m <sup>3</sup>)
 
 If the equation (1.10) is not satisfy the temporal step is divided in half and the new value of $\theta$ is used for solving the equation (1.7) for restarting the calculation process. The iteration process is stoped when the tolerance desired is reached.
 
-<figure>
-!
-<figcaption>Figure 2: Time step reduction</figcaption>
-</figure>
+<!-- TODO: figure missing in source (caption: Figure 2: Time step reduction) -->
 
 ## Boundary Conditions
 
@@ -265,7 +246,7 @@ The lateral open boundary computation can be limited to specific areas defining 
 
 Using a value of the latter keyword higher than the maximum altimetry found in the watershed will make the boundary open in all watershed.
 
-The blocks that allows to define piezometers (if not defined, the value used is BOUNDARY_VALUE everywhere.
+The blocks that allow to define piezometers (if not defined, the value used is BOUNDARY_VALUE everywhere).
 
 ```
 <begin_boundary>
@@ -299,7 +280,7 @@ The keyword in PorousMedia_X.dat that connects the bottom open boundary is:
 
 In PorousMedia the discharges may be positive or negative (PorousMedia uses discharge flow) and are dealt with ModuleDischarges. It was only programmed in PorousMedia the using of the defined discharge.
 
-To have a discharge in PorousMedia the user defines a discharge in any K_CELL positive and different from zero in the discharge definition (Discharges_X.dat.
+To have a discharge in PorousMedia the user defines a discharge in any K_CELL positive and different from zero in the discharge definition (Discharges_X.dat).
 
 ### Computation
 
@@ -326,7 +307,7 @@ Model needs to know soil ID in each cell and layer to pick hydraulic properties 
 Options:
 
 - Constant value
-- Soil Grid. One possible option is to associate with soil shape file. In this case can use MOHID GIS going to menu [Tools]->[Shape to Grid Data] and provide: i) the grid (model grid), ii) the soil shape file and iii) the corespondence between soil codes and soil ID defined in data file.
+- Soil Grid. One possible option is to associate with soil shape file. In this case can use MOHID GIS going to menu **Tools > Shape to Grid Data** and provide: i) the grid (model grid), ii) the soil shape file and iii) the corespondence between soil codes and soil ID defined in data file.
 
 Soil ID must be defined in Module FillMatrix standards for each soil horizon defined (grid example):
 
@@ -334,9 +315,6 @@ Soil ID must be defined in Module FillMatrix standards for each soil horizon def
 <beginhorizon>
 KLB                       : 1
 KUB                       : 10
-```
-
-```
 <beginproperty>
 NAME                      : SoilID
 DEFAULTVALUE              : 1
@@ -344,9 +322,6 @@ INITIALIZATION_METHOD     : ASCII_FILE
 REMAIN_CONSTANT           : 1
 FILENAME                  : ..\..\GeneralData\PorousMedia\SoilID200m.dat
 <endproperty>
-```
-\
-```
 <beginproperty>
 <endproperty>
 ..
@@ -367,9 +342,6 @@ SAT_K                     : 3.5556e-6   !is the satur
 ALPHA                     : 2.75        !is related to the inverse of the air entry (m -1) - equation 1.7 (alpha)
 L_FIT                     : 0.50        !empirical pore-connectivity (m) - equation 1.9 (l)
 <endsoiltype>
-```
-\
-```
 <beginsoiltype>
 ID                        : 2
 ...
@@ -385,7 +357,7 @@ Options:
 
 - Grid File.
 
-Soil depth (and soil bottom altitude, the effective grid needed) can be defined with a constant depth or estimated from slope HOW TO SoilBottom LINK. When the soil depth is estimated as a function of slope, soil depth will be smaller in ares with higher slope. In this areas only the surface layers of the soil will be considered (see Porous Media Geometry).
+Soil depth (and soil bottom altitude, the effective grid needed) can be defined with a constant depth or estimated from slope. When the soil depth is estimated as a function of slope, soil depth will be smaller in ares with higher slope. In this areas only the surface layers of the soil will be considered (see Porous Media Geometry).
 
 Define the grid just generated, in the porous media data file with:
 
@@ -416,7 +388,7 @@ Impermeability values (0 - completely permeable, 1 - impermeable) must be provid
 Options:
 
 - Constant Value.
-- Grid File. One possible option is to associate with land use shape file. In this case can use MOHID GIS going to menu [Tools]->[Shape to Grid Data] and provide: i) the grid (model grid), ii) the land use shape file and iii) the corespondence between land use codes and Impermeability values.
+- Grid File. One possible option is to associate with land use shape file. In this case can use MOHID GIS going to menu **Tools > Shape to Grid Data** and provide: i) the grid (model grid), ii) the land use shape file and iii) the corespondence between land use codes and Impermeability values.
 
 Use the following blocks with Module FillMatrix standards:
 
@@ -456,7 +428,7 @@ Hydro_Pressure_[m] - hydrostatic pressure in selected cell
 
 Final_Head_[m] - Soil water charge in selected cell
 
-[Check Mohid Land Heights and Levels to understand some of the outputs]
+Check Mohid Land Heights and Levels to understand some of the outputs.
 
 GW_flow_to_river_total_[m3/s] - Ground water flow to river if it is a river point
 
@@ -477,11 +449,10 @@ Transpiration_Flux_[m3/s] - transpiration flux in selected cell
 
 ### Keywords
 
-`Keywords read in the Data File`\
-\
-`Keyword                   : Data Type         Default     !Comment`\
-\
+Keywords read in the data file:
+
 ```
+Keyword                   : Data Type         Default     !Comment
 BOTTOM_FILE               : char              -           !Path to Bottom Topography File
 START_WITH_FIELD          : logical           1           !Sets Theta initial Field Capacity
 CONTINUOUS                : logical           0           !Continues from previous run
@@ -501,98 +472,69 @@ LIMIT_ITER                : integer           50  
 THETA_TOLERANCE           : real              0.001       !Converge Parameter
 INCREASE_DT               : real              1.25        !Increase of DT when iter < MIN_ITER
 DECREASE_DT               : real              0.70        !Decrease of DT when iter > MAX_ITER
-```
-\
-```
+
 <beginproperty>
-NAME                      : Theta / waterlevel 
+NAME                      : Theta / waterlevel
+...
+<endproperty>
 ```
-\
-`see Module FillMatrix for more options`\
-\
-`<endproperty>`
+
+See [Module FillMatrix](../../base/module-fillmatrix.md) for more options.
 
 ### Sample
 
 Some keywords of the PorousMedia input file:
 
 ```
-BOTTOM_FILE               : ..\General Data\Other\PorousMedia\SoilBottom_2cells.dat
-TIME_SERIE_LOCATION       : ..\General Data\TimeSeries\TimeSeriesLocation3D_2m.dat
-```
-\
-`COMPUTE_SOIL_FIELD        : 1 `\
-\
-```
-OUTPUT_TIME               : 0 86400
-CUT_OFF_THETA_HIGH        : 1e-15
-START_WITH_FIELD          : 1
-```
-\
-```
-LIMIT_EVAP_WATER_VEL      : 0
-LIMIT_EVAP_HEAD           : 0
-HEAD_LIMIT                : -100
-THETA_HYDRO_COEF          : 0.98
-```
-\
-\
-```
+BOTTOM_FILE               : ..\General Data\Other\PorousMedia\SoilBottom_2cells.dat
+TIME_SERIE_LOCATION       : ..\General Data\TimeSeries\TimeSeriesLocation3D_2m.dat
+COMPUTE_SOIL_FIELD        : 1
+OUTPUT_TIME               : 0 86400
+CUT_OFF_THETA_HIGH        : 1e-15
+START_WITH_FIELD          : 1
+LIMIT_EVAP_WATER_VEL      : 0
+LIMIT_EVAP_HEAD           : 0
+HEAD_LIMIT                : -100
+THETA_HYDRO_COEF          : 0.98
 <beginsoiltype>
-ID                        : 1
-THETA_S                   : 0.43
-THETA_R                   : 0.078
-SAT_K                     : 2.888e-6
-N_FIT                     : 1.56
-ALPHA                     : 3.6
-L_FIT                     : 0.50
+ID                        : 1
+THETA_S                   : 0.43
+THETA_R                   : 0.078
+SAT_K                     : 2.888e-6
+N_FIT                     : 1.56
+ALPHA                     : 3.6
+L_FIT                     : 0.50
 <endsoiltype>
-```
-\
-\
-```
-!----- Hydraulic Soil Properties
+
+!----- Hydraulic Soil Properties
 <beginhorizon>
-KLB                       : 1
-KUB                       : 10
-```
-\
-```
+KLB                       : 1
+KUB                       : 10
 <beginproperty>
-NAME                      : SoilID
-INITIALIZATION_METHOD     : CONSTANT
-DEFAULTVALUE              : 1
+NAME                      : SoilID
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 1
 <endproperty>
-```
-\
-```
 <beginproperty>
-NAME                      : Theta
-INITIALIZATION_METHOD     : CONSTANT
-DEFAULTVALUE              : 0.30
+NAME                      : Theta
+INITIALIZATION_METHOD     : CONSTANT
+DEFAULTVALUE              : 0.30
 <endproperty>
 <endhorizon>
-```
-\
-\
-```
+
 <beginwaterlevel>
-NAME                      : waterlevel
-INITIALIZATION_METHOD     : ASCII_FILE
-DEFAULTVALUE              : 1.
-REMAIN_CONSTANT           : 1
-FILENAME                  : ..\General Data\Initial Conditions\InitialWaterLevel_2cells.dat
+NAME                      : waterlevel
+INITIALIZATION_METHOD     : ASCII_FILE
+DEFAULTVALUE              : 1.
+REMAIN_CONSTANT           : 1
+FILENAME                  : ..\General Data\Initial Conditions\InitialWaterLevel_2cells.dat
 <endwaterlevel>
-```
-\
-```
+
 <beginimpermeablefraction>
-NAME                      : impermeablefraction
-INITIALIZATION_METHOD     : ASCII_FILE
-DEFAULTVALUE              : 0
-REMAIN_CONSTANT           : 1
-FILENAME                  : ..\General Data\Other\PorousMedia\InitialImpermeabilization_2cells.dat
+NAME                      : impermeablefraction
+INITIALIZATION_METHOD     : ASCII_FILE
+DEFAULTVALUE              : 0
+REMAIN_CONSTANT           : 1
+FILENAME                  : ..\General Data\Other\PorousMedia\InitialImpermeabilization_2cells.dat
 <endimpermeablefraction>
 ```
-
-Category:MOHID Land

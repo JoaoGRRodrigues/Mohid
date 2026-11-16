@@ -1,6 +1,6 @@
 # Atmospheric boundary condition
 
-For each water property the user needs to define if it want or not to impose atmospheric fluxes. Here's an example of atmospheric properties that need to be defined -if the user wants to compute heat fluxes with standard bulk formulas-. The atmospheric properties are defined in the Atmospheric_x.dat input file. The heat (bulk formulas), mass and momentum fluxes are defined in the InterfaceWaterAir_x.dat. The example of an input file InterfaceWaterAir_x.dat is presented below.
+For each water property the user needs to define if it wants or not to impose atmospheric fluxes. Here's an example of atmospheric properties that need to be defined -if the user wants to compute heat fluxes with standard bulk formulas-. The atmospheric properties are defined in the Atmospheric_x.dat input file. The heat (bulk formulas), mass and momentum fluxes are defined in the InterfaceWaterAir_x.dat. The example of an input file InterfaceWaterAir_x.dat is presented below.
 
 ## WaterProperties_x.dat
 
@@ -49,7 +49,7 @@ Meridional wind velocity
    <endproperty>
 ```
 
-!!!!!!Since 2016 code, zonal and meridional wind velocity are defined in one single block:
+**Since 2016 code:** zonal and meridional wind velocity are defined in one single block:
 
 ```
    <beginproperty>
@@ -175,7 +175,7 @@ Meridional wind stress
    <endproperty>
 ```
 
-!!!!!!Since 2016 code, Zonal and Meridional wind stress are defined in one single block:
+**Since 2016 code:** Zonal and Meridional wind stress are defined in one single block:
 
 ```
    <beginproperty>

@@ -1,5 +1,7 @@
 # Mohid Water Physics
 
+This page indexes the MOHID Water physics modules and the methodology for applying them.
+
 ## Concepts
 
 [Module Lagrangian](modules/lagrangian.md)

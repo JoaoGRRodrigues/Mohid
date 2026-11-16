@@ -40,6 +40,8 @@ Fortran style, program structure, scripting and utilities.
 - [Vba](vba.md)
 - [Visual Studio Configuration](visual-studio-configuration.md) — In Visual Studio, a configuration contains all the compiler and linker settings pre-saved, in order to build a solution (compile + link). It also may…
 - [Visual Studion Configuration](visual-studion-configuration.md) — In Visual Studio, a configuration contains all the compiler and linker settings pre-saved, in order to build a solution (compile + link). It also may…
+- [Ping](ping.md) — program ping
+- [Pong](pong.md) — program pong
 
 ## Short entries
 

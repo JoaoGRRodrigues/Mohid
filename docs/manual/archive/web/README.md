@@ -32,6 +32,13 @@ Web tools, databases and pages that used to live in the wiki.
 - [Calendar](calendar.md) — Mohid (un)official calendar.
 - [Hudson](hudson.md) — Hudson allows automatic daily builds and daily tests with a reporting system on top. Good to use with MOHID.
 - [RapidSvn](rapidsvn.md) — RapidSVN is a cross-platform GUI front-end for the Subversion revision system written in C++ using the wxWidgets framewo…
+- [Texmaker](texmaker.md) — Here's what I did to add a custom build command that would include the bibtex command: Options --> Configure T…
+- [Webcamp1](webcamp1.md) — This is the Webcamp1 users-defined programme. Webcamp1 is being held at rua lopes 77 2-D, lisboa during the 21…
+- [Goto](goto.md) — 1. Copy the goto.php extension in the extensions/goto.php of your mediawiki installation.
+- [WikiThis!](wikithis.md) — Add WikiThis! to your browser's personal toolbar so you can more easily post to this wiki.
+- [Css](css.md) — One of the most important concept of css is the box model. The box model provides the description of each geom…
+- [Templates](templates.md) — Templates allow to include pre-set wiki text inside an article. It can be useful to insert complex html data.
+- [Syntax highlighter](syntax-highlighter.md) — This wiki allows to embed code with syntax highlighting.
 
 ## Short entries
 

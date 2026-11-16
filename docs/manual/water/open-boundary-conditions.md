@@ -1,5 +1,7 @@
 # Open Boundary conditions
 
+This page describes the open boundary condition options available for water properties in MOHID Water.
+
 ## WaterProperties_x.dat
 
 For each property it's possible to define a specific boundary condition. The available options are:

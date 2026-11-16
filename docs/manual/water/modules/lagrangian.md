@@ -6,21 +6,21 @@ Lagrangian transport models are very useful to simulate localized processes with
 
 ## Concepts
 
-Like referred above, the Lagrangian module uses the concept of tracer. The tracers are characterized by there spatial coordinates, volume and a list of properties (each with a given concentration). The properties can be the same one like the ones described in the water properties module or coliform bacteria. Each tracer has associated a time to perform the random movement. The tracers are “born” at origins. Tracers which belong to the same origin have the same list of properties and use the same parameters for random walk, coliform decay, etc. Origins can differ in the way they emit tracers.
+As noted above, the Lagrangian module uses the concept of tracer. The tracers are characterized by their spatial coordinates, volume and a list of properties (each with a given concentration). The properties can be the same as those described in the water properties module or coliform bacteria. Each tracer has an associated time for the random movement. The tracers are “born” at origins. Tracers that belong to the same origin have the same list of properties and use the same parameters for random walk, coliform decay, etc. Origins can differ in the way they emit tracers.
 
 There are three different ways to define origins in space:
 
 - a **[Point Origin](../point-origin.md)** emits tracers at a given point;
 - a **[Box Origin](../../io/formats/boxes.md)** emits tracers over a given area;
-- a **Accident Origin** emit tracers in a circular form around a point;
+- an **Accident Origin** emits tracers in a circular form around a point;
 
-There are two different ways in which origins can emit tracers in time:
+There are three different ways in which origins can emit tracers in time:
 
 - a **Continuous Origin** emits tracers during a period of time;
-- a **Instantaneous Origin** emits tracers at one instant;
+- an **Instantaneous Origin** emits tracers at one instant;
 - a **Moving Origin** emits tracers during a period of time along a defined track;
 
-Origins can be grouped together in Groups. Origins which belong to the same group are grouped together in the output file, so it is more easy to analyze the results.
+Origins can be grouped together in Groups. Origins that belong to the same group are grouped together in the output file, so it is easier to analyze the results.
 
 ## Main processes
 
@@ -36,13 +36,13 @@ Origins can be grouped together in Groups. Origins which belong to the same grou
 
 ### Water quality processes
 
-To use the Water Quality processes in the lagrangian module it is necessary to define a WaterQuality.dat file different from the one used for the eulerian calculations. Defining its location by the keyword WQM_DATA_FILE.
+To use the Water Quality processes in the Lagrangian module it is necessary to define a WaterQuality.dat file different from the one used for the Eulerian calculations, defining its location with the keyword WQM_DATA_FILE.
 
 The waterquality files need to include the different parameters separately in two files in the case that both waterquality processes are calculated.
 
 #### Larvae
 
-To model larvae as lagrangian properties it is necessary to configure the properties larvae, age and oxygen in the lagrangian file
+To model larvae as lagrangian properties it is necessary to configure the properties larvae, age and oxygen in the lagrangian file.
 
 ```
 <BeginOrigin>

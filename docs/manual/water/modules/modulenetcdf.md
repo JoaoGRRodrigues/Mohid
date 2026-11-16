@@ -2,11 +2,11 @@
 
 ## Overview
 
-ModuleNETCDF is an interface module between the [netcdf](../../archive/linux/netcdf.md) libraries and [Mohid Framework](../../development/programming/README.md#mohid-framework), and it was developed in order to read and write netcdf files in a managed and straighforward way.
+ModuleNETCDF is an interface module between the [netcdf](../../archive/linux/netcdf.md) libraries and [Mohid Framework](../../development/programming/README.md#mohid-framework), and it was developed in order to read and write netcdf files in a managed and straightforward way.
 
 ## Using ModuleNETCDF to write a netcdf file
 
-Here is the steps to be taken in order to write a new netcdf file.
+Here are the steps to be taken in order to write a new netcdf file.
 
 ### Ask for access code to create a new file
 
@@ -51,6 +51,4 @@ call NETCDFWriteData(NCDFID, Name, LongName, StandardName, Units, &
                      OutputNumber, ARRAY*, STAT)
 ```
 
-```
-ARRAY can be 2D or 3D and integer or real (single or double precision)
-```
+ARRAY can be 2D or 3D and integer or real (single or double precision).

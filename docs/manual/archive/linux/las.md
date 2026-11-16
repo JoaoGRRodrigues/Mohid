@@ -19,7 +19,7 @@
 1. Open your favorite web-browser and write down [http://data.mohid.com:8080/las/servlets/dataset](http://data.mohid.com:8080/las/servlets/dataset).
 2. Select a dataset.
 3. Select variables then clik *next*.
-4. Select a region with the interactive map, a time window and a [ROI](../../reference/README.md#roi) (or view).
+4. Select a region with the interactive map, a time window and a [ROI](../../reference/roi.md) (or view).
 5. Select the desired output. It can be in binary or ascii format, or it can be a color plot.
 6. Click *next* and you should get in a few moments the results.
 

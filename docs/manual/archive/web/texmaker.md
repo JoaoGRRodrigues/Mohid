@@ -1,6 +1,6 @@
 # Texmaker
 
-**Texmaker** is a free, cross-platform [latex](../archive/linux/latex.md) editor.
+**Texmaker** is a free, cross-platform [latex](../linux/latex.md) editor.
 
 ## Installation
 
@@ -24,7 +24,7 @@ bibtex %
 
 ## Related links
 
-- [Latex](../archive/linux/latex.md)
+- [Latex](../linux/latex.md)
 
 ## External references
 

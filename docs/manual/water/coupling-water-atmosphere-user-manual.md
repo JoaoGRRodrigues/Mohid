@@ -8,8 +8,6 @@ Momentum fluxes, Oxygen and Carbon fluxes are not yet considered in this user ma
 
 Heat fluxes between air and water command water warming and cooling processes and thermal stratification formation. Wind can play an important role on surface stress and on mixture depth control, destroying stratification. Thus, when thermal stratification in natural systems occurs, and 3D model is used, both processes should be simulated.
 
-Mass fluxes can be important if level variations due to precipitation and evaporation or water abstraction are important.
-
 ## Inputs Required
 
 ### Wind Forcing
@@ -63,7 +61,7 @@ Water-Atmosphere heat fluxes and related properties in MOHID
 - If Property “surface radiation” in InterfaceWaterAir is to be computed by the model, **Property “solar radiation”** must be defined in Atmosphere data file. This property can be a constant value, entered as timeserie or computed by the model (REMAIN_CONSTANT : 0). If this property is to be computed by the model, in Atmosphere data file **keyword RADIATION_METHOD** (global variable) must define if it is MOHID method (value 1 - by default) or CE-QUAL based (value 2). See Solar Radiation theory for more details.
     -   If Property “solar radiation” is to be computed also **Property “cloud cover”** is needed in Atmosphere data file. If Cloud Cover is computed, **Keyword CLOUD_COVER_METHOD** (global variable) must define if it is computed from sun hours (value 1), from radiation (value 3) or from random values (value 2 - by default).
     -   **Remark**: Solar Radiation is a common property in INAG meteorological stations so, if available, data should be entered in timeserie format instead of computing with the model. Notice that if radiation is computed the model needs cloud cover and if cloud cover is computed (from radiation)it needs radiation.
-- If Property “sensible heat” in InterfaceWaterAir is to be computed it is needed air temperature and wind velocity for the formulation . Thus, **Property “air temperature”** and **Property “wind velocity X”** and **Property “wind velocity Y”** must be defined in Atmosphere data file. These properties can be a constant value or entered as timeserie; wind velocity X and wind velocity Y can in addition be computed from Property “wind modulus” and Property “wind angle”, as stated previously (see 2.1.3). These last properties can be a constant value or entered as timeserie.
+- If Property “sensible heat” in InterfaceWaterAir is to be computed it is needed air temperature and wind velocity for the formulation . Thus, **Property “air temperature”** and **Property “wind velocity X”** and **Property “wind velocity Y”** must be defined in Atmosphere data file. These properties can be a constant value or entered as timeserie; wind velocity X and wind velocity Y can in addition be computed from Property “wind modulus” and Property “wind angle”, as stated previously (see [Wind Forcing](#wind-forcing)). These last properties can be a constant value or entered as timeserie.
 - If Property “latent heat” in InterfaceWaterAir is to be computed properties needed are the same as in Property “sensible heat” plus humidity. Thus, **also Property “humidity”** has to be added in Atmosphere data file. This property can be a constant value or entered as timeserie.
 - If Property “downward long wave radiation” in InterfaceWaterAir is to be computed, then **Property “air temperature”** and **Property “cloud cover”** need to be defined in Atmosphere data file. These properties can be a constant value or entered as timeserie; cloud cover can in addition be computed by the model. If cloud cover is computed, **Keyword CLOUD_COVER_METHOD** (global variable) must define if it is computed from sun hours (value 1), from radiation (value 3). Until June 2015 there was the option to compute cloud cover from random values (value 2) but this option was removed.
 
@@ -82,9 +80,9 @@ Mass fluxes should be computed if level variations due to precipitation, evapora
 #### InterfaceWaterAir Data File
 
 - **Property “surface water flux”** must be present in InterfaceWaterAir data file. This property can be a constant value, entered as timeserie or computed by the model.
-    -   If Property “surface water flux” is to be computed by the model then the three properties needed for the balance can appear: Precipitation, Irrigation and Evaporation (this is not mandatory, properties that not appear, are not considered). Thus, **Property “evaporation”** can be defined. This property can be a constant value, entered as timeserie or can be computed by the model from latent heat. As so, if Property “evaporation” is to be computed by the model, also **Property “latent heat”** must be defined (see 2.2.2).
+    -   If Property “surface water flux” is to be computed by the model then the three properties needed for the balance can appear: Precipitation, Irrigation and Evaporation (this is not mandatory, properties that not appear, are not considered). Thus, **Property “evaporation”** can be defined. This property can be a constant value, entered as timeserie or can be computed by the model from latent heat. As so, if Property “evaporation” is to be computed by the model, also **Property “latent heat”** must be defined (see [Heat Fluxes](#heat-fluxes)).
 
-#### AtmosphereDataFile
+#### Atmosphere Data File
 
 - If Property “surface water flux” in InterfaceWaterAir data file is to be computed by the model then the three properties needed for the balance can appear: Precipitation, Irrigation and Evaporation (this is not mandatory, properties that not appear, are not considered). Thus, **Property “precipitation”** and **Property “irrigation”** can be defined. These two properties can be a constant value or entered as timeserie.
 

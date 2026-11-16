@@ -32,6 +32,6 @@ GUI stands for **G**raphical **U**ser **I**nterface. [Here](mohid-graphical-user
 
 In the next sections, are described the needed steps to be taken in order to perform a SWAT simulation whether using ArcView or MapWindow software.
 
-For the ArcView Tutorial see [SWAT in ArcView](../../reference/run-swat-model-arcview-interface.md)
+For the ArcView Tutorial see [SWAT in ArcView](../../tutorials/run-swat-model-arcview-interface.md)
 
-For the MapWindow Tutorial see [SWAT in MapWindow](../../reference/run-swat-model-mapwindow-interface.md)
+For the MapWindow Tutorial see [SWAT in MapWindow](../../tutorials/run-swat-model-mapwindow-interface.md)

@@ -8,6 +8,6 @@ The watershed and hydrological model: runoff, soil water, aquifers and river net
 
 ## Pages
 
-- [How to create a MOHID Land Project Step-by-Step](how-to-create-a-mohid-land-project-step-by-step.md) — 1. Run MOHID GUI (usually you can find it in the StartMenu->Programs->MOHID)
-- [How to create a MOHID River Project Step-by-Step](how-to-create-a-mohid-river-project-step-by-step.md) — 1. Run MOHID GUI (usually you can find it in the StartMenu->Programs->MOHID)
-- [Mohid Land](mohid-land.md) — MOHID Land is the newest core executable of the MOHID Water Modelling System. This program is designed to simulate hydrographic basin and aquifers. Ma…
+- [Mohid Land](mohid-land.md) — what the model simulates, its main processes, modules and source code layout.
+- [How to create a MOHID Land Project Step-by-Step](how-to-create-a-mohid-land-project-step-by-step.md) — set up a MOHID Land watershed project in the MOHID GUI.
+- [How to create a MOHID River Project Step-by-Step](how-to-create-a-mohid-river-project-step-by-step.md) — set up a stand-alone MOHID River Network project in the MOHID GUI.

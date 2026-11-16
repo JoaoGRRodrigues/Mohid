@@ -73,7 +73,7 @@ This will use the google charts equations api to render on-the-fly png images of
 
 #### Syntax Highlight extension
 
-Check out this page [Syntax_highlighter](../../project/syntax-highlighter.md) to install syntax highlighter.
+Check out this page [Syntax_highlighter](syntax-highlighter.md) to install syntax highlighter.
 
 #### Biblio extension
 

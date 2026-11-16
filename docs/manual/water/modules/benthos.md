@@ -4,11 +4,6 @@
 
 Module Benthos is a zero-dimensional biogeochemical model and was designed to compute, using simple model formulations, some of the main benthic biogeochemical processes occurring in an aquatic system: (i) Algae mortality, if algae are considered as a particulate property that can sink and deposit, then if deposited a mortality rate is applied; (ii) Particulate organic matter mineralization (nitrogen and phosphorus biogeochemical cycles); (iii) Biogenic silica dissolution; (iv) Oxygen depletion.
 
-> -   algae mortality, if algae are considered as a particulate property that can sink and deposit, then if deposited a mortality rate is applied
-> -   Particulate organic matter mineralization (nitrogen and phosphorus biogeochemical cycles)
-> -   Biogenic silica dissolution
-> -   Oxygen depletion
-
 Module Benthos is also ready to be coupled, in terms of organic matter mineralization, biogenic silica dissolution and oxygen depletion, with other pelagic biogeochemical models included in Mohid such as: [Module WaterQuality](waterquality.md) and [Module Life](life.md).
 
 ## Algae Mortality
@@ -47,24 +42,36 @@ $\frac{dM^{PON}}{dt} = -(k_{decay-N} \times \phi_{PON}^{(T-20C)}) \cdot M^{PON} 
 
 $\frac{dM^{NH_{4}^{+}}}{dt}= (k_{decay-N} \times \phi_{PON}^{(T-20C)}) \cdot M^{PON} \cdot Lim_{O_{2}}$
 
-Where is given in kg of Nitrogen, is the reference mineralization rate for PON, is a temperature coefficient, and is the water temperature at the water-sediment interface (ºC). Regarding the phosphorus budget: (eq.8)
+Where is given in kg of Nitrogen, is the reference mineralization rate for PON, is a temperature coefficient, and is the water temperature at the water-sediment interface (ºC). Regarding the phosphorus budget:
 
+<!-- TODO: formula missing in source -->
+(eq.8)
+
+<!-- TODO: formula missing in source -->
 (eq.9)
 
 Where is given in kg of Phosphorus, is the reference mineralization rate for POP, is a temperature coefficient, and is the water temperature at the water-sediment interface (ºC). For more details on the oxygen budget, see chapter 2.4.
 
 ## Silica dissolution
 
-Silica dissolution is simulated as a constant rate over the biogenic silica deposited in the water-sediment interface, acting as a source of dissolved silica. (eq.10)
+Silica dissolution is simulated as a constant rate over the biogenic silica deposited in the water-sediment interface, acting as a source of dissolved silica.
 
+<!-- TODO: formula missing in source -->
+(eq.10)
+
+<!-- TODO: formula missing in source -->
 (eq.11)
 
 Where is given in kg of biogenic silica, is given in kg of dissolved silica and is the dissolution rate for biogenic silica.
 
 ## Oxygen depletion
 
-Oxygen depletion occurs due to organic matter mineralization, and is computed according to stoichiometric relations. (eq.12)
+Oxygen depletion occurs due to organic matter mineralization, and is computed according to stoichiometric relations.
 
+<!-- TODO: formula missing in source -->
+(eq.12)
+
+<!-- TODO: formula missing in source -->
 (eq.13)
 
 Where is given in kg of oxygen, and are the Nitrogen/Carbon and Phosphorus/Carbon ratios of particulate organic matter, and is the ratio between Oxygen and Carbon in CO2.
@@ -82,7 +89,7 @@ As described before, Module Benthos is directly connected with [Module Interface
 All properties undergoing biogeochemical reactions in Module Benthos must be defined in [Module InterfaceSedimentWater](interfacesedimentwater.md), and keyword **BENTHOS** has to be activated in every one of it, including oxygen, which is mandatory to be computed.
 
 ```
-BENTHOS	        : 1
+BENTHOS	        : 1
 ```
 
 Additionally, property temperature must be also defined, as it controls mineralization rates. Nevertheless, as temperature is not subject to any specific process in the bottom, the **BENTHOS** keyword value for this property must be set to 0.
@@ -90,14 +97,14 @@ Additionally, property temperature must be also defined, as it controls minerali
 Particulate properties, such as particulate organic nitrogen, particulate organic phosphorus, biogenic silica, phytoplankton (if desired) and diatoms (if desired) must be set as **PARTICULATE**.
 
 ```
-PARTICULATE    : 1
+PARTICULATE    : 1
 ```
 
-Dissolved properties such as ammonia, inorganic phosphorus, dissolved silica, oxygen and temperature, must be set to **PARTICULATE : 0**.
+Dissolved properties such as ammonia, inorganic phosphorus, dissolved silica, oxygen and temperature, must be set to **PARTICULATE : 0**.
 
-The properties defined in the [Module InterfaceSedimentWater](interfacesedimentwater.md) must be consistent with the [Module WaterProperties](waterproperties.md) input file, which means that every property important for the benthic model must be defined in both input files;With exception to temperature, all dissolved properties defined in the [Module InterfaceSedimentWater](interfacesedimentwater.md) input file, with option **BENTHOS** activated, must set keyword **WATER_FLUXES : 1**. Particulate properties also need this option activated in order to compute the fluxes between the water column and the bottom due to erosion and deposition.
+The properties defined in the [Module InterfaceSedimentWater](interfacesedimentwater.md) must be consistent with the [Module WaterProperties](waterproperties.md) input file, which means that every property important for the benthic model must be defined in both input files;With exception to temperature, all dissolved properties defined in the [Module InterfaceSedimentWater](interfacesedimentwater.md) input file, with option **BENTHOS** activated, must set keyword **WATER_FLUXES : 1**. Particulate properties also need this option activated in order to compute the fluxes between the water column and the bottom due to erosion and deposition.
 
-Also as Module Benthos computes biogeochemical processes involving dissolved processes near the sediment-water interface (e.g. oxygen depletion), all these properties must be defined in the water column. In addition, and as referred above, temperature, as it influences the mineralization rates, is mandatory to be defined in the [Module WaterProperties](waterproperties.md) input data file. With exception to temperature, all properties defined in the ModuleInterfaceSedimentWater input file with option BENTHOS activated, must set keyword to **BOTTOM_FLUXES : 1** in the [Module WaterProperties](waterproperties.md) input file. This keywords activates an option that computes a bottom boundary condition in the transport equations of the dissolved properties due to the biogeochemical processes computed in Module Benthos.
+Also as Module Benthos computes biogeochemical processes involving dissolved processes near the sediment-water interface (e.g. oxygen depletion), all these properties must be defined in the water column. In addition, and as referred above, temperature, as it influences the mineralization rates, is mandatory to be defined in the [Module WaterProperties](waterproperties.md) input data file. With exception to temperature, all properties defined in the ModuleInterfaceSedimentWater input file with option BENTHOS activated, must set keyword to **BOTTOM_FLUXES : 1** in the [Module WaterProperties](waterproperties.md) input file. This keywords activates an option that computes a bottom boundary condition in the transport equations of the dissolved properties due to the biogeochemical processes computed in Module Benthos.
 
 For more on Module Benthos keywords go to [MOHID keyword Database](../../io/keywords/keyword-list.md).
 

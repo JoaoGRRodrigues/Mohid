@@ -22,7 +22,7 @@ Visual Studio 2008 (or Visual Studio C++ 2010 Express) provides the [dumpbin](..
 
 ## How-To
 
-- Copy paste the following code and save it as a batchfile in your simulation *\\exe* folder under the name *[IncrementSizeOfStack](../../reference/incrementsizeofstack.md).bat*:
+- Copy paste the following code and save it as a batchfile in your simulation *\\exe* folder under the name *[IncrementSizeOfStack](../../building/linux/incrementsizeofstack.md).bat*:
 
 ```
 @echo off

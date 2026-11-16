@@ -2,11 +2,11 @@
 
 ## Overview
 
-Module Reservoirs allows to compute reservois dynamic that change river flows and concentrations. Module Reservoirs recieves flows and concentrations from Module Drainage Network and gives flows and concentrations to the same module.
+Module Reservoirs allows to compute reservoir dynamics that change river flows and concentrations. Module Reservoirs receives flows and concentrations from Module Drainage Network and gives flows and concentrations to the same module.
 
 ## Main Processes
 
-The reservoirs do not have a explicit geometry and are located in a given Drainage Network node (that will interact flows and concetrations with it.
+The reservoirs do not have an explicit geometry and are located in a given Drainage Network node (that will exchange flows and concentrations with it).
 
 ### Hydrology
 

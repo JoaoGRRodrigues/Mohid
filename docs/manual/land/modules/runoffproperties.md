@@ -109,11 +109,11 @@ Partition between particulated and dissolved species is done using a user ratio.
 
 ## Boundary Conditions
 
-In Runoff there is the option to define the boundary condition as an imposed level or time series. If water enters domain from outside the properties values in the boundary need to be defined.
+In RunoffProperties, if water enters the domain from outside, the property values at the boundary need to be defined.
 
 ### Computation
 
-Boundary properties values are computed in one of two ways: i) impose a property value at boundary; ii) Null gradient where outside concentration is the same as inside. The boundary flow from ModuleRunoff and the imposed concentration in boundary are used to define compute new concentrations explicitly.
+Boundary properties values are computed in one of two ways: i) impose a property value at boundary; ii) Null gradient where outside concentration is the same as inside. The boundary flow from ModuleRunoff and the imposed concentration in boundary are used to compute new concentrations explicitly.
 
 ### Keywords
 
@@ -139,7 +139,7 @@ DEFAULTBOUNDARY           : 1.
 
 ## Discharges
 
-In RunoffProperties the discharges may be positive or negative (RunoffProperties uses discharge flow and concentrarion) and are dealt with ModuleDischarges
+In RunoffProperties the discharges may be positive or negative (RunoffProperties uses discharge flow and concentration) and are dealt with ModuleDischarges.
 
 If one property is not discharged than the assumption is that if a positive discharge exists that property concentration is zero.
 
@@ -157,26 +157,26 @@ For positive discharges the discharge concentration is read from Discharges_X.da
 DISCHARGES : 1
 ```
 
-## Other Features
-
 ## Outputs
 
 Output is done in terms of timeseries and HDF following the MOHID standards.
 
-## References
-
 ## Data File
 
-### Keywords
+### Units
 
 ```
 Units in runoff properties
   Transported properties (soluble)             : g/m3 (or mg/l)
   Adsorbed properties (non soluble)            : ug/kgsoil
   Bottom layer Properties (bottom transition)  : kg/m2
+```
 
+### Keywords
+
+```
 ADVDIFF_EXPLICIT              : 0/1               [1]        !REMARK: Horizontal diffusion is always explicit
-                                                              (1 - horiz adv is explicit; 0 - horiz adv is implicit
+                                                              !(1 - horiz adv is explicit; 0 - horiz adv is implicit)
 NEW_FORMULATION               : 0/1                [0]        !if 1 then spatial methods will be the same for all properties
      ADVDIFF_METHOD_H         : integer      [UpwindOrder1]   !Spatial methods for horizontal advection
                                                               !UpwindOrder1 = 1, UpwindOrder2 = 2, UpwindOrder3 = 3, P2_TVD = 4,

@@ -1,5 +1,7 @@
 # Advection numerical scheme
 
+Selects how advection is solved numerically, with separate options for the horizontal and vertical directions and for the TVD limiter.
+
 ## WaterProperties_x.dat
 
 1 - First order upwind is the more robust but the less precise;
@@ -8,7 +10,7 @@
 
 3 - Third order upwind has excellent precision, more or less stable and not;
 
-4 - The Transport Variation Diminishing method(TVD) is in fact a hydrid scheme between a first order and a third order method where a ponderation factor is computed so the method is able to insure positiveness. The method 4 is advised for experienced users. By default the method is 1 to increase robustness of the runs.
+4 - The Transport Variation Diminishing method(TVD) is in fact a hybrid scheme between a first order and a third order method where a ponderation factor is computed so the method is able to insure positiveness. The method 4 is advised for experienced users. By default the method is 1 to increase robustness of the runs.
 
 5 - Central differences has good precision but is highly unstable
 

@@ -40,5 +40,5 @@ Download and install the [Visual Studio C++ Express](http://www.microsoft.com/ex
 
 - [stacksize](../../development/programming/stacksize.md)
 - [editbin](../../development/programming/editbin.md)
-- [IncrementSizeOfStack](../../reference/incrementsizeofstack.md)
+- [IncrementSizeOfStack](../linux/incrementsizeofstack.md)
 - [Stack overflow](../../development/build/stack-overflow.md)
