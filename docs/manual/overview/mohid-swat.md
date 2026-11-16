@@ -94,33 +94,15 @@ Folder structure for simulation
 
 #### Step 3
 
-Get the latest SWAT-MOHID package (**SWAT-MOHID V2**) from [www.mohid.com](http://www.mohid.com) ([downloads](http://www.mohid.com/MembersArea/Downloads.asp)). If you are not registered jet, please do it to download the software. Copy the ascii file named “nomfich.dat” (which is inside the SWAT-MOHID package in the folder **..\\SWAT Package\\txtinout\\**) in to the folder **..\\scenarios\\default\\res\\
-
-$$
-SimulationName
-$$
-
-\\txtinout** and edit the ascii file to '**ROOT\_SRT : ..\\Output\\**
+Get the latest SWAT-MOHID package (**SWAT-MOHID V2**) from [www.mohid.com](http://www.mohid.com) ([downloads](http://www.mohid.com/MembersArea/Downloads.asp)). If you are not registered jet, please do it to download the software. Copy the ascii file named “nomfich.dat” (which is inside the SWAT-MOHID package in the folder **..\\SWAT Package\\txtinout\\**) in to the folder **..\\scenarios\\default\\res\\\[SimulationName\]\\txtinout** and edit the ascii file to '**ROOT\_SRT : ..\\Output\\**
 
 #### Step 4
 
-Copy the executable SWAT.EXE to the **..\\scenarios\\default\\res\\
-
-$$
-SimulationName
-$$
-
-\\txtinout** folder (you can find this in **..\\SWAT Package\\txtinout\\**) Use SWAT2000 or SWAT2005 depending on the version of your SWAT project. Do not run SWAT2005 in a SWAT2000 and vice versa
+Copy the executable SWAT.EXE to the **..\\scenarios\\default\\res\\\[SimulationName\]\\txtinout** folder (you can find this in **..\\SWAT Package\\txtinout\\**) Use SWAT2000 or SWAT2005 depending on the version of your SWAT project. Do not run SWAT2005 in a SWAT2000 and vice versa
 
 #### Step 5
 
-Copy all the ascii files from **..\\SWAT Package\\res\\** into folder **..\\scenarios\\default\\res\\
-
-$$
-SimulationName
-$$
-
-\\res**. These files include [outputs.dat](../io/outputs-dat.md), ts\_global.dat, ts\_subbasin.dat, etc…
+Copy all the ascii files from **..\\SWAT Package\\res\\** into folder **..\\scenarios\\default\\res\\\[SimulationName\]\\res**. These files include [outputs.dat](../io/outputs-dat.md), ts\_global.dat, ts\_subbasin.dat, etc…
 
 Edit this ascii file for the subbasins and HRU that you want to output. In most of the cases it would be needed an output file for each branch of the network, if you want to couple with Mohid River Network. If you just want to explore SWAT results, just oyt put in Subbasins and HRU you want to analyse.
 
@@ -150,43 +132,13 @@ Vizualize output files from folder **..\\scenarios\\default\\res** using Mohid T
 
 ## References
 
-Demissie, G (2010) Integrated Sediment Transport Modeling Using SWAT-MOHID Models in Lake Tana Subbasin, Upper Blue Nile, Ethiopia. MSc UNESCO-IHE. April 2010. 
+Demissie, G (2010) Integrated Sediment Transport Modeling Using SWAT-MOHID Models in Lake Tana Subbasin, Upper Blue Nile, Ethiopia. MSc UNESCO-IHE. April 2010. \[abstract\] ([\[1\]](http://www.unesco-ihe.org/About/Academic-departments/Hydroinformatics-and-Knowledge-Management/Master-Programme/Msc-Abstracts/MSc-research-topics-2010/Integrated-Sediment-Transport-Modeling-Using-SWAT-MOHID-Models-in-Lake-Tana-Subbasin-Upper-Blue-Nile-Ethiopia))
 
-$$
-abstract
-$$
+Chambel-Leitão P., F. Braunschweig, L. Fernandes, R. Neves, P. Galvão. (2007) Integration of MOHID model and tools with SWAT model, submitted to the Proceedings of the, 4th International SWAT Conference, July 2-6 2007. ([\[2\]](http://www.google.pt/url?sa=t&source=web&cd=1&ved=0CBcQFjAA&url=http%3A%2F%2Fmaretec.mohid.com%2Fpublicdata%2Fproducts%2Fconferencepapers%2F2007%2520swat-mohid.pdf&ei=UKUkTYjlF4es8gOQvr2TAw&usg=AFQjCNEkNVCYMNJsJ_MO9GHiOMxbcKIyLQ))
 
- ([
+Obermann, M (2007). Nutrient dynamics in temporary waters of Mediterranean catchments. PhD thesis. University of Hannover. March 2007. ([\[3\]](http://www.google.pt/url?sa=t&source=web&cd=1&ved=0CBwQFjAA&url=http%3A%2F%2Fwww.mohid.com%2FPublicData%2Fproducts%2FThesis%2FPhDMatthias%2520Obermann.pdf&ei=x6UkTdvFG4e48gPagKGyAg&usg=AFQjCNH20e3_Jjsz7HbZYx0YIsKpdtGQ_w))
 
-$$
-1
-$$
-
-](http://www.unesco-ihe.org/About/Academic-departments/Hydroinformatics-and-Knowledge-Management/Master-Programme/Msc-Abstracts/MSc-research-topics-2010/Integrated-Sediment-Transport-Modeling-Using-SWAT-MOHID-Models-in-Lake-Tana-Subbasin-Upper-Blue-Nile-Ethiopia))
-
-Chambel-Leitão P., F. Braunschweig, L. Fernandes, R. Neves, P. Galvão. (2007) Integration of MOHID model and tools with SWAT model, submitted to the Proceedings of the, 4th International SWAT Conference, July 2-6 2007. ([
-
-$$
-2
-$$
-
-](http://www.google.pt/url?sa=t&source=web&cd=1&ved=0CBcQFjAA&url=http%3A%2F%2Fmaretec.mohid.com%2Fpublicdata%2Fproducts%2Fconferencepapers%2F2007%2520swat-mohid.pdf&ei=UKUkTYjlF4es8gOQvr2TAw&usg=AFQjCNEkNVCYMNJsJ_MO9GHiOMxbcKIyLQ))
-
-Obermann, M (2007). Nutrient dynamics in temporary waters of Mediterranean catchments. PhD thesis. University of Hannover. March 2007. ([
-
-$$
-3
-$$
-
-](http://www.google.pt/url?sa=t&source=web&cd=1&ved=0CBwQFjAA&url=http%3A%2F%2Fwww.mohid.com%2FPublicData%2Fproducts%2FThesis%2FPhDMatthias%2520Obermann.pdf&ei=x6UkTdvFG4e48gPagKGyAg&usg=AFQjCNH20e3_Jjsz7HbZYx0YIsKpdtGQ_w))
-
-Chambel-Leitao P, Braunschweig F, Obermann M, Trancoso R, Galvao P, Lo Porto, A (2006). Coupling SWAT and TempQsim Mohid River Network. Geophysical Research Abstracts, EGU Meeting, Wien 25-29 April (Austria). ([
-
-$$
-4
-$$
-
-](http://meetings.copernicus.org/www.cosis.net/abstracts/EGU06/10104/EGU06-J-10104-1.pdf))
+Chambel-Leitao P, Braunschweig F, Obermann M, Trancoso R, Galvao P, Lo Porto, A (2006). Coupling SWAT and TempQsim Mohid River Network. Geophysical Research Abstracts, EGU Meeting, Wien 25-29 April (Austria). ([\[4\]](http://meetings.copernicus.org/www.cosis.net/abstracts/EGU06/10104/EGU06-J-10104-1.pdf))
 
 ## See Also
 

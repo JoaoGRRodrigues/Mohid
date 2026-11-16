@@ -117,20 +117,8 @@ This installation is described only for the R2007a to R2007b versions of Matlab:
     3.  Add in the matlab path setup the paths to mexnc,
     4.  Save and restart matlab,
     5.  Open Matlab,
-    6.  
-
-$$
-OPTIONAL
-$$
-
-: to enable opendap, you must install the netcdf [toolsUI jar file](ftp://ftp.unidata.ucar.edu/pub/netcdf-java/v4.0/). Installation instructions are available [here](http://mexcdf.sourceforge.net/tutorial/ch02.html).
-    7.  
-
-$$
-OPTIONAL
-$$
-
-: add the path and filename of toolsUI jar file in the classpath.txt in the /toolbox/local directory of your matlab installation,
+    6.  \[OPTIONAL\]: to enable opendap, you must install the netcdf [toolsUI jar file](ftp://ftp.unidata.ucar.edu/pub/netcdf-java/v4.0/). Installation instructions are available [here](http://mexcdf.sourceforge.net/tutorial/ch02.html).
+    7.  \[OPTIONAL\]: add the path and filename of toolsUI jar file in the classpath.txt in the /toolbox/local directory of your matlab installation,
     8.  Go to the tests folder in snctools and launch test\_snctools.m,
     9.  That's it!
 

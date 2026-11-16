@@ -26,13 +26,7 @@ Below are listed some places where one can find data available to construct a ba
 
 #### Bathymetric data
 
-[General Bathymetric Chart of the Oceans (GEBCO)](http://www.bodc.ac.uk/projects/international/gebco/) - In this website data can be downloaded, once registered, bathymetries of any place of the World with a 1´x1´ resolution. However, it has to be considered, that these data are not very reliable for coastal areas. In 2009, they released an updated version of their 30 minute GEBCO - grid which also includes satellite data. A description of both products can be found here [
-
-$$
-1
-$$
-
-](http://www.gebco.net/data_and_products/gridded_bathymetry_data/). Note: this data has to be processed in order to fulfill the [XYZ points](xyz-points.md) format.
+[General Bathymetric Chart of the Oceans (GEBCO)](http://www.bodc.ac.uk/projects/international/gebco/) - In this website data can be downloaded, once registered, bathymetries of any place of the World with a 1´x1´ resolution. However, it has to be considered, that these data are not very reliable for coastal areas. In 2009, they released an updated version of their 30 minute GEBCO - grid which also includes satellite data. A description of both products can be found here [\[1\]](http://www.gebco.net/data_and_products/gridded_bathymetry_data/). Note: this data has to be processed in order to fulfill the [XYZ points](xyz-points.md) format.
 
 [ETOPO](http://www.ngdc.noaa.gov/mgg/global/relief/) - In these website, a complete database with 2'x2' or 5'x5' regular grid resolution can be downloaded. Note: this data has to be processed in order to fulfill the [XYZ points](xyz-points.md) format.
 

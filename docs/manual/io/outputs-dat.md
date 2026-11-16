@@ -6,13 +6,7 @@ SWAT\_WITH\_CHANGES  : 1
 
 DENITRIFICATION\_THRESHOLD  : 0.99
 
-!OUTPUT\_TIME 
-
-$$
-0 86400
-$$
-
-  ! if this is on it will create two hdf files. One with LAI, Soil moisture and sediment information per HRU and another with flow per reach. Wkt geometry of hru poligons and wkt with river line, must be provided
+!OUTPUT\_TIME \[ 0 86400\]  ! if this is on it will create two hdf files. One with LAI, Soil moisture and sediment information per HRU and another with flow per reach. Wkt geometry of hru poligons and wkt with river line, must be provided
 
 !Subbasin level outputs
 

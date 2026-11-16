@@ -22,13 +22,7 @@ sos.mohid.com.
 
 - \-server einstein:8890 means the server name is einstein.
 - \-server 192.168.21.13:8890 means the server name is 192.168.21.13 and so on ...
-- Otherwise you'll get an error.[
-
-$$
-1
-$$
-
-](http://support.sourcegear.com/viewtopic.php?t=124&view=next)
+- Otherwise you'll get an error.[\[1\]](http://support.sourcegear.com/viewtopic.php?t=124&view=next)
 
 ## Commands
 

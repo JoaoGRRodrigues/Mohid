@@ -4,13 +4,7 @@
 
 1. Run MOHID GUI (usually you can find it in the StartMenu->Programs->MOHID)
 2. Choose Menu **Project** and then **New**
-3. Name the project, the filename and give the project folder (usually in ../Aplica/MohidLand/
-
-$$
-ApplicationName
-$$
-
-/
+3. Name the project, the filename and give the project folder (usually in ../Aplica/MohidLand/\[ApplicationName\]/
 4. Insert a new simulation right clicking the project icon in the left, as shown in the Figure 1.
 5. Define the simulation name (that you can easilly identify) and define MOHID River Network radio button defined in Figure 2
 6. Insert a new run right clicking the simulation icon in the left, as shown in the Figure 3. The run is each model simulation.

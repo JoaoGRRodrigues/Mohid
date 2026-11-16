@@ -15,13 +15,7 @@ A lot of other people gave contributions that all together have strongly influen
 ## Source code from other projects included in Mohid
 
 > -   [GOTM](http://www.gotm.net/) - turbulence model library included in [Module Turbulence](../water/modules/turbulence.md)
-> -   WGS84 to NLRD coordinate conversion C code written by E.J.O Schrama 
-
-$$
-e.j.o.schrama@lr.tudelft.nl
-$$
-
- was ported to FORTRAN95 into [Module HorizontalGrid](../water/modules/README.md#module-horizontalgrid#module-horizontalgrid).
+> -   WGS84 to NLRD coordinate conversion C code written by E.J.O Schrama \[e.j.o.schrama@lr.tudelft.nl\] was ported to FORTRAN95 into [Module HorizontalGrid](../water/modules/README.md#module-horizontalgrid#module-horizontalgrid).
 
 ## Software used in Mohid
 

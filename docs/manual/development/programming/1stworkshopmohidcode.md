@@ -9,13 +9,7 @@ Welcome to the 1st Workshop in programming for MOHID. Except maybe for the first
 - Date: **21-05-2010**, opening at 9:30.
 - Place: **Sala P1**, no piso1 do departamento de Matemática. Da parte da tarde: sala de reuniões do DEM, no pav. Mecânica III . ~salão de reuniões at MARETEC, pav. Mecânica I, 1st floor, IST-UTL.~
 - Wifi internet access: eduroam or eduroam-guest (**login: mohidcode, pass: VSm6Z2**).
-- Computers and software: Each participant is expected to bring their laptops with wifi, with VS 2008, Intel Fortran
-
-$$
-\\\\kepler\\Software
-$$
-
- and an [svn client](../../tools/tortoisesvn.md) already installed. Having already compiled the latest version of the MOHID code from [codeplex](../../archive/web/codeplex.md) is a plus.
+- Computers and software: Each participant is expected to bring their laptops with wifi, with VS 2008, Intel Fortran\[\\\\kepler\\Software\] and an [svn client](../../tools/tortoisesvn.md) already installed. Having already compiled the latest version of the MOHID code from [codeplex](../../archive/web/codeplex.md) is a plus.
 
 ### Registered participants
 

@@ -14,13 +14,7 @@ This is a tutorial on how to install MOHID in linux and derived other platforms.
 
 #### HDF5 libraries
 
-To compile Mohid it is mandatory to have the HDF5 [
-
-$$
-1
-$$
-
-](http://hdf.ncsa.uiuc.edu/HDF5/) libraries compiled.
+To compile Mohid it is mandatory to have the HDF5 [\[1\]](http://hdf.ncsa.uiuc.edu/HDF5/) libraries compiled.
 
 ##### Extract from Codeplex
 

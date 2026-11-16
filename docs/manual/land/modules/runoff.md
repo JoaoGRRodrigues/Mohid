@@ -31,7 +31,7 @@ where:
   
 {\|
 
-\| *Qi* \|\| is the overland flow in each direction (m3/s) \|- \| *A* \|\| is the area of the cross-section (m2) \|- \| *n* \|\| is the Manning coefficient (s/m1/3) \|- \| *Rh*\|\| is the hydraulic radius (m) \|- \| *Si* \|\| is the slope of the water surface (m/m) \|}
+\| *Qi* \|\| is the overland flow in each direction (m<sup>3</sup>/s) \|- \| *A* \|\| is the area of the cross-section (m<sup>2</sup>) \|- \| *n* \|\| is the Manning coefficient (s/m<sup>1/3</sup>) \|- \| *R<sub>h</sub>*\|\| is the hydraulic radius (m) \|- \| *Si* \|\| is the slope of the water surface (m/m) \|}
 
 #### Hydraulic radius
 
@@ -47,7 +47,7 @@ But in runoff the lateral cell face is open boundary (to the next cell) not exer
 R_{h}=\frac{w\cdot h}{w}\,\,\,\,\,\,\,\,(1.2)
 ```
 
-and the hydraulic radius is Rh=h. Therefore the Manning's equation can be rewritten as:
+and the hydraulic radius is R<sub>h</sub>=h. Therefore the Manning's equation can be rewritten as:
 
 ``` math
 Q=\frac{1}{n}\cdot w\cdot h^{5/3}\cdot s^{1/2}\,\,\,\,\,\,\,\,(1.3)
@@ -77,7 +77,7 @@ where:
   
 {\|
 
-\|- \|*sx* \|\| is the slope in the X direction (m) \|- \| *H(i,j-1)* \|\| is the water column at the left face of the cell (m) \|- \| *H(i,j)* \|\| is the water column at the right face of the cell (m) \|- \| *DZX* \|\| is width of the cell in the X direction (m) \|}
+\|- \|*s<sub>x</sub>* \|\| is the slope in the X direction (m) \|- \| *H(i,j-1)* \|\| is the water column at the left face of the cell (m) \|- \| *H(i,j)* \|\| is the water column at the right face of the cell (m) \|- \| *DZX* \|\| is width of the cell in the X direction (m) \|}
 
 ``` math
 s_{y}=\frac{H(i-1,j)-H(i,j)}{DZY}\,\,\,\,\,\,\,\,(1.6)
@@ -88,7 +88,7 @@ where:
   
 {\|
 
-\|*sy* \|\| is the slope in the Y direction (m) \|- \| *H(i-1,j)* \|\| is the water column at the left face of the cell (m) \|- \| *H(i,j)* \|\| is the water column at the right face of the cell (m) \|- \| *DZY* \|\| is width of the cell in the X direction (m) \|}
+\|*s<sub>y</sub>* \|\| is the slope in the Y direction (m) \|- \| *H(i-1,j)* \|\| is the water column at the left face of the cell (m) \|- \| *H(i,j)* \|\| is the water column at the right face of the cell (m) \|- \| *DZY* \|\| is width of the cell in the X direction (m) \|}
 
 In order to take in account the limitation given by the Manning's equation (1.1) that tends to overestimate the flow velocity when solpe > 0.04, the slope value obtained by the formulas (1.5) and (1.6) it is subsequently adjusted by the following function: [Slope correction given by City of Albuquerque, 1997, p.22-26](http://www.hkh-friend.net.np/rhdc/training/lectures/HEGGEN/Tc_3.pdf)
 
@@ -166,10 +166,12 @@ To allow water to flow in if the boundary level is higher use this keyword conne
 
 If the user wants to use a timeserie for imposing level (tide) than use this block where Piezometer6.dat is a time serie with level in time in the second column that the user will impose.
 
-``\
-`FILENAME                  : ..\General Data\Boundary Conditions\Piezometer6.dat`\
-`DATA_COLUMN               : 2`\
-``
+```
+<begin_boundary>
+FILENAME                  : ..\General Data\Boundary Conditions\Piezometer6.dat
+DATA_COLUMN               : 2
+<end_boundary>
+```
 
 ## Discharges
 
@@ -198,52 +200,35 @@ Manning coefficients must be provided in runoff data file.
 Options:
 
 - Use a constant value
-- Define a Manning's grid: One possible option is to associate Manning with land use classes (shape file). In this case can use MOHID GIS going to menu 
-
-$$
-Tools
-$$
-
- $\Longrightarrow$ 
-
-$$
-Shape to Grid Data
-$$
-
- and provide:
+- Define a Manning's grid: One possible option is to associate Manning with land use classes (shape file). In this case can use MOHID GIS going to menu [Tools] $\Longrightarrow$ [Shape to Grid Data] and provide:
 
   
 {\|
 
 \|(i) the grid (model grid) \|- \|ii) the land use shape file \|- \| iii) the corespondence between land use codes and Manning \|} Use Manning inicialization with Module FillMatrix standards in the block:
 
-``\
-`FILE_IN_TIME           : NONE`\
-`INITIALIZATION_METHOD  : ASCII_FILE`\
-`REMAIN_CONSTANT        : 1`\
-`DEFAULTVALUE           : 0.08`\
-`FILENAME               : ..\..\GeneralData\Runoff\Mannings200m_v2.dat `\
-``
+```
+<BeginOverLandCoefficient>
+FILE_IN_TIME           : NONE
+INITIALIZATION_METHOD  : ASCII_FILE
+REMAIN_CONSTANT        : 1
+DEFAULTVALUE           : 0.08
+FILENAME               : ..\..\GeneralData\Runoff\Mannings200m_v2.dat 
+<EndOverLandCoefficient>
+```
 
 ## Outputs
 
 ## References
 
 - Hubert Chanson\|Chanson, H. (2004), The Hydraulics of Open Channel Flow, Butterworth-Heinemann, Oxford, UK, 2nd edition, 630 pages
-- 
+- <http://www.hkh-friend.net.np/rhdc/training/lectures/HEGGEN/Tc_3.pdf>
 
 ## Data File
 
 ### Keywords
 
 ### Sample
-
-` (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){`\
-` (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),`\
-` m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)`\
-` })(window,document,'script','`[`https://www.google-analytics.com/analytics.js`](https://www.google-analytics.com/analytics.js)`','ga');`\
-` ga('create', 'UA-56589921-5', 'auto');`\
-` ga('send', 'pageview');`
 
 Category: MOHID Land
 

@@ -10,25 +10,7 @@ From the **maretec** user at the MrtXnSrv, **192.168.20.125** with putty was cre
 
 First mounted the Windows OS folder from kepler (192.168.20.131) so that can be used for virtual machine OS install (Windows 2008 Server):
 
-ex: sudo /bin/mount -t cifs -o 
-
-$$
-credentials
-$$
-
- 
-
-$$
-Folder Origin location
-$$
-
- 
-
-$$
-Folder Destination location
-$$
-
-
+ex: sudo /bin/mount -t cifs -o \[credentials\] \[Folder Origin location\] \[Folder Destination location\]
 
 ```
 >sudo /bin/mount -t cifs -o username=Administrator,password=XXXXX,workspace=MARETEC //192.168.20.131/Software/Windows_2008_Server_32bits
@@ -39,25 +21,7 @@ $$
 
 It was created a LV with 200GB (50 for OS).
 
-ex: sudo /sbin/lvcreate -n 
-
-$$
-Name of LV
-$$
-
- -L 
-
-$$
-size of LV
-$$
-
- 
-
-$$
-Volume group where LV will be
-$$
-
-
+ex: sudo /sbin/lvcreate -n \[Name of LV\] -L \[size of LV\] \[Volume group where LV will be\]
 
 ```
 >sudo /sbin/lvcreate -n vmmrtsrv08_FTP -L 200GB dados01
@@ -212,25 +176,7 @@ Marco said there are bether tools, in what concerns performance, security, versa
 
 Created a snapshot in 18-01-2009
 
-ex: sudo /sbin/lvcreate -n 
-
-$$
-Name of the snapshot
-$$
-
- -s 
-
-$$
-path to LV that will be snapshoted
-$$
-
- -L 
-
-$$
-snapshot size
-$$
-
-
+ex: sudo /sbin/lvcreate -n \[Name of the snapshot\] -s \[path to LV that will be snapshoted\] -L \[snapshot size\]
 
 ```
 >sudo /sbin/lvcreate -n VMMRTSRV08_FTP_SNAP20100118 -s /dev/dados01/vmmrtsrv08_FTP -L 200G

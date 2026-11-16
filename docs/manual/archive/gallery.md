@@ -19,7 +19,7 @@ Below is an example gallery. Edit the source code to see how to implement in oth
 
 - ![](../assets/images/Extrapol_gaussian.png)
 
-    Gaussian extrapolation with $\sigma=5\%$ of the domain characteristic length (average of the width and height), **w\_{ki} = \\e{\\left(-\\frac{ d^2\\left(X\_i,\\;Y\_k\\right)}{\\sigma^2}\\right)}**
+    Gaussian extrapolation with $\sigma=5\%$ of the domain characteristic length (average of the width and height), ** w\_{ki} = \\e{\\left(-\\frac{ d^2\\left(X\_i,\\;Y\_k\\right)}{\\sigma^2}\\right)}**
 
 ## See also
 

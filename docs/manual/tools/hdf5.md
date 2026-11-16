@@ -10,13 +10,7 @@ The windows binaries are served directly from our [codeplex](../archive/web/code
 
 ### Linux
 
-To compile Mohid it is mandatory to have the HDF5 [
-
-$$
-1
-$$
-
-](http://hdf.ncsa.uiuc.edu/HDF5/) libraries compiled. In HDF5's web page it is possible to obtain both binary distribuitions and the source code. Most of the times it is necessary to build from source which takse the following steps:
+To compile Mohid it is mandatory to have the HDF5 [\[1\]](http://hdf.ncsa.uiuc.edu/HDF5/) libraries compiled. In HDF5's web page it is possible to obtain both binary distribuitions and the source code. Most of the times it is necessary to build from source which takse the following steps:
 
 1. download the source code, e. g. hdf5-1.6.5.tar.gz;
 2. `> tar -zxvf hdf5-1.6.5.tar.gz`
@@ -38,10 +32,4 @@ To use the HDF5 libraries it is mandatory to have installed the zlib libraries. 
 
 ## References
 
-HDF5 Homepage - [
-
-$$
-2
-$$
-
-](http://hdf.ncsa.uiuc.edu/HDF5/)
+HDF5 Homepage - [\[2\]](http://hdf.ncsa.uiuc.edu/HDF5/)

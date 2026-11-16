@@ -128,13 +128,7 @@ In the surface water there will be the effect of hydraulic level gradient that t
 
 Hidraulic gradient implicitly incorporates gravity since water column level has the channel/topography bottom level. Usually it is presented the St. Venant equations with water column gradient $\frac{\partial h}{\partial x_i}$ and the slope $\frac{\partial z}{\partial x_i}$ but the system tries to homogenize both and not only water columns heigts.
 
-
-
-$$
-Improve the passage from the forces to the below equations since it needs geometry info
-$$
-
-
+\[Improve the passage from the forces to the below equations since it needs geometry info\]
 
 So, the sum of the forces acting on surface waters:
 
@@ -187,25 +181,7 @@ where:
 
 ![EqnQntMov StVenantQ disc7 2.png](../assets/images/EqnQntMov_StVenantQ_disc7_2.png)
 
-
-
-$$
-Advection
-$$
-
- and 
-
-$$
-Pressure
-$$
-
- units are im L3.T-1 and 
-
-$$
-Friction
-$$
-
- is adimensional. The remaining terms are defined above.
+\[Advection\] and \[Pressure\] units are im L3.T-1 and \[Friction\] is adimensional. The remaining terms are defined above.
 
 #### 2D descritization (Runoff)
 
@@ -255,13 +231,7 @@ The first acceleration term in St. Venant equation (partial derivate of velocity
 
 If inertia and advection are not used (or no acceleration) then forces balance themselves and the velocity is solely dependent on the forces and the last velocity or the transport of momentum from the neighbours is not accounted. Meaning that if forces push water from one time step to other in opossite directions water will instantaneously change directions and velocity. Moreover in case of changing slopes abruptly (from high to low), the lack of acceleration terms and because flow lowers downstream (lower surface gradient in flat areas) in order to balance the unreal reduction of flow the water column rises in unrealist way (the lack of momentum advection puts the energy dissipation in friction).
 
-An important application for using inertia and advection is when slope changes abruptly from hilly to flat. 
-
-$$
-Put image to describe this
-$$
-
-
+An important application for using inertia and advection is when slope changes abruptly from hilly to flat. \[Put image to describe this\]
 
 ### Porous Media
 
@@ -285,13 +255,7 @@ k: permeability (L2)
 
 Hidraulic gradient implicitly incorporates gravity since hydraulic head has the cell level.
 
-In the porous media there will be the effect of hydraulic head gradient that the system tries to homogenize and the resistance of the water passage since it is being transported trough a medium, with conductivity (K 
-
-$$
-L.T-1
-$$
-
-) being that measure (takes into account the permeability of the medium and the viscosity of the water):
+In the porous media there will be the effect of hydraulic head gradient that the system tries to homogenize and the resistance of the water passage since it is being transported trough a medium, with conductivity (K \[L.T-1\]) being that measure (takes into account the permeability of the medium and the viscosity of the water):
 
 $K = \frac{g k}{\nu v}$
 
@@ -299,13 +263,7 @@ The hydraulic head includes the gravity and intersticial forces (suction). The s
 
 In case of soil the velocites are low and the acceleration in porous media is not relevant (inertia or advection between water masses is low compared to the forces).
 
-
-
-$$
-Improve the passage from the forces to the below equations since it needs geometry info
-$$
-
-
+\[Improve the passage from the forces to the below equations since it needs geometry info\]
 
 The sum of the forces in Porous Media are the same as previous (balance between hydraulic gradient and resistance):
 

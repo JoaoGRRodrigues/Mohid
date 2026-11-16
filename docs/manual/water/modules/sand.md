@@ -2,35 +2,11 @@
 
 ## Overview
 
-Module Sand was the result of the accumulated experience gain by Hidromod in the framework of many engineering projects [
-
-$$
-1
-$$
-
-](http://www.hidromod.pt). Many of the projects were done with a old MOHID version programmed in F77. More recently Hidromod develop a new Module using the present [Mohid Programming](../../development/programming/mohid-programming.md) philosophy. The concepts of this module were described an tested in detail by Carmo (2005) (see [
-
-$$
-2
-$$
-
-](http://www.mohid.com/PublicData/products/Thesis/TFC_miguelcarmo.pdf) in Portuguese). However, if the user wants to know exactly what this module is doing it can take a look at the source code (see - [
-
-$$
-3
-$$
-
-](http://mohid.codeplex.com/SourceControl/changeset/view/63225#1208126)).
+Module Sand was the result of the accumulated experience gain by Hidromod in the framework of many engineering projects [\[1\]](http://www.hidromod.pt). Many of the projects were done with a old MOHID version programmed in F77. More recently Hidromod develop a new Module using the present [Mohid Programming](../../development/programming/mohid-programming.md) philosophy. The concepts of this module were described an tested in detail by Carmo (2005) (see [\[2\]](http://www.mohid.com/PublicData/products/Thesis/TFC_miguelcarmo.pdf) in Portuguese). However, if the user wants to know exactly what this module is doing it can take a look at the source code (see - [\[3\]](http://mohid.codeplex.com/SourceControl/changeset/view/63225#1208126)).
 
 ### Algorithm
 
-From a conceptual point of view this module is very simple. The bed load fluxes are computed in a Arakawa-C grid [
-
-$$
-4
-$$
-
-](http://en.wikipedia.org/wiki/Arakawa_grids#Arakawa_C-grid). In each centre cell (Z point) the transport flow is computes. In order to compute the transport flows the user can choose from a set of formulations presented below. In a second step the Zonal (or X) component flows are interpolated to the U points and the meridional (or Y) components are interpolated to the V points. Finally to estimate the evolution of the sand thickness in the centre cell (Z point) a mass balance is done. The availability of sand in a cell is limited by the depth of the bed rock.
+From a conceptual point of view this module is very simple. The bed load fluxes are computed in a Arakawa-C grid [\[4\]](http://en.wikipedia.org/wiki/Arakawa_grids#Arakawa_C-grid). In each centre cell (Z point) the transport flow is computes. In order to compute the transport flows the user can choose from a set of formulations presented below. In a second step the Zonal (or X) component flows are interpolated to the U points and the meridional (or Y) components are interpolated to the V points. Finally to estimate the evolution of the sand thickness in the centre cell (Z point) a mass balance is done. The availability of sand in a cell is limited by the depth of the bed rock.
 
 ### Transport formulas implemented
 

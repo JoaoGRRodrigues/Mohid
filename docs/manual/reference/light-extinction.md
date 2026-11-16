@@ -153,61 +153,51 @@ FILE_IN_TIME            : NONE
 Light energy reaching the water surface, I0 (Wm-2), can be estimated by MOHID based on a set of coordinates (Lat, Long) or imposed with a time-series. Light is divided into a shortwave component S and a longwave component L, so that . The short wave component of the light is used by the photosynthetic organisms and represents the 40-60% of the incoming radiation I0. In MOHID, long wave and shortwave radiation are calculated separately and can have different extinction coefficients. The model assumes that the light extinction in depth follows the decay given by Lambert-Beer’s law (Figure 4 1), which states that light intensity at depth z is:
 
 ```
-
+ 
 
 $$
 {{I}_{z}}={{I}_{0}}\,{{e}^{\left( -k\,z \right)}}
 $$
-
-
           Equation 1
 ```
 
 where Io is the incident radiation at the surface, Iz the available radiation at depth z and k the extinction coefficient. This law is applied to both shortwave and longwave radiation, so that Equation 3 can be rewritten as:
 
 ```
- 
+  
 
 $$
 {{S}_{z}}={{S}_{0}}\,{{e}^{\left( -{{k}_{s}}z \right)}}
 $$
-
-
  for shortwave radiation     Equation 2
 ```
 
 ```
- 
+  
 
 $$
 {{L}_{z}}={{L}_{0}}\,{{e}^{\left( -{{k}_{l}}z \right)}}
 $$
-
-
  for longwave radiation      Equation 3
 ```
 
 where ks and kl are the shortwave radiation extinction coefficient and the long wave radiation extinction coefficient, respectively, S0 the shortwave radiation component and L0 is the long wave radiation component at the sea surface. These, in turn, are expressed as:
 
 ```
-
+ 
 
 $$
 {{S}_{0}}\,=SW\times {{I}_{0}}
 $$
-
-
        Equation 4
 ```
 
 ```
-
+ 
 
 $$
 {{L}_{0}}\,=LW\times {{I}_{0}}
 $$
-
-
        Equation 5
 ```
 
@@ -326,27 +316,9 @@ OUTPUT_HDF               : 1
 
 #### Parsons Ocean
 
-The formulation for this method is taken from Parson et al. 
+The formulation for this method is taken from Parson et al. \[1\]. Only absorption by water molecules and chlorophyll pigments is considered. In this case, in the WaterProperties input file it is necessary to define also the water property phytoplankton as shown in Table 4 6. The constant (0.04) is close to the average extinction coefficient for visible light in clean water. To use this equation in other ambient where dissolved and particulate materials are important to the light extinction, which are not directly related to chlorophyll, the default value of this constant can be changed with the SW\_EXTINCTION\_COEF keyword. A typical value of 0.3 m-1 for reservoirs is described by Chapra \[2\].
 
-$$
-1
-$$
-
-. Only absorption by water molecules and chlorophyll pigments is considered. In this case, in the WaterProperties input file it is necessary to define also the water property phytoplankton as shown in Table 4 6. The constant (0.04) is close to the average extinction coefficient for visible light in clean water. To use this equation in other ambient where dissolved and particulate materials are important to the light extinction, which are not directly related to chlorophyll, the default value of this constant can be changed with the SW\_EXTINCTION\_COEF keyword. A typical value of 0.3 m-1 for reservoirs is described by Chapra 
-
-$$
-2
-$$
-
-.
-
-Since the Parsons formula accepts values of Chl expressed in mgChla/m3, but the model uses the concentration of phytoplankton expressed as mgC/l, a unit conversion from mgC/l to mg Chla/m3 is done in the model by using a default ratio C:Chla equal to 60. This ratio varies between about 10 and 100 for total phytoplankton 
-
-$$
-1
-$$
-
-, with 10 corresponding to low light intensities and high temperatures, and 100 corresponding to high light intensities and low temperatures. The default value can be changed using the RATIO\_C\_CHLA keyword in the ModuleWaterProperties.
+Since the Parsons formula accepts values of Chl expressed in mgChla/m3, but the model uses the concentration of phytoplankton expressed as mgC/l, a unit conversion from mgC/l to mg Chla/m3 is done in the model by using a default ratio C:Chla equal to 60. This ratio varies between about 10 and 100 for total phytoplankton \[1\], with 10 corresponding to low light intensities and high temperatures, and 100 corresponding to high light intensities and low temperatures. The default value can be changed using the RATIO\_C\_CHLA keyword in the ModuleWaterProperties.
 
 *Table 4 6 Example of keyword definition to use in WaterProperties\_x.dat input file to implement the Parsons Ocean shortwave radiation extinction coefficient in the water column (in this case the longwave radiation extinction coefficient is constant).*
 
@@ -393,13 +365,7 @@ PARTICULATE                  : 0
 
 #### Portela - Tagus Estuary
 
-This method uses a site-specific formula derived from a model calibration with field data from the Tagus estuary, Portugal 
-
-$$
-3
-$$
-
-. User must be aware that this method can be adequate for estuaries with similar characteristics, and may be used critically to other sites. Only cohesive sediments and water absorption of radiation is taken into account. Please notice that cohesive sediments are assumed to be suspended particulate matter (SPM) as appear in the formulation. In this case, in the WaterProperties input file it is necessary to define also the water properties phytoplankton and cohesive sediment, as shown in Table 4 7, otherwise the model will stop and give an error message.
+This method uses a site-specific formula derived from a model calibration with field data from the Tagus estuary, Portugal \[3\]. User must be aware that this method can be adequate for estuaries with similar characteristics, and may be used critically to other sites. Only cohesive sediments and water absorption of radiation is taken into account. Please notice that cohesive sediments are assumed to be suspended particulate matter (SPM) as appear in the formulation. In this case, in the WaterProperties input file it is necessary to define also the water properties phytoplankton and cohesive sediment, as shown in Table 4 7, otherwise the model will stop and give an error message.
 
 *Table 4 7 Example of keyword definition to use in WaterProperties\_x.dat input file to implement the Portela-Tagus estuary shortwave radiation extinction coefficient in the water column (in this case the longwave radiation extinction coefficient is constant).*
 
@@ -494,13 +460,7 @@ OUTPUT_HDF               : 1
 
 #### Multiparameter
 
-The multiparameter approach to estimate the extinction coefficient has been developed specifically for ModuleLife 
-
-$$
-4
-$$
-
-, but can be used with ModuleWaterProperties and ModuleWaterQuality. The rationale in this method consists in summing up the individual contribution of each component that may affect light (cohesive sediments, DOC, POC, etc.). These components (state-variables) are defined by the user, by means of keywords for activating the property (LIGHT\_EXTINCTION) and for defining its specific extinction coefficient (EXTINCTION\_PARAMETER) (see example in Table 4 9). There must be a matching in units of the state-variables and respective extinction coefficients must be the same, for example, mg/L and m-1 / mg/L, respectively.
+The multiparameter approach to estimate the extinction coefficient has been developed specifically for ModuleLife \[4\], but can be used with ModuleWaterProperties and ModuleWaterQuality. The rationale in this method consists in summing up the individual contribution of each component that may affect light (cohesive sediments, DOC, POC, etc.). These components (state-variables) are defined by the user, by means of keywords for activating the property (LIGHT\_EXTINCTION) and for defining its specific extinction coefficient (EXTINCTION\_PARAMETER) (see example in Table 4 9). There must be a matching in units of the state-variables and respective extinction coefficients must be the same, for example, mg/L and m-1 / mg/L, respectively.
 
 *Table 4 9 Example of keyword definition (in blue) to use multiparameter option in WaterProperties.dat input file (to use with ModuleLife).*
 
@@ -536,53 +496,37 @@ Simulation conditions S0 = 300 Wm-2; SW percentage = 60; Albedo = 0; Cloud cover
 
 ## The role of light in ecological models
 
-The ecological models that are built-in in MOHID have two rather different approaches to address the role of light in primary production. The differences arise from the fact that the models (WaterQuality and Life) have been developed around different modelling philosophies. Model WaterQuality is based on the NPZD (Nutrient-Phytoplankton-Zooplankton-Detritus) concept where N is used as the currency between state-variables 
-
-$$
-6
-$$
-
-. These early ecological model usually don’t consider Chla as a state-variable, and phytoplankton is expressed in C-biomass. Light limitation is usually a function of light availability and an optimal value. Model Life, on the other hand, is based on a more complex philosophy, where organism biomass is defined in terms of elemental composition (C, N and P). For primary producers there are some additional components such as Si and Chla. These models have their origin in the ERSEM model 
-
-$$
-7-10
-$$
-
-, and among the developments they have undergone is the introduction of algorithm for Chla synthesis. The result is that light control the growth of producers via the production of Chla and the instant ratio of C:Chla of each producer group.
+The ecological models that are built-in in MOHID have two rather different approaches to address the role of light in primary production. The differences arise from the fact that the models (WaterQuality and Life) have been developed around different modelling philosophies. Model WaterQuality is based on the NPZD (Nutrient-Phytoplankton-Zooplankton-Detritus) concept where N is used as the currency between state-variables \[6\]. These early ecological model usually don’t consider Chla as a state-variable, and phytoplankton is expressed in C-biomass. Light limitation is usually a function of light availability and an optimal value. Model Life, on the other hand, is based on a more complex philosophy, where organism biomass is defined in terms of elemental composition (C, N and P). For primary producers there are some additional components such as Si and Chla. These models have their origin in the ERSEM model \[7-10\], and among the developments they have undergone is the introduction of algorithm for Chla synthesis. The result is that light control the growth of producers via the production of Chla and the instant ratio of C:Chla of each producer group.
 
 ### ModuleWaterQuality
 
 Phytoplankton growth (μ) in this model is a function of a maximum growth rate (μmax) and the limitation imposed by light, nutrient and temperature, according to:
 
 ```
-
+ 
 
 $$
 \mu ={{\mu }_{\max }}\,{{\Omega }_{T}}\,{{\Omega }_{N}}\,{{\Omega }_{L}}\,
 $$
-
-
        Equation 6
 ```
 
 The dimensionless limitation factors vary between 0 (total limitation) and 1 (no limitation). The light limitation factor (ΩL) defines the relationship between the ambient light levels and primary producers’ photosynthetic rate. The photosynthetic rate increases with the light intensity until a maximum photosynthetic rate Pmax is reached (at optimal shortwave radiation Sopt). For values higher than Sopt, the photosynthetic rate decreases. The photosynthetic response to the light is given by the Steele’s formula:
 
 ```
-
+ 
 
 $$
 \frac{P}{{{P}_{\max }}}=\frac{{{S}_{z}}}{{{S}_{opt}}}{{e}^{\left[ 1-\frac{{{S}_{z}}}{{{S}_{opt}}} \right]}}
 $$
-
-
        Equation 7
 ```
 
 where P is the photosynthetic rate (d-1), Pmax the maximum photosynthetic rate (d-1), Sz the shortwave radiation (Wm-2) at depth z (m). From this, the light limiting factor (ΩL) is calculated according to Equation 8 in function PhytoLightLimitationFactor inside ModuleFunction, being called by ModuleWater Quality.
 
 ```
-LightLim =\frac{1}{z}\int\limits_{0}^{z}{\frac{P}{{{P}_{\max }}}dz
- =\frac{{{e}^{1}}}{z{{k}_{s}}}\left[ {{e}^{\left( -\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}} \right)}}-{{e}^{\left( -\frac{{{S}_{0}}}{{{S}_{opt}}} \right)}} \right]}
+ LightLim =\frac{1}{z}\int\limits_{0}^{z}{\frac{P}{{{P}_{\max }}}dz
+  =\frac{{{e}^{1}}}{z{{k}_{s}}}\left[ {{e}^{\left( -\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}} \right)}}-{{e}^{\left( -\frac{{{S}_{0}}}{{{S}_{opt}}} \right)}} \right]}
        Equation 8
 ```
 
@@ -592,29 +536,11 @@ This formula to calculate the limitation of the light on the growth of phytoplan
 
 ### ModuleMacroAlgae
 
-Light limitation to algal growth inside ModuleMacroAlgae is calculate with the same function (PhytoLightLimitationFactor inside ModuleFunction) used by ModuleWaterQuality for phytoplankton (Equation 8). The differences between macroalgae and phytoplankton can be addressed using different parameter values for Sopt. More information on this module can be found in 
-
-$$
-5
-$$
-
-.
+Light limitation to algal growth inside ModuleMacroAlgae is calculate with the same function (PhytoLightLimitationFactor inside ModuleFunction) used by ModuleWaterQuality for phytoplankton (Equation 8). The differences between macroalgae and phytoplankton can be addressed using different parameter values for Sopt. More information on this module can be found in \[5\].
 
 ### ModuleLife
 
-In this module the phytoplankton growth rates (C-fixation) are determined by available light and nutrients using a modified form of a growth model taken from the literature 
-
-$$
-11
-$$
-
-. The influence of light depends not just on available radiation but also on the instant C:Chla ratio of each producer group. For a comprehensive description of this model and its parameterization please consult 
-
-$$
-4
-$$
-
-.
+In this module the phytoplankton growth rates (C-fixation) are determined by available light and nutrients using a modified form of a growth model taken from the literature \[11\]. The influence of light depends not just on available radiation but also on the instant C:Chla ratio of each producer group. For a comprehensive description of this model and its parameterization please consult \[4\].
 
 ## References
 
@@ -636,21 +562,19 @@ $$
 As mentioned before, the shortwave radiation Sz at the depth z is calculated with the Lambert-Beer law (Equation 2). By replacing in Equation 7 we get:
 
 ```
-
+ 
 
 $$
 \frac{P}{{{P}_{\max }}}=\frac{{{S}_{0}}\,{{e}^{-{{k}_{s}}z}}}{{{S}_{opt}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}
 $$
-
-
        Equation 9
 ```
 
 The average value of the limiting factor at a depth z is given by the ratio between the integral of P/Pmax and z:
 
 ```
-LightLim=\frac{1}{z}\int\limits_{0}^{z}{\frac{P}{{{P}_{\max }}}dz
-=\frac{1}{z}\int\limits_{0}^{z}{\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}}{{e}^{\left( 1-\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}} \right)}}dz}}
+ LightLim=\frac{1}{z}\int\limits_{0}^{z}{\frac{P}{{{P}_{\max }}}dz
+ =\frac{1}{z}\int\limits_{0}^{z}{\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}}{{e}^{\left( 1-\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}} \right)}}dz}}
        Equation 10
 ```
 
@@ -661,167 +585,133 @@ The solution of the integral leads to the expression in Equation 8.
 To solve the integral in Equation 10 we start by calculating the solution of the indefinite integral,
 
 ```
-
+ 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\int\limits_{{}}^{{}}{\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}dz}
 $$
-
-
        Equation 11
 ```
 
 and then multiply and divide the expression inside the integral by –ks,
 
 ```
-
+ 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}
 $$
-
-
-
+ 
 
 $$
 =\int\limits_{{}}^{{}}{\frac{-{{k}_{s}}}{-{{k}_{s}}}\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{-{{k}_{s}}z}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}dz}
 $$
-
-
        Equation 12
 ```
 
 By applying the rules for integration by parts, we can replace:
 
 ```
-
+ 
 
 $$
 u={{e}^{-{{k}_{s}}z}}
 $$
-
-
-; 
+;  
 
 $$
 du=-{{k}_{s}}{{e}^{-{{k}_{s}}z}}dz
 $$
-
-
-; 
+;  
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\int\limits_{{}}^{{}}{-\frac{{{S}_{0}}}{{{k}_{s}}{{S}_{opt}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}u \right)}}du}
 $$
-
-
         Equation 13
 ```
 
 Being a constant ks can be brought outside the integral,
 
 ```
-
+ 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\frac{1}{{{k}_{s}}}\int\limits_{{}}^{{}}{-\frac{{{S}_{0}}}{{{S}_{opt}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}u \right)}}du}
 $$
-
-
        Equation 14
 ```
 
 and by applying the rules for integration by parts, it is possible to replace:
 
 ```
-
+ 
 
 $$
 s=1-\frac{{{S}_{0}}}{Sopt}u
 $$
-
-
- and 
+ and  
 
 $$
 ds=-\frac{{{S}_{0}}}{Sopt}du
 $$
-
-
-; 
+;  
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\frac{1}{{{k}_{s}}}\int\limits_{{}}^{{}}{{{e}^{s}}ds}
 $$
-
-
       Equation 15
 ```
 
 Considering that the integral of es is es :
 
 ```
-
+ 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\frac{1}{{{k}_{s}}}{{e}^{s}}
 $$
-
-
        Equation 16
 ```
 
 By substituting and we obtain:
 
 ```
-
+ 
 
 $$
 \int{\frac{P}{{{P}_{\max }}}dz}=\frac{1}{{{k}_{s}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}
 $$
-
-
        Equation 17
 ```
 
 Finally, the definite integral between the surface (z=0) and the depth z can be calculated as:
 
 ```
-
+ 
 
 $$
 \int\limits_{z}^{0}{\frac{P}{{{P}_{\max }}}dz}
 $$
-
-
-
+ 
 
 $$
 ={{\left[ \frac{1}{{{k}_{s}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}} \right]}_{z=z}}
 $$
-
-
-
+ 
 
 $$
 -{{\left[ \frac{1}{{{k}_{s}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}} \right]}_{z=0}}
 $$
 
-
-
-
+ 
 
 $$
 =\frac{1}{{{k}_{s}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}-\frac{1}{{{k}_{s}}}{{e}^{\left( 1-\frac{{{S}_{0}}}{Sopt}{{e}^{(0)}} \right)}}
 $$
-
-
-
+ 
 
 $$
 =\frac{{{e}^{1}}}{{{k}_{s}}}\left[ {{e}^{\left( -\frac{{{S}_{0}}}{Sopt}{{e}^{-{{k}_{s}}z}} \right)}}-{{e}^{\left( -\frac{{{S}_{0}}}{Sopt} \right)}} \right]
 $$
-
-
        Equation 18
 ```

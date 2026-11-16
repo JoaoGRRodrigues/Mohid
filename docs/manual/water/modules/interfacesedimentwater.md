@@ -20,55 +20,19 @@ EQUATION 1
 
 Where CD is the bottom drag coefficient that is calculated with the expression:
 
-Where κ is von Karman constant and zb0 is the bottom roughness length. This quadratic law is derived from the logarithmic law of the wall near boundaries characteristic of boundary layers, as the bottom velocities are located half a grid box above the bottom. This term is calculated semi-implicitly following Backhaus 
-
-$$
-1985
-$$
-
- for numerical stability reasons.
+Where κ is von Karman constant and zb0 is the bottom roughness length. This quadratic law is derived from the logarithmic law of the wall near boundaries characteristic of boundary layers, as the bottom velocities are located half a grid box above the bottom. This term is calculated semi-implicitly following Backhaus \[1985\] for numerical stability reasons.
 
 ### Bottom shear stress induced by surface waves
 
 Surface waves exert friction forces at the bed during propagation. The bed shear stress is related to the friction coefficient by:
 
-In which: Instantaneous bed-shear stress 
-
-$$
-N/m2
-$$
-
- Friction coefficient 
-
-$$
-dimensionless
-$$
-
- Instantaneous fluid velocity just outside boundary layer 
-
-$$
-m/s
-$$
-
- Fluid density 
-
-$$
-kg/m3
-$$
-
- The friction factor fw is assumed to be constant over the wave cycle and is determined from the peak values as:
+In which: Instantaneous bed-shear stress \[N/m2\] Friction coefficient \[dimensionless\] Instantaneous fluid velocity just outside boundary layer \[m/s\] Fluid density \[kg/m3\] The friction factor fw is assumed to be constant over the wave cycle and is determined from the peak values as:
 
 The time-average (over a wave cycle) bed shear stress is:
 
 In the rough turbulent regime Jonsson (1966 in van Rijn, 1989) proposed:
 
-fw,max=0.3for Where ks stands for bed roughness 
-
-$$
-m
-$$
-
-
+fw,max=0.3for Where ks stands for bed roughness \[m\]
 
 ## Mass fluxes
 

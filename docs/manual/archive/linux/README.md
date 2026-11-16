@@ -66,7 +66,7 @@ Building and running MOHID on Linux and other Unix-like systems.
 - [Perl one-liners](perl-one-liners.md) — A lot of nice things can be said about one-liners in Perl, but one example should suffice to give an understanding of their power and beauty:
 - [Plone](plone.md)
 - [Pr](pr.md)
-- [Profiling](profiling.md) — Is is possible to profile code compiled with the Intel Fortran compiler using gprof [
+- [Profiling](profiling.md) — Is is possible to profile code compiled with the Intel Fortran compiler using gprof [\[1\]](http://www.cs.utah.edu/dept/old/texinfo/as/gproftoc.html).…
 - [Ps](ps.md)
 - [Pure-ftpd](pure-ftpd.md) — This is a fedora core installation. No anonymous allowed. Virtual users only (created with the pure-pw useradd command).
 - [Pydap](pydap.md) — Excellent alternative to opendap, written in python! See all the docs here.
@@ -216,13 +216,7 @@ The example below kills a process whose PID is 22060
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-Basic linux bash commands [
-
-$$
-1
-$$
-
-](http://www.ss64.com/bash/)
+Basic linux bash commands [\[1\]](http://www.ss64.com/bash/)
 
 #### External References
 

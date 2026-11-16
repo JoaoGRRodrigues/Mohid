@@ -18,13 +18,7 @@ this file contains the login names of users who are not allowed to log in by way
 
 this file automatically mounts filesystems that are spread across multiple drives or separate partitions. This file is checked when the system boots and filesystems are mounted.
 
-/etc/hosts.
-
-$$
-allow, deny
-$$
-
-
+/etc/hosts.\[allow, deny\]
 
 you can control access to your network by using these files. Adds hosts that you want to grant access to your network to the hosts.allow file; add hosts that you want to deny access to hosts.deny.
 

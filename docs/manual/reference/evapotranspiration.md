@@ -34,13 +34,7 @@ To make MOHID Land calculate the reference evapotranspiration, the REMAIN\_CONST
 
 Evapotranspiration is calculated using the 'FAO crop reference evapotranspiration' method, a standardized Penman-Monteith equation.
 
-All necessary information can be obtained from the FAO website: [
-
-$$
-1
-$$
-
-](http://www.fao.org/docrep/X0490E/x0490e00.htm#Contents)
+All necessary information can be obtained from the FAO website: [\[1\]](http://www.fao.org/docrep/X0490E/x0490e00.htm#Contents)
 
 **ATTENTION**: The "UNITS" chosen for the reference evapotranspiration property are important. Internally MOHID Land will convert the values provided with the user units to m/s (meters by second). The units chosen for the property must match that of the input file if one is used. The units are always in LENGTH/TIME format.
 

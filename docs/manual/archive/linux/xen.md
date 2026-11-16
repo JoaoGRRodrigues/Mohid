@@ -33,33 +33,15 @@ VMMRTSRV06                                   4  1024     2     -b----   6656.9
 
 How to start a VM? 
 
-\> sudo /usr/sbin/xm start VMMRTSRV0
-
-$$
-2-6
-$$
-
-
+\> sudo /usr/sbin/xm start VMMRTSRV0\[2-6\]
 
 How to reboot a VM? 
 
-\> sudo /usr/sbin/xm reboot VMMRTSRV0
-
-$$
-2-6
-$$
-
-
+\> sudo /usr/sbin/xm reboot VMMRTSRV0\[2-6\]
 
 How to shutdown a VM? 
 
-\> sudo /usr/sbin/xm shutdown VMMRTSRV0
-
-$$
-2-6
-$$
-
-
+\> sudo /usr/sbin/xm shutdown VMMRTSRV0\[2-6\]
 
 How to list installed VMs? 
 
@@ -218,13 +200,7 @@ vim>:q
 ## Accessing via VNC
 
 - Install <goto>TightVNC client</goto>.
-- Then access to **192.168.20.125:?** to have console access. You need to determine which port(**?**) is allocated to the VM. You can test values ranging from 
-
-$$
-1-9
-$$
-
-, or you can check the *xen\_config* directory in the **192.168.20.125** machine (access it with [ssh](ssh.md) or putty).
+- Then access to **192.168.20.125:?** to have console access. You need to determine which port(**?**) is allocated to the VM. You can test values ranging from \[1-9\], or you can check the *xen\_config* directory in the **192.168.20.125** machine (access it with [ssh](ssh.md) or putty).
 
 ## How do I know how much space do I have left free?
 

@@ -144,25 +144,7 @@ That represents the maximum displacement in meters that the layer face (or SZZ) 
 
 In case of Lagrangian evolution the grid is deformed at each time step.
 
-First a new estimation of SZZ is computed. Surface and bottom faces SZZ's are fixed. Starting at the top layer, the displacement of each face is estimated using the last vertical velocity computed (displacement 
-
-$$
-m
-$$
-
- = vertical velocity
-
-$$
-m/s
-$$
-
- \* time step 
-
-$$
-s
-$$
-
-).
+First a new estimation of SZZ is computed. Surface and bottom faces SZZ's are fixed. Starting at the top layer, the displacement of each face is estimated using the last vertical velocity computed (displacement \[m\] = vertical velocity\[m/s\] \* time step \[s\]).
 
 At each layer, the estimation of SZZ based on vertical velocity is tested to check if they are within the maximum deformation allowed for the above and below cells of that face. In case the test fails, SZZ displacement is corrected to the minimum of the deformations allowed.
 

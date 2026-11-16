@@ -27,13 +27,7 @@ Recent files can be found in [ftp://ftp.mohid.com/](ftp://ftp.mohid.com/) (meteo
 
 ### References to MM5-IST configuration
 
-- Sousa, T., Domingos, J. (2002) Previsão Meteorológica em Portugal Continental utilizando o modelo operacional e de investigação MM5. Dissertação para obtenção do Grau de Mestre em Ecologia, Gestão e Modelação dos Recursos Marinhos, Instituto Superior Técnico, 150pp. [
-
-$$
-1
-$$
-
-](http://redibericamm5.uib.es/publicacions/any2002/g30_tesi_02.pdf)
+- Sousa, T., Domingos, J. (2002) Previsão Meteorológica em Portugal Continental utilizando o modelo operacional e de investigação MM5. Dissertação para obtenção do Grau de Mestre em Ecologia, Gestão e Modelação dos Recursos Marinhos, Instituto Superior Técnico, 150pp. [\[1\]](http://redibericamm5.uib.es/publicacions/any2002/g30_tesi_02.pdf)
 
 - Rodrigo's Msc thesis has a chapter on validation of MM5 forecasts for Guia
 

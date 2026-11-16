@@ -12,13 +12,7 @@ MOHID Water Modelling System has a large variety of support tools used to help c
 
 ### MOHID GUI 2009
 
-Old version of MOHID GUI (2009). No support is provided. Available at: 
-
-$$
-[MOHID GUI 2009 Download](http://www.mohid.com/PublicData/Products/Software/MOHID_GUI_2009.zip)
-$$
-
-
+Old version of MOHID GUI (2009). No support is provided. Available at: \[[MOHID GUI 2009 Download](http://www.mohid.com/PublicData/Products/Software/MOHID_GUI_2009.zip)\]
 
 ## Pre-processing
 

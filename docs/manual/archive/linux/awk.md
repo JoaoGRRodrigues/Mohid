@@ -220,13 +220,7 @@ substr(<string>,<start of substring>,<max length of substring>)
 
 Get substring.
 
-split(<string>,<array>,
-
-$$
-<field separator>
-$$
-
-)
+split(<string>,<array>,\[<field separator>\])
 
 Split string into array, with initial array index being 1.
 

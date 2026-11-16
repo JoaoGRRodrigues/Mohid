@@ -77,13 +77,7 @@ flow to channels - flow (m3/s) from runoff to river in the selected nodes.
 
 GW flow to channels - flow (m3/s) from groundwater to river in the selected nodes.
 
-each property transported will have an output with its concentration (mg/L) in the selected nodes. If property is particulated aslso will have a series named Bottom\_
-
-$$
-PropertyName
-$$
-
- (kg/m2).
+each property transported will have an output with its concentration (mg/L) in the selected nodes. If property is particulated aslso will have a series named Bottom\_\[PropertyName\] (kg/m2).
 
 [Check Mohid Land Heights and Levels to understand the difference between level and height results](http://screencast.com/t/I8We0B4j2uJ)
 
@@ -225,13 +219,7 @@ REACHES_FILE                  : ..\..\GeneralData\DrainageNetwork\DrainageNetwo
 
 - Define the cross sections for each node (see [MOHID GIS](../../tools/gui/mohid-gis.md)).
     -   **Warning 1**: Remember to select "Save All" in MOHID GIS to update the file.
-    -   **Warning 2**: Currently, this program writes a BOTTOM\_LEVEL keyword for each node instead of the keyword TERRAIN\_LEVEL needed by the Drainage Network module. BOTTOM\_LEVEL was replaced by TERRAIN\_LEVEL in the latest version of this module because of the introduction of the tabular (irregular) cross-section type, generalizing the formulation of cross-sections. The pre-processor tool is not yet adapted. Nevertheless, for regular cross-sections, TERRAIN LEVEL = BOTTOM\_LEVEL + HEIGHT. It can be changed manually or with this perl script [
-
-$$
-1
-$$
-
-](http://docs.google.com/leaf?id=0B_xtWE4qvkq8Y2FhNjk5NTQtZTdhZC00N2I1LWE3Y2YtM2QwYzIyMjhhZDRj&sort=name&layout=list&num=50).
+    -   **Warning 2**: Currently, this program writes a BOTTOM\_LEVEL keyword for each node instead of the keyword TERRAIN\_LEVEL needed by the Drainage Network module. BOTTOM\_LEVEL was replaced by TERRAIN\_LEVEL in the latest version of this module because of the introduction of the tabular (irregular) cross-section type, generalizing the formulation of cross-sections. The pre-processor tool is not yet adapted. Nevertheless, for regular cross-sections, TERRAIN LEVEL = BOTTOM\_LEVEL + HEIGHT. It can be changed manually or with this perl script [\[1\]](http://docs.google.com/leaf?id=0B_xtWE4qvkq8Y2FhNjk5NTQtZTdhZC00N2I1LWE3Y2YtM2QwYzIyMjhhZDRj&sort=name&layout=list&num=50).
 
 #### Irregular Cross Section
 

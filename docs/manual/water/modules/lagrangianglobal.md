@@ -6,13 +6,7 @@ The LangrangianGlobal Module is a deep upgrade of the [Lagrangian Module](lagran
 
 1 - Run only one lagrangian model in a multi-nesting implementation. This way particles can go from grid to grid without any problems (see example of particles moving between grids). In the Lagrangian module particles are destroyed when they leave the grid where they were emitted. This is the reason way a lagrangian model is runned for each grid in the Lagrangian Module;
 
-2 - Centralise all the interpolation and particle location (in a [grid](../../io/formats/grid.md)) methods in the [HorizontalGrid Module](README.md#module-horizontalgrid#module-horizontalgrid) and (see source code [
-
-$$
-1
-$$
-
-](http://mohid.codeplex.com/SourceControl/changeset/view/64163#1208106));
+2 - Centralise all the interpolation and particle location (in a [grid](../../io/formats/grid.md)) methods in the [HorizontalGrid Module](README.md#module-horizontalgrid#module-horizontalgrid) and (see source code [\[1\]](http://mohid.codeplex.com/SourceControl/changeset/view/64163#1208106));
 
 3 - Avoid redundances in the particle origin definitions. This way is possible to compress the input file (Lagrangian\_x.dat).
 

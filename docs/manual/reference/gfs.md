@@ -58,55 +58,13 @@ It has been created an script to extract the variables needed for modelling purp
 
 Once executed, the outputs are .dat files each containing a different property with the following correspondences:
 
-- HR2m - Relative Humidity 2 m above ground 
-
-$$
-%
-$$
-
-
-- LAND - Land Cover (1=land, 0=sea) 
-
-$$
-Proportion
-$$
-
-
-- MSLP - Pressure Reduced to Mean Sea Level 
-
-$$
-Pa
-$$
-
-
-- TCDC - Total Cloud Cover 
-
-$$
-%
-$$
-
-
-- TMP2m - Temperature 2 m above ground 
-
-$$
-K
-$$
-
-
-- U - U-Component of Wind 10 m above ground 
-
-$$
-m/s
-$$
-
-
-- V - V-Component of Wind 10 m above ground 
-
-$$
-m/s
-$$
-
-
+- HR2m - Relative Humidity 2 m above ground \[%\]
+- LAND - Land Cover (1=land, 0=sea) \[Proportion\]
+- MSLP - Pressure Reduced to Mean Sea Level \[Pa\]
+- TCDC - Total Cloud Cover \[%\]
+- TMP2m - Temperature 2 m above ground \[K\]
+- U - U-Component of Wind 10 m above ground \[m/s\]
+- V - V-Component of Wind 10 m above ground \[m/s\]
 
 ## ASCII to HDF5 format
 

@@ -68,13 +68,7 @@ This is a local user's guide. These are the official [user's guide](http://www.o
 
 1. From a web-browser, compose the address where the [DAP](README.md#dap#dap) files are being served. ex: [http://data.mohid.com/opendap/nph-dods/LASoutput.nc.html](http://data.mohid.com/opendap/nph-dods/LASoutput.nc.html) or [http://www.cdc.noaa.gov/cgi-bin/nph-nc/Datasets/](http://www.cdc.noaa.gov/cgi-bin/nph-nc/Datasets/). You can browse the directories to see the available files. [netcdf](http://www.unidata.ucar.edu/software/netcdf/) files are most likely to be found.
 2. Select a [netcdf](http://www.unidata.ucar.edu/software/netcdf/) file by clicking on it or simply append it's full address in the address bar followed by *.html* suffix. ex: [http://data.mohid.com/opendap/nph-dods/mercator-ist/Portugal/20061213\_Portugal\_WaterProperties.nc.html](http://data.mohid.com/opendap/nph-dods/mercator-ist/Portugal/20061213_Portugal_WaterProperties.nc.html) or [http://www.cdc.noaa.gov/cgi-bin/nph-nc/Datasets/coads/1degree/global/std/air.mean.nc.html](http://www.cdc.noaa.gov/cgi-bin/nph-nc/Datasets/coads/1degree/global/std/air.mean.nc.html).
-3. Select the desired variables by clicking on their select boxes. Then write their subdomain limits. For example, putting in latitude *
-
-$$
-12:2:24
-$$
-
-* selects the subdomain ranging from 12ºN to 24ºN with a 2º step. Only integers are allowed.
+3. Select the desired variables by clicking on their select boxes. Then write their subdomain limits. For example, putting in latitude *\[12:2:24\]* selects the subdomain ranging from 12ºN to 24ºN with a 2º step. Only integers are allowed.
 4. Get the data by clicking in *Get Ascii* or *Binary Data Object*. Respectively you will obtain the data in an [ASCII](http://en.wikipedia.org/wiki/Ascii) file or in [netcdf](http://www.unidata.ucar.edu/software/netcdf/) format (rewrite the extension *.nc.dods* to *.nc*).
 
 ### Quick ref
@@ -92,88 +86,10 @@ Here's a list of useful [suffixes](http://en.wikipedia.org/wiki/Suffix) for extr
 Here's a quick reference of [suffixes](http://en.wikipedia.org/wiki/Suffix) for extracting data from netcdf files:
 
 - *.asc?time* returns the variable time in ascii format.
-- *.asc?time
-
-$$
-0:2:6
-$$
-
-* returns the variable time in ascii format but within a subset of stride 2.
-- *.dods?time
-
-$$
-0:2:6
-$$
-
-* returns the same variable as above but in [binary](http://en.wikipedia.org/wiki/Binary_file) format (i.e. netcdf).
-- *.dods?time
-
-$$
-2:3:8
-$$
-
-,sst
-
-$$
-2:3:8
-$$
-
-
-
-$$
-43:47
-$$
-
-
-
-$$
-215:234
-$$
-
-,ssh
-
-$$
-2:3:8
-$$
-
-
-
-$$
-43:47
-$$
-
-
-
-$$
-215:234
-$$
-
-* returns the time, the SST and the SSH variables for a given domain.
-- *.dods?time
-
-$$
-2:3:8
-$$
-
-,sst
-
-$$
-2:3:8
-$$
-
-
-
-$$
-43:47
-$$
-
-
-
-$$
-215:234
-$$
-
-&pressure>50.0&pressure<100.0* returns the time and the SST variables for a given domain with the additional constraint that the variable pressure must range between 50.0 and 100.0 units.
+- *.asc?time\[0:2:6\]* returns the variable time in ascii format but within a subset of stride 2.
+- *.dods?time\[0:2:6\]* returns the same variable as above but in [binary](http://en.wikipedia.org/wiki/Binary_file) format (i.e. netcdf).
+- *.dods?time\[2:3:8\],sst\[2:3:8\]\[43:47\]\[215:234\],ssh\[2:3:8\]\[43:47\]\[215:234\]* returns the time, the SST and the SSH variables for a given domain.
+- *.dods?time\[2:3:8\],sst\[2:3:8\]\[43:47\]\[215:234\]&pressure>50.0&pressure<100.0* returns the time and the SST variables for a given domain with the additional constraint that the variable pressure must range between 50.0 and 100.0 units.
 
 ## Netcdf libraries
 

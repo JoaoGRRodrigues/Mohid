@@ -295,27 +295,9 @@ The netcdf libraries should be updated in MOHID projects. While that is not done
 3. Go to your folder where it was installed (e.g. C:\\Program Files\\netCDF 4.3.0\\bin) and copy those files to any work folder where to convert the netcf file (e.g D:\\ConvertNetcdf)
 4. Copy to the work folder the netcdf file to convert
 5. Start a command line and go to the work folder (e.g. cd D:\\ConvertNetcdf)
-6. Run in command prompt: nccopy -k classic 
-
-$$
-name of final file in v4 (with extension)
-$$
-
- 
-
-$$
-name of original file in v5 (with extension)
-$$
-
-
+6. Run in command prompt: nccopy -k classic \[name of final file in v4 (with extension)\] \[name of original file in v5 (with extension)\]
 7. Done
-8. You can test the final file to check that is v4 run in the same folder command prompt: ncdump -k 
-
-$$
-name of final file (with extension)
-$$
-
-
+8. You can test the final file to check that is v4 run in the same folder command prompt: ncdump -k \[name of final file (with extension)\]
 9. It should report "classic" if it is a v4 file
 
 ## External references

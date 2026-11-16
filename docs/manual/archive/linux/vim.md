@@ -4,13 +4,7 @@ Here are some useful references for using **Vim**, the powerful customizable wri
 
 ## Basic editing
 
-**
-
-$$
-ESC
-$$
-
-** to return in normal mode.
+**\[ESC\]** to return in normal mode.
 
 **i** key to insert text.
 
@@ -24,13 +18,7 @@ $$
 
 **U** key to undo all editing operations performed to the current line.
 
-**
-
-$$
-Ctrl
-$$
-
--r** keys to redo (undo the undo).
+**\[Ctrl\]-r** keys to redo (undo the undo).
 
 ## Motion keys
 
@@ -50,13 +38,7 @@ Operators are useful to perform operations a repeated number of times. Syntax is
 Op [count] motion
 ```
 
-wher Op is the operator, 
-
-$$
-count
-$$
-
- is the number of times, and motion is the scope of the operation.
+wher Op is the operator, \[count\] is the number of times, and motion is the scope of the operation.
 
 ### Delete
 
@@ -80,25 +62,13 @@ example: 'dd' followed by 'p' performs a cut/paste one-line operation
 
 ## Cursor location
 
-**
-
-$$
-CTRL-g
-$$
-
-** shows the cursor current position in text.
+**\[CTRL-g\]** shows the cursor current position in text.
 
 **gg** Goes to the beginning of text.
 
 **G** Goes to the end of text.
 
-**
-
-$$
-line
-$$
-
-G** goes to the given line.
+**\[line\]G** goes to the given line.
 
 ## Search
 
@@ -110,21 +80,9 @@ G** goes to the given line.
 
 **N** key finds the previous occurence of *text*.
 
-**
+**\[Ctrl-o\]**
 
-$$
-Ctrl-o
-$$
-
-**
-
-**
-
-$$
-Ctrl-i
-$$
-
-**
+**\[Ctrl-i\]**
 
 ### Replace
 

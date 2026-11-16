@@ -186,31 +186,7 @@ BOXES_VALUES              : real    (Drag coefficient value for the defined box
 
 The drag coefficient (Xd) is defined per cell
 
-!
-
-$$
-1/m
-$$
-
- = 
-
-$$
--
-$$
-
-\*
-
-$$
-m^2
-$$
-
-/
-
-$$
-m^3
-$$
-
-
+!\[1/m\] = \[-\]\*\[m^2\]/\[m^3\]
 
 Xd = 0.5 \* Cd \* Area of Reference per Cell / Cell volume
 
@@ -232,37 +208,7 @@ dy - cell spatial step in y
 
 dx \* dy = cell horizontal area
 
-!
-
-$$
-1/m
-$$
-
- = 
-
-$$
--
-$$
-
- \* 
-
-$$
-m
-$$
-
- / 
-
-$$
-m
-$$
-
- / 
-
-$$
-m
-$$
-
-
+!\[1/m\] = \[-\] \* \[m\] / \[m\] / \[m\]
 
 Xd = 0.5 \* Cd \* D \* nº of pillars per cell / dx / dy
 

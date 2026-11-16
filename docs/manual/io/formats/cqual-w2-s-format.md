@@ -1,12 +1,6 @@
 # CQUAL-W2's format
 
-The CQUAL-W2's format s complicated and you should refer to its documentation at [
-
-$$
-1
-$$
-
-](http://www.ce.pdx.edu/w2/).
+The CQUAL-W2's format s complicated and you should refer to its documentation at [\[1\]](http://www.ce.pdx.edu/w2/).
 
 Sample CQUAL-W2's bathymetry file:
 
@@ -14,61 +8,31 @@ Sample CQUAL-W2's bathymetry file:
 
 Bathymetry File for CE-Qual-W2 V3.12 - ALQUEVA (SEG 25, LAY 30, BRA 1)
 
-Segment length 
-
-$$
-DLX
-$$
-
-
+Segment length \[DLX\]
 
 3428.67 3428.67 2142.86 2142.86 1714.29 2142.86 2142.86 1285.71 1714.29 1714.29
 3000.00 1714.29 2142.86 2142.86 2785.71 3000.00 2571.43 2571.43 1714.29 2571.43
 1928.57 857.14 1071.43 1928.57 1928.57
 
-Water surface elevation 
-
-$$
-ELWS
-$$
-
-
+Water surface elevation \[ELWS\]
 
 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00
 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00
 50.00 50.00 50.00 50.00 50.00
 
-Angle/Segment orientation 
-
-$$
-PHI0
-$$
-
-
+Angle/Segment orientation \[PHI0\]
 
 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
 0.00 0.00 0.00 0.00 0.00
 
-Bottom Friction 
-
-$$
-FRICT
-$$
-
-
+Bottom Friction \[FRICT\]
 
 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00
 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00
 75.00 75.00 75.00 75.00 75.00
 
-Dz/Layer thickness (weigth,m) 
-
-$$
-H
-$$
-
-
+Dz/Layer thickness (weigth,m) \[H\]
 
 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000
 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000

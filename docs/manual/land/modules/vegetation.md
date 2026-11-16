@@ -415,19 +415,7 @@ EVOLUTION : 1 (property will be read by the model)
 
 A constant value, timeserie, vegetation grid or vegetation hdf may be given.
 
-In the case of grid: One possible option is to extract info from land use shape file. In this case can use MOHID GIS going to menu 
-
-$$
-Tools
-$$
-
-->
-
-$$
-Shape to Grid Data
-$$
-
- and provide: i) the grid (model grid), ii) the land use shape file and iii) the corespondence between land use codes and vegetation ID. In vegetation data file define the just created grid:
+In the case of grid: One possible option is to extract info from land use shape file. In this case can use MOHID GIS going to menu \[Tools\]->\[Shape to Grid Data\] and provide: i) the grid (model grid), ii) the land use shape file and iii) the corespondence between land use codes and vegetation ID. In vegetation data file define the just created grid:
 
 ```
 <begin_AgriculturalPractices>

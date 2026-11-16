@@ -131,13 +131,7 @@ Remember the ampersand (the symbol at the end)!! In that case, the MohidWater co
 
 ### 20080129
 
-- Installed in the PATH 
-
-$$
-\ncdump
-$$
-
- and [ncgen.
+- Installed in the PATH \[\[ncdump\] and ncgen.
 
 ### 20070725
 
@@ -287,13 +281,7 @@ This log explains how to recover the RAID1 logical drive:
 
 #### RAID controller BIOS configuration
 
-At boot 
-
-$$
-Ctrl-M
-$$
-
- to enter the RAID controller BIOS setup:
+At boot \[Ctrl-M\] to enter the RAID controller BIOS setup:
 
 \-->Clear configuration
 \-->New configuration

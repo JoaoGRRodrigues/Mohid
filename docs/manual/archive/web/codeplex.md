@@ -21,13 +21,7 @@ One of the coolest things about Codeplex is that you can get information about t
 
 ### Linux
 
-#### Video instructions 
-
-$$
-english only
-$$
-
-
+#### Video instructions \[english only\]
 
 1. [How to compile the hdf5 libraries with fortran enabled](../../tools/hdf5.md)
 2. [How to get the latest version of the code](http://screencast.com/t/4yexXUxB)

@@ -20,9 +20,7 @@ Before you start creating your own simulation, you may want to create a [bathyme
 
 In order to choose an adequate time-step, $\Delta t$, we recommend to aim to a 1D [Courant number](http://en.wikipedia.org/wiki/Courant_number) of 15; $Cr = c \frac{\Delta t}{\Delta x}$. In estuarine and shelf waters, you may estimate the system maximum velocity, 
 
-$$
-c
-$$
+$c$
 
 , with $c = \sqrt{g\,H} </mathtex>
 where <math>H$ is the maximum depth of your domain and $g$ is local gravitational field (approximately worth 10 m/s2). For example, with a 200 m resolution domain where maximum depth is 400 m, the approximate time step would be around 50 s.

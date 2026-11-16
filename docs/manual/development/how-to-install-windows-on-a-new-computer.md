@@ -18,29 +18,11 @@ This operating systems are available from \\\\davinci\\Software\\
 
 This instalation was performed with Windows 2003 server R2 Enterprise Edition.
 
-1. If installing in computers with SATA drives, RAID has to be disconnected. Access BIOS pressing 
-
-$$
-del
-$$
-
- at startup. In BIOS menu select "Integrated Peripherals" and then set "SATA RAID/AHCI Mode" to "Disabled" if it is currently set to "RAID". If the settings were already set to "Disabled" (default) do not do anything.
+1. If installing in computers with SATA drives, RAID has to be disconnected. Access BIOS pressing \[del\] at startup. In BIOS menu select "Integrated Peripherals" and then set "SATA RAID/AHCI Mode" to "Disabled" if it is currently set to "RAID". If the settings were already set to "Disabled" (default) do not do anything.
 2. If having several HD choose one between 100-200GB as the primary HD defining it in BIOS (in Advanced BIOS Features -> Hard Disk Boot Priority). This drive will be the one to install the operating system, later on.
 3. Exit BIOS saving settings if have done any changes (F10).
 4. Insert Windows CD in drive.
-5. Boot the computer (if coming from step 1 computer is automatically booted) assuring that will boot from cd (try first, if not booting from cd, check info on startup screen to know shortcut keys to boot menu (
-
-$$
-del
-$$
-
- for BIOS or could have an independent menu (e.g. 
-
-$$
-F12
-$$
-
- but it may change according to machines)).
+5. Boot the computer (if coming from step 1 computer is automatically booted) assuring that will boot from cd (try first, if not booting from cd, check info on startup screen to know shortcut keys to boot menu (\[del\] for BIOS or could have an independent menu (e.g. \[F12\] but it may change according to machines)).
 6. Appears the Windows Setup window.
 7. Wait for instructions while windows is loading drivers.
 8. Press Enter to continue the installation.
@@ -86,13 +68,7 @@ This instalation was performed with Windows 2008 Server Datacenter 64 bit (32 bi
 5. Accept the licence agreement.
 6. Choose a custom install (clean install from zero).
 7. Window to choose where to install windows. In case of several disks it should be the HD around 100-200 GB. If have only one disk should create partitions (one to install OS around 100-200GB and the remaining space in the other partition (work) should be > 200-300GB).
-8. If going to create partitions, disk options appear clicking "Advanced" in the same window. Click "New" to create a partition for OS (around 100-200GB). Click "Format" to format the just created partition 
-
-$$
-nothing appened
-$$
-
-. Nothing is done for now in the secondary partition.
+8. If going to create partitions, disk options appear clicking "Advanced" in the same window. Click "New" to create a partition for OS (around 100-200GB). Click "Format" to format the just created partition \[nothing appened\]. Nothing is done for now in the secondary partition.
 9. Select the just created partition to install windows to, and click "Next".
 10. Wait for instructions (includes several restarts).
 11. Insert Administrator Password.
@@ -145,13 +121,7 @@ This instalation was performed with Windows Vista Business 64 bit (32 bit versio
 4. Accept the licence agreement.
 5. Choose a custom install (clean install from zero).
 6. Window to choose where to install windows. In case of several disks it should be the HD around 100-200 GB. If have only one disk should create partitions (one to install OS around 100-200GB and the remaining space in the other partition (work) should be > 200-300GB).
-7. If going to create partitions, disk options appear clicking "Advanced" in the same window. Click "New" to create a partition for OS (around 100-200GB). Click "Format" to format the just created partition 
-
-$$
-nothing appened
-$$
-
-. Nothing is done for now in the secondary partition.
+7. If going to create partitions, disk options appear clicking "Advanced" in the same window. Click "New" to create a partition for OS (around 100-200GB). Click "Format" to format the just created partition \[nothing appened\]. Nothing is done for now in the secondary partition.
 8. Select the just created partition to install windows to, and click "Next".
 9. Wait for instructions (includes several restarts).
 10. Insert Administrator Password.
@@ -167,13 +137,7 @@ This instalation was performed with Windows 7 Professional (32 bit version).
 4. Accept the licence agreement.
 5. Choose a custom install (clean install from zero).
 6. Window to choose where to install windows. In case of several disks it should be the HD around 100-200 GB. If have only one disk should create partitions (one to install OS around 100-200GB and the remaining space in the other partition (work) should be > 200-300GB).
-7. If going to create partitions, disk options appear clicking "Advanced" in the same window. Click "New" to create a partition for OS (around 100-200GB). Click "Format" to format the just created partition 
-
-$$
-nothing appened
-$$
-
-. Nothing is done for now in the secondary partition.
+7. If going to create partitions, disk options appear clicking "Advanced" in the same window. Click "New" to create a partition for OS (around 100-200GB). Click "Format" to format the just created partition \[nothing appened\]. Nothing is done for now in the secondary partition.
 8. Select the just created partition to install windows to, and click "Next".
 9. Wait for instructions (includes restart).
 10. Insert a name for the user and PC.
@@ -188,13 +152,7 @@ $$
 2. Install Graphic drivers from graphic board disc. (See note)
 3. Go To device manager to check if all drivers are correctly installed (no yellow interrogation point). If any, try to install from motherboard cd.
 
-(Note for windows server 2003 32 bit installation) - If there is no driver for that system (appened with NIVIDIA 9600 and 9800 GT board)- 
-
-$$
-Process to be done from another computer at this step (recommended) or after having all windows updates for security reasons!! - 2 steps ahead
-$$
-
-:
+(Note for windows server 2003 32 bit installation) - If there is no driver for that system (appened with NIVIDIA 9600 and 9800 GT board)- \[Process to be done from another computer at this step (recommended) or after having all windows updates for security reasons!! - 2 steps ahead\]:
 
 1. Download from nvidia web page driver for Windows XP 32 bit.
 2. Install but only proceed in the first step where files are copied to disk.

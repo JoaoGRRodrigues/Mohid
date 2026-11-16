@@ -6,20 +6,8 @@ libfproj4 is a Fortran wrapper for [PROJ4](proj4.md) library. It was developed a
 
 libfproj4 it's a library build on top of [PROJ4](proj4.md). It can se used dynamically or statically. Here, only the static compilation is explained, as the instructions for dynamic compilation are included in the library source code. The first steps in compiling are:
 
-- Download libfproj4 source code from [
-
-$$
-1
-$$
-
-](http://forge.nesc.ac.uk/download.php/10/libfproj4-1.0.tar.gz) or \\\\kepler\\Software\\PROJ4\\libfproj4-1.0.tar.
-- Download proj4 source code from [
-
-$$
-2
-$$
-
-](http://download.osgeo.org/proj/proj-4.7.0.tar.gz) or \\\\kepler\\Software\\PROJ4\\proj-4.7.0.tar.
+- Download libfproj4 source code from [\[1\]](http://forge.nesc.ac.uk/download.php/10/libfproj4-1.0.tar.gz) or \\\\kepler\\Software\\PROJ4\\libfproj4-1.0.tar.
+- Download proj4 source code from [\[2\]](http://download.osgeo.org/proj/proj-4.7.0.tar.gz) or \\\\kepler\\Software\\PROJ4\\proj-4.7.0.tar.
 - Extract all contents to a place in your computer, from now referred to as ROOT\_DIR.
 
 ### Windows
@@ -35,13 +23,7 @@ $$
 
 #### Visual Studio 2008 with Intel Fortran
 
-(Already compiled in [
-
-$$
-3
-$$
-
-](http://mohid.codeplex.com) ExternalLibs/Proj4)
+(Already compiled in [\[3\]](http://mohid.codeplex.com) ExternalLibs/Proj4)
 
 1. Open Visual Studio and select File/New/Project/Visual C++/W32/Win32 Console Application. Name it libfproj4, and select location as $ROOT\_DIR\\libfproj4-1.0. Click ok.
 2. In the wizard, click Next and then choose "Console application" and "Empty project" in the following window. Then click Finish.

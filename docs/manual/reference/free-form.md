@@ -22,49 +22,19 @@ Sample free form bathymetry:
 
 COMMENT\_HEADER : Bathymetry File for CE-Qual-W2 V3.12 - ALQUEVA (SEG 25, LAY 30, BRA 1)
 
-COMMENT\_DLX : Segment length 
-
-$$
-DLX
-$$
-
-
+COMMENT\_DLX : Segment length \[DLX\]
 DLX  : 3428.67 3428.67 2142.86 2142.86 1714.29 2142.86 2142.86 1285.71 1714.29 1714.29 3000.00 1714.29 2142.86 2142.86 2785.71 3000.00 2571.43 2571.43 1714.29 2571.43 1928.57 857.14 1071.43 1928.57 1928.57
 
-COMMENT\_ELWS : Water surface elevation 
-
-$$
-ELWS
-$$
-
-
+COMMENT\_ELWS : Water surface elevation \[ELWS\]
 ELWS  : 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00 50.00
 
-COMMENT\_EPHI0 : Angle/Segment orientation 
-
-$$
-PHI0
-$$
-
-
+COMMENT\_EPHI0 : Angle/Segment orientation \[PHI0\]
 PHI0  : 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
 
-COMMENT\_FRIC : Bottom Friction 
-
-$$
-FRICT
-$$
-
-
+COMMENT\_FRIC : Bottom Friction \[FRICT\]
 FRIC : 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00 75.00
 
-COMMENT\_H : Dz/Layer thickness (weigth,m) 
-
-$$
-H
-$$
-
-
+COMMENT\_H : Dz/Layer thickness (weigth,m) \[H\]
 H : 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000 2.000
 
 COMMENT\_SEGMENT : Dist(m) - Upstream segmento of

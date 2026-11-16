@@ -47,7 +47,7 @@ An excerpt of a log file looks like this (Iterartion number, dt, i, j, k, model 
 
 The main idea to compute an ideal time-step is to choose the largest time-step above which the numerical model iteration would overshoot. This is equivalent to making sure that no cell in any property can deplete more than its property mass in one time-step, given that it has a net flux with positive divergence. Mathematically speaking this would be equivalent to:
 
-**\\Delta t = \\min\_{p\\;ijk} \\left( \\frac{ m }{ \\Phi } \\right) \\quad\\;\\;\\;\\; \\text{if}\\quad\\;\\;\\Phi \\gt 0** .
+** \\Delta t = \\min\_{p\\;ijk} \\left( \\frac{ m }{ \\Phi } \\right) \\quad\\;\\;\\;\\; \\text{if}\\quad\\;\\;\\Phi \\gt 0** .
 
 where $m$ and $\Phi$ are, respectively, the mass ($kg\,m^{-3}$) and the net massic flow ($kg\,m^{-3}\,s^{-1}$) of the property $p$ at the cell indexed by $i,\,j,\,k$.
 

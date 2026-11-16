@@ -2051,45 +2051,9 @@ if keyword value = 1 (one) computes distances according to a "graphical" method 
 | Water | Waves | REMAIN\_CONSTANT |  |  |  |  |  |  |
 | Water | Waves | WAVE\_DIRECTION | Compute/read wave direction |  |  |  |  |  |
 | Water | Waves | WAVE\_HEIGHT | Compute/read wave height |  |  |  |  |  |
-| Water | Waves | WAVE\_HEIGHT\_PARAMETER | Proportional parameter (
-
-$$
-final\_value
-$$
-
-=
-
-$$
-parameter
-$$
-
-\*
-
-$$
-computed\_value
-$$
-
-) for wave height calibration. |  |  |  |  |  |
+| Water | Waves | WAVE\_HEIGHT\_PARAMETER | Proportional parameter (\[final\_value\]=\[parameter\]\*\[computed\_value\]) for wave height calibration. |  |  |  |  |  |
 | Water | Waves | WAVE\_PERIOD | Compute/read wave period |  |  |  |  |  |
-| Water | Waves | WAVE\_PERIOD\_PARAMETER | Proportional parameter (
-
-$$
-final\_value
-$$
-
-=
-
-$$
-parameter
-$$
-
-\*
-
-$$
-computed\_value
-$$
-
-) for wave period calibration. |  |  |  |  |  |
+| Water | Waves | WAVE\_PERIOD\_PARAMETER | Proportional parameter (\[final\_value\]=\[parameter\]\*\[computed\_value\]) for wave period calibration. |  |  |  |  |  |
 | Water | Waves | WAVEGEN\_TYPE | Chooses 1 of 2 methods to compute Wave Height and Wave Period.
 
 If keyword value equals 0 (zero), WaveHeight and WavePeriod are computed as originaly (wind modulus dependent). If value equals 1 (one), computes as CEQUAL-W2 way (wind, depth and Fetch dependent).

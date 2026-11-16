@@ -10,32 +10,14 @@
 
 In order to install Ifort für \*nix, you need to do the following steps:
 
-1. get the correct Ifort sources from 
-
-$$
-1
-$$
-
- (registration required)
+1. get the correct Ifort sources from \[1\] (registration required)
 2. make sure, the required libraries are installed: *g++ libstdc++5 zlib1g-bin zlib1g-dev libc6* (Note: the names may differ depending on your distribution. The names above apply to Debian Sid)
 3. compile the Ifort sources: un-tar the sources and execute the installation script. With Debian, you need to manually convert the rpms (see below).
 4. integrate the compiler into your working environment:
     1.  Symlink the installation version, to avoid having to edit all the config files again, once you install a new compiler version.
     2.  Add the *source* lines to your bashrc (see below).
 
-**Debian specific installation notes**: With Debian (Sid), the shipped *install.sh* script from the Ifort sources does not work 
-
-$$
-2
-$$
-
-,
-
-$$
-3
-$$
-
-. You need to execute the following commands as root (VERSION is the version number):
+**Debian specific installation notes**: With Debian (Sid), the shipped *install.sh* script from the Ifort sources does not work \[2\],\[3\]. You need to execute the following commands as root (VERSION is the version number):
 
 ```
 aptitude install alien
@@ -83,25 +65,7 @@ source /opt/intel/fc/current/bin/ifortvars.sh
 source /opt/intel/idb/current/bin/idbvars.sh
 ```
 
-**Resources**: 
-
-$$
-[| 1](http://www.intel.com/cd/software/products/asmo-na/eng/219771.htm)
-$$
-
- 
-
-$$
-[| 2](http://groups.google.de/group/comp.lang.fortran/browse_thread/thread/d5efc992211e517b/25331fb8ea8ec01a?lnk=st&q=ifortvars%20%20%20%20.sh+debian+installdir&rnum=1&hl=en#25331fb8ea8ec01a)
-$$
-
- 
-
-$$
-[| 3](http://groups.google.de/group/linux.debian.user/browse_thread/thread/9076eb8ca951f0ce/6408013d92230ca1?lnk=st&q=Debian.te%20%20%20%20sting+Intel.Fortran&rnum=1&hl=en#6408013d92230ca1)
-$$
-
-
+**Resources**: \[[| 1](http://www.intel.com/cd/software/products/asmo-na/eng/219771.htm)\] \[[| 2](http://groups.google.de/group/comp.lang.fortran/browse_thread/thread/d5efc992211e517b/25331fb8ea8ec01a?lnk=st&q=ifortvars%20%20%20%20.sh+debian+installdir&rnum=1&hl=en#25331fb8ea8ec01a)\] \[[| 3](http://groups.google.de/group/linux.debian.user/browse_thread/thread/9076eb8ca951f0ce/6408013d92230ca1?lnk=st&q=Debian.te%20%20%20%20sting+Intel.Fortran&rnum=1&hl=en#6408013d92230ca1)\]
 
 ## Tools for linking
 

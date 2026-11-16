@@ -151,20 +151,8 @@ This is a text phase where you will try to see if one HRU per sub-basin is enoug
 This file points to weather stations that will create climate variables (wind, humidity, etc..) so you should check which is closer to your watershed using the weather stations shapefile in \\\\datacenter\\Albufeiras\_Eutrofizacao\\Produtos\\ProjectosGIS\\ShapesBase\\EM\_WGNSWAT\_PT. Station name is in this shape file and coordinates in the file "C:\\AVSWATX\\AVSWATDB\\userwgn.dbf" searching for station name. Please remind to use a station with **no data fails** in file userwgn.dbf. http://content.screencast.com/users/GRiflet/folders/Jing/media/49b8fe23-0cf1-49ef-8a72-2bb2b93fa851/2009-11-03\_1521.png
 
 1. Go to menu "AVSWAT"->"SWAT View" then menu "Input"->"Weather Stations"
-2. "Rainfall data" --> "Raingages" --> "Locations Table" 
-
-$$
-browse
-$$
-
- and choose file ".\\data\\weather\\LocRain.dbf"
-3. "Weather simulation data" --> "Custom database" --> "Locations table" 
-
-$$
-browse
-$$
-
- and choose file ".\\data\\weather\\LocWgn.dbf"
+2. "Rainfall data" --> "Raingages" --> "Locations Table" \[browse\] and choose file ".\\data\\weather\\LocRain.dbf"
+3. "Weather simulation data" --> "Custom database" --> "Locations table" \[browse\] and choose file ".\\data\\weather\\LocWgn.dbf"
 4. Click "Ok".
 5. Substitute file ".\\watershed\\tables\\PCP.dbf" all values -99. by adequate values of precipitation (they should not appear as noted in the first step).
 6. "input"-->"build all default"-->"yes"-->"continue".

@@ -8,9 +8,7 @@ Regional scale models and large scale models can't reproduce accurately estuary 
 
 Let 
 
-$$
-Q=Q(t)
-$$
+$Q=Q(t)$
 
  be the water flux exchanged between the estuary and the coastal region. Let A be the surface of the estuary. Let H be the mean tidal deviation from neap-tide to spring-tide inside the estuary. Let 
 

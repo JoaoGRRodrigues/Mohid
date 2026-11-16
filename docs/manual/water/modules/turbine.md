@@ -10,9 +10,9 @@ For the moment, the model is thought for horizontal bidirectional turbines, with
 
 ### Forces
 
-**\\text{F}\_{T} = \\frac{1}{2}\\rho A\_{T} C\_{T} U^{2}**
+** \\text{F}\_{T} = \\frac{1}{2}\\rho A\_{T} C\_{T} U^{2}**
 
-**\\text{P}\_{T} = \\frac{1}{2}\\rho A\_{T} C\_{P} U^{3}**
+** \\text{P}\_{T} = \\frac{1}{2}\\rho A\_{T} C\_{P} U^{3}**
 
 **Thrust force produced by the turbine rotor due to the energy extraction**
 

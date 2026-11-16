@@ -4,35 +4,25 @@
 
 Given 
 
-$$
-n
-$$
+$n$
 
  nodes of known values of any real function 
 
-$$
-f
-$$
+$f$
 
 , the **unisolvence theorem** states that there exists a unique polynomial of degree 
 
-$$
-n-1
-$$
+$n-1$
 
  that interpolates the nodes. Such a polynomial 
 
-$$
-P
-$$
+$P$
 
  is easily constructed for low degrees and is easily generalized to any degree.
 
 ## Polynomial interpolation of real function 
 
-$$
-f
-$$
+$f$
 
 
 
@@ -69,23 +59,17 @@ $$
 
  are the nodes where 
 
-$$
-f
-$$
+$f$
 
  is known.
 
 ## 
 
-$$
-p
-$$
+$p$
 
 -th derivative of polynomial interpolation of real function 
 
-$$
-f
-$$
+$f$
 
 
 
@@ -121,9 +105,7 @@ $$
 
 In particular, if 
 
-$$
-n-1 = p
-$$
+$n-1 = p$
 
  we have,
 

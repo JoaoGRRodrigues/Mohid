@@ -2,20 +2,8 @@
 
 This file contains the relevant information to run the MohidReservoirOptimization program. Like most of Mohid system's files, it is uses keywords, which are:
 
-- START - initial time 
-
-$$
-AAAA MM DD HH MM SS
-$$
-
-;
-- END - final time 
-
-$$
-AAAA MM DD HH MM SS
-$$
-
-;
+- START - initial time \[AAAA MM DD HH MM SS\];
+- END - final time \[AAAA MM DD HH MM SS\];
 - DT - time step in seconds;
 - W2\_BATH\_FORMAT - determines if the bathymetry file is in [free form](free-form.md) or [CQUAL-W2's format](../io/formats/cqual-w2-s-format.md);
 - W2\_DATA\_FORMAT - determines if the control file is in [free form](free-form.md) or [CQUAL-W2's format](../io/formats/cqual-w2-s-format.md);

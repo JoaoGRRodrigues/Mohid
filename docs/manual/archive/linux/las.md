@@ -47,19 +47,7 @@ Or you could initialize it from the [http://data.mohid.com/las.xml](http://data.
 - Make sure the prerequisites are met.
 - \>./configure
 
-The configure script will install a lot of perl modules. Should they fail, then install them manually. Use *perl -MCPAN -e shell; install 
-
-$$
-module
-$$
-
-;* or *yum 
-
-$$
-perl-mod-rpm-package
-$$
-
-*.
+The configure script will install a lot of perl modules. Should they fail, then install them manually. Use *perl -MCPAN -e shell; install \[module\];* or *yum \[perl-mod-rpm-package\]*.
 
 - Add the following lines to *httpd.conf* accordingly to your installation directory:
 
@@ -254,13 +242,7 @@ No results should have returned. Otherwise if some root owned file returned, the
 > sudo chown -R apache:apache *
 ```
 
-Now you can return to [
-
-$$
-1
-$$
-
-](http://data.mohid.com/las.xml) and click on the reboot link and see if it worked.
+Now you can return to [\[1\]](http://data.mohid.com/las.xml) and click on the reboot link and see if it worked.
 
 **Problem: The las.php script returns an error about one of the datasets when restarting and the LAS interface is down.**
 

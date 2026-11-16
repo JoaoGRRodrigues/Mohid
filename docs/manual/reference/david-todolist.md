@@ -2,25 +2,7 @@
 
 ## Article Tasks
 
-
-
-$$
-Task
-$$
-
- 
-
-$$
-Priority
-$$
-
- 
-
-$$
-MonthToFinish
-$$
-
-
+\[Task\] \[Priority\] \[MonthToFinish\]
 
 1. Validate Model with analitical solutions - porous media and runoff
 2. Validate Model with erosion/deposition data (Jose)

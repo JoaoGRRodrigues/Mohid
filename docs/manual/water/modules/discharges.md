@@ -82,30 +82,30 @@ The discharge can have four possible types:
 **overflow**: This discharge type aims to simulate the flow associate to a spillway. The flow in this case is function of the water level in the discharge location. The spillway is a structure used to provide the controlled release of flows from a dam or levee into a downstream area, typically being the river that was dammed. In the UK they may be known as overflow channels
 
 ```
-Q=\sqrt{2g}\cdot w_{c_{_}}{\cdot }\Delta H^{1.5} \cdot w_{L}
+ Q=\sqrt{2g}\cdot w_{c_{_}}{\cdot }\Delta H^{1.5} \cdot w_{L}
 
 ```
 
 ```
-Q - flow\\
+ Q - flow\\
 ```
 
 ```
-w_{c_{_}} - weir \ (\ or \ spillway) \ empiric \ coefficient \\
+ w_{c_{_}} - weir \ (\ or \ spillway) \ empiric \ coefficient \\
 ```
 
 ```
-w_{L_{_}} - weir \ (\ or \ spillway) \ width \\
+ w_{L_{_}} - weir \ (\ or \ spillway) \ width \\
 ```
 
 ```
-\Delta H = SSH - w_{z_{_}}
+ \Delta H = SSH - w_{z_{_}}
 ```
 
 $SSH - Sea \ Surface \ Height$
 
 ```
-w_{z_{_}} - crest \ height \ or \ sill \ of \ the \ weir
+ w_{z_{_}} - crest \ height \ or \ sill \ of \ the \ weir
 ```
 
 Keywords related with the **flow over** type discharge
@@ -128,16 +128,16 @@ CREST_HEIGTH :
 **valve**: This discharge aims to simulate the flow associated to a hydraulic valve. The flow in this case is function of the water level difference between two locations. In this type of discharge it is necessary to define for each discharge two locations. The flow between the two locations can be two-way (normal valve) or one-way (or check valve).
 
 ```
-Q=\sqrt{2g \cdot \Delta H}\cdot v_{c_{_}} \cdot A
+ Q=\sqrt{2g \cdot \Delta H}\cdot v_{c_{_}} \cdot A
 
 ```
 
 ```
-Q - flow\\
+ Q - flow\\
 ```
 
 ```
-v_{c_{_}} - valve \ empiric \ coefficient \\
+ v_{c_{_}} - valve \ empiric \ coefficient \\
 ```
 
 $\Delta H = SSH_{a} -SSH_{b}$
@@ -145,7 +145,7 @@ $\Delta H = SSH_{a} -SSH_{b}$
 $SSH_{x} - Sea \ Surface \ Height \ in \ point \ x$
 
 ```
-A - area \ of \ the \ valve. \ The \ valve \ is \ assumed \ to \ be \ circular
+ A - area \ of \ the \ valve. \ The \ valve \ is \ assumed \ to \ be \ circular
 ```
 
 ```

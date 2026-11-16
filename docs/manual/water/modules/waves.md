@@ -221,25 +221,13 @@ Poligon block for DISTANCE_TO_LAND_METHOD : 1
 
 ### Input data file
 
-In a simulation, it is possible to choose between the calculation of wave height and wave period as described in deep ocean equations based on wind velocity (simpler) or as fetch and depth dependent. This is made by a keyword named 
-
-$$
-WAVEGEN\_TYPE
-$$
-
- (keyword = 0 and the method is the simpler and keyword = 1 stands for the fetch method, by default the value is 0 (zero)).
+In a simulation, it is possible to choose between the calculation of wave height and wave period as described in deep ocean equations based on wind velocity (simpler) or as fetch and depth dependent. This is made by a keyword named \[WAVEGEN\_TYPE\] (keyword = 0 and the method is the simpler and keyword = 1 stands for the fetch method, by default the value is 0 (zero)).
 
 #### Fetch based
 
 If using the fetch based model, the working scheme of the model is very simple: in the constructing phase of MOHID, the distances to land are calculated for all water cells in the 16 cardinal directions.
 
-The distances to land can be computed with two different methods, distinguishing them with the keyword 
-
-$$
-DISTANCE\_TO\_LAND\_METHOD
-$$
-
-. If this keyword equals zero, the distances to land are computed along the grid, incrementing half cell size in each cycle step, until land or end of grid is encountered. If the keyword equals one, distances are computed performing tangents to the points and intersecting them with polygons (Land Areas) segments. The first method can not be used with nested models (if grid ends before directions reaches land).
+The distances to land can be computed with two different methods, distinguishing them with the keyword \[DISTANCE\_TO\_LAND\_METHOD\]. If this keyword equals zero, the distances to land are computed along the grid, incrementing half cell size in each cycle step, until land or end of grid is encountered. If the keyword equals one, distances are computed performing tangents to the points and intersecting them with polygons (Land Areas) segments. The first method can not be used with nested models (if grid ends before directions reaches land).
 
 Depth can be computed from local cell water column variable during simulation (DEPTH\_METOD : 0) or with average water depth (DEPTH\_METHOD : 1) in each 16 cardinal directions (bathymetry + Mean Sea Level where MSL is MEAN\_SEA\_LEVEL : xx).
 

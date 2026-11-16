@@ -6,45 +6,9 @@ Nagios is a monitoring tool that mediates several plugins that find useful infor
 
 ## Useful links and commmands for the OMD package
 
-- http://
-
-$$
-nagios-server
-$$
-
-:8888/
-
-$$
-site
-$$
-
-/thruk --> identifies the nagios plugin (script in perl, python, bash...)
-- http://
-
-$$
-nagios-server
-$$
-
-:8888/
-
-$$
-site
-$$
-
-/nagios --> nagios basic frontend
-- http://
-
-$$
-nagios-server
-$$
-
-:8888/
-
-$$
-site
-$$
-
-/check\_mk --> check\_mk frontend
+- http://\[nagios-server\]:8888/\[site\]/thruk --> identifies the nagios plugin (script in perl, python, bash...)
+- http://\[nagios-server\]:8888/\[site\]/nagios --> nagios basic frontend
+- http://\[nagios-server\]:8888/\[site\]/check\_mk --> check\_mk frontend
 
 Sites: ppv, teste
 
@@ -66,8 +30,4 @@ Ssh server to nagios vm: 10.15.228.34:2222
 - [OMD for debian ubuntu](http://omdistro.org/doc/quickstart_debian_ubuntu)
 - [Check\_mk](http://mathias-kettner.com/check_mk.html)
 
-
-
-$$
-Category:Linux
-$$
+\[Category:Linux\]

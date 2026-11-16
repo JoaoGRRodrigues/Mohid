@@ -350,13 +350,7 @@ N/OUTFL     NTR     NST     NIW     NWD     NGT     NSP     NPI     NPU
 
     Withdrawall Definition
 
-2. **Attention: the water elevation in the beggining of the simulation must be that of the first volume considered in the computation of outflow or the computed flows will produce not realistic heights**. Initial elevation can be changed in bathymetry file (Water surface elevation 
-
-$$
-ELWS
-$$
-
- values in the file Bth\_wb1.npt should match the first values of your Cota (m) values).
+2. **Attention: the water elevation in the beggining of the simulation must be that of the first volume considered in the computation of outflow or the computed flows will produce not realistic heights**. Initial elevation can be changed in bathymetry file (Water surface elevation \[ELWS\] values in the file Bth\_wb1.npt should match the first values of your Cota (m) values).
 
 ###### Concentration Inflows
 

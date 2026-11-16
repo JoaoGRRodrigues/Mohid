@@ -108,13 +108,7 @@ In each time series graph window it is possible to change the features of the gr
 
 Four additional buttons, located beneath the graph, command the following actions:
 
-- **CheckBox1**: checking it allows the selection in **Window Width 
-
-$$
-days
-$$
-
-** the number of days to appear in the graph and in the ruler the location in the time interval of that number of days;
+- **CheckBox1**: checking it allows the selection in **Window Width \[days\]** the number of days to appear in the graph and in the ruler the location in the time interval of that number of days;
 
 - **Save XML**: saves the graph in XML code in the path provided by the user;
 
