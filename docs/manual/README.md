@@ -42,8 +42,12 @@ Pages are plain Markdown: edit them in place and open a pull request against the
 
 This folder is the **source of truth**. The GitHub wiki is generated from it by
 [`scripts/wiki_sync.py`](../../scripts/wiki_sync.py) and the
-[`Sync wiki`](../../.github/workflows/wiki-sync.yml) workflow, which flattens the
-tree into one wiki page per document and rebuilds `Home`, `_Sidebar` and `_Footer`.
+[`Wiki`](../../.github/workflows/wiki-sync.yml) workflow, which flattens the tree
+into one wiki page per document and rebuilds `Home`, `_Sidebar` and `_Footer`.
+
+On `master` the workflow publishes to the wiki. On other branches it only builds
+the pages and uploads them as the `wiki-pages` artifact, so the result can be
+reviewed before merging.
 
 Do not edit the wiki tab directly: the next sync overwrites it. The workflow needs a
 `WIKI_TOKEN` secret (a classic personal access token with the `repo` scope), because

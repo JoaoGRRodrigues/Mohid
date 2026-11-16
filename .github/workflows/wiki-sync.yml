@@ -1,14 +1,18 @@
-name: Sync wiki
+name: Wiki
 
-# Mirrors docs/manual/ into the GitHub wiki (<repo>.wiki.git).
+# Builds the wiki pages from docs/manual and, when the ref is master, mirrors
+# them into <repo>.wiki.git.
 #
-# The wiki is generated: edit docs/manual/ in the repository, never the wiki tab.
+# Branch pushes only build: the generated pages are uploaded as an artifact so
+# the result can be reviewed before merging. Publishing is restricted to master
+# so unreviewed content never reaches the public wiki.
+#
 # Requires a repository secret WIKI_TOKEN: a classic PAT with the "repo" scope.
 # GITHUB_TOKEN cannot push to the wiki repository, it is scoped to this repo.
 
 on:
   push:
-    branches: [master]
+    branches: [master, docs/manual-migration]
     paths:
       - "docs/manual/**"
       - "scripts/wiki_sync.py"
@@ -19,11 +23,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: wiki-sync
+  group: wiki-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  sync:
+  build:
+    name: Build wiki pages
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -36,6 +41,25 @@ jobs:
 
       - name: Generate wiki pages
         run: python scripts/wiki_sync.py --out "$RUNNER_TEMP/wiki"
+
+      - name: Upload pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: wiki-pages
+          path: ${{ runner.temp }}/wiki
+          if-no-files-found: error
+
+  publish:
+    name: Publish to wiki
+    needs: build
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download pages
+        uses: actions/download-artifact@v4
+        with:
+          name: wiki-pages
+          path: ${{ runner.temp }}/wiki
 
       - name: Push to wiki
         env:
