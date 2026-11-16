@@ -1,5 +1,7 @@
 # Adsorption/Desorption
 
+Describes adsorption and desorption in the water column and the partition coefficient used to relate dissolved and adsorbed particulate concentrations.
+
 ## Overview
 
 Adsorption relates to the process where a solute in a liquid phase becomes bonded to the surface of a solid (Linde, 2002). It can occur in three major pathways: physical adsorption, electrostatic adsorption and specific adsorption.
@@ -18,7 +20,7 @@ This model can be applied to trace elements, as the limitation of adsorption sit
 
 - James, I.D., 2002, Modelling pollution dispersion, the ecosystem and water quality in coastal waters: a review, Environmental Modelling & Software, 17, 363-385
 
-- Johasson, H., Lindstrom, M., Hakanson, L., 2001, On the Modelling of particulate and dissolved fractions of substances in aquatic systems – sedimentological and ecological interactions, Ecological Modelling, 137, 225-240
+- Johansson, H., Lindstrom, M., Hakanson, L., 2001, On the Modelling of particulate and dissolved fractions of substances in aquatic systems – sedimentological and ecological interactions, Ecological Modelling, 137, 225-240
 
 - Linde, K., 2002, Assessment of Contaminant Availability in a Shallow Wetland, PhD thesis in Environmental Chemistry, University of Western Australia, Centre for Water Research
 

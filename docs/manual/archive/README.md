@@ -4,9 +4,9 @@ Historical material kept for reference only. Not maintained.
 
 ## Sections
 
-- [Linux](linux/README.md) (117 pages)
-- [Web](web/README.md) (25 pages)
-- [Windows](windows/README.md) (1 pages)
+- [Linux](linux/README.md) (103 pages)
+- [Web](web/README.md) (35 pages)
+- [Windows](windows/README.md) (4 pages)
 
 ## Pages
 

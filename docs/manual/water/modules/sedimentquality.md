@@ -57,7 +57,7 @@ $RPOMRate = RPOM_MaximumRate(HeterotrophsPop) * AerobioseTerm * pHTerm * OxygenT
 
 **Immobilization rate**
 
-$Insert formula here$
+<!-- TODO: formula missing in source -->
 
 ### Nitrification
 

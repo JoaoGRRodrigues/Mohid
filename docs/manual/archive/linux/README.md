@@ -146,8 +146,6 @@ cat> Hello World!
 
 #### See also
 
-- [dd](dd.md)
-- [mkisofs](mkisofs.md)
 
 ### DAP
 
@@ -292,7 +290,6 @@ Locate quickly finds you the files you're looking for.
 
 #### See also
 
-- [Sudo](sudo.md)
 
 ### Time
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Module Runoff allows the calculation of the overland surface runoff over a grid as function of the water column slopes between adjacen cells (dynamic wave). The water column, namely the water located above the terrain, is given by the Module Basin after considering the precipitation input and the losses due to the evaporation and the infiltration.
+Module Runoff allows the calculation of the overland surface runoff over a grid as function of the water column slopes between adjacent cells (dynamic wave). The water column, namely the water located above the terrain, is given by the Module Basin after considering the precipitation input and the losses due to the evaporation and the infiltration.
 
 ## Main Processes
 
@@ -18,9 +18,7 @@ The St. Venant Equations are derived from the Newton's second law taking into ac
 
 ### Manning Equation
 
-The overland surface runoff flow (m3/s) is calculated at the cell faces and it can be obtained by applying the Manning's equation. In this case inertia effects are neglected and forces balance bottom friction.
-
-[^1] :
+The overland surface runoff flow (m3/s) is calculated at the cell faces and it can be obtained by applying the Manning's equation[^1]. In this case inertia effects are neglected and forces balance bottom friction.
 
 ``` math
 Q_i=\frac{1}{n}\cdot A\cdot R_{h}^{2/3}\cdot s_i^{1/2}\,\,\,\,\,\,\,\,\,\,\,\,(1.1)
@@ -28,7 +26,6 @@ Q_i=\frac{1}{n}\cdot A\cdot R_{h}^{2/3}\cdot s_i^{1/2}\,\,\,\,\,\,\,\,\,\,\,\,(1
 
 where:
 
-  
 - *Qi* — the overland flow in each direction (m<sup>3</sup>/s)
 - *A* — the area of the cross-section (m<sup>2</sup>)
 - *n* — the Manning coefficient (s/m<sup>1/3</sup>)
@@ -65,7 +62,6 @@ H(i,j)= h(i,j)+T(i,j)\,\,\,\,\,\,\,\,\,\,\,\,(1.4)
 
 where:
 
-  
 - *H* — the water level (m)
 - *h(i,j)* — the water column (m)
 - *T(i,j)* — the Topography (m)
@@ -78,7 +74,6 @@ s_{x}=\frac{H(i,j-1)-H(i,j)}{DZX}\,\,\,\,\,\,\,\,(1.5)
 
 where:
 
-  
 - *s<sub>x</sub>* — the slope in the X direction (m)
 - *H(i,j-1)* — the water column at the left face of the cell (m)
 - *H(i,j)* — the water column at the right face of the cell (m)
@@ -90,7 +85,6 @@ s_{y}=\frac{H(i-1,j)-H(i,j)}{DZY}\,\,\,\,\,\,\,\,(1.6)
 
 where:
 
-  
 - *s<sub>y</sub>* — the slope in the Y direction (m)
 - *H(i-1,j)* — the water column at the left face of the cell (m)
 - *H(i,j)* — the water column at the right face of the cell (m)
@@ -104,10 +98,9 @@ s= 0.05247 + 0.06363 \cdot s - 0.182\cdot e^{(-62.38\cdot s)}\,\,\,\,\,\,\,\,\,\
 
 where:
 
-  
 - *s* — the slope (m)
 
-### Manning cofficient
+### Manning coefficient
 
 The Manning coefficient is derived from the land use map. Indeed by using a GIS program it is possible to associate at each cell a land use class in order to obtain, by the support of an abacus or table, a Manning coefficent value. See the Other Features section.
 
@@ -115,7 +108,6 @@ The Manning coefficient is derived from the land use map. Indeed by using a GIS 
 
 In the eventuality presence of a river it is possible to obtain two different configurations:
 
-  
 - Flow to the river when the water level of the river is lower than the soil one.
 
 - Flow from the river when the water level is higher than the soil one.
@@ -194,12 +186,11 @@ Manning coefficients must be provided in runoff data file.
 Options:
 
 - Use a constant value
-- Define a Manning's grid: One possible option is to associate Manning with land use classes (shape file). In this case can use MOHID GIS going to menu [Tools] $\Longrightarrow$ [Shape to Grid Data] and provide:
+- Define a Manning's grid: One possible option is to associate Manning with land use classes (shape file). In this case can use MOHID GIS going to menu **Tools > Shape to Grid Data** and provide:
 
-  
-- (i) the grid (model grid)
-- (ii) the land use shape file
-- (iii) the correspondence between land use codes and Manning
+  - (i) the grid (model grid)
+  - (ii) the land use shape file
+  - (iii) the correspondence between land use codes and Manning
 
 Use Manning inicialization with Module FillMatrix standards in the block:
 
@@ -213,19 +204,9 @@ FILENAME               : ..\..\GeneralData\Runoff\Mannings200m_v
 <EndOverLandCoefficient>
 ```
 
-## Outputs
-
 ## References
 
 - Chanson, H. (2004), The Hydraulics of Open Channel Flow, Butterworth-Heinemann, Oxford, UK, 2nd edition, 630 pages
 - <http://www.hkh-friend.net.np/rhdc/training/lectures/HEGGEN/Tc_3.pdf>
-
-## Data File
-
-### Keywords
-
-### Sample
-
-Category: MOHID Land
 
 [^1]: Gauckler, P. (1867), Etudes Théoriques et Pratiques sur l'Ecoulement et le Mouvement des Eaux, Comptes Rendues de l'Académie des Sciences, Paris, France, Tome 64, pp. 818–822

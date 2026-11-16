@@ -1,16 +1,14 @@
 # Mohid Land
 
-MOHID Land is the newest core executable of the [MOHID Water Modelling System](../overview/README.md#mohid-water-modelling-system). This program is designed to simulate hydrographic basin and aquifers. Main equations are described in a simple way in: [equations description](../reference/equations-in-mohid-land.md).
+MOHID Land is the newest core executable of the [MOHID Water Modelling System](../overview/README.md#mohid-water-modelling-system). This program is designed to simulate hydrographic basins and aquifers. Main equations are described in a simple way in: [equations description](../reference/equations-in-mohid-land.md).
 
 ## MOHID Land's main features
 
-MOHID Land is a physically-based, spatially distributed, continuous, variable time step model for the water and property cycles in inland waters and main mediums and equations are presented in next image:
+MOHID Land is a physically-based, spatially distributed, continuous, variable time step model for the water and property cycles in inland waters and main mediums. The equations are presented in the next image:
 
-![](../assets/images/MohidLand_Old_New.png)
+![MOHID Land mediums and equations](../assets/images/MohidLand_Old_New.png)
 
-Mohid Land mediums and equations
-
-To follow the description of MOHID Land equations and derivation go to [Equations in Mohid Land](../reference/equations-in-mohid-land.md)
+To follow the description of MOHID Land equations and derivation go to [Equations in Mohid Land](../reference/equations-in-mohid-land.md).
 
 ### Main Processes
 
@@ -19,11 +17,11 @@ The main processes solved are:
 - 3D Porous Media solving Richard's Equations
 - 1D Drainage Network solving Kinematic Wave, DiffusionWave or complete St. Venant equations (dynamic wave)
 - 2D Overland Flow (solving Diffusion Wave)
-- [Evapotranspiration](../reference/evapotranspiration.md) using Penman Motheith and water availability in soil
+- [Evapotranspiration](../reference/evapotranspiration.md) using Penman-Monteith and water availability in soil
 - Plant growth and agricultural practices (planting, harvest, kill, fertilization, pesticide application, etc.) including dormancy and SWAT crop database
 - Porous Media interaction with Runoff in [Infiltration](../reference/infiltration.md) using continuity (Richard's equation with Head gradient)
 - Porous Media and Runoff interaction with Drainage Network using continuity (surface gradient between Runoff and Drainage Network. Richard's equation with level gradient between Porous Media and Drainage Network)
-- Drainage Network and Reservoir interaction to account river flow impact due to manmande hydraulic infraestructures
+- Drainage Network and Reservoir interaction to account river flow impact due to man-made hydraulic infrastructures
 - Property transport in all mediums and transformation in soil and river (water quality models can be coupled)
 - Biological and chemical reactions in soil as mineralization, nitrification, denitrification, immobilization, chemical equilibrium, property decay, and processes in river as primary production, nutrient assimilation, property decay, etc.
 - Linkage to [MOHID Water](../water/mohid-water.md) by [Module Discharges](../water/modules/discharges.md)
@@ -34,11 +32,11 @@ MOHID Land uses an adaptive time-stepping method in its main hydrodynamic cycle.
 
 ### Interpolated Rain
 
-You can produce spatialy interpolated rain using [FillMatrix](../tools/fillmatrix.md) tool, using as input two or more precipitation stations.
+You can produce spatially interpolated rain using [FillMatrix](../tools/fillmatrix.md) tool, using as input two or more precipitation stations.
 
 ## MOHID Land Structure, Description and Source Code
 
-MOHID Land model is programmed in Fortan95 using a OOP (object-oriented programming) philoshophy and code is organized in Modules (or classes) that handle specific processes in specific mediums. Also and interface Module exists to handle the exchange info between classes.
+MOHID Land model is programmed in Fortran 95 using an OOP (object-oriented programming) philosophy and code is organized in Modules (or classes) that handle specific processes in specific mediums. An interface Module also exists to handle the exchange of information between classes.
 
 ### MOHID Land Modules
 
@@ -56,11 +54,11 @@ Some modules developed are related with specific processes which occur inside a 
 - [Module Reservoirs](../water/modules/reservoirs.md) which handles weir and reservoir behavior in changing river flow (Drainage Network interaction) and concentrations.
 - [Module Basin](modules/basin.md) which handles information between modules and computes interface forcing fluxes between atmosphere and soil (e.g. throughfall, potential evapotranspiration, etc.).
 
-MOHID Land also uses all the modules for data pre-processing, computation and post-processing that are common to MOHID Water (e.g. data file read, geometry handling, results writing in HDF and timeserie, etc.) See below how you can see module [source code](mohid-land.md).
+MOHID Land also uses all the modules for data pre-processing, computation and post-processing that are common to MOHID Water (e.g. data file read, geometry handling, results writing in HDF and timeserie, etc.). See [MOHID Land Source Code](#mohid-land-source-code) below.
 
 ### MOHID Land Source Code
 
-You can download the latest source code of the model from GitHub ([Mohid Land in GitHub](https://github.com/Mohid-Water-Modelling-System/Mohid#)). Just click on the download link, no need to register. For advanced users you can download the entire solution ready to compile.
+You can download the latest source code of the model from GitHub ([Mohid Land in GitHub](https://github.com/Mohid-Water-Modelling-System/Mohid)). Just click on the download link, no need to register. For advanced users you can download the entire solution ready to compile.
 
 Other users can just browse around the code of each module to checkout equations. In the links below you can go directly to the latest version and see code in html:
 
@@ -78,17 +76,15 @@ Other users can just browse around the code of each module to checkout equations
 - [MOHID RiverNetwork](https://github.com/Mohid-Water-Modelling-System/Mohid/blob/master/Software/MOHIDRiver/RiverNetwork.F90) Program that alows to run river using SWAT-Mohid discharges
 - [ModuleCEQUALW2](https://github.com/Mohid-Water-Modelling-System/Mohid/blob/master/Software/MOHIDBase1/ModuleCEQUALW2.F90) U.S. Army Corps of Engineers zero-dimensional model for primary production that can be run to simulate water quality in the river
 - [ModuleTriangulation](https://github.com/Mohid-Water-Modelling-System/Mohid/blob/master/Software/MOHIDBase1/ModuleTriangulation.F90) This is one of the modules for interpolation. This is useful to obtain distributed rain in space based on point time series.
-- etc
 
 ## MOHID Land Interfaces
 
 You can download interfaces to prepare inputs and to analyse model results. Presently available two options:
 
-- a completely free interface from Mohid Website (www.mohid.com).
+- a completely free interface from Mohid Website ([www.mohid.com](http://www.mohid.com)).
 - MOHID Studio is a new interface can be downloaded from [Action Modulers](http://www.actionmodulers.pt/products/mstudio/products-mohidstudio2015.shtml). A full professional version and a free version (with some limitations) exist. The full version is available for free for academic purposes (research, master, phD, teaching) for one year.
 
 ## How To
 
-[Create a MOHID Land Project Step-by-Step](how-to-create-a-mohid-land-project-step-by-step.md)
-
-[Rough Guide on Hydrology Calibration in MOHID Land](../reference/calibration-validation-in-mohid-land.md)
+- [Create a MOHID Land Project Step-by-Step](how-to-create-a-mohid-land-project-step-by-step.md)
+- [Rough Guide on Hydrology Calibration in MOHID Land](../reference/calibration-validation-in-mohid-land.md)

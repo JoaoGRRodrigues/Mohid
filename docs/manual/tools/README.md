@@ -4,7 +4,7 @@ Pre- and post-processing programs, graphical interfaces and helper utilities.
 
 ## Sections
 
-- [Gui](gui/README.md) (20 pages)
+- [Gui](gui/README.md) (17 pages)
 
 ## Pages
 
@@ -85,5 +85,3 @@ HDFView is java based (cross-platform) HDF4 and HDF5 viewer and editor. It allow
 
 MohidReservoirOptimization is part of Mohid system. It is used to create bathymetries to be used with the CEQUAL-W2 EPA's program. It is writen in FORTRAN95.
 
-- [User manual](../reference/user-manual.md).
-- [Technical manual](../reference/technical-manual.md).

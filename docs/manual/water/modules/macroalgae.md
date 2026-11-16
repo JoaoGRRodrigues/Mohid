@@ -6,9 +6,9 @@ Module MacroAlgae is a zero-dimensional biogeochemical model and was designed to
 
 - **Attached macroalgae** - macroalgae attached to the bottom of the water column
 
-- **Drifting macroalgae** - macroalgae dettached from the bottom drifting in the water column
+- **Drifting macroalgae** - macroalgae detached from the bottom drifting in the water column
 
-The evolution of the two macroalgae types is computed in the exactly same way (although different parameters are allowed for each type). The main differences relate to the fact that attached macroalgae are not transported by flow and drifting macroalgae are. On top of the main primary production limiting factors (e.g. light, nutrients, temperature), attached macroalgae growth is also limited by salinity (optionally), by suspended particulate matter deposition fluxes and also by shear stress near the bottom, which dettaches these macroalgae which become drifting macroalgae. Drifting macroalgae do not have this type of limitation (SPM deposition flux and obviously bottom shear stress) and when they reach the shore the only process computed is an increased mortality rate.
+The evolution of the two macroalgae types is computed in exactly the same way (although different parameters are allowed for each type). The main differences relate to the fact that attached macroalgae are not transported by flow and drifting macroalgae are. On top of the main primary production limiting factors (e.g. light, nutrients, temperature), attached macroalgae growth is also limited by salinity (optionally), by suspended particulate matter deposition fluxes and also by shear stress near the bottom, which detaches these macroalgae which become drifting macroalgae. Drifting macroalgae do not have this type of limitation (SPM deposition flux and obviously bottom shear stress) and when they reach the shore the only process computed is an increased mortality rate.
 
 This module is independent of the pelagic and benthic biogeochemical model being used to compute other biogeochemical processes, thus it can be coupled with [Module WaterQuality](waterquality.md), [Module CEQUALW2](cequalw2.md) or [Module Life](life.md), or even [Module Benthos](benthos.md).
 
@@ -121,7 +121,7 @@ where,
 
 Module MacroAlgae solves the differential equations described above using an Euler forward scheme (explicit method), which was used in order to make the code organization as simple as possible. When using this numerical method there are, nevertheless, some restraints in terms of temporal discretization, which can cause numerical instabilities that can be solved, at some extent, by using a smaller time step.
 
-Only for a specific calculation (drifting macroalgae mortality when reaching the shore), an Euler backward scheme (implicit method) is used to insure numerical stability.
+Only for a specific calculation (drifting macroalgae mortality when reaching the shore), an Euler backward scheme (implicit method) is used to ensure numerical stability.
 
 Module MacroAlgae has an independent time step in relation to the model’s main time step. Normally the time step to integrate the differential equations describing these kind of biogeochemical reactions is much higher than the time step used to solve hydrodynamic and transport equations, and as the set of equations in this module is quite simple, there is no significant increase in terms of computational costs when using a smaller time step.
 
@@ -129,13 +129,13 @@ Module MacroAlgae has an independent time step in relation to the model’s main
 
 ### Waterproperties data file options
 
-In order to activate this module, specify in [Module WaterProperties](waterproperties.md) input data file, in each property involved in macroalgae processes the following keyword:
+In order to activate this module, specify, in the [Module WaterProperties](waterproperties.md) input data file, the following keyword in each property involved in macroalgae processes:
 
 ```
 MACROALGAE             : 1
 ```
 
-Here is the property list which has to be with the macroalgae processes keyword activated:
+Here is the list of properties that must have the macroalgae processes keyword activated:
 
 ```
 macroalgae
@@ -154,14 +154,14 @@ particulate organic phosphorus**
 
 \*\*if computing the phosphorus cycle
 
-The following step, still in [Module WaterProperties](waterproperties.md) input data file, in the header section, the following keywords:
+The next step is to define the following keywords in the header section of the [Module WaterProperties](waterproperties.md) input data file:
 
 ```
 MACROALGAE_MASS       : 0.001        !macroalgae bottom distribution in gC/m2
 MACROALGAE_HEIGHT     : 0.25         !macroalgae reference height in meters
 ```
 
-Ultimately one must parameterize the influence of macroalgae in light extincion. Thus, in the macroalgae property block the following keywords must be defined:
+Ultimately one must parameterize the influence of macroalgae in light extinction. Thus, in the macroalgae property block the following keywords must be defined:
 
 ```
 LIGHT_EXTINCTION      : 1            !activates macroalgae influence on light extinction
@@ -182,7 +182,7 @@ Then, activate Module MacroAlgae in [MOHID GUI](../../tools/gui/mohid-gui.md) as
 
 ```
 Keyword            Default value       Description
-DT                  : 3600]          !Time step compute biogeochemical processes
+DT                  : 3600          !Time step compute biogeochemical processes
 PELAGIC_MODEL       : WaterQuality   !Defines which pelagic biogeochemical model is coupled
 NITROGEN            : 0              !Compute the nitrogen cycle
 PHOSPHORUS          : 0              !Compute the phosphorus cycle
@@ -224,7 +224,7 @@ RATIOPC             : 0.024        !macroalgae phosphorus/carbon ratio
 MACROALGAE_MINCONC  : 1e-12        !minimum residual value for macroalgae abundance
 MIN_OXYGEN          : 1e-8         !minimum oxygen concentration for macroalgae growth
 DEPLIM              : 5e-6         !maximum SPM deposition flux for macroalgae growth(kg m-2 s-1)*
-EROCRITSS           : 0.1          !critical shear stress to occur macroalgae dettachment (in Pa)*
+EROCRITSS           : 0.1          !critical shear stress to occur macroalgae detachment (in Pa)*
 SALT_EFFECT         : 0            !include salinity limitation on macroalgae growth
 SALTOPT             : 20           !macroalgae optimum salinity for growth
 SALTCRIT            : 5.           !macroalgae critical salinity limit growth
@@ -245,7 +245,7 @@ In order to perform outputs of biogeochemical rates and other parameters of the 
 BOXFLUXES          : ..\..\GeneralData\Boxes.dat     !path to a boxes data file
 ```
 
-The same keyword, referencing the same [boxes data file](../../io/formats/boxes.md) must be defined in the [Hydrodynamic](hydrodynamic.md) input data file. This insures the output of the water.BXM file, which contains the spatial integration of the water volumes into the previously boxes defined.
+The same keyword, referencing the same [boxes data file](../../io/formats/boxes.md) must be defined in the [Hydrodynamic](hydrodynamic.md) input data file. This ensures the output of the water.BXM file, which contains the spatial integration of the water volumes into the previously defined boxes.
 
 Also **at least one** water property needs to have the following keyword activated:
 

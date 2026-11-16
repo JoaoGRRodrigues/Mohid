@@ -6,6 +6,8 @@ Module TimeSerie manages all operations involving [Time Series](../../io/formats
 
 ## Time Series input
 
+Input time series are ASCII files; their header and data layout are described in [Time Series format](../../io/formats/time-series.md).
+
 ## Time Series output
 
 Module TimeSerie handles results output in time series format. It acts as a server for other modules that which to output results in this format. This the client module needs to define the specifications with the location and other options of the output time series. This is made via a file:

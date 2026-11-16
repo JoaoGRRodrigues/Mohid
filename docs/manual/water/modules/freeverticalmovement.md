@@ -2,7 +2,7 @@
 
 ## Overview
 
-The free vertical movement module computes particulate water properties vertical fluxes. It is normally used to computed [settling velocity](../../reference/settling-velocity.md) in cohesive sediment or particulate organic matter transport simulations.
+The free vertical movement module computes the vertical fluxes of particulate water properties. It is normally used to compute [settling velocity](../../reference/settling-velocity.md) in cohesive sediment or particulate organic matter transport simulations.
 
 ## Equations
 
@@ -25,5 +25,3 @@ where $W_S$ in $m s^{-1}$ is the settling velocity, C ($kg m^{-3}$) is the cohes
 ### Flocculation
 
 Flocculation can be parameterized in MOHID by defining a limit for the salinity concentration above which flocculation is considered to be complete. Below this limit there is no flocculation, thus the settling velocity is null. This process can be optionally activated in the model and it can be used along with a constant settling velocity definition or a cohesive sediment concentration dependent settling velocity.
-
-## References

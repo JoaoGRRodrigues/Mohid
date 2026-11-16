@@ -4,7 +4,7 @@ The three-dimensional hydrodynamic and water-quality model for estuaries, coasta
 
 ## Sections
 
-- [Modules](modules/README.md) (41 pages)
+- [Modules](modules/README.md) (34 pages)
 
 ## Pages
 

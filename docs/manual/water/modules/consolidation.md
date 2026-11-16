@@ -2,6 +2,8 @@
 
 ## Overview
 
+Module Consolidation computes the sediment column geometry, accounting for consolidation and erosion of the sediment layers, and the associated dry sediment and interstitial water volumes.
+
 ## Sediment physical processes and properties
 
 The sediment compartment is constituted by a module which computes the sediment geometry (variations due to erosion and consolidation), namely dry sediment volumes and interstitial water volumes. In terms of vertical referential, it is located below the water column until a certain defined depth.

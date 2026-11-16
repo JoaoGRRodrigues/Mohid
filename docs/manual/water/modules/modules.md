@@ -1,5 +1,7 @@
 # Modules
 
+MOHID is built from modules, which the sections below group by project.
+
 ## Mohid Base 1
 
 ![](../../assets/images/MohidBase1DAG.png)

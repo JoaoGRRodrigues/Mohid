@@ -1,12 +1,12 @@
 # Modules
 
-Optional physical, biogeochemical and numerical modules that extend the base model.
+The process modules of MOHID Land: water fluxes in soil and overland flow, property transport and vegetation growth.
 
 ## Pages
 
-- [Module Basin](basin.md) — Module Basin works as an interface among the different modules of Mohid-Land. Indeed it manages fluxes between modules as precipitation, evapotranspir…
-- [Module PorousMedia](porousmedia.md) — Module Porous Media is responsible for handling all water fluxes in soil, including water transport due to the balance between pressure (gravity and s…
-- [Module PorousMediaProperties](porousmediaproperties.md) — This is the module in Mohid Land that handles porous media properties, meaning that controls transport (dependent on fluxes computed in porous media)…
-- [Module Runoff](runoff.md) — Module Runoff allows the calculation of the overland surface runoff over a grid as function of the water column slopes between adjacen cells (dynamic…
-- [Module RunoffProperties](runoffproperties.md) — This is the module in Mohid Land that handles runoff properties, meaning that controls its transport (dependent on fluxes computed in module Runoff).…
-- [Module Vegetation](vegetation.md) — Vegetation Model handles information about vegetation cover and interacts with atmosphere and soil properties. Vegetation dynamics can be handled by t…
+- [Module Basin](basin.md) — interface between the modules: distributes atmospheric fluxes and updates the water column and concentrations after each module call.
+- [Module PorousMedia](porousmedia.md) — water fluxes in soil: infiltration, unsaturated and saturated flow, evapotranspiration and exchange with runoff and rivers.
+- [Module PorousMediaProperties](porousmediaproperties.md) — transport and transformation of properties in soil.
+- [Module Runoff](runoff.md) — overland flow over the grid, using St. Venant, diffusion wave or kinematic wave.
+- [Module RunoffProperties](runoffproperties.md) — transport of properties in runoff, including erosion and deposition.
+- [Module Vegetation](vegetation.md) — vegetation cover, growth model, water and nutrient uptake and agricultural practices.

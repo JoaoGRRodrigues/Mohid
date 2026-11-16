@@ -1,8 +1,6 @@
 # Model setup methodology
 
-```
-NOTE: This article has been discontinued and is no longer maintained.
-```
+> **NOTE:** This article has been discontinued and is no longer maintained.
 
 This is the log of the current best-practice methodology for setting up hydrodynamic nested models.
 
@@ -12,7 +10,7 @@ This is the log of the current best-practice methodology for setting up hydrodyn
 
 - **[Grid](../io/formats/grid.md)**: First of all, define your domain(s) and build the grid(s). We use [Mohid GIS](../tools/gui/mohid-gis.md) for that matter. For nested models, remember to keep a maximum downscaling factor ratio of *1:3*. In the end, you should have a bunch of [*.grd*](../io/formats/grid.md) files.
 
-- **Baseline data**: Next, you need to define/obtain your baseline topographic/bathymetric data as well as your landline data. For example, in regional oceanography, one could choose the ETOPO or GEBCO datasets (available in intranet at *\\\\kepler\\DataCenter\\DadosBase\\Oceanografia\\Batimetria*) for the bathymetry.
+- **Baseline data**: Next, you need to define/obtain your baseline topographic/bathymetric data as well as your landline data. For example, in regional oceanography, one could choose the ETOPO or GEBCO datasets (available in intranet at *\\\\server\\share*) for the bathymetry.
 
 - **[ConvertToXYZ](../tools/converttoxyz.md)**: However, before interpolation of the datasets to your grid, you need to convert the dataset into a readable file for [Mohid GIS](../tools/gui/mohid-gis.md). [ConvertToXYZ](../tools/converttoxyz.md) is a little program used for that effect. It will create a [*.xyz*](../io/formats/xyz-points.md) file.
 

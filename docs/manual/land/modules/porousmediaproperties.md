@@ -32,7 +32,7 @@ dt is infinitesimal variation of time
 
 In a finite volume approach, the control volume (or cell) has a defined volume and all the properties are homogeneous inside the control volume (and referred to the cell center) and velocities are homogeneous in the faces of the volume (and referred to the face). So the latter equation may be simplified because property, velocity, and diffusivity are homogeneous inside control volume or in the faces so they may exit the integral and the various flux directions (3 directions through 6 faces have to be analyzed).
 
-The property transport equation in "infinitesimal volume" form::
+The property transport equation in "infinitesimal volume" form:
 
 ![EqnPropertyTransport InifinitesimalVolume.png](../../assets/images/EqnPropertyTransport_InifinitesimalVolume.png)
 
@@ -176,17 +176,13 @@ For positive discharges the discharge concentration is read from Discharges_X.da
 DISCHARGES : 1
 ```
 
-## Other Features
-
 ## Outputs
 
 Output is done in terms of timeseries, HDF, and boxes following the MOHID standards.
 
-## References
-
 ## Data File
 
-## Units
+### Units
 
 ```
 Units in porous media properties

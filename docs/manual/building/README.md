@@ -4,8 +4,8 @@ Compilers, platforms and build recipes for the different systems MOHID runs on.
 
 ## Sections
 
-- [Linux](linux/README.md) (8 pages)
-- [Windows](windows/README.md) (8 pages)
+- [Linux](linux/README.md) (9 pages)
+- [Windows](windows/README.md) (7 pages)
 
 ## Pages
 

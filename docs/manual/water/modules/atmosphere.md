@@ -12,7 +12,7 @@ A user manual is available in the link at the bottom of the page. This user manu
 
 ### Air temperature
 
-Air temperature is used for latent heat, sensible heat and downward longwave radiation computation (in the atmoshphere-water interface).
+Air temperature is used for latent heat, sensible heat and downward longwave radiation computation (in the atmosphere-water interface).
 
 ### Solar radiation
 
@@ -28,7 +28,7 @@ Solar radiation is used to compute radiation that enters the water surface (afte
 
 Wind is described by its velocity decomposed on x and y components. If not available it can be computed from wind modulus and wind direction.
 
-Wind is used to compute latent heat, sensible heat and wind stress (in the water-atmoshphere interface).
+Wind is used to compute latent heat, sensible heat and wind stress (in the water-atmosphere interface).
 
 ### Specific humidity
 
@@ -38,7 +38,7 @@ Specific humidity is the ratio of water mass present in the atmosphere against t
 
 Relative humidity is a term used to describe the amount of water vapor that exists in a gaseous mixture of air and water. The relative humidity of an air-water mixture is defined as the ratio of the partial pressure of water vapor in the mixture to the saturated vapor pressure of water at a given temperature.
 
-Relative humidity is used for latent heat computation (in the water-atmoshphere interface).
+Relative humidity is used for latent heat computation (in the water-atmosphere interface).
 
 ### Precipitation
 
@@ -56,7 +56,7 @@ ii) random solution (this option was removed from June 2015, it is shown here fo
 
 iii) comparison between solar radiation (measured or computed) and top of atmosphere radiation (default method);
 
-Cloud cover is used for downward long wave radiation computation (in the atmoshphere-water interface). One method in solar radiation computation (if no data available) uses cloud cover as input.
+Cloud cover is used for downward long wave radiation computation (in the atmosphere-water interface). One method in solar radiation computation (if no data available) uses cloud cover as input.
 
 **Remarks**:
 
@@ -70,25 +70,25 @@ Cloud cover is used for downward long wave radiation computation (in the atmoshp
 
 Mass flux from water added by anthropogenic sources.
 
-### Other Properties
+### Other properties
 
-When using **[Module PorousMediaProperties](../../land/modules/porousmediaproperties.md)** or **Module RunOffProperties**, it's possible to include property concentrations in the Atmosphere data file, that will be used as "top boundary condition" for these properties.
+When using **[Module PorousMediaProperties](../../land/modules/porousmediaproperties.md)** or **[Module RunOffProperties](../../land/modules/runoffproperties.md)**, it's possible to include property concentrations in the Atmosphere data file, that will be used as "top boundary condition" for these properties.
 
 Ex.:
 
 ```
 <beginproperty>
-  NAME                               : solution ammonia
-  UNITS                              : mg/L
-  DESCRIPTION                        : Ammonia in precipitation
-  PRECIPITATION                      : 1
-  FILE_IN_TIME                       : TIMESERIE
-  FILENAME                           : ..\GeneralData\Boundary Conditions\ammonia_in_precipitation_timeseries.dat
-  DATA_COLUMN                        : 2
-  NO_INTERPOLATION_OR_ACCUMULATION   : 1
-  DEFAULTVALUE                       : 0
-  REMAIN_CONSTANT                    : 0
-  TIME_SERIE                         : 1
+  NAME                               : solution ammonia
+  UNITS                              : mg/L
+  DESCRIPTION                        : Ammonia in precipitation
+  PRECIPITATION                      : 1
+  FILE_IN_TIME                       : TIMESERIE
+  FILENAME                           : ..\GeneralData\Boundary Conditions\ammonia_in_precipitation_timeseries.dat
+  DATA_COLUMN                        : 2
+  NO_INTERPOLATION_OR_ACCUMULATION   : 1
+  DEFAULTVALUE                       : 0
+  REMAIN_CONSTANT                    : 0
+  TIME_SERIE                         : 1
 <endproperty>
 ```
 
@@ -96,7 +96,7 @@ Ex.:
 
 ### Random components
 
-## User Manual
+## User manual
 
 [Coupling Water-Atmosphere User Manual](../coupling-water-atmosphere-user-manual.md)
 

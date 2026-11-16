@@ -4,8 +4,8 @@ How the source code is organised and how to write, compile and debug it.
 
 ## Sections
 
-- [Build](build/README.md) (13 pages)
-- [Programming](programming/README.md) (41 pages)
+- [Build](build/README.md) (11 pages)
+- [Programming](programming/README.md) (38 pages)
 
 ## Pages
 

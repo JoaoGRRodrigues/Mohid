@@ -38,7 +38,7 @@ EVAPOTRANSPIRATION : 1
 
 and reference evapotranspiration defined (property standard). In this case, all the reference evapotranspiration will be in the form of potential evaporation.
 
-### If Vegetation is readed from file
+### If Vegetation is read from file
 
 If the user chooses to include vegetation in basin file with the keyword:
 
@@ -142,7 +142,7 @@ Nutrient uptake may be done only using the formulation where the uptake mass is 
 
 #### Properties
 
-Also Properties **leaf area index**, **root depth**, **specific leaf storage** and **crop coefficent** must be provided (from file or constant values). This must comply with fillmatrix standards under the **<beginproperty>** and **<endpropery>** blocks.
+Also Properties **leaf area index**, **root depth**, **specific leaf storage** and **crop coefficient** must be provided (from file or constant values). This must comply with fillmatrix standards under the **<beginproperty>** and **<endproperty>** blocks.
 
 **leaf area index**
 
@@ -206,7 +206,7 @@ Which means that the method for transpiration is the one from the vegetation gro
 
 Potential water uptake (potential evapotranspiration/transpiration) is distributed in depth according to a exponential distribution. The equation for that distribution is not reproduced in this page.
 
-Water Uptake (actual uptake) computation takes in potential uptake and limits it to soil constraints. consisting in water content in soil. The low water content reduction equation is not reproduced in this page, and the high water content reduction equation is still to be done.
+Water Uptake (actual uptake) computation takes in potential uptake and limits it to soil constraints, consisting of water content in soil. The low water content reduction equation is not reproduced in this page, and the high water content reduction equation is still to be done.
 
 #### Nutrient Uptake
 
@@ -541,8 +541,6 @@ Potential_HU - number of heat units that atmosphere is presenting since the begg
 
 TemperatureStressFactor - temperature stress factor that the plant feels (zero being maximum stress and one being no stress)
 
-### Box integration
-
 ### Maps (HDF5 format)
 
 To write 3D results use the keyword [OUTPUT_TIME](../../io/keywords/output-time.md) and define keyword:
@@ -866,7 +864,7 @@ DESCRIPTION               : plant leaf area index
 EVOLUTION                 : 1
 OLD                       : 0
 FILE_IN_TIME              : HDF
-FILENAME                  : ..\General Data\\Vegetation\LAI.hdf5
+FILENAME                  : ..\General Data\Vegetation\LAI.hdf5
 DEFAULTVALUE              : 0.
 REMAIN_CONSTANT           : 0
 OUTPUT_HDF                : 1

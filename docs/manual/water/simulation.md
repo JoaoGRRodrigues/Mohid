@@ -1,5 +1,7 @@
 # /Simulation
 
+This page describes the `/GeneralData` and `/Simulation` folder structure of a MOHID Water simulation.
+
 ## /GeneralData
 
 The /GeneralData is the default folder where to keep model's input baseline data such as bathymetries, S, T, Tide and waterproperties initialization. Usually you'll copy here the files created from [Mohid GIS](../tools/gui/mohid-gis.md).
@@ -33,7 +35,7 @@ It contains all the configuration files of all the runs. Here's the full list of
 - MacroAlgae.dat
 - Life.dat
 - SedimentProperties.dat
-- [SedimentGeometry.dat](../io/README.md#sedimentgeometry-dat)
+- [SedimentGeometry.dat](../io/README.md#sedimentgeometrydat)
 - Consolidation.dat
 - Assimilation.dat
 - HydrodynamicFile.dat

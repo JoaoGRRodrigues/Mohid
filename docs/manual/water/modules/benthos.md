@@ -89,7 +89,7 @@ As described before, Module Benthos is directly connected with [Module Interface
 All properties undergoing biogeochemical reactions in Module Benthos must be defined in [Module InterfaceSedimentWater](interfacesedimentwater.md), and keyword **BENTHOS** has to be activated in every one of it, including oxygen, which is mandatory to be computed.
 
 ```
-BENTHOS	        : 1
+BENTHOS	        : 1
 ```
 
 Additionally, property temperature must be also defined, as it controls mineralization rates. Nevertheless, as temperature is not subject to any specific process in the bottom, the **BENTHOS** keyword value for this property must be set to 0.
@@ -97,14 +97,14 @@ Additionally, property temperature must be also defined, as it controls minerali
 Particulate properties, such as particulate organic nitrogen, particulate organic phosphorus, biogenic silica, phytoplankton (if desired) and diatoms (if desired) must be set as **PARTICULATE**.
 
 ```
-PARTICULATE    : 1
+PARTICULATE    : 1
 ```
 
-Dissolved properties such as ammonia, inorganic phosphorus, dissolved silica, oxygen and temperature, must be set to **PARTICULATE : 0**.
+Dissolved properties such as ammonia, inorganic phosphorus, dissolved silica, oxygen and temperature, must be set to **PARTICULATE : 0**.
 
-The properties defined in the [Module InterfaceSedimentWater](interfacesedimentwater.md) must be consistent with the [Module WaterProperties](waterproperties.md) input file, which means that every property important for the benthic model must be defined in both input files;With exception to temperature, all dissolved properties defined in the [Module InterfaceSedimentWater](interfacesedimentwater.md) input file, with option **BENTHOS** activated, must set keyword **WATER_FLUXES : 1**. Particulate properties also need this option activated in order to compute the fluxes between the water column and the bottom due to erosion and deposition.
+The properties defined in the [Module InterfaceSedimentWater](interfacesedimentwater.md) must be consistent with the [Module WaterProperties](waterproperties.md) input file, which means that every property important for the benthic model must be defined in both input files;With exception to temperature, all dissolved properties defined in the [Module InterfaceSedimentWater](interfacesedimentwater.md) input file, with option **BENTHOS** activated, must set keyword **WATER_FLUXES : 1**. Particulate properties also need this option activated in order to compute the fluxes between the water column and the bottom due to erosion and deposition.
 
-Also as Module Benthos computes biogeochemical processes involving dissolved processes near the sediment-water interface (e.g. oxygen depletion), all these properties must be defined in the water column. In addition, and as referred above, temperature, as it influences the mineralization rates, is mandatory to be defined in the [Module WaterProperties](waterproperties.md) input data file. With exception to temperature, all properties defined in the ModuleInterfaceSedimentWater input file with option BENTHOS activated, must set keyword to **BOTTOM_FLUXES : 1** in the [Module WaterProperties](waterproperties.md) input file. This keywords activates an option that computes a bottom boundary condition in the transport equations of the dissolved properties due to the biogeochemical processes computed in Module Benthos.
+Also as Module Benthos computes biogeochemical processes involving dissolved processes near the sediment-water interface (e.g. oxygen depletion), all these properties must be defined in the water column. In addition, and as referred above, temperature, as it influences the mineralization rates, is mandatory to be defined in the [Module WaterProperties](waterproperties.md) input data file. With exception to temperature, all properties defined in the ModuleInterfaceSedimentWater input file with option BENTHOS activated, must set keyword to **BOTTOM_FLUXES : 1** in the [Module WaterProperties](waterproperties.md) input file. This keywords activates an option that computes a bottom boundary condition in the transport equations of the dissolved properties due to the biogeochemical processes computed in Module Benthos.
 
 For more on Module Benthos keywords go to [MOHID keyword Database](../../io/keywords/keyword-list.md).
 

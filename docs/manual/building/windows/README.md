@@ -35,6 +35,3 @@ Useful windows utility to turn *jpeg* files into *eps* files.
 #### External References
 
 - [Download here.](http://www.pdflib.com/products/more/jpeg2ps.html)
-- [2jpeg](2jpeg.md)
-- [2gif](../../tools/2gif.md)
-- [Convert](convert.md)

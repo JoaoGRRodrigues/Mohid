@@ -2,21 +2,11 @@
 
 ## Overview
 
-The water-air interface module is responsible by processes occurring at the water-air interface, such as computing [wind shear stress](../../reference/wind-surface-stress.md), radiation balances, latent and sensible heat fluxes. This modules uses [Module Atmosphere](atmosphere.md) as a database for meteorological data and combines it with information from, for example, [Module Hydrodynamic](hydrodynamic.md) and [Module WaterProperties](waterproperties.md) to compute mass, heat and momentum fluxes across the water-air interface.
+The water-air interface module is responsible for the processes occurring at the water-air interface, such as computing [wind shear stress](../../reference/wind-surface-stress.md), radiation balances, latent and sensible heat fluxes. This module uses [Module Atmosphere](atmosphere.md) as a database for meteorological data and combines it with information from, for example, [Module Hydrodynamic](hydrodynamic.md) and [Module WaterProperties](waterproperties.md) to compute mass, heat and momentum fluxes across the water-air interface.
 
 A user manual is available in the link at the bottom of the page. This user manual intends to help the user to couple atmosphere to water, activating in MOHID wind forcing, heat fluxes and mass fluxes between this interface.
 
 ## Main Processes
-
-### Momentum fluxes
-
-#### Surface rugosity
-
-#### Wind shear stress
-
-#### Wind shear velocity
-
-#### Turbulent kinetic energy
 
 ### Heat fluxes
 
@@ -34,9 +24,9 @@ Solar Spectrum at the surface is composed from ultra-violet (UV), visible and in
 
 Earth emits radiation (IR radiation) in the 3000-100000nm (or 3-100um) (Monteith and Unsworth, 1990) which means that emitted radiation has different spectra than that coming from solar origin.
 
-Atmosphere absorbs part of emitted radiation from earth (green house gases) and emitts in the same spectrum (from 3 to 100 um)- (Monteith and Unsworth, 1990).
+Atmosphere absorbs part of emitted radiation from earth (green house gases) and emits in the same spectrum (from 3 to 100 um) (Monteith and Unsworth, 1990).
 
-It is common to find the term "short wave" associated with solar radiation and "long wave" with terrestrial and atmosphere radiation because of the different well defined spectral bands. In oceanography best care is taken to UV and visible bands because are the bands most sensible for fitoplankton and which penetrate in depth; infrared is rapidily attenuated in the first centimeters of water (Ohlman et al. 1996). As so, a "short wave solar radiation" term can be used integrating UV and visible bands and a "long wave solar radiation" for the correspondent IR band.
+It is common to find the term "short wave" associated with solar radiation and "long wave" with terrestrial and atmosphere radiation because of the different well defined spectral bands. In oceanography best care is taken to UV and visible bands because they are the bands most sensitive to phytoplankton and which penetrate in depth; infrared is rapidly attenuated in the first centimeters of water (Ohlman et al. 1996). As such, a "short wave solar radiation" term can be used integrating UV and visible bands and a "long wave solar radiation" for the corresponding IR band.
 
 In MOHID it will be used the term "short wave" for UV and visible bands and longwave for IR band. This means that solar radiation has short wave (around 250-700nm) and long wave bands (around 700-2500nm) and that terrestrial (upward radiation) and atmosphere (downward radiation) are longwave bands as well (3-100um).
 
@@ -44,21 +34,19 @@ In MOHID it will be used the term "short wave" for UV and visible bands and long
 
 - Surface radiation
 
-Surface radiation represents the solar radiation entering the water surface (after reflection - albedo). A fraction of solar radiation is short wave radiation (60% of surface radiation by default) .
+Surface radiation represents the solar radiation entering the water surface (after reflection - albedo). A fraction of solar radiation is short wave radiation (60% of surface radiation by default).
 
-The shortwave solar spectrum represents the UV and visible bands from solar radiation (around 250 - 700nm) which are sensible for biology and penetrate in depth in the water column. The fraction of this spectra to total solar radiation is variable with gases concentration (O3, O2, water vapour, CO2) in atmosphere, solar zenith, turbidity, and mainly, by cloudiness (Ohlman and Siegel 2000a). The 60% of surface radiation used in MOHID as default for solar short wave radiation corresponds to clear sky conditions. Accordingly to Ohlman and Siegel, 2000a UV and visible spectra can undergo to 70% and 80% of total solar radiation when 40% and 90% of radiation is reduced due to clouds, respectively.
+The shortwave solar spectrum represents the UV and visible bands from solar radiation (around 250 - 700nm) which are sensitive to biology and penetrate in depth in the water column. The fraction of this spectra to total solar radiation is variable with gases concentration (O3, O2, water vapour, CO2) in atmosphere, solar zenith, turbidity, and mainly, by cloudiness (Ohlman and Siegel 2000a). The 60% of surface radiation used in MOHID as default for solar short wave radiation corresponds to clear sky conditions. Accordingly to Ohlman and Siegel, 2000a UV and visible spectra can undergo to 70% and 80% of total solar radiation when 40% and 90% of radiation is reduced due to clouds, respectively.
 
-Solar radiation is an atmosphere property (see module Atmosphere for details).
+Solar radiation is an atmosphere property (see [Module Atmosphere](atmosphere.md) for details).
 
 ##### Long wave radiation
 
 - Surface radiation
 
-Surface radiation represents the solar radiation entering the water surface (after reflection - albedo). A fraction of solar radiation is long wave radiation (40% of surface radiation by default) .
+Surface radiation represents the solar radiation entering the water surface (after reflection - albedo). A fraction of solar radiation is long wave radiation (40% of surface radiation by default).
 
-The longwave solar spectrum represents the IR bands from solar radiation (around 700 - 2500nm) which are rapidilly attenuated in the first centimeters fo the water column. The fraction of this spectra to total solar radiation is variable with gases concentration (O3, O2, water vapour, CO2) in atmosphere, solar zenith, turbidity, and mainly, by cloudiness(Ohlman and Siegel 2000a). The 40% of surface radiation used in MOHID as default for solar long wave radiation corresponds to clear sky conditions. Adapted from Ohlman and Siegel, 2000a IR spectra from the solar radiation can undergo to 30% and 20% of total solar radiation when 40% and 90% of radiation is reduced due to clouds, respectively.
-
-Solar radiation is an atmosphere property (see module Atmosphere for details).
+The longwave solar spectrum represents the IR bands from solar radiation (around 700 - 2500nm) which are rapidly attenuated in the first centimeters of the water column. The fraction of this spectra to total solar radiation is variable with gases concentration (O3, O2, water vapour, CO2) in atmosphere, solar zenith, turbidity, and mainly, by cloudiness (Ohlman and Siegel 2000a). The 40% of surface radiation used in MOHID as default for solar long wave radiation corresponds to clear sky conditions. Adapted from Ohlman and Siegel, 2000a IR spectra from the solar radiation can undergo to 30% and 20% of total solar radiation when 40% and 90% of radiation is reduced due to clouds, respectively.
 
 - Upward long wave radiation
 
@@ -74,11 +62,11 @@ If computed, depends on air temperature and cloud cover.
 
 - Net long wave radiation
 
-Represents the balance between upward long wave radiation and downward long wave radiation. According to Monteith and Unsworth, 1990 net long wave radiation has exit direction from earth becuase not all upward radiation is absorbed and re-emitted by green house gases.
+Represents the balance between upward long wave radiation and downward long wave radiation. According to Monteith and Unsworth, 1990 net long wave radiation has exit direction from earth because not all upward radiation is absorbed and re-emitted by greenhouse gases.
 
 #### Latent heat
 
-Absorbed or removed heat from water when changing phase at constant temperature. In other words, is the heat that affects the physical sate of water. Represents heat exchange between water and air in terms of evaporation and condensation.
+Absorbed or removed heat from water when changing phase at constant temperature. In other words, is the heat that affects the physical state of water. Represents heat exchange between water and air in terms of evaporation and condensation.
 
 If computed, depends on water temperature, air temperature, humidity and wind velocity.
 
@@ -99,10 +87,6 @@ Non solar flux is the boundary condition at the surface for water temperature ca
 COARE3.0 algorithm for fluxes calculation can also be used. More information in [Coare](../../reference/coare.md).
 
 ### Mass fluxes
-
-#### Oxygen
-
-#### Carbon dioxide
 
 #### Surface water fluxes
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Module Sand was the result of the accumulated experience gain by Hidromod in the framework of many engineering projects [\[1\]](http://www.hidromod.pt). Many of the projects were done with a old MOHID version programmed in F77. More recently Hidromod develop a new Module using the present [Mohid Programming](../../development/programming/mohid-programming.md) philosophy. The concepts of this module were described an tested in detail by Carmo (2005) (see [\[2\]](http://www.mohid.com/PublicData/products/Thesis/TFC_miguelcarmo.pdf) in Portuguese). However, if the user wants to know exactly what this module is doing it can take a look at the source code (see - [\[3\]](http://mohid.codeplex.com/SourceControl/changeset/view/63225#1208126)).
+Module Sand computes the transport of non-cohesive sediment (sand) and the resulting evolution of the bed bathymetry. Module Sand was the result of the accumulated experience gain by Hidromod in the framework of many engineering projects [\[1\]](http://www.hidromod.pt). Many of the projects were done with a old MOHID version programmed in F77. More recently Hidromod develop a new Module using the present [Mohid Programming](../../development/programming/mohid-programming.md) philosophy. The concepts of this module were described an tested in detail by Carmo (2005) (see [\[2\]](http://www.mohid.com/PublicData/products/Thesis/TFC_miguelcarmo.pdf) in Portuguese). However, if the user wants to know exactly what this module is doing it can take a look at the source code (see - [\[3\]](http://mohid.codeplex.com/SourceControl/changeset/view/63225#1208126)).
 
 ### Algorithm
 
@@ -44,7 +44,7 @@ DEFAULTVALUE : 0.002
 <end_waverugosity>
 ```
 
-The user needs also to add the follow keywords in the bathymetry file (see - [Bathymetry](../../io/formats/bathymetry.md)). Keyword EVOLUTION used to activate the ability of the [Module GridData](README.md#module-griddata) to write the bathymetry evolution in a [HDF5](../../tools/hdf5.md) file and read also from a [HDF5](../../tools/hdf5.md) (important for the hot start runs). The keyword EVOLUTION_FILE is used to define the [HDF5](../../tools/hdf5.md) filename. The keyword PROPERTY_NAME is used to associate a name to the bathymetry array to be stored in the [HDF5](../../tools/hdf5.md) file.
+The user needs also to add the follow keywords in the bathymetry file (see - [Bathymetry](../../io/formats/bathymetry.md)). Keyword EVOLUTION used to activate the ability of the [Module GridData](../../io/keywords/keyword-list.md#module-griddata) to write the bathymetry evolution in a [HDF5](../../tools/hdf5.md) file and read also from a [HDF5](../../tools/hdf5.md) (important for the hot start runs). The keyword EVOLUTION_FILE is used to define the [HDF5](../../tools/hdf5.md) filename. The keyword PROPERTY_NAME is used to associate a name to the bathymetry array to be stored in the [HDF5](../../tools/hdf5.md) file.
 
 ```
 EVOLUTION      : 1
@@ -156,7 +156,7 @@ TRANSPORT_FACTOR : 1.
 The maximum limit for the bottom shear stress used in the Meyer Peter formula can be defined with the following keyword:
 
 ```
-TAU_MAX = 10.
+TAU_MAX : 10.
 ```
 
 To help improve the model performance it the concept of lateral transport was implemented (SMOOTH_SLOPE : 0 - OFF, 1 - ON). In this case, it is assumed that when the bathymetry gradient perpendicular to the main bed load flow is above a critical slope (CRITICAL_SLOPE) there is a flow in this direction. This bed load flow is equal to a percentage (FLUX_SLOPE) of the main flow. This perpendicular bed load flow tend to smooth the slopes. This is important in river flows where the bathymetry gradients perpendicular to the main flow can be very steep.

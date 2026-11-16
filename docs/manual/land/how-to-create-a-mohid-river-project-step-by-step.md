@@ -1,31 +1,24 @@
 # How to create a MOHID River Project Step-by-Step
 
+This page walks through the setup of a stand-alone MOHID River Network project in the MOHID GUI: the model and drainage network data files, the discharges and the model outputs.
+
 ## Creating a new GUI Project
 
 1. Run MOHID GUI (usually you can find it in the StartMenu->Programs->MOHID)
 2. Choose Menu **Project** and then **New**
-3. Name the project, the filename and give the project folder (usually in ../Aplica/MohidLand/\[ApplicationName\]/
+3. Name the project, the filename and give the project folder (usually in ../Aplica/MohidLand/\[ApplicationName\]/)
 4. Insert a new simulation right clicking the project icon in the left, as shown in the Figure 1.
 5. Define the simulation name (that you can easilly identify) and define MOHID River Network radio button defined in Figure 2
 6. Insert a new run right clicking the simulation icon in the left, as shown in the Figure 3. The run is each model simulation.
 7. Define the run name (that you can easilly identify) and couple modules that you need and are not checked (e.g. discharges) as seen in Figure 4.
 
-- How to create a new simulation and runs
-- ![](../assets/images/InsertSimulation.JPG)
+![Figure 1: How to insert new simulation](../assets/images/InsertSimulation.JPG)
 
-    Figure 1: How to insert new simulation
+![Figure 2: How to insert new simulation, settings](../assets/images/InsertSimulMRN2.JPG)
 
-- ![](../assets/images/InsertSimulMRN2.JPG)
+![Figure 3: How to insert a new run](../assets/images/InsertRun.JPG)
 
-    Figure 2: How to insert new simulation, settings
-
-- ![](../assets/images/InsertRun.JPG)
-
-    Figure 3: How to insert a new run
-
-- ![](../assets/images/InsertRunMRN2.JPG)
-
-    Figure 4: How to insert a new run, coupled modules
+![Figure 4: How to insert a new run, coupled modules](../assets/images/InsertRunMRN2.JPG)
 
 You will have a drainage network file and a model file. As you're using Mohid River Network (MRN) as a stand alone program you will need to define discharges to the river and you'll have to define them in a discharge file.
 
