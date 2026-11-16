@@ -8,7 +8,7 @@ The Module Geometry manages the initialization and the temporal evolution of the
 
 The Cartesian coordinates are adequate when the flow is horizontal. This is the case when the baroclinic pressure is important as happens in systems with very low free surface gradient or in deep systems where even small density gradients can result into important baroclinic pressure gradients when the density gradient is integrated along depth.
 
-Sigma coordinates are convenient when the pressure gradient is barotropic. In this case the pressure force is the same over the whole water column and vertical velocity gradients are due mostly to bottom friction. In these cases the velocity tends to be parallel to the sigma lines.
+Sigma coordinates are convenient when the pressure gradient is barotropic; the details are given in the [Sigma coordinates](#sigma) section below.
 
 In reality the flow is never horizontal or along the sigma lines, because the pressure is never purely barotropic or baroclinic, but also due to inertia forces. As a consequence the best grid is that which is able to react as a function of the local vertical velocity. This is the “lagrangian coordinate”. The Lagrangian coordinate must thus be able to manage grid initiated as Cartesian or as Sigma, but must also be able to manage situations when the level changes dramatically in time, as is the case of artificial reservoirs.
 
@@ -88,7 +88,7 @@ The Harmonic coordinate works like the Cartesian coordinate, just that the horiz
 
 ### Fixsediment
 
-### SigmaTop
+Fixsediment is one of the vertical coordinate types accepted by the `TYPE` keyword, and, like Fixspacing, it uses `TOTALTHICKNESS` to define the total domain thickness.
 
 ### Cartesiantop
 

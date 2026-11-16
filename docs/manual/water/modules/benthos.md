@@ -4,11 +4,6 @@
 
 Module Benthos is a zero-dimensional biogeochemical model and was designed to compute, using simple model formulations, some of the main benthic biogeochemical processes occurring in an aquatic system: (i) Algae mortality, if algae are considered as a particulate property that can sink and deposit, then if deposited a mortality rate is applied; (ii) Particulate organic matter mineralization (nitrogen and phosphorus biogeochemical cycles); (iii) Biogenic silica dissolution; (iv) Oxygen depletion.
 
-> -   algae mortality, if algae are considered as a particulate property that can sink and deposit, then if deposited a mortality rate is applied
-> -   Particulate organic matter mineralization (nitrogen and phosphorus biogeochemical cycles)
-> -   Biogenic silica dissolution
-> -   Oxygen depletion
-
 Module Benthos is also ready to be coupled, in terms of organic matter mineralization, biogenic silica dissolution and oxygen depletion, with other pelagic biogeochemical models included in Mohid such as: [Module WaterQuality](waterquality.md) and [Module Life](life.md).
 
 ## Algae Mortality
@@ -47,24 +42,36 @@ $\frac{dM^{PON}}{dt} = -(k_{decay-N} \times \phi_{PON}^{(T-20C)}) \cdot M^{PON} 
 
 $\frac{dM^{NH_{4}^{+}}}{dt}= (k_{decay-N} \times \phi_{PON}^{(T-20C)}) \cdot M^{PON} \cdot Lim_{O_{2}}$
 
-Where is given in kg of Nitrogen, is the reference mineralization rate for PON, is a temperature coefficient, and is the water temperature at the water-sediment interface (ºC). Regarding the phosphorus budget: (eq.8)
+Where is given in kg of Nitrogen, is the reference mineralization rate for PON, is a temperature coefficient, and is the water temperature at the water-sediment interface (ºC). Regarding the phosphorus budget:
 
+<!-- TODO: formula missing in source -->
+(eq.8)
+
+<!-- TODO: formula missing in source -->
 (eq.9)
 
 Where is given in kg of Phosphorus, is the reference mineralization rate for POP, is a temperature coefficient, and is the water temperature at the water-sediment interface (ºC). For more details on the oxygen budget, see chapter 2.4.
 
 ## Silica dissolution
 
-Silica dissolution is simulated as a constant rate over the biogenic silica deposited in the water-sediment interface, acting as a source of dissolved silica. (eq.10)
+Silica dissolution is simulated as a constant rate over the biogenic silica deposited in the water-sediment interface, acting as a source of dissolved silica.
 
+<!-- TODO: formula missing in source -->
+(eq.10)
+
+<!-- TODO: formula missing in source -->
 (eq.11)
 
 Where is given in kg of biogenic silica, is given in kg of dissolved silica and is the dissolution rate for biogenic silica.
 
 ## Oxygen depletion
 
-Oxygen depletion occurs due to organic matter mineralization, and is computed according to stoichiometric relations. (eq.12)
+Oxygen depletion occurs due to organic matter mineralization, and is computed according to stoichiometric relations.
 
+<!-- TODO: formula missing in source -->
+(eq.12)
+
+<!-- TODO: formula missing in source -->
 (eq.13)
 
 Where is given in kg of oxygen, and are the Nitrogen/Carbon and Phosphorus/Carbon ratios of particulate organic matter, and is the ratio between Oxygen and Carbon in CO2.

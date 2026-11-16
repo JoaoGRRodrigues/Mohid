@@ -21,7 +21,7 @@ The main processes solved are:
 - 2D Overland Flow (solving Diffusion Wave)
 - [Evapotranspiration](../reference/evapotranspiration.md) using Penman Motheith and water availability in soil
 - Plant growth and agricultural practices (planting, harvest, kill, fertilization, pesticide application, etc.) including dormancy and SWAT crop database
-- Porous Media interaction with Runoff in [Infiltration](../reference/README.md#infiltration) using continuity (Richard's equation with Head gradient)
+- Porous Media interaction with Runoff in [Infiltration](../reference/infiltration.md) using continuity (Richard's equation with Head gradient)
 - Porous Media and Runoff interaction with Drainage Network using continuity (surface gradient between Runoff and Drainage Network. Richard's equation with level gradient between Porous Media and Drainage Network)
 - Drainage Network and Reservoir interaction to account river flow impact due to manmande hydraulic infraestructures
 - Property transport in all mediums and transformation in soil and river (water quality models can be coupled)

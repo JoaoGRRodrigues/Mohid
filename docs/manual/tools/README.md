@@ -43,6 +43,7 @@ Pre- and post-processing programs, graphical interfaces and helper utilities.
 - [SmoothBatimNesting](smoothbatimnesting.md) — Animation consisting of three frames showing respectively i) the father bathymetry, ii) the son bathym, iii) and the interpolated bathym.
 - [Tide Preview](tide-preview.md) — Configuration of the TidePrevInput.dat file:
 - [WOAnetcdfTOhdf5](woanetcdftohdf5.md) — This program converts the NetCDF files of the World Ocean Atlas 2005 (WOA05) into HDF5, it allows to create HDF5 files for Mohid using the Module LIFE…
+- [ART](art.md) — ART (Automatic Running Tool) is a tool for managing operational models, this tool is programmed in Python and…
 
 ## Short entries
 
@@ -85,4 +86,4 @@ HDFView is java based (cross-platform) HDF4 and HDF5 viewer and editor. It allow
 MohidReservoirOptimization is part of Mohid system. It is used to create bathymetries to be used with the CEQUAL-W2 EPA's program. It is writen in FORTRAN95.
 
 - [User manual](../reference/user-manual.md).
-- [Technical manual](../reference/README.md#technical-manual).
+- [Technical manual](../reference/technical-manual.md).

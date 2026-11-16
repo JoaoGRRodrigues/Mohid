@@ -56,7 +56,7 @@ PROPERTY_NAME  : Bathymetry
 
 In this section the available options in Module Sand are briefly described. The different options provided by the module can be defined through an input data file, similarly to other MOHID modules. The name of the Module Sand for run number x is Sand_x.dat (see [Mohid GUI](../../tools/gui/mohid-gui.md))
 
-Keyword TRANSPORT_METHOD is used to choose the transport formula the user wants to test from the list presented above. The options are: no transport, MeyerPeter, Ackers, VanRijn1, VanRijn2, Bailard, Dibajnia, Bijker. Keyword SAND_DT is the time step used to compute the transport formula and by default it is equal to the global model time step (see - [Choose the model time step](../../reference/README.md#choose-the-model-time-step)). The keyword OLD (0 - OFF; 1 - ON) is ON when the user wants to do a hot start (OFF - cold start).
+Keyword TRANSPORT_METHOD is used to choose the transport formula the user wants to test from the list presented above. The options are: no transport, MeyerPeter, Ackers, VanRijn1, VanRijn2, Bailard, Dibajnia, Bijker. Keyword SAND_DT is the time step used to compute the transport formula and by default it is equal to the global model time step (see - [Choose the model time step](../../reference/choose-the-model-time-step.md)). The keyword OLD (0 - OFF; 1 - ON) is ON when the user wants to do a hot start (OFF - cold start).
 
 ```
 TRANSPORT_METHOD : MeyerPeter
@@ -64,7 +64,7 @@ SAND_DT          : 60.
 OLD              : 0
 ```
 
-The user can choose if the compute bed loads change or not the bathymetry and consequently the hydrodynamics. If the user wants to take in consideration the effect of bathymetry changes in the other Mohid modules then the keyword BATHYM_EVOLUTION : 1 must be defined. The keyword BATIM_DT is used to define the update frequency of the model bathymetry and by default is equal to the global model time step (see - [Choose the model time step](../../reference/README.md#choose-the-model-time-step)).
+The user can choose if the compute bed loads change or not the bathymetry and consequently the hydrodynamics. If the user wants to take in consideration the effect of bathymetry changes in the other Mohid modules then the keyword BATHYM_EVOLUTION : 1 must be defined. The keyword BATIM_DT is used to define the update frequency of the model bathymetry and by default is equal to the global model time step (see - [Choose the model time step](../../reference/choose-the-model-time-step.md)).
 
 ```
 BATHYM_EVOLUTION : 1

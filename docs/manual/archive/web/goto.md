@@ -1,6 +1,6 @@
 # Goto
 
-**Goto** is a mediawiki extension and a useful keymark for searching [Google](../archive/web/google.md) using the *Feeling Lucky* option. It's great when you're lazy and just want the obvious first search result linked from your string.
+**Goto** is a mediawiki extension and a useful keymark for searching [Google](google.md) using the *Feeling Lucky* option. It's great when you're lazy and just want the obvious first search result linked from your string.
 
 ## Goto for your wiki
 

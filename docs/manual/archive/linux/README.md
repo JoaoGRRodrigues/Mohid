@@ -105,6 +105,8 @@ Building and running MOHID on Linux and other Unix-like systems.
 - [Xen](xen.md)
 - [Xen workshop](xen-workshop.md) — On January 2009, we held a workshop lectured by Conexa on Xen servers. During the course of the workshop we learned about the specifications and the a…
 - [Yum](yum.md) — Let us find nano, a nice little text editor
+- [Virtualization](virtualization.md) — Virtualization in Maretec was used in two systems: Xen and VMWare
+- [SeaDAS](seadas.md) — SeaDAS (SeaWiFS Data Analysis System) is a sattelite image processing package developed by GSFC/NASA.
 
 ## Short entries
 

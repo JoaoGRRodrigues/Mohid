@@ -10,7 +10,7 @@ Authors, licence, history and how the project is organised.
 - [Copyrighting and licensing the Mohid system](copyrighting-and-licensing-mohid-water-modelling-system.md) — The Mohid system is currently undergoing its licensing process. The first step towards this goal is to copyright it.
 - [History](history.md) — The development of MOHID started back in 1985. Since that time a continuous development effort of new features has been maintained. Model updates and…
 - [Reference to the license](reference-to-the-license.md) — According to the GNU web page, the following text is to be attached to the start of each source file:
-- [Syntax highlighter](syntax-highlighter.md) — This wiki allows to embed code with syntax highlighting.
+- [David ToDoList](david-todolist.md) — \[Task\] \[Priority\] \[MonthToFinish\]
 
 ## Short entries
 

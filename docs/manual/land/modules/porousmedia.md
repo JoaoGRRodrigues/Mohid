@@ -10,7 +10,7 @@ Module Porous Media is responsible for handling all water fluxes in soil, includ
 
 Porous Media is a 3D domain delimited in its upper limit by topography and lower limit by soil bottom (defined by user). In terms of soil definition it can be defined vertical horizons to correspond to real soil horizons with different hydraulic carachteristics. See the picture below for information.
 
-[![](http://content.screencast.com/users/jovem/folders/Jing/media/b9ef6c79-c1d1-46ea-94f7-623471c15883/MohidLandSoilProfile.png)](http://content.screencast.com/users/jovem/folders/Jing/media/b9ef6c79-c1d1-46ea-94f7-623471c15883/MohidLandSoilProfile.png)
+![MOHID Land soil profile](../../assets/images/mohid-land-soil-profile.png)
 
 ### Water Flow
 

@@ -384,6 +384,6 @@ If some service is down in FTPServer, WebServer or OpenDAP do this:
 
 ## Links
 
-[Go Back to Virtualization](../../reference/virtualization.md)
+[Go Back to Virtualization](virtualization.md)
 
 [Xen](xen.md)

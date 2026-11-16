@@ -27,7 +27,7 @@ File.open("sample.txt", "r") { |fs|
  }
 </pre></td></tr></tbody></table>
 
-This works because of the [html](../archive/web/html.md) extension already installed in this wiki.
+This works because of the [html](html.md) extension already installed in this wiki.
 
 ## Installation procedure for mediawiki
 

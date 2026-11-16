@@ -1,6 +1,6 @@
 # Html
 
-You can embed generic html in this wiki. However, in order to simplify the wiki markup we recommend the use of [templates](../../reference/templates.md) whenever possible. Here is a list of useful html snippets.
+You can embed generic html in this wiki. However, in order to simplify the wiki markup we recommend the use of [templates](templates.md) whenever possible. Here is a list of useful html snippets.
 
 ## Embedding generic **html** in this [wiki](wiki.md)
 

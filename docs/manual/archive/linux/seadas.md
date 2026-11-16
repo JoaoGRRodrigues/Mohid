@@ -2,7 +2,7 @@
 
 [SeaDAS](http://oceancolor.gsfc.nasa.gov/seadas/) (SeaWiFS Data Analysis System) is a sattelite image processing package developed by [GSFC/NASA](http://www.gsfc.nasa.gov/).
 
-It is developed for a UNIX/LINUX platform, so, for Windows users the best choice is to create a [VMWare](../archive/linux/vmware.md) virtual machine and install SeaDAS, or to use an existing linux machine and install it.
+It is developed for a UNIX/LINUX platform, so, for Windows users the best choice is to create a [VMWare](vmware.md) virtual machine and install SeaDAS, or to use an existing linux machine and install it.
 
 It has a GUI and a command line interface. To process a large set of files, the best choice is to use the command line(or terminal/SSH) and use Bash or Seadas/IDL scripts.
 

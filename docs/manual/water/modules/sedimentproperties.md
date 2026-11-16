@@ -10,39 +10,27 @@ The sediment column model is basically a set of 1D vertical models defined below
 
 Transport of dissolved properties in porewater is computed only in the vertical axis, as horizontal gradients are not considered in this study. Therefore, the transport equation can be written:
 
-```
-Equation
-```
+<!-- TODO: formula missing in source -->
 
 Where Cd is the concentration (kg.mwater-3), w (m/s) is the porewater velocity due to compaction, kz (m2s-1) is the diffusivity coefficient. The molecular diffusion coefficients must be corrected with tortuosity parameterization, to account for the increase in the solute pathways due to difficulty presented by the sediment particles for diffusion to occur. Two different formulations were included in model, the first following formulation by Berner (1980), tortuosity dependent, which on the other hand is porosity dependent:
 
-```
-Equation
-```
+<!-- TODO: formula missing in source -->
 
 The second by Soetaert (1996), is dependent of porosity square.
 
-```
-Equation
-```
+<!-- TODO: formula missing in source -->
 
 Where, DINF (m2s-1) is the molecular diffusion coefficient in solution, and Dm (m2s-1) is the corrected molecular diffusion coefficient.
 
-```
-Equation
-```
+<!-- TODO: formula missing in source -->
 
 Bioturbation is computed as a diffusion coefficient, which is present until a certain depth, and decreases exponentially with it. This pretends to simulate benthic fauna activity, which is most of the times present in sediments upper 10-15cm. Below this, bio-activity can be considered negligible. Thus, the bioturbation diffusion coefficient, Db (m2s-1), can be computed by:
 
-```
-Equation
-```
+<!-- TODO: formula missing in source -->
 
 In which zb is the depth limit for maximum biological activity and α is a decay coefficient (m) to account for the decrease of bioturbation with depth.
 
-```
-Equation
-```
+<!-- TODO: formula missing in source -->
 
 Thus, the diffusivity coefficient, kz, becomes the sum of the molecular and bioturbation diffusion coefficients:
 

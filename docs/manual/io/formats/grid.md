@@ -18,7 +18,7 @@ The header section contains information related to the grid global definitions, 
 
 > -   **ILB_IUB** - Two integer numbers defining the **minimum** and **maximum** **I** values along the Y-axis of the grid.
 > -   **JLB_JUB** - Two integer numbers defining the **minimum** and **maximum** **J** values along the X-axis of the grid.
-> -   **COORD_TIP** - A flag which indicates the used [coordinates type](../../reference/README.md#coordinates-type).
+> -   **COORD_TIP** - A flag which indicates the used [coordinates type](../../reference/coordinates-type.md).
 > -   **ORIGIN** - Two real values, which indicate the origin of the lower left corner of the grid (**X Y**).
 > -   **ZONE** - Integer values defining the UTM Zone where the bathymetry is located.
 > -   **GRID_ANGLE** - Counter-clock mesh rotation relative to the north. The base point is the origin of the grid.

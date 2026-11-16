@@ -44,4 +44,4 @@ In [ImageMagick Studio](http://www.imagemagick.org/MagickStudio/scripts/MagickSt
 - [ImageMagick](http://www.imagemagick.org/script/index.php)
 - [2jpeg](2jpeg.md)
 - [2gif](../../tools/2gif.md)
-- [winzip](../../reference/winzip.md)
+- [winzip](../../archive/windows/winzip.md)

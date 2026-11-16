@@ -154,4 +154,4 @@ Run the simulation outside the interface with SWAT_MOHID as decribed previously 
 
 ### Converting SWAT model results to CE-QUAL model input files
 
-In order to do so follow the instructions on the following [link](eutrofiza-o-albufeiras.md) .
+In order to do so follow the instructions on the following [link](../reference/eutrofiza-o-albufeiras.md) .

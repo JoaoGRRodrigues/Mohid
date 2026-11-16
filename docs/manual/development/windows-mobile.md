@@ -29,7 +29,7 @@ Start > Definições > Ligações > Definição GPRS > ligação PAP
 concluir
 ```
 
-## [Time2me](../reference/README.md#time2me)
+## [Time2me](../reference/time2me.md)
 
 ## External links
 

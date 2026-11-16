@@ -131,7 +131,7 @@ EVAPOTRANSPIRATION : 1
 
 and the property evapotranspiration is not readed from file.
 
-#### If the user is running with vegetation
+### If the user is running with vegetation
 
 than Crop Evapotranspiration is obtained from Potential Evapotranspiration using crop coefficient from Module Vegetation (dependent on crop).
 
@@ -155,11 +155,11 @@ EVAPOTRANSPIRATION_METHOD : 1
 
 there will not be soil evaporation (in Module PorousMedia) and Crop Evapotranspiration is all transpiration (in Module Vegetation).
 
-#### If the user is not running with vegetation
+### If the user is not running with vegetation
 
 than Potential Evapotranspiration is all evaporation in the soil surface and will be done in Module PorousMedia.
 
-#### Fluxes to other modules
+### Fluxes to other modules
 
 If they are used, Potential transpiration computed in Module Basin is given to Module Vegetation to compute the effective transpiration. Potential Evaporation computed in Module Basin is given to Module Porous Media to compute the effective evaporation.
 

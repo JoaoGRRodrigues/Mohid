@@ -8,7 +8,7 @@ MOHID Water Modelling System has a large variety of support tools used to help c
 
 ### MOHID Automatic Running Tool (ART)
 
-- [ART](../reference/art.md)
+- [ART](art.md)
 
 ### MOHID GUI 2009
 
@@ -30,7 +30,7 @@ Old version of MOHID GUI (2009). No support is provided. Available at: [MOHID GU
 - [Fes2012](../reference/fes2012.md)
 - [FilterBathymetry](filterbathymetry.md)
 - [GenerateGrid](generategrid.md)
-- [HydrodynamicAnalyser](../reference/README.md#hydrodynamicanalyser)
+- [HydrodynamicAnalyser](../reference/hydrodynamicanalyser.md)
 - [InvertedBarometer](invertedbarometer.md)
 - [Kml2Mohid](../development/programming/kml2mohid.md)
 - [NOAAnetcdfTOhdf5](noaanetcdftohdf5.md)
@@ -70,7 +70,7 @@ Old version of MOHID GUI (2009). No support is provided. Available at: [MOHID GU
 
 - CoordTrans
 - [MohidReservoirOptimization](README.md#mohidreservoiroptimization)
-- [SWAT Link](../reference/README.md#swat-link)
+- [SWAT Link](../reference/swat-link.md)
 
 ## Not developed by the MOHID team
 
@@ -81,5 +81,5 @@ Old version of MOHID GUI (2009). No support is provided. Available at: [MOHID GU
 - [Wiki](../archive/web/wiki.md)
 - [H5DUMP](h5dump.md)
 - [h5utils](h5utils.md)
-- [SeaDAS](../reference/seadas.md)
+- [SeaDAS](../archive/linux/seadas.md)
 - [Notepadplus](../building/windows/notepadplus.md)

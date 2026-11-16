@@ -1,6 +1,6 @@
 # Fortran implementation of the Actor Model using MPI
 
-A very simple ping-pong program is shown here. There are 2 programs, *[ping](../../reference/ping.md)* and *[pong](../../reference/pong.md)*, that shoot messages among them, starting each with a random number of plays. The first program reaching 0 will send a message for the other program to stop and stops itself. File *[moduleMPImanagement](../modulempimanagement.md)* is necessary to compile both programs.
+A very simple ping-pong program is shown here. There are 2 programs, *[ping](ping.md)* and *[pong](pong.md)*, that shoot messages among them, starting each with a random number of plays. The first program reaching 0 will send a message for the other program to stop and stops itself. File *[moduleMPImanagement](../modulempimanagement.md)* is necessary to compile both programs.
 
 If you examine the code there is no single MPI_BARRIER or any other explicit synchronization point. The main subroutine is:
 

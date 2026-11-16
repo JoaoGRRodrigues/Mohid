@@ -117,7 +117,7 @@ $$
 
 
 
-### [Compound sum](../reference/README.md#compound-sum)
+### [Compound sum](../reference/compound-sum.md)
 
 - 
 

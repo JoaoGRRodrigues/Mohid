@@ -6,8 +6,8 @@ The /GeneralData is the default folder where to keep model's input baseline data
 
 ## /Simulation
 
-- Here's the [Modules list and DAG tree](../water/modules/modules.md).
-- Here's the [MohidWater](mohidwater.md) /Simulation file structure.
+- Here's the [Modules list and DAG tree](modules/modules.md).
+- Here's the [MohidWater](../reference/mohidwater.md) /Simulation file structure.
 
 ### /data
 
@@ -44,7 +44,7 @@ It contains all the configuration files of all the runs. Here's the full list of
 
 ### /exe
 
-Folder containing the [Nomfich.dat](../io/nomfich-dat-file.md) in use. Its the [MohidWater](mohidwater.md) executable home folder.
+Folder containing the [Nomfich.dat](../io/nomfich-dat-file.md) in use. Its the [MohidWater](../reference/mohidwater.md) executable home folder.
 
 ### /figures
 

@@ -11,6 +11,8 @@ Building and running MOHID on Linux and other Unix-like systems.
 - [Mohid facts](mohid-facts.md) — Linux is great to quickly get some trivia related with the MOHID software suite. These numbers contemplate only the MOHIDWater, MOHIDLand, MOHIDBase1…
 - [Mohid Makefile](mohid-makefile.md) — Following the makefile cross-platform, cross-compiler project methodology, we finally developped a sound makefile project for MOHID.
 - [MPI](mpi.md) — Is an acronym standing for Message Passing Interface. MPI are programing directives which allow a program to launch child processes in different nodes…
+- [Gcc](gcc.md)
+- [IncrementSizeOfStack](incrementsizeofstack.md)
 
 ## Short entries
 

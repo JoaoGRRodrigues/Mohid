@@ -32,7 +32,7 @@ Verify the options to compute transport processes:
        Too many keywords make it difficult to read the input files and
        to find errors.
 
-[Choose the model time step](../reference/README.md#choose-the-model-time-step)
+[Choose the model time step](../reference/choose-the-model-time-step.md)
 
     1. In a 2D case choose a semi-implicit approach to compute the horizontal transport.
        In the 3D case, an explicit one must be chosen due to stability problems;

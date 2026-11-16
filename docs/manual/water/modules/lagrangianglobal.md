@@ -212,42 +212,6 @@ VARVELV                        : 0.01
 NBR_PARTIC                     : 1
 ```
 
-The maximum volume allowed for each particle (in this case 1 m3)
-
-```
-POINT_VOLUME                   : 1
-```
-
-Time between particle emission in a origin (in this case 100 s)
-
-```
-DT_EMIT                        : 100
-```
-
-Time the particle takes to double its volume due to turbulence(in this case 7200 s or 2 h)
-
-```
-TVOL200                        : 7200.
-```
-
-Factor that multiply by the particle initial volume gives the volume limit above which the particle is killed.
-
-```
-VOLFAC                         : 100.
-```
-
-True (or 1) if the particles volume is compute automaticly function of a flow time serie
-
-```
-ESTIMATE_MIN_VOL               : 1
-```
-
-In this case at least for each run for each origin at least 1000 particles will be emitted along the run.
-
-```
-MAX_PART                       : 1000
-```
-
 ```
 FLOW                           : -9e16
 FLOW_VARIABLE                  : 1

@@ -50,7 +50,7 @@ FOR %%A IN (*.zip) DO winzip32 -min -e -o %%A
 
 Producing large amounts of snapshots and creating animations can be very time-consuming. Here are a few tips for speeding up with the commandline:
 
-- Get the [2gif](../tools/2gif.md) utility and add the folder to the *PATH* environment variable.
+- Get the [2gif](../../tools/2gif.md) utility and add the folder to the *PATH* environment variable.
 - Get the *winzip* utility and add the folder to the *PATH* environment variable.
 
 The idea is basically inside your figures folder, to create a subfolder with the number of the run, and save inside the images and animations. The goal is to keep the same structure for each run, thus allowing more efficiency.

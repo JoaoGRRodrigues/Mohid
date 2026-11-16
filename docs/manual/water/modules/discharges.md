@@ -203,8 +203,6 @@ The user can define a velocity to the discharge via the follow keyword
 
 DEFAULT_VELOCITY_VALUE : vx vy vz
 
-The momentum discharge need to by connected in the hydrodynamic_x.dat input file via the follow keyword
-
 MOMENTUM_DISCHARGE  : 1
 
 The follow image shows a symmetry test for a:

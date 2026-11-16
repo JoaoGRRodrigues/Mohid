@@ -282,4 +282,4 @@ br3
 
 ## See also
 
-- [Eutrofização_Albufeiras](eutrofiza-o-albufeiras.md)
+- [Eutrofização_Albufeiras](../../reference/eutrofiza-o-albufeiras.md)

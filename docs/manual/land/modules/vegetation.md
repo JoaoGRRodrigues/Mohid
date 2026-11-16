@@ -104,11 +104,7 @@ where Tp is Effective transpiration in layer, Factor is the stress factor achiev
 
 Plant tresholds for water stress in Feddes model
 
-- van Genuchten formulation is an empirical curve also dependent on pressure head:
-
-```
-Insert Equation for van Genuchten
-```
+- van Genuchten formulation is an empirical curve also dependent on pressure head. The equation itself is not reproduced in this page.
 
 Water uptake is then limited to available water in soil (above residual content). Additionally water uptake can be limited with soil velocity with the following keyword in vegetation data file:
 
@@ -198,17 +194,7 @@ FERTILIZATION             : 0/1     !Connects/disconnects fertilization
 
 #### Water Uptake
 
-This process corresponds to plant transpiration taking water from soil. Evapotranspiration must be enabled in basin data file:
-
-```
-EVAPOTRANSPIRATION : 1
-```
-
-The user may want to compute a global potential evapotranspiration or separate potential transpiration (in plants along the root depth) and potential evaporation (on soil surface) based on leaf area index. This option is defined in basin data file with the keyword:
-
-```
-EVAPOTRANSPIRATION_METHOD: 1/2 (1-Global Evapotranspiration; 2-Transpiration and Evaporation)
-```
+As in the read from file approach, evapotranspiration must be enabled in the basin data file and its method defined there; see [Water Uptake](#water-uptake) above.
 
 To use the vegetation growth model approach use the keyword in vegetation data file:
 
@@ -218,21 +204,9 @@ WATER_UPTAKE_METHOD : 2 (1- TP according to root profile; 2-SWAT based (TP expo
 
 Which means that the method for transpiration is the one from the vegetation growth model formulation.
 
-Potential water uptake (potential evapotranspiration/transpiration) is distributed in depth according to a exponential distribution:
+Potential water uptake (potential evapotranspiration/transpiration) is distributed in depth according to a exponential distribution. The equation for that distribution is not reproduced in this page.
 
-```
-Insert potential water uptake distribution equation
-```
-
-Water Uptake (actual uptake) computation takes in potential uptake and limits it to soil constraints. consisting in water content in soil:
-
-```
-Insert low water content reduction
-```
-
-```
-Insert high water content reduction (to do)
-```
+Water Uptake (actual uptake) computation takes in potential uptake and limits it to soil constraints. consisting in water content in soil. The low water content reduction equation is not reproduced in this page, and the high water content reduction equation is still to be done.
 
 #### Nutrient Uptake
 
@@ -248,17 +222,9 @@ Also, nutrient stress may be computed either using SWAT formulation (relation to
 NUTRIENT_STRESS_METHOD    : 1/2      !1- effective/optimal; 2- SWAT based
 ```
 
-Optimal nutrient uptake is computed from plant optimal content and effective content
+Optimal nutrient uptake is computed from plant optimal content and effective content. The equation for the optimal nutrient content is not reproduced in this page.
 
-```
-Equation for optimal nutrient content
-```
-
-Then, optimal nutrient uptake is distributed in depth similar to that of water
-
-```
-Equation for optimal uptake distribution with depth
-```
+Then, optimal nutrient uptake is distributed in depth similar to that of water. The equation for this uptake distribution is not reproduced in this page.
 
 Soil constraints are then taken into account because uptake is only allowed if enough mass exists in layer
 
@@ -500,14 +466,12 @@ In the other end, if you decide to use vegetation growth model these properties 
 - root biomass
 - canopy height
 
-```
-and only:
-```
+and only the following properties need to have values defined for the simulation:
 
 - specific leaf storage
 - crop coefficient
 
-need to have values defined for the simulation. All other properties will be simulated.
+All other properties will be simulated.
 
 ### How to pre-process vegetation properties
 

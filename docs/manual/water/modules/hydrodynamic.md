@@ -54,7 +54,7 @@ where $k$ is von Karman constant and $z^{b}_{0}$ is the bottom roughness length.
 
 #### Momentum
 
-Diffusive flux of momentum is imposed explicitly by means of a [wind surface stress](../../reference/README.md#wind-surface-stress), $\tau_{ w}$:
+Diffusive flux of momentum is imposed explicitly by means of a [wind surface stress](../../reference/wind-surface-stress.md), $\tau_{ w}$:
 
 #### Mass
 

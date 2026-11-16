@@ -213,7 +213,7 @@ http://i35.tinypic.com/2d1raqu.jpg
 
 - Winedt, commercial, windows.
 - TexnicCenter, free, windows.
-- [Texmaker](../../reference/texmaker.md), free, cross-platform.
+- [Texmaker](../web/texmaker.md), free, cross-platform.
 - vi, free, gnu distros.
 
 ## Troubleshootings
