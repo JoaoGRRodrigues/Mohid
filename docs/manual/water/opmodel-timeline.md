@@ -7,7 +7,7 @@ This article describes the Mercator-IST operational system timeline.
 - Maretec-IST intranet
 - Hidromod-IST intranet
 - \\\\guillaume
-- \\\\192.168.23.151 or \\\\Dual\_64
+- \\\\192.168.23.151 or \\\\Dual_64
 - ~\\\\kepler~ \\\\alexandria
 - \\\\data.mohid.com
 
@@ -25,7 +25,7 @@ is the folder where the interpolations from the Mercator grid and MM5 grids to t
 
 is the folder where the post-processing is made to the results from the model every week.
 
-#### \\\\192.168.23.151 or \\\\Dual\_64... \\Aplica\\PreOpModel
+#### \\\\192.168.23.151 or \\\\Dual_64... \\Aplica\\PreOpModel
 
 is the folder where the model is run every week.
 

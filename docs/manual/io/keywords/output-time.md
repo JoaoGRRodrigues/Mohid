@@ -2,7 +2,7 @@
 
 ## Overview
 
-OUTPUT\_TIME is a [keyword](keywords.md) which is common to several MOHID [modules](../../water/modules/modules.md). It is normally used to identify the frequency of results outputs in [HDF5](../../tools/hdf5.md) format.
+OUTPUT_TIME is a [keyword](keywords.md) which is common to several MOHID [modules](../../water/modules/modules.md). It is normally used to identify the frequency of results outputs in [HDF5](../../tools/hdf5.md) format.
 
 ## Usage
 
@@ -41,4 +41,4 @@ Here is a list of modules in which this keyword can be used in the correspondent
 
 ## See also
 
-[SURFACE\_OUTPUT\_TIME](surface-output-time.md)
+[SURFACE_OUTPUT_TIME](surface-output-time.md)

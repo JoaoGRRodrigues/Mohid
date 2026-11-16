@@ -18,7 +18,7 @@ NEW_COEF                    : SmoothCoefs.dat
 NUMBER_CELLS                : 10
 ```
 
-The *Number\_cells* are the number of grid points taken from the border in, that will yield non-null smoothing coefficients.
+The *Number_cells* are the number of grid points taken from the border in, that will yield non-null smoothing coefficients.
 
 ## Algorithms
 

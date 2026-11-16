@@ -4,7 +4,7 @@
 
 ## Commands
 
-### nc\_dump
+### nc_dump
 
 ```
 >>> help nc_dump
@@ -14,7 +14,7 @@
      named VARNAME.
 ```
 
-### nc\_varget
+### nc_varget
 
 ```
 >>> help nc_varget

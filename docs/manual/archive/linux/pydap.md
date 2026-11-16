@@ -30,13 +30,7 @@ Excellent alternative to opendap, written in python! See all the docs [here](htt
 
 ## Pre-requisites
 
-- Numpy. Download and extract 
-
-$$
-Numpy
-$$
-
- then type:
+- Numpy. Download and extract \[Numpy\] then type:
 
 ```
 > sudo python setup.py
@@ -44,26 +38,14 @@ $$
 
 and follow the interface.
 
-- Numarray. Download and extract 
-
-$$
-Numarray
-$$
-
- then type:
+- Numarray. Download and extract \[Numarray\] then type:
 
 ```
 > sudo python setup.py --help-commands
 ```
 
 - HDF5. Make sure you install [correctly](nix-platforms.md) the hdf5 libs.
-- PyTables. Download and extract 
-
-$$
-PyTables
-$$
-
- then type:
+- PyTables. Download and extract \[PyTables\] then type:
 
 ```
 > sudo python setup.py --hdf5=<HDF5HOME> --help-commands

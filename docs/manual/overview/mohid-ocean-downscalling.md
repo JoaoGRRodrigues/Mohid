@@ -10,11 +10,11 @@ To download GFS model solution go to [https://www.ncdc.noaa.gov/data-access/mode
 
 ### CMEMS
 
-The Copernicus Marine Environment Monitoring Service (CMEMS; [http://marine.copernicus.eu/](http://marine.copernicus.eu/)) is the follow up of the my ocean project. To download this solution access the catalogue [http://marine.copernicus.eu/services-portfolio/access-to-products/](http://marine.copernicus.eu/services-portfolio/access-to-products/) and select the GLOBAL\_ANALYSIS\_FORECAST\_PHY\_001\_024. You will need to register in order to download your product of interest.
+The Copernicus Marine Environment Monitoring Service (CMEMS; [http://marine.copernicus.eu/](http://marine.copernicus.eu/)) is the follow up of the my ocean project. To download this solution access the catalogue [http://marine.copernicus.eu/services-portfolio/access-to-products/](http://marine.copernicus.eu/services-portfolio/access-to-products/) and select the GLOBAL_ANALYSIS_FORECAST_PHY_001_024. You will need to register in order to download your product of interest.
 
 ### RTOFS
 
-To download te RTOFS global model solution go to [http://polar.ncep.noaa.gov/global/data\_access.shtml](http://polar.ncep.noaa.gov/global/data_access.shtml) or [http://nomads.ncep.noaa.gov:9090/dods/rtofs](http://nomads.ncep.noaa.gov:9090/dods/rtofs). The download in the second one is made via opendap. select the product and thenclick in download data.
+To download te RTOFS global model solution go to [http://polar.ncep.noaa.gov/global/data_access.shtml](http://polar.ncep.noaa.gov/global/data_access.shtml) or [http://nomads.ncep.noaa.gov:9090/dods/rtofs](http://nomads.ncep.noaa.gov:9090/dods/rtofs). The download in the second one is made via opendap. select the product and thenclick in download data.
 
 ## Conversion
 
@@ -77,7 +77,7 @@ Example of the input file SmoothBathymNesting.dat
 
 STEP 1: Grib to NetCDF
 
-To convert grib files to NetCDF files create a batch file and write the follow comand line "java -Xmx1024m -classpath netcdfAll-4.3.jar ucar.nc2.dataset.NetcdfDataset -in gfs\_4\_20130415\_0000\_003.grb2 -out gfs\_4\_20130415\_0000\_003.nc > NCDumpLog.txt". The input file must be in the same folder of batch file.
+To convert grib files to NetCDF files create a batch file and write the follow comand line "java -Xmx1024m -classpath netcdfAll-4.3.jar ucar.nc2.dataset.NetcdfDataset -in gfs_4_20130415_0000_003.grb2 -out gfs_4_20130415_0000_003.nc > NCDumpLog.txt". The input file must be in the same folder of batch file.
 
 STEP 2: NetCDF to HDF5
 

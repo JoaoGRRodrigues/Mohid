@@ -4,10 +4,10 @@
 
 Before running the MWSWAT it is suggested to perform some modifications in the MWSwat database (mwswat.mdb) located in the subfolder ..\\Plugins\\MWSWAT of the Mapwindow installation directory. In this database, there should be created some Tables that correspond to our modelling site. In our case we would create the following tables, it is important that the keyword in black would be present in the new table created for your site as will serve to the MPSWAT to locate the possible options:
 
-- Divor\_**weather\_sources**: Where will be located the site for meteorologicla information.
+- Divor_**weather_sources**: Where will be located the site for meteorologicla information.
 - **pcp**Divor:
-- Corine2000\_**landuses**:
-- crsr\_**soils**:
+- Corine2000_**landuses**:
+- crsr_**soils**:
 
 ### Create the SWAT Project
 
@@ -77,7 +77,7 @@ Before running the MWSWAT it is suggested to perform some modifications in the M
 
     MPSWAT menu after Step 2 completed
 
-2. It is suggested that before filling anything in this new menu to click on Weather Sources button. We would choose as the **Database tables** as a weather source and from the drop down menu the one for our study case (i.e. Divor\_Weather\_Sources). As the Weather Generator, we would choose the **Table** option and from the menu the one defined in the MWSWAT database (i.e.wgn\_divor). Then clik on **Done**.
+2. It is suggested that before filling anything in this new menu to click on Weather Sources button. We would choose as the **Database tables** as a weather source and from the drop down menu the one for our study case (i.e. Divor_Weather_Sources). As the Weather Generator, we would choose the **Table** option and from the menu the one defined in the MWSWAT database (i.e.wgn_divor). Then clik on **Done**.
 
     ![](../assets/images/MWSWAT_Step3.3_ChooseSWATweathersources.gif)
 
@@ -114,13 +114,13 @@ SWAT Editor Main Menu
 
 In the "Edit SWAT Input" menu choose "Subbasin Data". Then in the "Select Input Table To Edit", three modifications will be performed:
 
-1. **Soils (.Sol):** Select any Subbasin, Land Use, Soils and Slope option and click "ok". A new window will open. In this new window will modify the USLE\_K value from 0.1 to 0.3 and will tick the box "Extend edits to all HRUs". Then "Save Edits" and "Exit".
+1. **Soils (.Sol):** Select any Subbasin, Land Use, Soils and Slope option and click "ok". A new window will open. In this new window will modify the USLE_K value from 0.1 to 0.3 and will tick the box "Extend edits to all HRUs". Then "Save Edits" and "Exit".
 
     ![](../assets/images/MWSWAT_Step4.4_EditSWAT_SoilParametersCorrected.gif)
 
     SWAT Editor for Soil parameters
 
-2. **Groundwater (.Gw):** Select any Subbasin, Land Use, Soils and Slope option and click "ok". A new window will open. In this new window will set the GW\_DELAY (days) and ALPHA\_BF (days) to 3 and 1 respectively and will tick the box "Extend edits to all HRUs". Then "Save Edits" and "Exit".
+2. **Groundwater (.Gw):** Select any Subbasin, Land Use, Soils and Slope option and click "ok". A new window will open. In this new window will set the GW_DELAY (days) and ALPHA_BF (days) to 3 and 1 respectively and will tick the box "Extend edits to all HRUs". Then "Save Edits" and "Exit".
 
     ![](../assets/images/MWSWAT_Step4.4_EditSWAT_GWParametersCorrected.gif)
 
@@ -150,7 +150,7 @@ Then we press the "Cancel" button on the Edit Subbasins input menu and we will b
 
 #### Run the modified executable outside the interface
 
-Run the simulation outside the interface with SWAT\_MOHID as decribed previously in [Run SWAT with MOHID outputs](../overview/mohid-swat.md). Remind that the txtinout folder that the interface uses where input files are written (in ..\\scenarios\\default\\txtinout) has to be copied to simulation folder and then run so that the changes made are accounted when running the modified executable.
+Run the simulation outside the interface with SWAT_MOHID as decribed previously in [Run SWAT with MOHID outputs](../overview/mohid-swat.md). Remind that the txtinout folder that the interface uses where input files are written (in ..\\scenarios\\default\\txtinout) has to be copied to simulation folder and then run so that the changes made are accounted when running the modified executable.
 
 ### Converting SWAT model results to CE-QUAL model input files
 

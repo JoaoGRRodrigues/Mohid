@@ -16,8 +16,8 @@ The official repository is at the [Codeplex](../web/codeplex.md).
 
 To quickly download the code please install a gui client. Choose your flavour:
 
-- [RapidSvn](../../tools/rapidsvn.md), very similar environment to source-safe, for windows, linux and mac.
-- [TortoiseSvn](../../tools/tortoisesvn.md), elegantly inserts itself into your windows explorer environment (windows only).
+- [RapidSvn](../web/rapidsvn.md), very similar environment to source-safe, for windows, linux and mac.
+- [TortoiseSvn](../windows/tortoisesvn.md), elegantly inserts itself into your windows explorer environment (windows only).
 
 ## Syntax
 

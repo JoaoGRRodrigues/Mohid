@@ -15,19 +15,13 @@ One of the coolest things about Codeplex is that you can get information about t
 ### Windows
 
 1. [How to install TortoiseSvn client](http://screencast.com/t/NHw3UL5NEWu)
-2. [How to checkout latest version of the code from codeplex with TortoiseSvn client](http://screencast.com/t/roTXBTea) or you can check the [text equivalent](../../tools/tortoisesvn.md) of it.
+2. [How to checkout latest version of the code from codeplex with TortoiseSvn client](http://screencast.com/t/roTXBTea) or you can check the [text equivalent](../windows/tortoisesvn.md) of it.
 3. How to compile the MOHID code in Visual Studio 2008
-4. [How to commit changes to the code into the codeplex](../../tools/tortoisesvn.md).
+4. [How to commit changes to the code into the codeplex](../windows/tortoisesvn.md).
 
 ### Linux
 
-#### Video instructions 
-
-$$
-english only
-$$
-
-
+#### Video instructions \[english only\]
 
 1. [How to compile the hdf5 libraries with fortran enabled](../../tools/hdf5.md)
 2. [How to get the latest version of the code](http://screencast.com/t/4yexXUxB)
@@ -62,5 +56,5 @@ To build an executable from the source code, follow these lines:
 
 ## See also
 
-- [TortoiseSvn](../../tools/tortoisesvn.md)
+- [TortoiseSvn](../windows/tortoisesvn.md)
 - [svn](../linux/svn.md)

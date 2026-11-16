@@ -1,6 +1,6 @@
 # Sudo
 
-**Sudo** is the linux command that allows users to perform [su](README.md#su#su) commands.
+**Sudo** is the linux command that allows users to perform [su](README.md#su) commands.
 
 ## Sudoers list
 

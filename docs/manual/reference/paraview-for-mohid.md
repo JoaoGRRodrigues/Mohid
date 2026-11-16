@@ -14,13 +14,13 @@ You will also need the Phyton V3 that can be obtained form the Miniconda distrib
 pip install h5py
 ```
 
-You will also need to download the package [https://github.com/maretec/MOHID\_python\_tools](https://github.com/maretec/MOHID_python_tools)
+You will also need to download the package [https://github.com/maretec/MOHID_python_tools](https://github.com/maretec/MOHID_python_tools)
 
 ## Opening HDF5 files
 
-To be able to open MOHID HDF5 in paraview it needs a descriptor file with the extension .xdmf that is generated using a python tool that is located at [https://github.com/maretec/MOHID\_python\_tools/tree/master/MXDMF](https://github.com/maretec/MOHID_python_tools/tree/master/MXDMF)
+To be able to open MOHID HDF5 in paraview it needs a descriptor file with the extension .xdmf that is generated using a python tool that is located at [https://github.com/maretec/MOHID_python_tools/tree/master/MXDMF](https://github.com/maretec/MOHID_python_tools/tree/master/MXDMF)
 
-It is needed to run the file RunWin.bat ([https://github.com/maretec/MOHID\_python\_tools/blob/master/MXDMF/run/RunWin.bat](https://github.com/maretec/MOHID_python_tools/blob/master/MXDMF/run/RunWin.bat)) or RunLinux.sh ([https://github.com/maretec/MOHID\_python\_tools/blob/master/MXDMF/run/RunLinux.sh](https://github.com/maretec/MOHID_python_tools/blob/master/MXDMF/run/RunLinux.sh)) according to the operational system where the location of the TestFiles need to be edited. The tool also is able to glue files.
+It is needed to run the file RunWin.bat ([https://github.com/maretec/MOHID_python_tools/blob/master/MXDMF/run/RunWin.bat](https://github.com/maretec/MOHID_python_tools/blob/master/MXDMF/run/RunWin.bat)) or RunLinux.sh ([https://github.com/maretec/MOHID_python_tools/blob/master/MXDMF/run/RunLinux.sh](https://github.com/maretec/MOHID_python_tools/blob/master/MXDMF/run/RunLinux.sh)) according to the operational system where the location of the TestFiles need to be edited. The tool also is able to glue files.
 
 Open using XDMF reader
 

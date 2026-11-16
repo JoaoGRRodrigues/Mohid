@@ -32,7 +32,7 @@ $ yes? FRAME/FILE=picture.gif
 
 ### Bash shell
 
-To export the correct environment variables under bash. Copy the file */usr/local/ferret/bin/ferret\_paths\_bash\_template* to */usr/local/ferret\_paths* then edit it to perform the following changes:
+To export the correct environment variables under bash. Copy the file */usr/local/ferret/bin/ferret_paths_bash_template* to */usr/local/ferret_paths* then edit it to perform the following changes:
 
 ```
 # You may want to customize the pathname of the `ferret' directory:

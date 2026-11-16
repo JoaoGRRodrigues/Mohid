@@ -42,9 +42,9 @@ Equation 3 - Significant wave heigth
 
 Equation 4 - Significant wave period
 
-Where, H~s~ is Significant Wave Height,
+Where, H<sub>s</sub> is Significant Wave Height,
 
-T~s~ is Significant Wave Period,
+T<sub>s</sub> is Significant Wave Period,
 
 W is the wind velocity modulus (m/s),
 
@@ -54,13 +54,13 @@ F, the fetch distance (m).
 
 These equations predict wave height and wave period at the end of the generation zone, therefore the duration of the wind action it is not accounted for, because it is admitted that the total development of the waves is achieved (direction uniform during the time for development). The hyperbolic function in eq. 3 and eq. 4 simulates the effects that, for high depths, waves are not influenced by the bottom and is also used to avoid the indefinite increasing of wave height and wave period with increasing depth.
 
-As stated above, in lakes, estuaries, small variations in wind direction may change significantly Fetch distances. In order to take into account that effect effective fetch is computed: The broader equation (eq. 5) for effective fetch (F~e~) was obtained from Rogala (1997) and Howes (1997):
+As stated above, in lakes, estuaries, small variations in wind direction may change significantly Fetch distances. In order to take into account that effect effective fetch is computed: The broader equation (eq. 5) for effective fetch (F<sub>e</sub>) was obtained from Rogala (1997) and Howes (1997):
 
 $F_e=\frac{\Sigma F_i\cdot\cos\left(\alpha_i\right)}{\Sigma\cos\left(\alpha_i\right)}$ equation 5
 
-Where F~i~ is the fetch distance (m) in the i direction and
+Where F<sub>i</sub> is the fetch distance (m) in the i direction and
 
-α~i~ = angle (º) between the wind direction and the i direction.
+α<sub>i</sub> = angle (º) between the wind direction and the i direction.
 
 Effective fetch may be seen as taking into account that wind field data is usually averaged meaning that in reality the wind may have changed along a dominant direction and so adjacent directions are used.
 
@@ -73,7 +73,7 @@ Water depth may be computed from 2 methods:
 - instant water column in the cell
 - average depth in the wind direction
 
-The first method (DEPTH\_METHOD : 0) uses the water column in every instant to compute wave height and wave period. The second method (DEPTH\_METHOD : 1) computes the average depth in wind direction (computed in construction phase from bathymetry). The latter tries to take into account the effect of depth limitation during the wind work on surface.
+The first method (DEPTH_METHOD : 0) uses the water column in every instant to compute wave height and wave period. The second method (DEPTH_METHOD : 1) computes the average depth in wind direction (computed in construction phase from bathymetry). The latter tries to take into account the effect of depth limitation during the wind work on surface.
 
 The algorithm for fetch computes distances to land (Fetch distances) in 16 cardinal directions for each cell. The distances to land may be computed using a grid based or graphical method. In the graphical method it is still not possible to compute average depths in wind direction.
 
@@ -97,13 +97,13 @@ The graphical method computes distances between cells and poligon lines (trigono
 
 ###### Effective Fetch
 
-The above distances and average depths can be used directly for wave calculus or can be weighted over 3 directions to account for what was stated in the beggining, that with small wind variation may significantly change fetch distances (or average depths in wind direction). In case of weighting (FETCH\_DIRECTIONS : 8) for main octants, distances and depths are computed for 8 cardinal directions (the weighing is done using the left to the main direction, direction and right to the main direction) - Figure 1.
+The above distances and average depths can be used directly for wave calculus or can be weighted over 3 directions to account for what was stated in the beggining, that with small wind variation may significantly change fetch distances (or average depths in wind direction). In case of weighting (FETCH_DIRECTIONS : 8) for main octants, distances and depths are computed for 8 cardinal directions (the weighing is done using the left to the main direction, direction and right to the main direction) - Figure 1.
 
 ![](../../assets/images/Fetch8directions.png)
 
 Figure 1 - Example of Fetch components used for North Wind (8 directions)
 
-In case of no weighting (FETCH\_DIRECTIONS : 16) the computed distances (and optionally average depths) explained above are used without weighting - Figure 2.
+In case of no weighting (FETCH_DIRECTIONS : 16) the computed distances (and optionally average depths) explained above are used without weighting - Figure 2.
 
 ![](../../assets/images/Fetch16directions.png)
 
@@ -121,11 +121,11 @@ So, for the fetch directions weighting, 3 distances (eq. 6) can be used (the car
 
 Equation 6 - Effective Fetch with 8 cardinal directions
 
-Where, F~22L~ are the distances to land in the directions 22.5º left of the wind direction (m);
+Where, F<sub>22L</sub> are the distances to land in the directions 22.5º left of the wind direction (m);
 
-F~22R~ are the distances to land in the directions 22.5º right of the wind direction (m);
+F<sub>22R</sub> are the distances to land in the directions 22.5º right of the wind direction (m);
 
-and F~0~ is distance to land along wind direction (m).
+and F<sub>0</sub> is distance to land along wind direction (m).
 
 The weight given to each distance is based on the cosine function, taking a unitary weight for the wind direction and decreasing weights to angles away from this direction.
 
@@ -147,7 +147,7 @@ Insert equation
 
 ### Main options
 
-In this chapter it is briefly described how to use Module Waves. The different options provided by the module can be defined through an input data file, similarly to other modules in MOHID. In order to couple this module with the rest of the model simulation, it has to be activated in the [Module Model](README.md#module-model#module-model) input data file, by defining the following keyword:
+In this chapter it is briefly described how to use Module Waves. The different options provided by the module can be defined through an input data file, similarly to other modules in MOHID. In order to couple this module with the rest of the model simulation, it has to be activated in the [Module Model](README.md#module-model) input data file, by defining the following keyword:
 
 ```
 WAVES                                     : 1
@@ -221,29 +221,17 @@ Poligon block for DISTANCE_TO_LAND_METHOD : 1
 
 ### Input data file
 
-In a simulation, it is possible to choose between the calculation of wave height and wave period as described in deep ocean equations based on wind velocity (simpler) or as fetch and depth dependent. This is made by a keyword named 
-
-$$
-WAVEGEN\_TYPE
-$$
-
- (keyword = 0 and the method is the simpler and keyword = 1 stands for the fetch method, by default the value is 0 (zero)).
+In a simulation, it is possible to choose between the calculation of wave height and wave period as described in deep ocean equations based on wind velocity (simpler) or as fetch and depth dependent. This is made by a keyword named \[WAVEGEN_TYPE\] (keyword = 0 and the method is the simpler and keyword = 1 stands for the fetch method, by default the value is 0 (zero)).
 
 #### Fetch based
 
 If using the fetch based model, the working scheme of the model is very simple: in the constructing phase of MOHID, the distances to land are calculated for all water cells in the 16 cardinal directions.
 
-The distances to land can be computed with two different methods, distinguishing them with the keyword 
+The distances to land can be computed with two different methods, distinguishing them with the keyword \[DISTANCE_TO_LAND_METHOD\]. If this keyword equals zero, the distances to land are computed along the grid, incrementing half cell size in each cycle step, until land or end of grid is encountered. If the keyword equals one, distances are computed performing tangents to the points and intersecting them with polygons (Land Areas) segments. The first method can not be used with nested models (if grid ends before directions reaches land).
 
-$$
-DISTANCE\_TO\_LAND\_METHOD
-$$
+Depth can be computed from local cell water column variable during simulation (DEPTH_METOD : 0) or with average water depth (DEPTH_METHOD : 1) in each 16 cardinal directions (bathymetry + Mean Sea Level where MSL is MEAN_SEA_LEVEL : xx).
 
-. If this keyword equals zero, the distances to land are computed along the grid, incrementing half cell size in each cycle step, until land or end of grid is encountered. If the keyword equals one, distances are computed performing tangents to the points and intersecting them with polygons (Land Areas) segments. The first method can not be used with nested models (if grid ends before directions reaches land).
-
-Depth can be computed from local cell water column variable during simulation (DEPTH\_METOD : 0) or with average water depth (DEPTH\_METHOD : 1) in each 16 cardinal directions (bathymetry + Mean Sea Level where MSL is MEAN\_SEA\_LEVEL : xx).
-
-Fetch distances or average depths may be maintained in 16 directions (FETCH\_DISTANCES : 16) or be weighted with 3 directions (FETCH\_DISTANCES : 8) to take account of wind direction variation may impact fetch distance and average water depht.
+Fetch distances or average depths may be maintained in 16 directions (FETCH_DISTANCES : 16) or be weighted with 3 directions (FETCH_DISTANCES : 8) to take account of wind direction variation may impact fetch distance and average water depht.
 
 Fetch distances and average depths are only calculated once in the simulation (in the MOHID construction phase).
 

@@ -1,17 +1,17 @@
 # Latex
 
-The (in)famous scientific text-processor. Good for producing high quality documents in scientific and literary areas. You can also use a subset of latex commands in this [wiki](../../project/README.md#mathtex#mathtex) editor for producing mathematical formulas.
+The (in)famous scientific text-processor. Good for producing high quality documents in scientific and literary areas. You can also use a subset of latex commands in this [wiki](../../project/README.md#mathtex) editor for producing mathematical formulas.
 
 ## Installing
 
 ### Windows
 
-1. Download and install <goto>miktex</goto>, the latex processor for windows,
-2. Download and install <goto>ghostscript</goto>, the postscript processor,
-3. Download and install <goto>ghostview</goto>, the postscript viewer,
-4. Download and install <goto>acrobat reader</goto>, the pdf reader (only if it isn't already installed),
-5. Download and install <goto>winedt</goto>, the popular latex text-editor,
-6. Download <goto>winedt dictionaries</goto> for spelling auto-correction,
+1. Download and install miktex, the latex processor for windows,
+2. Download and install ghostscript, the postscript processor,
+3. Download and install ghostview, the postscript viewer,
+4. Download and install acrobat reader, the pdf reader (only if it isn't already installed),
+5. Download and install winedt, the popular latex text-editor,
+6. Download winedt dictionaries for spelling auto-correction,
 7. Unzip the dictionaries somewhere in a folder,
 8. To configure winedt with the dictionaries do
 
@@ -32,8 +32,8 @@ That's it!
 
 I heartily recommend:
 
-- <goto>The Not So Short Introduction To Latex</goto>,
-- <goto>Uma Não Tão Pequena Introdução Ao Latex</goto> (same, but in portuguese),
+- The Not So Short Introduction To Latex,
+- Uma Não Tão Pequena Introdução Ao Latex (same, but in portuguese),
 - [wikibook on Latex](http://en.wikibooks.org/wiki/LaTeX/Introduction).
 
 ### Difference between latex and pdflatex
@@ -203,7 +203,7 @@ Side by side:
 
 ### pspictures
 
-Example with MOHID hierarchical structure (download [eps\_image](http://rosatrancoso.googlepages.com/MohidStructure_beamer2.eps)/[code](http://rosatrancoso.googlepages.com/MohidStructure_beamer2.tex)). The image was made with [latexdraw](http://latexdraw.sourceforge.net/), which is a visual interface that produces the pspicture code. To compile: latex -> dvips.
+Example with MOHID hierarchical structure (download [eps_image](http://rosatrancoso.googlepages.com/MohidStructure_beamer2.eps)/[code](http://rosatrancoso.googlepages.com/MohidStructure_beamer2.tex)). The image was made with [latexdraw](http://latexdraw.sourceforge.net/), which is a visual interface that produces the pspicture code. To compile: latex -> dvips.
 
 Another very interesting alternative (probably) to create illustrations and sketches and other vectorial graphics for latex consists using [Inkscape](http://www.inkscape.org/) and its [TexText](http://www.elisanet.fi/ptvirtan/software/textext/index.html) extension! They-re both free software. Some use those tools to create math posters...
 
@@ -226,7 +226,7 @@ A: Check if you're using
 \usepackage[T1]{fontenc}
 ```
 
-If so, then that's your problem. Either erase it ([not recommended](http://66.249.93.104/translate_c?hl=en&ie=UTF-8&oe=UTF-8&langpair=de%7Cen&u=http://www.open4me.de/pdfprobleme.html&prev=/language_tools)) or simply add this extra package
+If so, then that's your problem. Either erase it ([not recommended](http://66.249.93.104/translate_c?hl=en&ie=UTF-8&oe=UTF-8&langpair=deen&u=http://www.open4me.de/pdfprobleme.html&prev=/language_tools)) or simply add this extra package
 
 ```
 \usepackage[T1]{fontenc}
@@ -238,9 +238,9 @@ Recompile your tex file and convert it to pdf, and that should do the trick.
 ## External references
 
 - [Wikipedia](http://meta.wikimedia.org/wiki/Help:Formula)
-- <goto>Miktex</goto>
-- <goto>Winedt</goto>
-- <goto>The Not So Short Introduction To Latex</goto>
-- <goto>CiteULike</goto>
-- <goto>Comprehensive TeX Archive Network</goto>
+- Miktex
+- Winedt
+- The Not So Short Introduction To Latex
+- [CiteULike](../citeulike.md)
+- Comprehensive TeX Archive Network
 - [wikibook on latex](http://en.wikibooks.org/wiki/LaTeX/Introduction)

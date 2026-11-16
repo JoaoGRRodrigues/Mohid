@@ -120,7 +120,7 @@ The REDUCTION operation has as restriction that the reduction variable only is a
 
 In practice in the program execution a copy of the variable is made for each thread, which actualizes it as a local variable, and in the end of the construct the thread variables are added to the shared variable from which they originate. The knowledge of this process is important because in the case of the accumulation of real values this process can originate differences relative to the unparallel result due to rounded values.
 
-***Parallelization overheads:***
+## Parallelization overheads
 
 Although parallelization involves potentially gains in computer resources use it also involves overheads which can sometimes be important.
 
@@ -136,7 +136,7 @@ Generally as the scale of the problem increases the overheads will be less signi
 
 In very small scale problems parallelization may provide more comsumption of computational resources than the non parallelization.
 
-***Race condition:***
+## Race condition
 
 In some case execution of a parallel program may be suspended because different threads are competing for the actualization of some variable. This is called a race condition.
 
@@ -144,7 +144,7 @@ The programmer should take care to avoid this situation as its debugging is very
 
 A way to avoid this is to use critical regions or a REDUCTION clause.
 
-***Overheads and thread efficiency***
+## Overheads and thread efficiency
 
 http://i.imgur.com/aZXGh.png
 
@@ -154,7 +154,7 @@ http://i.imgur.com/F1kLM.png
 
 http://i.imgur.com/PEmH4.png
 
-***References:***
+## References
 
 - Chandra, Rohit, 2001, Parallel Programming in OpenMP, Academic Press.
 - [Chapman, Barbara, Using OpenMP, Portable Shared Memory Parallel Programming, The MIT Press](http://drop.io/8gzzkv3).

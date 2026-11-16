@@ -4,8 +4,8 @@ This article lists a few perl useful utilities. The full and updated list may be
 
 ## Copying, moving, renaming, matching files
 
-- [\_perl\_filem.pl](http://www.mohid.com/hydrogroup/codecomments/_perl_filem.pl.xml)
-- [\_perl\_fileop.pl](http://www.mohid.com/hydrogroup/codecomments/_perl_fileop.pl.xml)
+- [_perl_filem.pl](http://www.mohid.com/hydrogroup/codecomments/_perl_filem.pl.xml)
+- [_perl_fileop.pl](http://www.mohid.com/hydrogroup/codecomments/_perl_fileop.pl.xml)
 
 ## Setting environment variables
 

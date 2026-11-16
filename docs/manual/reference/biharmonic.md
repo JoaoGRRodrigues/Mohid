@@ -12,22 +12,10 @@ where U is a typical flow velocity and $\Delta x$ is the numerical model horizon
 
 ## MOHID
 
-In mohid, you need to add in the Hydrodynamic\_x.dat the following keywords:
+In mohid, you need to add in the Hydrodynamic_x.dat the following keywords:
 
-BIHARMONIC  : 
-
-$$
-0/1
-$$
-
- <-- Activates de biharmonic viscous flux
-BIHARMONIC\_COEF  : 
-
-$$
-Real
-$$
-
- <-- Sets the value of $\kappa_4$
+BIHARMONIC  : \[0/1\] <-- Activates de biharmonic viscous flux
+BIHARMONIC_COEF  : \[Real\] <-- Sets the value of $\kappa_4$
 
 ## References
 

@@ -2,7 +2,7 @@
 
 By default the horizontal turbulent viscosity is assumed equal to the horizontal turbulent diffusion (or diffusivity). In the vertical, the same is assumed except if the turbulent model (GOTM) option is on.
 
-## Turbulence\_x.dat
+## Turbulence_x.dat
 
 By default it is assume a constant turbulent horizontal viscosity (m2/s)
 

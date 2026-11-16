@@ -20,7 +20,7 @@ A property consists of a reference field and a relaxation coefficients field. It
 
 ### Reference field
 
-The reference field is a prescribed solution which is used to force the solution computed by the model. The reference field must be given in the same units as the computed field. Examples of properties are velocity U, velocity V, water level, temperature, salinity, etc. A reference field must be defined in the U, V or Z grid, via keyword **TYPE\_ZUV** and it can be set using [Module FillMatrix](../../base/module-fillmatrix.md).
+The reference field is a prescribed solution which is used to force the solution computed by the model. The reference field must be given in the same units as the computed field. Examples of properties are velocity U, velocity V, water level, temperature, salinity, etc. A reference field must be defined in the U, V or Z grid, via keyword **TYPE_ZUV** and it can be set using [Module FillMatrix](../../base/module-fillmatrix.md).
 
 ### Relaxation coefficients
 
@@ -32,8 +32,8 @@ To generate in a easy way a relaxation coefficients file use the [AssimilationZo
 
 ### Cold relaxation period
 
-- **COLD\_RELAX\_PERIOD**
-- *COLD\_ORDER*
+- **COLD_RELAX_PERIOD**
+- *COLD_ORDER*
 
 ### Outputs
 
@@ -43,11 +43,11 @@ To generate in a easy way a relaxation coefficients file use the [AssimilationZo
 
 A property is identified by the [keyword](../../io/keywords/keywords.md) **NAME** inside a [block](../../io/keywords/blocks.md) delimited by the *<beginproperty>* and *<endproperty>* tags. The dimension of the property is specified by keyword **DIMENSION** (e.g. for a 3D property: ***DIMENSION  : 3***).
 
-A reference field is defined inside a block delimited by the *<<begin\_field>>* and *<<end\_field>>* tags.
+A reference field is defined inside a block delimited by the *<<begin_field>>* and *<<end_field>>* tags.
 
-A relaxation coefficients field is defined inside a block delimited by the *<<begin\_coef>>* and *<<end\_coef>>* tags.
+A relaxation coefficients field is defined inside a block delimited by the *<<begin_coef>>* and *<<end_coef>>* tags.
 
-A relaxation coefficients and reference fields must be defined in the U, V or Z grid, via keyword **TYPE\_ZUV** and can be set using [Module FillMatrix](../../base/module-fillmatrix.md).
+A relaxation coefficients and reference fields must be defined in the U, V or Z grid, via keyword **TYPE_ZUV** and can be set using [Module FillMatrix](../../base/module-fillmatrix.md).
 
 ```
 <beginproperty>

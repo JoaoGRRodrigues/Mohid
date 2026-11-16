@@ -1,10 +1,10 @@
 # Bottom boundary condition
 
-For each water property the user needs to define if it wants or not to impose sediment-water fluxes of particulate or dissolved matter. An example of a input file InterfaceWaterAir\_x.dat where bottom boundary condition is defined is presented below.
+For each water property the user needs to define if it wants or not to impose sediment-water fluxes of particulate or dissolved matter. An example of a input file InterfaceWaterAir_x.dat where bottom boundary condition is defined is presented below.
 
-## WaterProperties\_x.dat
+## WaterProperties_x.dat
 
-For each property is possible to impose a bottom boundary condition. By default no bottom boundary condition is imposed (BOTTOM\_FLUXES : 0).
+For each property is possible to impose a bottom boundary condition. By default no bottom boundary condition is imposed (BOTTOM_FLUXES : 0).
 
 ```
     <beginproperty>
@@ -12,7 +12,7 @@ For each property is possible to impose a bottom boundary condition. By default 
     <endproperty>
 ```
 
-## InterfaceSedimentWater\_x.dat
+## InterfaceSedimentWater_x.dat
 
 Bottom absolute rugosity in meters
 

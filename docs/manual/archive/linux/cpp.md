@@ -183,10 +183,10 @@ typedef struct s_myexample{
 
 The C or C++ compiler comes with [preprocessing](http://en.wikipedia.org/wiki/Preprocessor) capabilities. Hence [macros](http://en.wikipedia.org/wiki/Macro) are allowed, but use them with care. Here are a few examples for syntax purposes. Preferrably, define at head of the code. `[c,Y]`
 
-#define OK\_ 1
-#define BAD\_ -1
-#define DATA\_ 1
-#define INPUT\_ 2
+#define OK_ 1
+#define BAD_ -1
+#define DATA_ 1
+#define INPUT_ 2
 
 ## IO string manipulations
 

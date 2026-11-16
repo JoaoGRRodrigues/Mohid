@@ -135,11 +135,11 @@ end module moduleDoloopsOpenmp
 
 #### Results
 
-http://content.screencast.com/users/GRiflet/folders/Jing/media/49c2beae-32f4-4da0-96b1-ddae90bd2d02/2010-10-21\_1735.png
+http://content.screencast.com/users/GRiflet/folders/Jing/media/49c2beae-32f4-4da0-96b1-ddae90bd2d02/2010-10-21_1735.png
 
 - Full results
 
-http://content.screencast.com/users/GRiflet/folders/Jing/media/9e999f22-7204-481a-84be-495ffe35e9f7/2010-10-21\_1734.png
+http://content.screencast.com/users/GRiflet/folders/Jing/media/9e999f22-7204-481a-84be-495ffe35e9f7/2010-10-21_1734.png
 
 - Looking only at the results with STATIC/DYNAMIC/CHUNK variations.
 
@@ -268,7 +268,7 @@ Size	Time
 
 ---
 
-### SetMatrix3D\_Constant
+### SetMatrix3D_Constant
 
 #### Description
 
@@ -334,7 +334,7 @@ This subroutine is in the ModuleFunctions of MohidWater. In the context of Mohid
 
 #### Results
 
-http://content.screencast.com/users/GRiflet/folders/Jing/media/136f62db-a24f-4315-9eae-f4bcd9110d4e/2010-10-22\_1553.png
+http://content.screencast.com/users/GRiflet/folders/Jing/media/136f62db-a24f-4315-9eae-f4bcd9110d4e/2010-10-22_1553.png
 
 ## MOHID
 
@@ -384,7 +384,7 @@ A 1 hour run of the PCOMS is made, and takes around **400s** with parallelizatio
 
 - All threads (8):
 
-http://content.screencast.com/users/GRiflet/folders/Jing/media/c8b434c0-0ab0-4931-9491-4e018c3ce566/2010-10-27\_1705.png
+http://content.screencast.com/users/GRiflet/folders/Jing/media/c8b434c0-0ab0-4931-9491-4e018c3ce566/2010-10-27_1705.png
 
 Here's an excerpt of the outwatch log:
 
@@ -397,35 +397,35 @@ Here's an excerpt of the outwatch log:
               ModuleFunctions InterpolateLinearyMatrix2D                  0.08
 ```
 
-- 1 Thread only (set OMP\_NUM\_THREADS=1) takes more than **460s**:
+- 1 Thread only (set OMP_NUM_THREADS=1) takes more than **460s**:
 
 http://i.imgur.com/zY3K3.png
 
-- 2 Threads only (set OMP\_NUM\_THREADS=2) take less than **380s**:
+- 2 Threads only (set OMP_NUM_THREADS=2) take less than **380s**:
 
 http://i.imgur.com/CpFvT.png
 
-- 3 Threads only (set OMP\_NUM\_THREADS=3) take less than **370s**:
+- 3 Threads only (set OMP_NUM_THREADS=3) take less than **370s**:
 
 http://i.imgur.com/TKBrC.png
 
-- 4 Threads only (set OMP\_NUM\_THREADS=3) take less than **360s**:
+- 4 Threads only (set OMP_NUM_THREADS=3) take less than **360s**:
 
 http://i.imgur.com/VNFuQ.png~
 
-- 5 Threads only (set OMP\_NUM\_THREADS=5) take more than **370s**:
+- 5 Threads only (set OMP_NUM_THREADS=5) take more than **370s**:
 
 http://i.imgur.com/6dOxk.png
 
-- 6 Threads only (set OMP\_NUM\_THREADS=6) take more than **375s**:
+- 6 Threads only (set OMP_NUM_THREADS=6) take more than **375s**:
 
 http://i.imgur.com/n55Vo.png
 
-- 7 Threads only (set OMP\_NUM\_THREADS=7) take more than **385s**:
+- 7 Threads only (set OMP_NUM_THREADS=7) take more than **385s**:
 
 http://i.imgur.com/693cw.png
 
-- 8 Threads only (set OMP\_NUM\_THREADS=8) take more than **390S**:
+- 8 Threads only (set OMP_NUM_THREADS=8) take more than **390S**:
 
 http://i.imgur.com/3yjtc.png
 
@@ -459,7 +459,7 @@ Here's an excerpt of the outwatch log:
               ModuleFunctions THOMAS_3D                                   0.67
 ```
 
-Parallelizing only the moduleFunctions yields a localized gain in most of the parallelized subroutines, except for the THOMASZ and the THOMAS\_3D.
+Parallelizing only the moduleFunctions yields a localized gain in most of the parallelized subroutines, except for the THOMASZ and the THOMAS_3D.
 
 ### ModuleGeometry
 

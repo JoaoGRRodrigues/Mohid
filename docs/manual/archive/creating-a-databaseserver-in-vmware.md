@@ -47,13 +47,7 @@ IP changed to the old davinci IP
 
 **Installed second copy**
 
-Copy profiles.dat in C:\\Users\\
-
-$$
-AdminUser
-$$
-
-\\AppData\\Local\\Centered Systems\\Second Copy
+Copy profiles.dat in C:\\Users\\\[AdminUser\]\\AppData\\Local\\Centered Systems\\Second Copy
 
 Checked if paths were OK
 

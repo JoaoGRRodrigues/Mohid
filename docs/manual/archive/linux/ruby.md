@@ -35,7 +35,7 @@ Hello world!
 => nil
 ```
 
-The most interesting method to call in irb is *public\_methods* which lists all the object's available methods:
+The most interesting method to call in irb is *public_methods* which lists all the object's available methods:
 
 ```
 irb(main):001:0> puts 11.public_methods.sort.join(" | ")

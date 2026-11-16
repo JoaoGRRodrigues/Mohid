@@ -10,25 +10,7 @@ From the **maretec** user at the MrtXnSrv, **192.168.20.125** with putty was cre
 
 First mounted the Windows OS folder from kepler (192.168.20.131) so that can be used for virtual machine OS install (Windows 2008 Server):
 
-ex: sudo /bin/mount -t cifs -o 
-
-$$
-credentials
-$$
-
- 
-
-$$
-Folder Origin location
-$$
-
- 
-
-$$
-Folder Destination location
-$$
-
-
+ex: sudo /bin/mount -t cifs -o \[credentials\] \[Folder Origin location\] \[Folder Destination location\]
 
 ```
 >sudo /bin/mount -t cifs -o username=Administrator,password=XXXXX,workspace=MARETEC //192.168.20.131/Software/Windows_2008_Server_32bits
@@ -39,25 +21,7 @@ $$
 
 It was created a LV with 200GB (50 for OS).
 
-ex: sudo /sbin/lvcreate -n 
-
-$$
-Name of LV
-$$
-
- -L 
-
-$$
-size of LV
-$$
-
- 
-
-$$
-Volume group where LV will be
-$$
-
-
+ex: sudo /sbin/lvcreate -n \[Name of LV\] -L \[size of LV\] \[Volume group where LV will be\]
 
 ```
 >sudo /sbin/lvcreate -n vmmrtsrv08_FTP -L 200GB dados01
@@ -67,13 +31,13 @@ $$
 
 It was created a config file based on [vmmrtsrv06-1.0.cfg](vmmrtsrv06-1-0.md) and adapted to ISO file and LV created.
 
-- [vmmrtsrv08\_1.cfg](vmmrtsrv08-1.md)
+- [vmmrtsrv08_1.cfg](vmmrtsrv08-1.md)
 
 It was used command vi to edit the file
 
 ### Created the Virtual Machine (VM) and started it
 
-in /home/maretec/xen\_configs the config file was used to create the VM
+in /home/maretec/xen_configs the config file was used to create the VM
 
 ```
 >sudo /usr/sbin/xm new -F VMMRTSRV08_1.cfg
@@ -111,7 +75,7 @@ In the VM first was installed the OS and then configured.
 
 ### Accessed the domain via a console with VNC
 
-Access the domain with a VNC client, such as <goto>TightVNC</goto>. The domain console access port with VNC is **192.168.20.125:5904**.
+Access the domain with a VNC client, such as TightVNC. The domain console access port with VNC is **192.168.20.125:5904**.
 
 ### OS Installation - in the console
 
@@ -212,25 +176,7 @@ Marco said there are bether tools, in what concerns performance, security, versa
 
 Created a snapshot in 18-01-2009
 
-ex: sudo /sbin/lvcreate -n 
-
-$$
-Name of the snapshot
-$$
-
- -s 
-
-$$
-path to LV that will be snapshoted
-$$
-
- -L 
-
-$$
-snapshot size
-$$
-
-
+ex: sudo /sbin/lvcreate -n \[Name of the snapshot\] -s \[path to LV that will be snapshoted\] -L \[snapshot size\]
 
 ```
 >sudo /sbin/lvcreate -n VMMRTSRV08_FTP_SNAP20100118 -s /dev/dados01/vmmrtsrv08_FTP -L 200G

@@ -415,19 +415,7 @@ EVOLUTION : 1 (property will be read by the model)
 
 A constant value, timeserie, vegetation grid or vegetation hdf may be given.
 
-In the case of grid: One possible option is to extract info from land use shape file. In this case can use MOHID GIS going to menu 
-
-$$
-Tools
-$$
-
-->
-
-$$
-Shape to Grid Data
-$$
-
- and provide: i) the grid (model grid), ii) the land use shape file and iii) the corespondence between land use codes and vegetation ID. In vegetation data file define the just created grid:
+In the case of grid: One possible option is to extract info from land use shape file. In this case can use MOHID GIS going to menu \[Tools\]->\[Shape to Grid Data\] and provide: i) the grid (model grid), ii) the land use shape file and iii) the corespondence between land use codes and vegetation ID. In vegetation data file define the just created grid:
 
 ```
 <begin_AgriculturalPractices>
@@ -565,27 +553,27 @@ TIME_SERIE           : 1
 
 in each property that you wish to write results.
 
-total\_plant\_biomass - plant total biomass in kg/ha
+total_plant_biomass - plant total biomass in kg/ha
 
-root\_biomass - plant root biomass in kg/ha
+root_biomass - plant root biomass in kg/ha
 
-root\_depth - plant root depth (m)
+root_depth - plant root depth (m)
 
-leaf\_area\_index - area of active photosyntetic leafs per surface area (-)
+leaf_area_index - area of active photosyntetic leafs per surface area (-)
 
-canopy\_height - plant height (m)
+canopy_height - plant height (m)
 
-specific\_leaf\_storage - leaf capacity to storage water (m3 water per m2 leaf or m)
+specific_leaf_storage - leaf capacity to storage water (m3 water per m2 leaf or m)
 
-crop\_coefficient - coefficient to account in reference evapotranspiration for crop differences from reference conditions (-)
+crop_coefficient - coefficient to account in reference evapotranspiration for crop differences from reference conditions (-)
 
-Water\_Uptake\_m3/s - water uptake for all the plant
+Water_Uptake_m3/s - water uptake for all the plant
 
 WaterStressFactor - water stress factor that the plant feels (zero being maximum stress and one being no stress)
 
-HU\_Accumulated - fraction of maturity heat units accumulated in the plant since begin of growth cycle
+HU_Accumulated - fraction of maturity heat units accumulated in the plant since begin of growth cycle
 
-Potential\_HU - number of heat units that atmosphere is presenting since the beggining of the year
+Potential_HU - number of heat units that atmosphere is presenting since the beggining of the year
 
 TemperatureStressFactor - temperature stress factor that the plant feels (zero being maximum stress and one being no stress)
 
@@ -593,7 +581,7 @@ TemperatureStressFactor - temperature stress factor that the plant feels (zero b
 
 ### Maps (HDF5 format)
 
-To write 3D results use the keyword [OUTPUT\_TIME](../../io/keywords/output-time.md) and define keyword:
+To write 3D results use the keyword [OUTPUT_TIME](../../io/keywords/output-time.md) and define keyword:
 
 ```
 OUTPUT_HDF           : 1

@@ -44,9 +44,9 @@ wgrib -V -o /dev/null  -d 1 grib_file
 
 ### wgrib2.exe
 
-The wgrib2.exe is a command-line program and presents a wide list of options. The best option is to convert the grib2 file into a netcdf file using [ConvertToHDF5 Generic\_NETCDF\_CF\_FILES](../tools/converttohdf5.md)
+The wgrib2.exe is a command-line program and presents a wide list of options. The best option is to convert the grib2 file into a netcdf file using [ConvertToHDF5 Generic_NETCDF_CF_FILES](../tools/converttohdf5.md)
 
-Also can be obtained an ascii file and in order to reduce the computing space, the extracted domain can be limited through the option -small\_grib. A typical command-line using this option would be:
+Also can be obtained an ascii file and in order to reduce the computing space, the extracted domain can be limited through the option -small_grib. A typical command-line using this option would be:
 
 ```
 wgrib2 20090101/gfs.t00z.pgrb2f00 -small_grib -10:11 30:45 Smallergrib00.grib
@@ -58,55 +58,13 @@ It has been created an script to extract the variables needed for modelling purp
 
 Once executed, the outputs are .dat files each containing a different property with the following correspondences:
 
-- HR2m - Relative Humidity 2 m above ground 
-
-$$
-%
-$$
-
-
-- LAND - Land Cover (1=land, 0=sea) 
-
-$$
-Proportion
-$$
-
-
-- MSLP - Pressure Reduced to Mean Sea Level 
-
-$$
-Pa
-$$
-
-
-- TCDC - Total Cloud Cover 
-
-$$
-%
-$$
-
-
-- TMP2m - Temperature 2 m above ground 
-
-$$
-K
-$$
-
-
-- U - U-Component of Wind 10 m above ground 
-
-$$
-m/s
-$$
-
-
-- V - V-Component of Wind 10 m above ground 
-
-$$
-m/s
-$$
-
-
+- HR2m - Relative Humidity 2 m above ground \[%\]
+- LAND - Land Cover (1=land, 0=sea) \[Proportion\]
+- MSLP - Pressure Reduced to Mean Sea Level \[Pa\]
+- TCDC - Total Cloud Cover \[%\]
+- TMP2m - Temperature 2 m above ground \[K\]
+- U - U-Component of Wind 10 m above ground \[m/s\]
+- V - V-Component of Wind 10 m above ground \[m/s\]
 
 ## ASCII to HDF5 format
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Module GlobalData, is responsible for global variables such as [properties names](../reference/properties-names.md) and ID numbers, error types ID, constants and parameters, classes registration numbers and some derived types used frequently in other classes (e.g. type T\_Size, a derived type containing the matrixes bounds).
+Module GlobalData, is responsible for global variables such as [properties names](../reference/properties-names.md) and ID numbers, error types ID, constants and parameters, classes registration numbers and some derived types used frequently in other classes (e.g. type T_Size, a derived type containing the matrixes bounds).
 
 This is mainly static information needed and used equally by all classes. Some methods are also provided by this class, mainly related to checking properties names spelling and attributing ID numbers. It also handles error and used keywords logging and I/O units.
 
@@ -13,7 +13,7 @@ This is mainly static information needed and used equally by all classes. Some m
 - CheckPropertyName
 - GetPropertyName
 - GetPropertyIDNumber
-- Check\_Particulate\_Property
+- Check_Particulate_Property
 - TranslateTypeZUV
 
 ### I/O management
@@ -38,6 +38,6 @@ This is mainly static information needed and used equally by all classes. Some m
 - DeassociateInstance
 - RegisterModule
 - ModuleIsRegistered
-- Read\_Lock
-- Read\_Unlock
+- Read_Lock
+- Read_Unlock
 - VerifyReadLock

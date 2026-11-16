@@ -42,6 +42,6 @@ $ move *.* This_snap
 
 - [2eps](../building/windows/convert.md)
 - [Convert](../building/windows/convert.md)
-- [Jpeg2ps](../building/windows/README.md#jpeg2ps#jpeg2ps)
+- [Jpeg2ps](../building/windows/README.md#jpeg2ps)
 - [Winzip](../reference/winzip.md)
 - [2jpeg](../building/windows/2jpeg.md)

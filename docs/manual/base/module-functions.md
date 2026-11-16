@@ -11,15 +11,15 @@ Module Functions is a set of scientific mathematical functions or routines that 
 - SetMatrixValue
 - ReadTimeKeyWords
 - ConstructPropertyID
-- Check\_Hydrodynamic\_Property
-- Check\_Water\_Property
+- Check_Hydrodynamic_Property
+- Check_Water_Property
 - GetDataOnlineString
 - IsOdd
-- Chunk\_K
-- Chunk\_J
+- Chunk_K
+- Chunk_J
 - TimeToString
 - ChangeSuffix
-- SortNumerically\_3D
+- SortNumerically_3D
 
 ### Math & Solvers
 
@@ -27,11 +27,11 @@ Module Functions is a set of scientific mathematical functions or routines that 
 - CholeskyFactorization
 - CholLinSystemSolver
 - TriangLinSystemSolver
-- THOMAS\_2D
-- THOMAS\_3D
+- THOMAS_2D
+- THOMAS_3D
 - THOMASZ
 - tridag
-- tridag\_cyclic
+- tridag_cyclic
 - CGS2D
 - LISOLVE
 - SIPSOL
@@ -44,7 +44,7 @@ Module Functions is a set of scientific mathematical functions or routines that 
 ### Advection & Diffusion & Boundary Conditions
 
 - ComputeAdvectionFace
-- ComputeAdvection1D\_V2
+- ComputeAdvection1D_V2
 - ComputeAdvection1D
 - ComputeAdvection3D
 - ComputeDiffusion3D
@@ -109,6 +109,6 @@ Module Functions is a set of scientific mathematical functions or routines that 
 ### Biogeochemistry & Water quality
 
 - PhytoLightLimitationFactor
-- ComputeT90\_Canteras
-- ComputeT90\_Chapra
+- ComputeT90_Canteras
+- ComputeT90_Chapra
 - SettlingVelocity

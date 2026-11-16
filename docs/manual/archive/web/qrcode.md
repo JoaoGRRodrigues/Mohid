@@ -6,7 +6,7 @@
 
 ## Hello world example
 
-[http://farm4.static.flickr.com/3093/2824480513\_cb08e32b3b\_m.jpg](http://farm4.static.flickr.com/3093/2824480513_cb08e32b3b_m.jpg)
+[http://farm4.static.flickr.com/3093/2824480513_cb08e32b3b_m.jpg](http://farm4.static.flickr.com/3093/2824480513_cb08e32b3b_m.jpg)
 
 ### Python
 

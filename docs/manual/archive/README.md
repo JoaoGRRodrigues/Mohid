@@ -64,31 +64,19 @@ This wiki code outputs the folowing:
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-[http://en.wikipedia.org/wiki/Finite\_volume\_method](http://en.wikipedia.org/wiki/Finite_volume_method)
+[http://en.wikipedia.org/wiki/Finite_volume_method](http://en.wikipedia.org/wiki/Finite_volume_method)
 
 ### Fine volume method
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-[
-
-$$
-1
-$$
-
-](http://en.wikipedia.org/wiki/Finite_volume_method)
+[\[1\]](http://en.wikipedia.org/wiki/Finite_volume_method)
 
 ### Finite Volume Method
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-[
-
-$$
-1
-$$
-
-](http://en.wikipedia.org/wiki/Finite_volume_method)
+[\[1\]](http://en.wikipedia.org/wiki/Finite_volume_method)
 
 ### Module:TestExec
 
@@ -131,13 +119,13 @@ Time: 21:05
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-{{#invoke:os|execute|whoami}}
+
 
 ### Test basic html
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-<html>**HTMLEXT\_ACTIVE**</html>
+<html>**HTMLEXT_ACTIVE**</html>
 
 ### Test iframe lfi
 
@@ -157,22 +145,16 @@ Time: 21:05
 
 Test page with math formulas:
 
-**\\write18{echo RCE > C:\\inetpub\\wwwroot\\wiki\\rce\_proof.txt}**
+** \\write18{echo RCE > C:\\inetpub\\wwwroot\\wiki\\rce_proof.txt}**
 
-**\\input{|"whoami"}**
+** \\input{|"whoami"}**
 
-**\\immediate\\write18{whoami}**
+** \\immediate\\write18{whoami}**
 
-Regular math: **E = mc^2**
+Regular math: ** E = mc^2**
 
 ### Water content
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-[
-
-$$
-1
-$$
-
-](http://en.wikipedia.org/wiki/Water_content)
+[\[1\]](http://en.wikipedia.org/wiki/Water_content)

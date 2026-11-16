@@ -16,7 +16,7 @@ MOHID computes fluxes using components in cell referential (aligned with U and V
 
 MOHID treated until now (Dez 2015) vectorial properties as two scalar properties, defined separately.
 
-This an example of wind velocity X and wind velocity Y in Atmosphere\_X.dat file until now:
+This an example of wind velocity X and wind velocity Y in Atmosphere_X.dat file until now:
 
 ```
 <beginproperty>
@@ -97,7 +97,7 @@ Module Waves
 
 ### What kind of input type is allowed for the new vectorial properties?
 
-for now only constant, timeserie, ascii\_file and hdf inputs are allowed. However new developments are welcome for other types of input.
+for now only constant, timeserie, ascii_file and hdf inputs are allowed. However new developments are welcome for other types of input.
 
 ### How does ModuleFillMatrix now works?
 

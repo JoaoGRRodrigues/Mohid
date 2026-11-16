@@ -16,9 +16,9 @@ There is one thing that allow this project to be easily cross-platformed:
 
 ### Platform/Compiler expandible
 
-The project makefile's DAG meta-tree shows currently 4 platforms/compilers available: windows *Win.mk*, linux *Nix.mk*, linux with [Portland Group Fortran](http://www.pgroup.com/) *Nix\_pgf.mk* and macintosh *Mac.mk*.
+The project makefile's DAG meta-tree shows currently 4 platforms/compilers available: windows *Win.mk*, linux *Nix.mk*, linux with [Portland Group Fortran](http://www.pgroup.com/) *Nix_pgf.mk* and macintosh *Mac.mk*.
 
-- To add a new compiler and/or a new architecture, one needs to change the main *Makefile* and create a new *Arch\_Fcomp.mk* file.
+- To add a new compiler and/or a new architecture, one needs to change the main *Makefile* and create a new *Arch_Fcomp.mk* file.
 
 ### Action extensible
 
@@ -28,7 +28,7 @@ An *action* is one given process to apply to the whole project: it could be to *
 
 ### Module extensible
 
-The MOHID project has a modular nature. In this makefile project, each module is subject to the same overall actions and each module is contained in a light-blue folder in the image (*MohidWater*, *Mohid\_Base\_1*, *Mohid\_Base\_2* and *...*).
+The MOHID project has a modular nature. In this makefile project, each module is subject to the same overall actions and each module is contained in a light-blue folder in the image (*MohidWater*, *Mohid_Base_1*, *Mohid_Base_2* and *...*).
 
 - To add a new file to an existing module: one must edit the *Makefile* file within the module's folder.
 - To add a new module: one must create a new folder, name it after the module, copy the module's files, create the corresponding *Makefile* file. Finally, one must edit the *Nix.mk* file from the *root* folder.
@@ -67,7 +67,7 @@ Get the latest version of the code at [http://mohid.codeplex.com](http://mohid.c
 >make Nix
 ```
 
-Please edit the *nix\_template.mk* first and save it as *nix.mk*
+Please edit the *nix_template.mk* first and save it as *nix.mk*
 
 - Clean
 
@@ -75,7 +75,7 @@ Please edit the *nix\_template.mk* first and save it as *nix.mk*
 >make Nix.clean
 ```
 
-Please edit the *../makefiles/Sos\_template.mk* file first and save it as *../makefiles/Sos.mk*.
+Please edit the *../makefiles/Sos_template.mk* file first and save it as *../makefiles/Sos.mk*.
 
 - Install
 

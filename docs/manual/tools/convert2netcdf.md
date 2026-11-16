@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Convert2netcdf** is a tool to convert MOHID results files written in [HDF5](hdf5.md) format into [netcdf](../archive/linux/netcdf.md). This tool makes use of [ModuleNETCDF](../water/modules/modulenetcdf.md) (under development and to be included in [MOHID Base 1](../water/README.md#mohid-base-1#mohid-base-1)). Optionally, you can extract only specified datasets.
+**Convert2netcdf** is a tool to convert MOHID results files written in [HDF5](hdf5.md) format into [netcdf](../archive/linux/netcdf.md). This tool makes use of [ModuleNETCDF](../water/modules/modulenetcdf.md) (under development and to be included in [MOHID Base 1](../water/README.md#mohid-base-1)). Optionally, you can extract only specified datasets.
 
 ## Input data file
 

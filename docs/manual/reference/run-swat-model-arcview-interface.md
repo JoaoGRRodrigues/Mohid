@@ -12,15 +12,15 @@
 
     ArcView SWAT extension
 
-6. Go to Explorer and create a directory for the project (e.g. Aplica\\AVSWAT2005\\Portugal\\Guadiana\\BaciaExemplo\\Cenario\_teste)
+6. Go to Explorer and create a directory for the project (e.g. Aplica\\AVSWAT2005\\Portugal\\Guadiana\\BaciaExemplo\\Cenario_teste)
 7. A new Window appears - SWAT interface. Click on the box "New Project" to create a new project.
-8. Choose the name for the project in the directory you created (e.g. Bacia\_crsr)
-9. Go back to Explorer and to your project directory (the just created by the project) and copy the "data" file from \\\\Datacenter\\Albufeiras\_Eutrofizacao\\ComoFazer\\1.PreparaInputs\\3.SWAT\\ExemploAplicacao\\data
+8. Choose the name for the project in the directory you created (e.g. Bacia_crsr)
+9. Go back to Explorer and to your project directory (the just created by the project) and copy the "data" file from \\\\Datacenter\\Albufeiras_Eutrofizacao\\ComoFazer\\1.PreparaInputs\\3.SWAT\\ExemploAplicacao\\data
 10. A window appears "SWAT - ArcView: DataSets". Choose the data directory just created and named "data".
 
 ### Create the project options text file
 
-Copy from \\\\Datacenter\\Albufeiras\_Eutrofizacao\\ComoFazer\\1.PreparaInputs\\3.SWAT\\ExemploAplicacao\\SimulationProperties\_xxx.txt the text file where you will write all the options that you make in this interface. This file is not used by the model, it is only a memo and will be very useful when you have a lot of old simulations and have to understand what options have you chosen and difference betwen them.
+Copy from \\\\Datacenter\\Albufeiras_Eutrofizacao\\ComoFazer\\1.PreparaInputs\\3.SWAT\\ExemploAplicacao\\SimulationProperties_xxx.txt the text file where you will write all the options that you make in this interface. This file is not used by the model, it is only a memo and will be very useful when you have a lot of old simulations and have to understand what options have you chosen and difference betwen them.
 
 Place the file in the ..\\watershed\\text folder that meanwhile was created by SWAT.
 
@@ -80,7 +80,7 @@ Inlets are inputs from point sources (e.g. WWTP or industrial sources). If runni
 
 ### Land Use and Soil Definition
 
-1. Add to the ArcView the shapes with the soil data (in data/soil) and land use (in data/uso\_solo)
+1. Add to the ArcView the shapes with the soil data (in data/soil) and land use (in data/uso_solo)
 2. Go to Menu "AVSWAT" -> "Land Use and Soil Definition". Note that the previous step (watershed delineation) is in this menu and that the next step is unavailable yet.
 
 #### In "Land Use Data Layer"
@@ -89,12 +89,12 @@ Inlets are inputs from point sources (e.g. WWTP or industrial sources). If runni
 2. Choose option: Select shape from watershed view
 3. Choose option: Format: shape
 4. Select shape: Corine2000
-5. Select the field with the land use code: code\_00
+5. Select the field with the land use code: code_00
 6. Message saying that shape was sucessfully clipped and to reclassify. Click "OK"
 7. Now we need to translate the land use codes to a land use that SWAT understands. That is done by a table with correspondences. Click "Lookup Table Grid..." button.
 8. Select: "User Table"
 9. Select: dbf file
-10. Browse for the file lucnew\_wwater.dbf in data/uso\_solo
+10. Browse for the file lucnew_wwater.dbf in data/uso_solo
 11. Now land uses in swat language appear. Check that all the values in the table have an "Land Use SWAT" code.
 12. Click Reclassify
 
@@ -102,20 +102,20 @@ Inlets are inputs from point sources (e.g. WWTP or industrial sources). If runni
 
 First you need to copy from SAMSUNG the file "usersoil.dbf" from "C:\\AVSWATX\\AVSWATDB" to your local folder "C:\\AVSWATX\\AVSWATDB". This file has the soil names (and hydraulic parameters associated) that you will have in the soil map.
 
-1. Load the soil map to the view: Click on the main menu icon "load theme" then select the folder and file *data/solo/solo\_eu\_portugal.shp*. This will load the theme in the theme view in ArcView.
+1. Load the soil map to the view: Click on the main menu icon "load theme" then select the folder and file *data/solo/solo_eu_portugal.shp*. This will load the theme in the theme view in ArcView.
 2. Then, in the "Avswatx"--> "Land Use and Soil Definition" --> "Soil Data Layer" panel, click the folder icon to load the soil shape.
 3. Choose option: Select shape from watershed view
 4. Choose option: Format: shape
-5. Select shape: Solo\_eu\_Portugal
+5. Select shape: Solo_eu_Portugal
 6. Select the field with the land use code: sltxcl
 7. Message saying that shape was sucessfully clipped and to reclassify. Click "OK"
 8. Now we need to translate the land use codes to a land use that SWAT understands. That is done by a table with correspondences. Click "Lookup Table Grid..." button.
 9. Select: dbf file
-10. Browse for the file soil\_crsr.dbf in data/solo
+10. Browse for the file soil_crsr.dbf in data/solo
 11. Now soil types in swat language appear. Check that all the values in the table have an "Name" code.
 12. Click Reclassify
 
-\_\_\_\_\_
+_____
 
 1. Click "Overlay" where model takes out landuse and soil infor for each subbasin.
 2. Message saying that process is complete. Click "OK".
@@ -148,23 +148,11 @@ This is a text phase where you will try to see if one HRU per sub-basin is enoug
 3. Copy from SAMSUNG file "userwgn.dbf" from "C:\\AVSWATX\\AVSWATDB" to your local folder "C:\\AVSWATX\\AVSWATDB".
 4. Edit the file in ".\\data\\weather\\LocWgn.dbf" with the name and coordinates of the station(s) near to your watershed.
 
-This file points to weather stations that will create climate variables (wind, humidity, etc..) so you should check which is closer to your watershed using the weather stations shapefile in \\\\datacenter\\Albufeiras\_Eutrofizacao\\Produtos\\ProjectosGIS\\ShapesBase\\EM\_WGNSWAT\_PT. Station name is in this shape file and coordinates in the file "C:\\AVSWATX\\AVSWATDB\\userwgn.dbf" searching for station name. Please remind to use a station with **no data fails** in file userwgn.dbf. http://content.screencast.com/users/GRiflet/folders/Jing/media/49b8fe23-0cf1-49ef-8a72-2bb2b93fa851/2009-11-03\_1521.png
+This file points to weather stations that will create climate variables (wind, humidity, etc..) so you should check which is closer to your watershed using the weather stations shapefile in \\\\datacenter\\Albufeiras_Eutrofizacao\\Produtos\\ProjectosGIS\\ShapesBase\\EM_WGNSWAT_PT. Station name is in this shape file and coordinates in the file "C:\\AVSWATX\\AVSWATDB\\userwgn.dbf" searching for station name. Please remind to use a station with **no data fails** in file userwgn.dbf. http://content.screencast.com/users/GRiflet/folders/Jing/media/49b8fe23-0cf1-49ef-8a72-2bb2b93fa851/2009-11-03_1521.png
 
 1. Go to menu "AVSWAT"->"SWAT View" then menu "Input"->"Weather Stations"
-2. "Rainfall data" --> "Raingages" --> "Locations Table" 
-
-$$
-browse
-$$
-
- and choose file ".\\data\\weather\\LocRain.dbf"
-3. "Weather simulation data" --> "Custom database" --> "Locations table" 
-
-$$
-browse
-$$
-
- and choose file ".\\data\\weather\\LocWgn.dbf"
+2. "Rainfall data" --> "Raingages" --> "Locations Table" \[browse\] and choose file ".\\data\\weather\\LocRain.dbf"
+3. "Weather simulation data" --> "Custom database" --> "Locations table" \[browse\] and choose file ".\\data\\weather\\LocWgn.dbf"
 4. Click "Ok".
 5. Substitute file ".\\watershed\\tables\\PCP.dbf" all values -99. by adequate values of precipitation (they should not appear as noted in the first step).
 6. "input"-->"build all default"-->"yes"-->"continue".
@@ -176,10 +164,10 @@ $$
 ### Run SWAT in the Interface
 
 1. "Simulation"-->"RunSwat"
-2. Click on "Bsn" button...http://content.screencast.com/users/GRiflet/folders/Jing/media/ce39e5c4-2fd2-4cd3-8a1e-50f0790e9069/2009-11-03\_1303.png
+2. Click on "Bsn" button...http://content.screencast.com/users/GRiflet/folders/Jing/media/ce39e5c4-2fd2-4cd3-8a1e-50f0790e9069/2009-11-03_1303.png
 3. Change the "Potential ET Method" to "Pennman-Monteith method".
 4. "Setup SWAT Run"
-5. "Run SWAT". http://content.screencast.com/users/GRiflet/folders/Jing/media/0dd9d060-b488-4f9b-acbb-7a8d70e3e04b/2009-11-03\_1543.png http://content.screencast.com/users/GRiflet/folders/Jing/media/1193a02d-4b8f-4e06-8e7d-a27ab5bb9d16/2009-11-03\_1554.png
+5. "Run SWAT". http://content.screencast.com/users/GRiflet/folders/Jing/media/0dd9d060-b488-4f9b-acbb-7a8d70e3e04b/2009-11-03_1543.png http://content.screencast.com/users/GRiflet/folders/Jing/media/1193a02d-4b8f-4e06-8e7d-a27ab5bb9d16/2009-11-03_1554.png
 6. Everything should run fine. Most errors should occur from bad formatting and/or bad data in the dbf input data files. The precipitation file and the LocWgn and LocRain files.
 7. You may not wait until the end of SWAT simulation and close the run window. This is because SWAT run in its original form creates giant and confuse outputs so there has been created a MOHID version of SWAT. This version runs the original code of SWAT bur produces output in MOHID language (e.g. timeseries that can be read in Timeserie Editor or be used as discharges in MOHID). See next step to know what to do to have your outputs in MOHID way.
 
@@ -209,8 +197,8 @@ By default the first HRU is selected (number, land use, soil are presented and s
 Lets change in all HRU's the hydraulic response of soil to feed the river (groundwater or baseflow)
 
 1. Click the .gw
-2. Change GW\_DELAY to 3 days
-3. Change ALPHA\_BF to 1 days
+2. Change GW_DELAY to 3 days
+3. Change ALPHA_BF to 1 days
 4. Click OK
 5. In >LandUses select radio button to >selected and select all the land uses of your project (old down shift and click to multiple selections)
 6. In >Soils select radio button to selected and select all the soils of your project (old down shift and click to multiple selections)
@@ -232,7 +220,7 @@ Have to find one HRU for each soil type that exists in the watershed. These HRU'
 Do the next steps for each soil type (and HRU representing that soil type):
 
 1. Click the .sol
-2. Change USLE\_K to 0.3 (originally is 0.1)
+2. Change USLE_K to 0.3 (originally is 0.1)
 3. Click OK
 4. In >LandUses select radio button to >selected and select all the land uses of your project (old down shift and click to multiple selections)
 5. In >Soils do not do anything! It will apply those settings to all land uses with only that soil type.
@@ -257,11 +245,11 @@ Have to find all the agriculture crops (e.g. AGRC, AGRR, ORCD, RICE...) and sele
 1. Click the .mgt
 2. Double click >Auto fetilization init
 3. Change >fertilizer to 28-10-10 - it is a standard fertilizer (28%N, 10%P, 10%K)
-4. Change >AUTO\_NSTRS to 0.93 - it is the treshold of the plant stress to start applying fertilizer
-5. Change >AUTO\_NAPP to 50 - it is the maximum amount of fertilizer (N) in one application (kg)
-6. Change >AUTO\_NYR to 300 - it is the maximum amount of fertilizer (N) in one year (kg)
-7. Change >AUTO\_EFF to 1.3 - it is the fertilization efficiency
-8. Change >AFRT\_SURFACE to 0.2 - it is the fraction of fertilizer applied in the first layer of soil
+4. Change >AUTO_NSTRS to 0.93 - it is the treshold of the plant stress to start applying fertilizer
+5. Change >AUTO_NAPP to 50 - it is the maximum amount of fertilizer (N) in one application (kg)
+6. Change >AUTO_NYR to 300 - it is the maximum amount of fertilizer (N) in one year (kg)
+7. Change >AUTO_EFF to 1.3 - it is the fertilization efficiency
+8. Change >AFRT_SURFACE to 0.2 - it is the fraction of fertilizer applied in the first layer of soil
 
     ![](../assets/images/Swat_MGTParameter.png)
 
@@ -283,7 +271,7 @@ ArcView SWAT MGT parameter change
 
 ### Run the modified executable outside the interface
 
-Run the simulation outside the interface with SWAT\_MOHID as decribed previously in [Run SWAT with MOHID outputs](../overview/mohid-swat.md). Remind that the txtinout folder that the interface uses where input files are written (in ..\\scenarios\\default\\txtinout) has to be copied to simulation folder and then run so that the changes made are accounted when running the modified executable.
+Run the simulation outside the interface with SWAT_MOHID as decribed previously in [Run SWAT with MOHID outputs](../overview/mohid-swat.md). Remind that the txtinout folder that the interface uses where input files are written (in ..\\scenarios\\default\\txtinout) has to be copied to simulation folder and then run so that the changes made are accounted when running the modified executable.
 
 ## Run SWAT with Point Sources
 
@@ -295,7 +283,7 @@ If running with point sources:
 
 ### Run the modified executable outside the interface
 
-Run the simulation outside the interface with SWAT\_MOHID as decribed previously in [Run SWAT with MOHID outputs](../overview/mohid-swat.md). Remind that the txtinout folder that the interface uses where input files are written (in ..\\scenarios\\default\\txtinout) has to be copied to simulation folder and then run so that the changes made are accounted when running the modified executable.
+Run the simulation outside the interface with SWAT_MOHID as decribed previously in [Run SWAT with MOHID outputs](../overview/mohid-swat.md). Remind that the txtinout folder that the interface uses where input files are written (in ..\\scenarios\\default\\txtinout) has to be copied to simulation folder and then run so that the changes made are accounted when running the modified executable.
 
 ### SWAT Project with/without point sources
 

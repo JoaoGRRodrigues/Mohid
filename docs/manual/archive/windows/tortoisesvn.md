@@ -1,14 +1,14 @@
 # TortoiseSvn
 
-**TortoiseSvn** is a very cool [svn](../archive/linux/svn.md) client for windows with a cool interface that blends seamlessly with the windows explorer.
+**TortoiseSvn** is a very cool [svn](../linux/svn.md) client for windows with a cool interface that blends seamlessly with the windows explorer.
 
 ## How to use the svn client with Mohid
 
-Simply install presto the tortoise svn [Tortoise svn](http://tortoisesvn.tigris.org/). You can also see [video screencasts](../archive/web/codeplex.md) instead of the picture-only tutorial below...
+Simply install presto the tortoise svn [Tortoise svn](http://tortoisesvn.tigris.org/). You can also see [video screencasts](../web/codeplex.md) instead of the picture-only tutorial below...
 
 ### Creating a new local repo
 
-Here's the quick how-to add a new **mohid\_net** project from our local intranet repository:
+Here's the quick how-to add a new **mohid_net** project from our local intranet repository:
 
 - Create a new folder:
 
@@ -44,5 +44,5 @@ Here's the quick how-to add a new **mohid\_net** project from our local intranet
 
 ## External References
 
-- <goto>TortoiseSvn</goto>
-- <goto>RapidSvn</goto>
+- [TortoiseSvn](tortoisesvn.md)
+- [RapidSvn](../web/rapidsvn.md)

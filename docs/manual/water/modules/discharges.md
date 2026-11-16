@@ -12,33 +12,33 @@ Module Discharges handles all the point discharges in Mohid Water Modelling Syst
 
 #### Horizontal
 
-A discharge can be made in a point, along a line or in a polygon. The keyword to define the type of horizontal emission is SPATIAL\_EMISSION, the options are: **Point**, **Line** and **Polygon**. The default option is **Point**.
+A discharge can be made in a point, along a line or in a polygon. The keyword to define the type of horizontal emission is SPATIAL_EMISSION, the options are: **Point**, **Line** and **Polygon**. The default option is **Point**.
 
 ```
 SPATIAL_EMISSION : Point
 ```
 
-A point can be define using the grid coordinates (COORD\_X, COORD\_Y)
+A point can be define using the grid coordinates (COORD_X, COORD_Y)
 
 ```
 COORD_X : 8.6
 COORD_Y : 42.3
 ```
 
-or specifing the cell (I\_CELL - line, J\_CELL - column)
+or specifing the cell (I_CELL - line, J_CELL - column)
 
 ```
 I_CELL : 23
 J_CELL : 43
 ```
 
-To define a discharge along a line is necessary to specify a file with the [Lines](../../io/formats/lines.md) format. The keyword used is SPATIAL\_FILE.
+To define a discharge along a line is necessary to specify a file with the [Lines](../../io/formats/lines.md) format. The keyword used is SPATIAL_FILE.
 
 ```
 SPATIAL_FILE : Discharge.lin
 ```
 
-To define a discharge in a box is necessary to specify a file with the [Polygon](../../io/formats/polygons.md) format. The keyword used is SPATIAL\_FILE.
+To define a discharge in a box is necessary to specify a file with the [Polygon](../../io/formats/polygons.md) format. The keyword used is SPATIAL_FILE.
 
 ```
 SPATIAL_FILE : Discharge.xy
@@ -46,7 +46,7 @@ SPATIAL_FILE : Discharge.xy
 
 #### Vertical
 
-**VERTICAL\_DISCHARGE** - this keyword is used to specify the discharge distribution in the vertical direction:
+**VERTICAL_DISCHARGE** - this keyword is used to specify the discharge distribution in the vertical direction:
 
 ```
 1 – discharge in the bottom cell
@@ -82,30 +82,30 @@ The discharge can have four possible types:
 **overflow**: This discharge type aims to simulate the flow associate to a spillway. The flow in this case is function of the water level in the discharge location. The spillway is a structure used to provide the controlled release of flows from a dam or levee into a downstream area, typically being the river that was dammed. In the UK they may be known as overflow channels
 
 ```
-Q=\sqrt{2g}\cdot w_{c_{_}}{\cdot }\Delta H^{1.5} \cdot w_{L}
+ Q=\sqrt{2g}\cdot w_{c_{_}}{\cdot }\Delta H^{1.5} \cdot w_{L}
 
 ```
 
 ```
-Q - flow\\
+ Q - flow\\
 ```
 
 ```
-w_{c_{_}} - weir \ (\ or \ spillway) \ empiric \ coefficient \\
+ w_{c_{_}} - weir \ (\ or \ spillway) \ empiric \ coefficient \\
 ```
 
 ```
-w_{L_{_}} - weir \ (\ or \ spillway) \ width \\
+ w_{L_{_}} - weir \ (\ or \ spillway) \ width \\
 ```
 
 ```
-\Delta H = SSH - w_{z_{_}}
+ \Delta H = SSH - w_{z_{_}}
 ```
 
 $SSH - Sea \ Surface \ Height$
 
 ```
-w_{z_{_}} - crest \ height \ or \ sill \ of \ the \ weir
+ w_{z_{_}} - crest \ height \ or \ sill \ of \ the \ weir
 ```
 
 Keywords related with the **flow over** type discharge
@@ -128,16 +128,16 @@ CREST_HEIGTH :
 **valve**: This discharge aims to simulate the flow associated to a hydraulic valve. The flow in this case is function of the water level difference between two locations. In this type of discharge it is necessary to define for each discharge two locations. The flow between the two locations can be two-way (normal valve) or one-way (or check valve).
 
 ```
-Q=\sqrt{2g \cdot \Delta H}\cdot v_{c_{_}} \cdot A
+ Q=\sqrt{2g \cdot \Delta H}\cdot v_{c_{_}} \cdot A
 
 ```
 
 ```
-Q - flow\\
+ Q - flow\\
 ```
 
 ```
-v_{c_{_}} - valve \ empiric \ coefficient \\
+ v_{c_{_}} - valve \ empiric \ coefficient \\
 ```
 
 $\Delta H = SSH_{a} -SSH_{b}$
@@ -145,7 +145,7 @@ $\Delta H = SSH_{a} -SSH_{b}$
 $SSH_{x} - Sea \ Surface \ Height \ in \ point \ x$
 
 ```
-A - area \ of \ the \ valve. \ The \ valve \ is \ assumed \ to \ be \ circular
+ A - area \ of \ the \ valve. \ The \ valve \ is \ assumed \ to \ be \ circular
 ```
 
 ```
@@ -201,11 +201,11 @@ BYPASS_SIDE : 1/2
 
 The user can define a velocity to the discharge via the follow keyword
 
-DEFAULT\_VELOCITY\_VALUE : vx vy vz
+DEFAULT_VELOCITY_VALUE : vx vy vz
 
-The momentum discharge need to by connected in the hydrodynamic\_x.dat input file via the follow keyword
+The momentum discharge need to by connected in the hydrodynamic_x.dat input file via the follow keyword
 
-MOMENTUM\_DISCHARGE  : 1
+MOMENTUM_DISCHARGE  : 1
 
 The follow image shows a symmetry test for a:
 
@@ -223,19 +223,19 @@ The follow image shows a symmetry test for a:
 
 ### MohidJet discharge
 
-The user can define a discharge compute by MohidJet (Buoyant Jet Integral Model) [http://www.mohid.com/PublicData/Products/Manuals/MOHIDJET.pdf](http://www.mohid.com/PublicData/Products/Manuals/MOHIDJET.pdf) Need to define the follow in the discharges\_x.dat input file
+The user can define a discharge compute by MohidJet (Buoyant Jet Integral Model) [http://www.mohid.com/PublicData/Products/Manuals/MOHIDJET.pdf](http://www.mohid.com/PublicData/Products/Manuals/MOHIDJET.pdf) Need to define the follow in the discharges_x.dat input file
 
 !MohidJet
 
-DISCHARGE\_TYPE  : 6
+DISCHARGE_TYPE  : 6
 
-MOHID\_JET\_FILE  : ..\\data\\MohidJet\_West.dat
+MOHID_JET_FILE  : ..\\data\\MohidJet_West.dat
 
-The momentum discharge need to by connected in the hydrodynamic\_x.dat input file via the follow keyword
+The momentum discharge need to by connected in the hydrodynamic_x.dat input file via the follow keyword
 
-WATER\_DISCHARGES  : 1
+WATER_DISCHARGES  : 1
 
-MOMENTUM\_DISCHARGE  : 1
+MOMENTUM_DISCHARGE  : 1
 
 The follow image shows two MohidJet discharges:
 
@@ -298,9 +298,9 @@ Discharges into MOHID River Network can be automatically linked to SWAT model di
 
 Steps after creating the discharge time serie (with time and flow as minimum):
 
-1 - Have to activate module discharges so that Discharges\_X.dat in input data file appears in the simulation (in Simulation Properties add the model if not present)
+1 - Have to activate module discharges so that Discharges_X.dat in input data file appears in the simulation (in Simulation Properties add the model if not present)
 
-2 - The block <begindischarge> <enddischarge> has to appear in Discharges\_X.dat and can add the number of discharge properties that you want (or none, if only water discharged).
+2 - The block <begindischarge> <enddischarge> has to appear in Discharges_X.dat and can add the number of discharge properties that you want (or none, if only water discharged).
 
 ```
 <begindischarge>
@@ -321,9 +321,9 @@ TIME_SERIE_COLUMN             : 3
 
 To know the node ID of your discharge, do a query on the GIS, on top of the drainage network in the point required. The query result (if pointing to a river section) will say the node ID.
 
-DATA\_BASE\_FILE is the file that was prepared with at least time and flow. If giving also property timeserie (e.g nitrate) also need a column to nitrate in the file. FLOW\_COLUMN is the column with flow and TIME\_SERIE\_COLUMN is the column with the property time serie.
+DATA_BASE_FILE is the file that was prepared with at least time and flow. If giving also property timeserie (e.g nitrate) also need a column to nitrate in the file. FLOW_COLUMN is the column with flow and TIME_SERIE_COLUMN is the column with the property time serie.
 
-3 - have to activate discharges (DISCHARGES : 1) in DrainageNetwork\_X.dat
+3 - have to activate discharges (DISCHARGES : 1) in DrainageNetwork_X.dat
 
 4 - run the simulation and compare flow results in HDF or in node timeseries between a simulation with the discharge and without it (the discharge will only appear in the node timeseries results that are downstream of the inputed discharge).
 
@@ -331,15 +331,15 @@ DATA\_BASE\_FILE is the file that was prepared with at least time and flow. If g
 
 To add a discharge in Porous Media or Runoff the discharge file is similar to MOHID Water.
 
-Just need to know that K\_CELL is 0 (zero) for discharge in Runoff and the layer number for Porous Media.
+Just need to know that K_CELL is 0 (zero) for discharge in Runoff and the layer number for Porous Media.
 
-And correspondingly in PorousMedia\_X.dat and Runoff\_X.dat need to have the keyword
+And correspondingly in PorousMedia_X.dat and Runoff_X.dat need to have the keyword
 
 ```
 DISCHARGES : 1
 ```
 
-If discharging also properties, in PorousMedia Properties\_X.dat and Runoff Properties\_X.dat in the discharged properties need to add also inside the proeprty block
+If discharging also properties, in PorousMedia Properties_X.dat and Runoff Properties_X.dat in the discharged properties need to add also inside the proeprty block
 
 ```
 DISCHARGES : 1

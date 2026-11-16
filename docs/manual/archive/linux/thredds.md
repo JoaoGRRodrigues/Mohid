@@ -48,7 +48,7 @@ Username and password are the usual maretec administrator login and password.
 
 ## Directory tree structure
 
-### $TOMCAT\_HOME/content/thredds
+### $TOMCAT_HOME/content/thredds
 
 - **threddsConfig.xml**: configuration xml file of the Thredds server.
 - **catalog.xml**: catalog file containing links to all the subcatalogs containing the netcdf data.

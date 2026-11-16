@@ -21,7 +21,7 @@ Then, get the [MAME src code](http://goo.gl/LeBO),
 
 ## Troubleshoot
 
-**Q: When compiling I get error *ompiling src/emu/video/9927tms9927.c... cc1plus: warnings being treated as errors src/emu/video/tms9927.c: In function 'void generic\_access(const device\_config\*, offs\_t)': src/emu/video/tms9927.c:142: error: array subscript is above array bounds*. What should I do?**
+**Q: When compiling I get error *ompiling src/emu/video/9927tms9927.c... cc1plus: warnings being treated as errors src/emu/video/tms9927.c: In function 'void generic_access(const device_config\*, offs_t)': src/emu/video/tms9927.c:142: error: array subscript is above array bounds*. What should I do?**
 
 A: Edit the makefile and uncomment and edit the line
 

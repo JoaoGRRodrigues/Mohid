@@ -1,6 +1,6 @@
 # Open Boundary conditions
 
-## WaterProperties\_x.dat
+## WaterProperties_x.dat
 
 For each property it's possible to define a specific boundary condition. The available options are:
 

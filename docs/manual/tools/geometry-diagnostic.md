@@ -4,7 +4,7 @@ Once the vertical discretization or [geometry](../base/module-geometry.md) is im
 
 ## Source-safe whereabouts
 
-The latest source code is in the **Mohid\_V4** repository, inside the **small tools\\GeometryDiagnostic** folder.
+The latest source code is in the **Mohid_V4** repository, inside the **small tools\\GeometryDiagnostic** folder.
 
 ## Configuration
 

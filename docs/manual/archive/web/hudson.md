@@ -22,13 +22,13 @@ I'm going to install Hudson into c:\\Hudson.
 
 Copy the hudson.war file to c:\\Hudson
 
-In command line go to c:\\Hudson and start Hudson through "java -DHUDSON\_HOME=data -jar hudson.war". Verify that you can access Hudson on web browser through [http://localhost:8080](http://localhost:8080)
+In command line go to c:\\Hudson and start Hudson through "java -DHUDSON_HOME=data -jar hudson.war". Verify that you can access Hudson on web browser through [http://localhost:8080](http://localhost:8080)
 
 (To stop Hudson press Ctrl+C in the command prompt where you started Hudson)
 
 #### To start it at boot time
 
-Create this [batch](../building/windows/batch.md) file in the *c:\\hudson* folder *StartHudson.bat*:
+Create this [batch](../../building/windows/batch.md) file in the *c:\\hudson* folder *StartHudson.bat*:
 
 ```
 c:
@@ -113,7 +113,7 @@ You can install hudson as windows service in [http://localhost:8080/manage](http
 
 ### mohidTester
 
-The executable process: 1. Check if the Test.xml file passed through argument is valid. 2. For each Level in configuration from BaseDirectory will a. Copy from that level data folder Nomfich\_”RunNumber”.dat to exe folder Nomfich.dat b. Execute MohidExecutable for that level exe folder c. Validate if needed files for compare have been created d. For each ResultCompare will compare from res folder to the respective in ReferenceBaseDirectory i. Number of parameters ii. For each parameter 1. Max value 2. Min value 3. Begin instant 4. End instant 5. Model domain name 6. Name without parameter 7. Parameter 8. Parameter name 9. Number of time series values 10. For each time series values a. Compare datetime, id and value
+The executable process: 1. Check if the Test.xml file passed through argument is valid. 2. For each Level in configuration from BaseDirectory will a. Copy from that level data folder Nomfich_”RunNumber”.dat to exe folder Nomfich.dat b. Execute MohidExecutable for that level exe folder c. Validate if needed files for compare have been created d. For each ResultCompare will compare from res folder to the respective in ReferenceBaseDirectory i. Number of parameters ii. For each parameter 1. Max value 2. Min value 3. Begin instant 4. End instant 5. Model domain name 6. Name without parameter 7. Parameter 8. Parameter name 9. Number of time series values 10. For each time series values a. Compare datetime, id and value
 
 Tests.xml
 

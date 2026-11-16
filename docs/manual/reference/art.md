@@ -10,34 +10,34 @@ ART (Automatic Running Tool) is a tool for managing operational models, this too
 
 #### ARTCONFIG
 
-- MAIN\_PATH - MANDATORY - path to the main project, needs to exist.
-- OPERATIONAL\_MODE - if set to \`1\` it sets \`ART\` mode to run as an operational model, it uses the current day on the machine and \`REF\_DAYS\_TO\_START\` to calculate the \`START\_DATE\` and uses \`DAYS\_PER\_RUN\` and \`NUMBER\_OF\_RUNS\` to calculate \`END\_DATE\`. If set to \`0\` or non existent it defaults to a single run (using \`START\_DATE\` and \`END\_DATE\` parameters instead of calculating them).
-- RUN\_PREPROCESSIN - if set to \`1\` it will run all programs defined in the \`PRE\_PROCESSING\` block. If set to \`0\` or non existent it will default to not running them.
-- DAYS\_PER\_RUN
-- REF\_DAYS\_TO\_START - reference day relative to current day on the machine. It sets the \`START\_DATE\` for \`OPERATIONAL\_MODE\`.
-- NUMBER\_OF\_RUNS
+- MAIN_PATH - MANDATORY - path to the main project, needs to exist.
+- OPERATIONAL_MODE - if set to \`1\` it sets \`ART\` mode to run as an operational model, it uses the current day on the machine and \`REF_DAYS_TO_START\` to calculate the \`START_DATE\` and uses \`DAYS_PER_RUN\` and \`NUMBER_OF_RUNS\` to calculate \`END_DATE\`. If set to \`0\` or non existent it defaults to a single run (using \`START_DATE\` and \`END_DATE\` parameters instead of calculating them).
+- RUN_PREPROCESSIN - if set to \`1\` it will run all programs defined in the \`PRE_PROCESSING\` block. If set to \`0\` or non existent it will default to not running them.
+- DAYS_PER_RUN
+- REF_DAYS_TO_START - reference day relative to current day on the machine. It sets the \`START_DATE\` for \`OPERATIONAL_MODE\`.
+- NUMBER_OF_RUNS
 - MODULE - defines which program \`ART\` is going to use to calculate the model. Allowed values: \`mohid\`, \`ww3\`, \`wrf\`.
-- RUN\_SIMULATION\_MODULE - if set to \`1\` it will run the program specified in the \`MODULE\` parameter. If set to \`0\` or non existent it will default to not running it.
-- RUN\_SIMULATION\_POST - if set to \`1\` it will run all programs defined in the \`POST\_PROCESSING\` block. If set to \`0\` or non existent it will default to not running them.
-- START\_DATE - start date to calculate model in a non-operational run, ignored if \`OPERATIONAL\_MODE\` is set.
-- END\_DATE - end date to calculate model in a non-operational run, ignored if \`OPERATIONAL\_MODE\` is set.
-- OUTPUT\_TO\_FILE - if set to \`1\` it will redirect the output of the console (\`ART\`) to a file specified by \`OUTPUT\_FILEPATH\` parameter. If \`0\` or non existent it will only output to the console where it is running.
-- OUTPUT\_FILEPATH - specifies the file path for which \`ART\` will output. If non existent and \`OUTPUT\_FILE\` is set to \`1\` it will default to the path where \`ART\` is running.
-- SEND\_EMAIL - if set to 1 it will enable sending emails upon the completion of \`MOHID\` runs. If 0 it disables that option.
-- EMAIL - list of strings that specify the address(es) of the person the email is sent to. If \`SEND\_EMAIL\` is set to 1, it has to exist, and it has to be non-empty.
+- RUN_SIMULATION_MODULE - if set to \`1\` it will run the program specified in the \`MODULE\` parameter. If set to \`0\` or non existent it will default to not running it.
+- RUN_SIMULATION_POST - if set to \`1\` it will run all programs defined in the \`POST_PROCESSING\` block. If set to \`0\` or non existent it will default to not running them.
+- START_DATE - start date to calculate model in a non-operational run, ignored if \`OPERATIONAL_MODE\` is set.
+- END_DATE - end date to calculate model in a non-operational run, ignored if \`OPERATIONAL_MODE\` is set.
+- OUTPUT_TO_FILE - if set to \`1\` it will redirect the output of the console (\`ART\`) to a file specified by \`OUTPUT_FILEPATH\` parameter. If \`0\` or non existent it will only output to the console where it is running.
+- OUTPUT_FILEPATH - specifies the file path for which \`ART\` will output. If non existent and \`OUTPUT_FILE\` is set to \`1\` it will default to the path where \`ART\` is running.
+- SEND_EMAIL - if set to 1 it will enable sending emails upon the completion of \`MOHID\` runs. If 0 it disables that option.
+- EMAIL - list of strings that specify the address(es) of the person the email is sent to. If \`SEND_EMAIL\` is set to 1, it has to exist, and it has to be non-empty.
 
 #### MOHID
 
-- MAX\_TIME - maximum time allowed for \`MOHID\` to run, if non existent it will default to \`40000\`.
-- OUTPUT\_TO\_FILE - if set to \`1\` it will redirect the output of \`MOHID\` to a file specified by \`OUTPUT\_FILEPATH\` parameter. If \`0\` or non existent it will only output to the console where it is running.
-- OUTPUT\_FILEPATH - specifies the file path for which \`MOHID\` will output. If non existent and \`OUTPUT\_FILE\` is set to \`1\` it will default to the path where \`MOHID\` is running.
-- EXE\_PATH - MANDATORY - specifies the path to where the \`MOHID\` execution file is
+- MAX_TIME - maximum time allowed for \`MOHID\` to run, if non existent it will default to \`40000\`.
+- OUTPUT_TO_FILE - if set to \`1\` it will redirect the output of \`MOHID\` to a file specified by \`OUTPUT_FILEPATH\` parameter. If \`0\` or non existent it will only output to the console where it is running.
+- OUTPUT_FILEPATH - specifies the file path for which \`MOHID\` will output. If non existent and \`OUTPUT_FILE\` is set to \`1\` it will default to the path where \`MOHID\` is running.
+- EXE_PATH - MANDATORY - specifies the path to where the \`MOHID\` execution file is
 - MPI
 - ENABLE - if set to \`1\` it will enable \`MPI\` on current run. If \`0\` or non existent it will default to ignore all the \`MPI\` block
-- EXE\_PATH - MANDATORY IF \`ENABLE\`- specifies the path to where the MOHID execution file is.
-- TOTAL\_PROCESSORS - number of total processors cores that \`MPI\` will use
+- EXE_PATH - MANDATORY IF \`ENABLE\`- specifies the path to where the MOHID execution file is.
+- TOTAL_PROCESSORS - number of total processors cores that \`MPI\` will use
 
-#### model\_name
+#### model_name
 
 ```
   - NAME

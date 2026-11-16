@@ -18,14 +18,7 @@ Before you start creating your own simulation, you may want to create a [bathyme
 
 - Edit at will the start date, the end date and the simulation time-step, then click *Ok*
 
-In order to choose an adequate time-step, $\Delta t$, we recommend to aim to a 1D [Courant number](http://en.wikipedia.org/wiki/Courant_number) of 15; $Cr = c \frac{\Delta t}{\Delta x}$. In estuarine and shelf waters, you may estimate the system maximum velocity, 
-
-$$
-c
-$$
-
-, with $c = \sqrt{g\,H} </mathtex>
-where <math>H$ is the maximum depth of your domain and $g$ is local gravitational field (approximately worth 10 m/s2). For example, with a 200 m resolution domain where maximum depth is 400 m, the approximate time step would be around 50 s.
+In order to choose an adequate time-step, $\Delta t$, we recommend to aim to a 1D [Courant number](http://en.wikipedia.org/wiki/Courant_number) of 15; $Cr = c \frac{\Delta t}{\Delta x}$. In estuarine and shelf waters, you may estimate the system maximum velocity, $c = \sqrt{gH}$, where $H$ is the maximum depth of your domain and $g$ is local gravitational field (approximately worth 10 m/s2). For example, with a 200 m resolution domain where maximum depth is 400 m, the approximate time step would be around 50 s.
 
 ## Step 3 - Configure the modules
 
@@ -33,7 +26,7 @@ To configure the modules simply double-click on the module icon in the GUI.
 
 Warning: the configuration files are made of a list pairs of keywords and values. **Only whitespaces are admitted.** Any tabulation will yield in error during the reading of the keywords.
 
-### [Module Model](../../water/modules/README.md#module-model#module-model)
+### [Module Model](../../water/modules/README.md#module-model)
 
 The module model determines the start and end times, as well as the model's time-step. It is probably already configured and should look like this:
 
@@ -133,7 +126,7 @@ If all is correctly configured, and all the input files are double-checked, we c
 
 - Select *Tools* from menu, then *Launch Mohid...*
 
-- Select the *Run\_1*, then select *Run Mohid*, then select *Launch after Ok*, then click on *Ok*
+- Select the *Run_1*, then select *Run Mohid*, then select *Launch after Ok*, then click on *Ok*
 
 - Supervise the screen-outputs to check for any error, or to simply read the estimated end time of simulation
 

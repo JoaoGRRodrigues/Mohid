@@ -1,10 +1,10 @@
 # Dual 64
 
-This is the user's guide and log book of the dual\_64 machine. The logs are sorted chronologically descending from the last log entry to the first log entry.
+This is the user's guide and log book of the dual_64 machine. The logs are sorted chronologically descending from the last log entry to the first log entry.
 
 ## User's guide
 
-THE DUAL\_64 USAGE IS AT BETA STAGE. Important parameters such as IP and hostname are likely to change!
+THE DUAL_64 USAGE IS AT BETA STAGE. Important parameters such as IP and hostname are likely to change!
 
 ### Briefing
 
@@ -25,7 +25,7 @@ Here are some specific guidelines:
 
 1. [MOHID](../../overview/mohid.md) applications are to be inserted in */home/fedora/Aplica*. Careful not to overwrite any already existing application. In the future people will have a login and will use the */home/user/Aplica* folder.
 2. The path where the mohid bins will lie is */usr/bin/mohid*. What lies in there are MOHID related libraries and executables.
-3. The path where the Mohid source lies is */home/fedora/Projects/mohid\_v4*. You can get the latest version from SourceOffSite with *make nix.sos* and then build a *MohidWater* binary with *make nix*.
+3. The path where the Mohid source lies is */home/fedora/Projects/mohid_v4*. You can get the latest version from SourceOffSite with *make nix.sos* and then build a *MohidWater* binary with *make nix*.
 4. Here's the list of already existing binaries:
 
 ```
@@ -38,11 +38,11 @@ Here are some specific guidelines:
 -rwxr-xr-x 1 root root 7749376 Jul 26 10:19 x64_singleMohidWater
 ```
 
-The naming philosophy is to add a prefix indicating the architecture (*x64* or *x32*), the floating point unit precision (*single* or *double*), the symbolic information for debugging (*g*) and the symbolic information for [profiling](profiling.md) (*g\_p*). They are for generic use. However the administrator may freely update them with the latest version of MOHID. It is VERY recommended to choose and copy one of them to the *exe* directory of the application for consistency.
+The naming philosophy is to add a prefix indicating the architecture (*x64* or *x32*), the floating point unit precision (*single* or *double*), the symbolic information for debugging (*g*) and the symbolic information for [profiling](profiling.md) (*g_p*). They are for generic use. However the administrator may freely update them with the latest version of MOHID. It is VERY recommended to choose and copy one of them to the *exe* directory of the application for consistency.
 
 ### Begin a new session
 
-1. Open a [putty](http://en.wikipedia.org/wiki/PuTTY) terminal and connect to *Dual\_64* or *192.168.20.160*.
+1. Open a [putty](http://en.wikipedia.org/wiki/PuTTY) terminal and connect to *Dual_64* or *192.168.20.160*.
     -   username: *fedora*
     -   password: *fedora*
 
@@ -131,13 +131,7 @@ Remember the ampersand (the symbol at the end)!! In that case, the MohidWater co
 
 ### 20080129
 
-- Installed in the PATH 
-
-$$
-\ncdump
-$$
-
- and [ncgen.
+- Installed in the PATH \[\[ncdump\] and ncgen.
 
 ### 20070725
 
@@ -248,13 +242,13 @@ cpan> install Date::Calc
 
 ### 20061021
 
-The [Nx nomachine](nx-nomachine.md) was installed. It allows to easily connect remotely to the workstation. The [rdesktop](README.md#linux-rdesktop#linux-rdesktop) was installed. It allows to connect remotely to windows systems with remote-desktoping enabled:
+The [Nx nomachine](nx-nomachine.md) was installed. It allows to easily connect remotely to the workstation. The [rdesktop](README.md#linux-rdesktop) was installed. It allows to connect remotely to windows systems with remote-desktoping enabled:
 
 ```
 > rdesktop -u Administrator -d MARETEC Einstein
 ```
 
-To access to fedora@dual\_64 type.
+To access to fedora@dual_64 type.
 
 ```
 $ vncviewer dual_64.maretec.ist.utl.pt:0
@@ -287,13 +281,7 @@ This log explains how to recover the RAID1 logical drive:
 
 #### RAID controller BIOS configuration
 
-At boot 
-
-$$
-Ctrl-M
-$$
-
- to enter the RAID controller BIOS setup:
+At boot \[Ctrl-M\] to enter the RAID controller BIOS setup:
 
 \-->Clear configuration
 \-->New configuration
@@ -316,7 +304,7 @@ To see drives with correct filesystems:
 > df -T
 ```
 
-Creating a DOS table to Dual\_64 RAID 1 logical drive and one primary partition:
+Creating a DOS table to Dual_64 RAID 1 logical drive and one primary partition:
 
 ```
 > fdisk /dev/sdb
@@ -372,7 +360,7 @@ vim /etc/hosts
 
 127.0.0.1 localhost.localdomain.com localhost
 #added this line
-192.168.20.160 dual\_64.maretec.ist.utl.pt dual\_64
+192.168.20.160 dual_64.maretec.ist.utl.pt dual_64
 
 Now *mpdcheck -s* / *mpdcheck -c* works!
 
@@ -481,7 +469,7 @@ The first conclusions aren't too encouraging. Yet it still wasn't optimized.
 
 Throughout these tests the same MohidWater baroclinic 3D model was run.
 
-**x64\_single\_openmp:**
+**x64_single_openmp:**
 
 ```
 -------------------------- MOHID -------------------------
@@ -541,16 +529,16 @@ fedora   29742  0.0  0.0  59868  1688 pts/5    Ss   20:49   0:00 -bash
 ### 20060721
 
 - Battery tests idealized with [profiling](profiling.md): A) run the standard benchmark, B) run a 3D application for:
-    1.  x64\_single precision
-    2.  x64\_double precision
-    3.  x32\_single precision
-    4.  x32\_double precision
-- The [makefile methodology](../../building/linux/makefile.md) was implemented and the MOHID files are easily retrievable from the [SourceOffSite](sos.md). MOHID now compiles in the dual\_64 machine.
+    1.  x64_single precision
+    2.  x64_double precision
+    3.  x32_single precision
+    4.  x32_double precision
+- The [makefile methodology](../../building/linux/makefile.md) was implemented and the MOHID files are easily retrievable from the [SourceOffSite](sos.md). MOHID now compiles in the dual_64 machine.
 
 ### 20060717
 
 - The intel fortran compiler, the hdf5 and netcdf libraries were successfully installed. Users are fedora:fedora and root:... . The useradd command doesn't work? The machine current ip is 192.168.20.160 and is ssh ip-accessible within the intranet. Name resolution is still a problem. Samba is yet to be properly configured.
-- As the intel fortran is distributed in rpms, the Fedora Core seemed appropriate and straightforward for installation. A boot DVD was made and installed. Thus a stripped version of Fedora Core 5 x86\_64 is the current dual\_64 OS. During installation, a custom installation was chosen, and all the compatibility and legacy packages available were installed (glibc, libstdc++, and libgcc among others).
+- As the intel fortran is distributed in rpms, the Fedora Core seemed appropriate and straightforward for installation. A boot DVD was made and installed. Thus a stripped version of Fedora Core 5 x86_64 is the current dual_64 OS. During installation, a custom installation was chosen, and all the compatibility and legacy packages available were installed (glibc, libstdc++, and libgcc among others).
 - During the installation of glibc (legacy lib) things went wrong. Lost all control over the machine. Solution: reinstallation of the entire OS.
 - The intel fortran wouldn't install as some legacy libraries required were missing.
 - As of this date, the machine was delivered last week with the Gentoo Vannilla distribution.

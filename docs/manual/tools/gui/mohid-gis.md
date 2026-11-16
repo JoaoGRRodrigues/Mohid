@@ -2,7 +2,7 @@
 
 ## Overview
 
-Mohid GIS is a [geographical information system](http://en.wikipedia.org/wiki/Gis) specifically designed to support [Mohid Water Modelling System](../../overview/README.md#mohid-water-modelling-system#mohid-water-modelling-system) which handles spatial and temporal variable data required or produces by the MOHID numerical programs. It allows to load and to visualize data stored in different formats:
+Mohid GIS is a [geographical information system](http://en.wikipedia.org/wiki/Gis) specifically designed to support [Mohid Water Modelling System](../../overview/README.md#mohid-water-modelling-system) which handles spatial and temporal variable data required or produces by the MOHID numerical programs. It allows to load and to visualize data stored in different formats:
 
 - **MOHID Data Files** – files which contain geographical information like [points](../../io/formats/xyz-points.md), [lines](../../io/formats/lines.md), [polygons](../../io/formats/polygons.md), [grids](../../reference/grids.md), etc formatted in a proper way. All these files are ASCII files;
 - **ESRI Shape Files** – files which are the used by the ESRI ArcView software;

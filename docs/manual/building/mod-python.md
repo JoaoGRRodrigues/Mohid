@@ -16,7 +16,7 @@ LoadModule python_module modules/mod_python.so
 </Directory>
 ```
 
-You can also add the following lines in the *.htaccess* file from the local user's *public\_html* directory:
+You can also add the following lines in the *.htaccess* file from the local user's *public_html* directory:
 
 ```
    AddHandler mod_python .py

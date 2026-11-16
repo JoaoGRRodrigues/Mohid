@@ -43,7 +43,7 @@ del _tmp.txt
 
 - [mohid1](http://www.twitter.com/mohid1): Pre-op model;
 - [weatherlisbon](http://www.twitter.com/weatherlisbon): BBC lisbon weather forecast;
-- [marvin\_bot](http://www.twitter.com/marvin_bot): Marvin, the paranoid android;
+- [marvin_bot](http://www.twitter.com/marvin_bot): Marvin, the paranoid android;
 - [euromillions](http://www.twitter.com/euromillions): Every friday night you get the euromillions results;
 - [weatherhannover](http://www.twitter.com/weatherhannover): BBC hannover weather forecast;
 - [Biosfera](http://www.twitter.com/biosfera): Meteo-IST;
@@ -103,7 +103,7 @@ curl --basic --user $twitbot --data status="$weather" http://twitter.com/statuse
 
 ### Batch example
 
-Here's the [marvin\_bot](http://twitter.com/marvin_bot) agent script in batch. However, previously, you are required to have [cygwin](http://cygwin.com/) installed and the `%CYGWIN%\bin` path added to your `%PATH%` environment variable.
+Here's the [marvin_bot](http://twitter.com/marvin_bot) agent script in batch. However, previously, you are required to have [cygwin](http://cygwin.com/) installed and the `%CYGWIN%\bin` path added to your `%PATH%` environment variable.
 
 ```
 @ECHO off

@@ -2,7 +2,7 @@
 
 A very simple ping-pong program is shown here. There are 2 programs, *[ping](../../reference/ping.md)* and *[pong](../../reference/pong.md)*, that shoot messages among them, starting each with a random number of plays. The first program reaching 0 will send a message for the other program to stop and stops itself. File *[moduleMPImanagement](../modulempimanagement.md)* is necessary to compile both programs.
 
-If you examine the code there is no single MPI\_BARRIER or any other explicit synchronization point. The main subroutine is:
+If you examine the code there is no single MPI_BARRIER or any other explicit synchronization point. The main subroutine is:
 
 ```
    subroutine main()
@@ -20,7 +20,7 @@ If you examine the code there is no single MPI\_BARRIER or any other explicit sy
    end subroutine main
 ```
 
-There is a call to an infinite loop. This routine reads the MPI message queue identifying messages to itself (MPI\_PROBE).
+There is a call to an infinite loop. This routine reads the MPI message queue identifying messages to itself (MPI_PROBE).
 
 ```
    recursive subroutine loop(pingPong)

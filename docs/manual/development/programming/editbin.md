@@ -6,13 +6,13 @@
 > editbin /STACK:64000000 MohidWater_x64_double_openmp.exe
 ```
 
-This will set the Stack reserve size of *MohidWater\_x64\_double\_openmp.exe* to roughly 64M.
+This will set the Stack reserve size of *MohidWater_x64_double_openmp.exe* to roughly 64M.
 
 ```
 > editbin /HEAP:128000 MohidWater_x64_double_openmp.exe
 ```
 
-This will set the heap reserve size of *MohidWater\_x64\_double\_openmp.exe* to roughly 128K.
+This will set the heap reserve size of *MohidWater_x64_double_openmp.exe* to roughly 128K.
 
 ## Install
 

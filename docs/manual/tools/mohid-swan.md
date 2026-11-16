@@ -44,7 +44,7 @@ The Swan model would need of wind, tide and deep-Ocean swell as boundary conditi
 
 Wind vectors should also be provided from other model results (i.e. MOHID, MM5 or WRF) and then converted to the SWAN format using [ConvertToHDF5](converttohdf5.md) using the option "ConvertHDF5ToSWANorMOHID" that will provide a hourly file with values for x and y directions, be aware of the file size.
 
-One way to extract winds to force the SWAN, is to use the wind velocity present in the Atmosphere\_x.hdf5 file, coming from a 2D MOHID simulation pre-made for the study region.
+One way to extract winds to force the SWAN, is to use the wind velocity present in the Atmosphere_x.hdf5 file, coming from a 2D MOHID simulation pre-made for the study region.
 
 An alternative way is to use MM5 HDF5 Mohid results and then [glue](converttohdf5.md) and [interpolate](converttohdf5.md) them to the MOHID model(s) grid(s) (which is(are) the same as SWAN's). To perform standard [glue](converttohdf5.md) and [interpolate](converttohdf5.md) operations with [ConvertToHDF5](converttohdf5.md), please refer to the [ConvertToHDF5](converttohdf5.md) wiki ...
 
@@ -115,7 +115,7 @@ Notice how there are first the X-direction files and then, after, come the Y-dir
 
 **Q: The conversion won't work or the SWAN model won't run because of the winds.**
 
-A: The Atmosphere\_x.hdf5 of the MOHID results needs to be edited and changed (using [HDFView](README.md#hdfview#hdfview)). 1 - The *MappingPoints2D* data needs to be renamed to *WaterPoints* in the *GRID/* group. 2 - The first instant of *Time* is could be wrong; it could display an offset of one dt. The time instant data should be edited and the offset should be removed. Example: Once, the first time instant in the HDF5 atmosphere\_x file would read *2006 10 15 17 00 20* when it should read instead *2006 10 15 17 00 00*.
+A: The Atmosphere_x.hdf5 of the MOHID results needs to be edited and changed (using [HDFView](README.md#hdfview)). 1 - The *MappingPoints2D* data needs to be renamed to *WaterPoints* in the *GRID/* group. 2 - The first instant of *Time* is could be wrong; it could display an offset of one dt. The time instant data should be edited and the offset should be removed. Example: Once, the first time instant in the HDF5 atmosphere_x file would read *2006 10 15 17 00 20* when it should read instead *2006 10 15 17 00 00*.
 
 **Q: The SWAN won't run because it can't find a wind text file, whose name in the log is a few characters short.**
 
@@ -127,7 +127,7 @@ The tide sould be obtained from other models (i.e. PCOMS), or calculated (i.e. [
 
 For the interpolation method between the source grid and the user domain grid, the user is recommended to use the [ConvertToHdf5](converttohdf5.md) tool with the *INTERPOLATE* action. [Please refer to this wiki](converttohdf5.md).
 
-Alternatively, the user domain model could be pre-run with tide only and outputs be given with the same time-period and same frequency as the wind's. Thus the user would only need to use the *water level* results from the hydrodynamic\_x.hdf5 file.
+Alternatively, the user domain model could be pre-run with tide only and outputs be given with the same time-period and same frequency as the wind's. Thus the user would only need to use the *water level* results from the hydrodynamic_x.hdf5 file.
 
 Then, the tide should be converted into SWAN input file for tide, using the *CONVERT FROM HDF5 TO SWAN OR MOHID* action method of the [ConvertToHDF5](converttohdf5.md) tool. Here's the input configuration to copy/paste/edit in the *ConvertToHdf5Action.dat* file:
 
@@ -241,7 +241,7 @@ CGRID REG 185000 -8000 0 29900 22450 299 449 CIR 36 0.05 1 50 Computational grid
 
 $-------- Section 4. Input
 
-INPGRID BOT REG 185000 -8000 0 299 449 100 50 EXCEPTION -99 READ BOT 1 'd/450x300\_Swan\_Ref.bty' 1 0 FREE WIND 0.1 0 Grid coordinates: referred to the bottom, regular, Xorig, Yorig, X axis direction, grid cells in X direction, grid cells in Y direction, DX, DY, Ignore points -99 Bathymetry file: data sign, filename, read mode, header lines, free format reading Wind characteristics: Velocity, direction
+INPGRID BOT REG 185000 -8000 0 299 449 100 50 EXCEPTION -99 READ BOT 1 'd/450x300_Swan_Ref.bty' 1 0 FREE WIND 0.1 0 Grid coordinates: referred to the bottom, regular, Xorig, Yorig, X axis direction, grid cells in X direction, grid cells in Y direction, DX, DY, Ignore points -99 Bathymetry file: data sign, filename, read mode, header lines, free format reading Wind characteristics: Velocity, direction
 
 $-------- Section 5. Boundary/Initial Conditions
 

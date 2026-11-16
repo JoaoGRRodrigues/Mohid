@@ -2,7 +2,7 @@
 
 ## Overview
 
-A grid in Mohid is stored in an ASCII text file and is directly handled by [Module HorizontalGrid](../../water/modules/README.md#module-horizontalgrid#module-horizontalgrid). The organization of this file is divided into a header section, and a grid spacing section.
+A grid in Mohid is stored in an ASCII text file and is directly handled by [Module HorizontalGrid](../../water/modules/README.md#module-horizontalgrid). The organization of this file is divided into a header section, and a grid spacing section.
 
 Mohid supports orthogonal horizontal grids, which can be rectangular or curvilinear. Grid files can be created manually or automatically via [MOHID GIS](../../tools/gui/mohid-gis.md) or via the [GenerateGrid](../../tools/generategrid.md) tool. The default extension for Grid files in [MohidGIS](../../tools/gui/mohid-gis.md) is **\*.grd**.
 
@@ -16,16 +16,16 @@ Note that in MOHID the **i** index refers to the YY axis and the **j** index to 
 
 The header section contains information related to the grid global definitions, such as the number of cells, the type of coordinate used, the origin coordinates of the grid, etc. Below are shown the [keywords](../keywords/keywords.md) supported in the header section of a Grid file.
 
-> -   **ILB\_IUB** - Two integer numbers defining the **minimum** and **maximum** **I** values along the Y-axis of the grid.
-> -   **JLB\_JUB** - Two integer numbers defining the **minimum** and **maximum** **J** values along the X-axis of the grid.
-> -   **COORD\_TIP** - A flag which indicates the used [coordinates type](../../reference/README.md#coordinates-type#coordinates-type).
+> -   **ILB_IUB** - Two integer numbers defining the **minimum** and **maximum** **I** values along the Y-axis of the grid.
+> -   **JLB_JUB** - Two integer numbers defining the **minimum** and **maximum** **J** values along the X-axis of the grid.
+> -   **COORD_TIP** - A flag which indicates the used [coordinates type](../../reference/README.md#coordinates-type).
 > -   **ORIGIN** - Two real values, which indicate the origin of the lower left corner of the grid (**X Y**).
 > -   **ZONE** - Integer values defining the UTM Zone where the bathymetry is located.
-> -   **GRID\_ANGLE** - Counter-clock mesh rotation relative to the north. The base point is the origin of the grid.
+> -   **GRID_ANGLE** - Counter-clock mesh rotation relative to the north. The base point is the origin of the grid.
 > -   **LATITUDE** - Average latitude value used to compute Coriolis frequency and [solar radiation](../../water/modules/atmosphere.md) when metric coordinates cannot be converted to WGS84 geographic coordinates.
 > -   **LONGITUDE** - Average longitude value used to compute Coriolis frequency and [solar radiation](../../water/modules/atmosphere.md) when metric coordinates cannot be converted to WGS84 geographic coordinates.
-> -   **CONSTANT\_SPACING\_X** - Boolean defining if the spacing in the X axis is constant
-> -   **CONSTANT\_SPACING\_Y** - Boolean defining if the spacing in the Y axis is constant
+> -   **CONSTANT_SPACING_X** - Boolean defining if the spacing in the X axis is constant
+> -   **CONSTANT_SPACING_Y** - Boolean defining if the spacing in the Y axis is constant
 > -   **DX** - Constant spacing distance in XX axis
 > -   **DY** - Constant spacing distance in YY axis
 

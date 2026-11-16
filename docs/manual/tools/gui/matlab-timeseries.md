@@ -10,6 +10,6 @@ It is availiable trought the [SourceSafe](../../building/windows/sourcesafe.md) 
 
 Opens and plots MOHID time series output files. Saves mat files with time series columns and a graphics file with the plotted timeseries in the timeseries folder you selected.
 
-**plot\_var(time, var, name, save, path)**
+**plot_var(time, var, name, save, path)**
 
 Simple plot of a variable(vector var) in time(vector time). If save option is on, a png file will be saved in the folder "path" with the name "name".

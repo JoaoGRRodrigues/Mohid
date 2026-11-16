@@ -6,7 +6,7 @@
 
 ### See also
 
-- Mohid [calendar](../../tools/gui/calendar.md)
+- Mohid [calendar](calendar.md)
 
 ## External references
 

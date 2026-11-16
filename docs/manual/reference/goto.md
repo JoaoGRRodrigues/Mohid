@@ -1,12 +1,12 @@
 # Goto
 
-**Goto** is a <goto>mediawiki extension</goto> and a useful <goto>keymark</goto> for searching <goto>Google</goto> using the *Feeling Lucky* option. It's great when you're lazy and just want the obvious first search result linked from your string.
+**Goto** is a mediawiki extension and a useful keymark for searching [Google](../archive/web/google.md) using the *Feeling Lucky* option. It's great when you're lazy and just want the obvious first search result linked from your string.
 
 ## Goto for your wiki
 
 ### Installation
 
-1. Copy the **goto.php** [extension](http://refactormycode.com/codes/222-mediawiki-extension-template) in the *extensions/goto.php* of your <goto>mediawiki</goto> installation.
+1. Copy the **goto.php** [extension](http://refactormycode.com/codes/222-mediawiki-extension-template) in the *extensions/goto.php* of your mediawiki installation.
 2. Append the following couple of lines at the end of your wiki's **LocaSettings.php** file:
 
 ```
@@ -18,10 +18,10 @@ That's it!
 
 ### Syntax
 
-Simply embed the search snippet using the <goto> tag in your wiki:
+Simply embed the search snippet using the tag in your wiki:
 
 ```
-<goto>goto for your wiki</goto>             <goto>goto for your wiki</goto>
+<goto>goto for your wiki             goto for your wiki
 ```
 
 ## Goto for your browser
@@ -48,4 +48,4 @@ From the browser address bar type:
 
 ## External references
 
-- <goto>Google feeling lucky</goto>
+- Google feeling lucky

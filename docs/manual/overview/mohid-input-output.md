@@ -10,8 +10,8 @@ To input data into MOHID please see [Module FillMatrix](../base/module-fillmatri
 
 ### HDF outputs
 
-- [OUTPUT\_TIME](../io/keywords/output-time.md)
-- [SURFACE\_OUTPUT\_TIME](../io/keywords/surface-output-time.md)
+- [OUTPUT_TIME](../io/keywords/output-time.md)
+- [SURFACE_OUTPUT_TIME](../io/keywords/surface-output-time.md)
 
 ### Time series outputs
 

@@ -44,7 +44,7 @@ MOHID syntax for distances
 
 ModuleHorizontalGrid
 
-GetHorizontalGrid(HorizontalGridID, XX\_IE, YY\_IE, XX\_Z, YY\_Z,XX\_U, YY\_U, XX\_V, YY\_V, XX\_Cross, YY\_Cross, DXX, DYY, DZX, DZY, DUX, DUY, DVX, DVY, XX, YY, XX2D\_Z, YY2D\_Z, STAT)
+GetHorizontalGrid(HorizontalGridID, XX_IE, YY_IE, XX_Z, YY_Z,XX_U, YY_U, XX_V, YY_V, XX_Cross, YY_Cross, DXX, DYY, DZX, DZY, DUX, DUY, DVX, DVY, XX, YY, XX2D_Z, YY2D_Z, STAT)
 
 ModuleGeometry
 
@@ -144,25 +144,7 @@ That represents the maximum displacement in meters that the layer face (or SZZ) 
 
 In case of Lagrangian evolution the grid is deformed at each time step.
 
-First a new estimation of SZZ is computed. Surface and bottom faces SZZ's are fixed. Starting at the top layer, the displacement of each face is estimated using the last vertical velocity computed (displacement 
-
-$$
-m
-$$
-
- = vertical velocity
-
-$$
-m/s
-$$
-
- \* time step 
-
-$$
-s
-$$
-
-).
+First a new estimation of SZZ is computed. Surface and bottom faces SZZ's are fixed. Starting at the top layer, the displacement of each face is estimated using the last vertical velocity computed (displacement \[m\] = vertical velocity\[m/s\] \* time step \[s\]).
 
 At each layer, the estimation of SZZ based on vertical velocity is tested to check if they are within the maximum deformation allowed for the above and below cells of that face. In case the test fails, SZZ displacement is corrected to the minimum of the deformations allowed.
 
@@ -256,7 +238,7 @@ MININITIALLAYERTHICKNESS  : 0.2
 
 #### Domains Definition with Lagrangian Method
 
-The Lagrangian method was changed in May 2013 but old Lagrangian domains will work without any keyword changes because MOHID will adapt and the domain will be changed from Lagrangian to Sigma or Cartesian depending on INITIALIZATION\_METHOD keyword and will have Lagrangian process active. The user will just be warned that the Lagrangian domain is deprecated and tell about the new keyword to use in future projects. The new definition is as follows:
+The Lagrangian method was changed in May 2013 but old Lagrangian domains will work without any keyword changes because MOHID will adapt and the domain will be changed from Lagrangian to Sigma or Cartesian depending on INITIALIZATION_METHOD keyword and will have Lagrangian process active. The user will just be warned that the Lagrangian domain is deprecated and tell about the new keyword to use in future projects. The new definition is as follows:
 
 ##### Sigma Domain with Lagrangian method active
 

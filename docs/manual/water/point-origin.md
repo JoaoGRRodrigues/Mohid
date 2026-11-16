@@ -16,7 +16,7 @@ are the values are the I and J cells' indexes.
 
 NOTE: The above is not an exhaustive list of ways for how to insert a point origin.
 
-## Example Lagrangian\_1.dat
+## Example Lagrangian_1.dat
 
 ```
 OUTPUT_TIME             : 0 3600

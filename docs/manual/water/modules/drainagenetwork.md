@@ -2,9 +2,9 @@
 
 ## Overview
 
-This module can be used by two models: [MOHID Land](../../land/mohid-land.md), and [MOHID River Network](../../overview/mohid-river-network.md). Like other modules, it has a specific input file, called **DrainageNetwork\_X.dat**, where X is the simulation number. The following tables describe the keywords that can be used, their data type, and the default values (in case of omission).
+This module can be used by two models: [MOHID Land](../../land/mohid-land.md), and [MOHID River Network](../../overview/mohid-river-network.md). Like other modules, it has a specific input file, called **DrainageNetwork_X.dat**, where X is the simulation number. The following tables describe the keywords that can be used, their data type, and the default values (in case of omission).
 
-### DrainageNetwork\_X.dat Keywords
+### DrainageNetwork_X.dat Keywords
 
 #### General
 
@@ -53,7 +53,7 @@ DATA_COLUMN               : int               -           !Number of column wi
 
 #### Output
 
-Output is given for all nodes in HDF5 format, and also as time series for the specified nodes in TIME\_SERIE\_LOCATION file. These nodes are identified by their IDS (see Network file) and have to be inside the block **<BeginNodeTimeSerie> / <EndNodeTimeSerie>**.
+Output is given for all nodes in HDF5 format, and also as time series for the specified nodes in TIME_SERIE_LOCATION file. These nodes are identified by their IDS (see Network file) and have to be inside the block **<BeginNodeTimeSerie> / <EndNodeTimeSerie>**.
 
 ```
 Keyword                   : Data Type         Default     !Comment
@@ -77,13 +77,7 @@ flow to channels - flow (m3/s) from runoff to river in the selected nodes.
 
 GW flow to channels - flow (m3/s) from groundwater to river in the selected nodes.
 
-each property transported will have an output with its concentration (mg/L) in the selected nodes. If property is particulated aslso will have a series named Bottom\_
-
-$$
-PropertyName
-$$
-
- (kg/m2).
+each property transported will have an output with its concentration (mg/L) in the selected nodes. If property is particulated aslso will have a series named Bottom_\[PropertyName\] (kg/m2).
 
 [Check Mohid Land Heights and Levels to understand the difference between level and height results](http://screencast.com/t/I8We0B4j2uJ)
 
@@ -165,14 +159,14 @@ SUMTOTALCONC               : 0/1               [0] 0        !Checks if user wa
 - The formulation is to associate an eco-toxiciy value to the property (From project ECORIVER 2002).
 - Every toxic property must be discharged.
 - Its concentration in the river network is set to 0.0.
-- Discharge concentration must be equal to 1, because we are measuring the dilution D = 1 - C\_new / C\_ini
-- The variable property%toxicity%concentration represents C/c\_ini so it starts by being 1.
+- Discharge concentration must be equal to 1, because we are measuring the dilution D = 1 - C_new / C_ini
+- The variable property%toxicity%concentration represents C/c_ini so it starts by being 1.
 - This is not even close to a final version. For more details, or sugestions/corrections, contact MARETEC (Rosa Trancoso).
 - EC50 - Concentration that causes 50% of effect (Tox = 0.5)
 
 ### Network file
 
-The Network file specified in **NETWORK\_FILE** keyword has two types of blocks:
+The Network file specified in **NETWORK_FILE** keyword has two types of blocks:
 
 - **<BeginNode>/ <EndNode>**
 - **<BeginReach>/<EndReach>**
@@ -225,17 +219,11 @@ REACHES_FILE                  : ..\..\GeneralData\DrainageNetwork\DrainageNetwo
 
 - Define the cross sections for each node (see [MOHID GIS](../../tools/gui/mohid-gis.md)).
     -   **Warning 1**: Remember to select "Save All" in MOHID GIS to update the file.
-    -   **Warning 2**: Currently, this program writes a BOTTOM\_LEVEL keyword for each node instead of the keyword TERRAIN\_LEVEL needed by the Drainage Network module. BOTTOM\_LEVEL was replaced by TERRAIN\_LEVEL in the latest version of this module because of the introduction of the tabular (irregular) cross-section type, generalizing the formulation of cross-sections. The pre-processor tool is not yet adapted. Nevertheless, for regular cross-sections, TERRAIN LEVEL = BOTTOM\_LEVEL + HEIGHT. It can be changed manually or with this perl script [
-
-$$
-1
-$$
-
-](http://docs.google.com/leaf?id=0B_xtWE4qvkq8Y2FhNjk5NTQtZTdhZC00N2I1LWE3Y2YtM2QwYzIyMjhhZDRj&sort=name&layout=list&num=50).
+    -   **Warning 2**: Currently, this program writes a BOTTOM_LEVEL keyword for each node instead of the keyword TERRAIN_LEVEL needed by the Drainage Network module. BOTTOM_LEVEL was replaced by TERRAIN_LEVEL in the latest version of this module because of the introduction of the tabular (irregular) cross-section type, generalizing the formulation of cross-sections. The pre-processor tool is not yet adapted. Nevertheless, for regular cross-sections, TERRAIN LEVEL = BOTTOM_LEVEL + HEIGHT. It can be changed manually or with this perl script [\[1\]](http://docs.google.com/leaf?id=0B_xtWE4qvkq8Y2FhNjk5NTQtZTdhZC00N2I1LWE3Y2YtM2QwYzIyMjhhZDRj&sort=name&layout=list&num=50).
 
 #### Irregular Cross Section
 
-It's possible to create an irregular cross section setting the CROSS\_SECTION\_TYPE to 3 (Tabular). The N\_STATIONS is the number of "points" that will be used. A minimun of 3 points is needed, to make a triangular cross section. The STATION keyword is where you put the horizontal distance of the point to the origin point. The ELEVATION/LEVEL is where you put the vertical distances. The first and the last point must be at the same elevation (same values). The LEVEL is currently the distance from the bottom of the channel to the point.
+It's possible to create an irregular cross section setting the CROSS_SECTION_TYPE to 3 (Tabular). The N_STATIONS is the number of "points" that will be used. A minimun of 3 points is needed, to make a triangular cross section. The STATION keyword is where you put the horizontal distance of the point to the origin point. The ELEVATION/LEVEL is where you put the vertical distances. The first and the last point must be at the same elevation (same values). The LEVEL is currently the distance from the bottom of the channel to the point.
 
 Observe the irregular cross section image below:
 

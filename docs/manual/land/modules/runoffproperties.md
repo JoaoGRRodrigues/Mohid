@@ -117,7 +117,7 @@ Boundary properties values are computed in one of two ways: i) impose a property
 
 ### Keywords
 
-The keyword in property block in RunoffProperties\_X.dat that allows to define the boundary condition method is:
+The keyword in property block in RunoffProperties_X.dat that allows to define the boundary condition method is:
 
 ```
 <beginproperty>
@@ -151,7 +151,7 @@ In Modification phase the discharges are explicit and computed before transport 
 
 ### Keywords
 
-For positive discharges the discharge concentration is read from Discharges\_X.dat and the following keyword needs to exist in the Runoff Properties\_X.dat inside the property block of the discharged property:
+For positive discharges the discharge concentration is read from Discharges_X.dat and the following keyword needs to exist in the Runoff Properties_X.dat inside the property block of the discharged property:
 
 ```
 DISCHARGES : 1

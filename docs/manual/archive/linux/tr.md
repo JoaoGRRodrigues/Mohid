@@ -8,7 +8,7 @@
 >for i in `find | grep Nomfich`; do j=`echo $i | tr [Nom] [nom]`; if [ $i != $j ]; then mv $i $j; fi; done;
 ```
 
-This bash line transforms the *Nomfich\_\*.dat* files into *nomfich\_\*.dat*
+This bash line transforms the *Nomfich_\*.dat* files into *nomfich_\*.dat*
 
 ```
 > cat somefile.txt | tr -cd [:graph:]

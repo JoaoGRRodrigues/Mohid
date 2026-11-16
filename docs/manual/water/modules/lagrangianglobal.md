@@ -6,17 +6,11 @@ The LangrangianGlobal Module is a deep upgrade of the [Lagrangian Module](lagran
 
 1 - Run only one lagrangian model in a multi-nesting implementation. This way particles can go from grid to grid without any problems (see example of particles moving between grids). In the Lagrangian module particles are destroyed when they leave the grid where they were emitted. This is the reason way a lagrangian model is runned for each grid in the Lagrangian Module;
 
-2 - Centralise all the interpolation and particle location (in a [grid](../../io/formats/grid.md)) methods in the [HorizontalGrid Module](README.md#module-horizontalgrid#module-horizontalgrid) and (see source code [
+2 - Centralise all the interpolation and particle location (in a [grid](../../io/formats/grid.md)) methods in the [HorizontalGrid Module](README.md#module-horizontalgrid) and (see source code [\[1\]](http://mohid.codeplex.com/SourceControl/changeset/view/64163#1208106));
 
-$$
-1
-$$
+3 - Avoid redundances in the particle origin definitions. This way is possible to compress the input file (Lagrangian_x.dat).
 
-](http://mohid.codeplex.com/SourceControl/changeset/view/64163#1208106));
-
-3 - Avoid redundances in the particle origin definitions. This way is possible to compress the input file (Lagrangian\_x.dat).
-
-**If the mohid user wants to activate this module it needs in the mohid compilation process to predefined a preprocessor symbol called \_LAGRANGIAN\_GLOBAL\_.**
+**If the mohid user wants to activate this module it needs in the mohid compilation process to predefined a preprocessor symbol called _LAGRANGIAN_GLOBAL_.**
 
 ## Related projects
 
@@ -49,7 +43,7 @@ The model are order by decreasing priority.
 
 ### Goal 2 - Centralize all interpolation and particle location methods
 
-In the [Lagrangian module](lagrangian.md) the interpolation and particle location methods were developed in a independent way of similar methods implemented in the [HorizontalGrid Module](README.md#module-horizontalgrid#module-horizontalgrid) for the [hydrodynamic](hydrodynamic.md) and [water properties](waterproperties.md) nesting. Now the lagrangian mdoule uses the same interpolation and location methods as the Eulerian modules. The subroutines from the HorizontalGrid Module used in the LagrangianGlobal Module are:
+In the [Lagrangian module](lagrangian.md) the interpolation and particle location methods were developed in a independent way of similar methods implemented in the [HorizontalGrid Module](README.md#module-horizontalgrid) for the [hydrodynamic](hydrodynamic.md) and [water properties](waterproperties.md) nesting. Now the lagrangian mdoule uses the same interpolation and location methods as the Eulerian modules. The subroutines from the HorizontalGrid Module used in the LagrangianGlobal Module are:
 
 - GetXYInsideDomain
 
@@ -59,7 +53,7 @@ Check if a location X,Y (eg. particle location) is inside a specific model domai
 
 For a location X,Y (eg. particle location) and a specific model domain returns the correspondent cell (i,j) and even the relative position of the location inside the cell;
 
-- GetCellZ\_XY
+- GetCellZ_XY
 
 Do the inverse process ofsuborutine GetXYCellZ
 
@@ -71,7 +65,7 @@ All this subroutines work in all [grid](../../io/formats/grid.md) types support 
 
 For the curvilinear case was necessary to develop a quite complex method to [calculate the relative position of a particle in a cell](../../reference/relative-position-of-a-particle-in-a-cell.md).
 
-### Goal 3 - Decrease redundances in Lagrangian\_x.dat
+### Goal 3 - Decrease redundances in Lagrangian_x.dat
 
 To decrease this redundance the "clone origin" concept was created. There are several [Lagrangian Origins](lagrangian.md) options.
 
@@ -123,13 +117,13 @@ MAX_PART                       : 1000
 
 **Step 1**
 
-If the option ESTIMATE\_MIN\_VOL is ON (ESTIMATE\_MIN\_VOL : 1) a first estimation of the particles volumes for each run (eg. 1 day simulation) and for each origin is computed:
+If the option ESTIMATE_MIN_VOL is ON (ESTIMATE_MIN_VOL : 1) a first estimation of the particles volumes for each run (eg. 1 day simulation) and for each origin is computed:
 
-Particle Volume estimated = max (Total Discharge Volume in origin X along the run / MAX\_PART, POINT\_VOLUME)
+Particle Volume estimated = max (Total Discharge Volume in origin X along the run / MAX_PART, POINT_VOLUME)
 
 **Step 2**
 
-After for each emission iteration is computed the volume to be discharge. The period of each emission iteration is from Now to Now + DT\_EMIT
+After for each emission iteration is computed the volume to be discharge. The period of each emission iteration is from Now to Now + DT_EMIT
 
 Along this period is compute the total volume emitted in a specific emission iteration (Total Volume by Iteration). This volume is computed based in the flow time serie associated to the origin.
 

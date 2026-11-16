@@ -8,7 +8,7 @@ This domain is meant to become a dedicated [OpenDAP](opendap.md)/[Thredds](thred
 
 ### Architecture
 
-http://content.screencast.com/users/GRiflet/folders/Jing/media/d90b157c-ec48-404f-a0d2-833d7350e89c/2009-02-03\_2237.png
+http://content.screencast.com/users/GRiflet/folders/Jing/media/d90b157c-ec48-404f-a0d2-833d7350e89c/2009-02-03_2237.png
 
 ## Logs/notes
 
@@ -49,7 +49,7 @@ VMMRTSRV06                          36    256  150
 
 #### Accessing the domain via a console with VNC
 
-Access the domain with a VNC client, such as <goto>TightVNC</goto>. The domain console access port with VNC is **192.168.20.125:5903**. If running from the live cd, then proceed to install the distro. If the distro is already installed and you're not running from the live cd, then the linux distro is already installed and you can check the network ip so you can ssh. Open a new terminal and type the **\> ifconfig** command. Read the ip number. In this case we have **192.168.20.136**. Then you can proceed to configure your new domain.
+Access the domain with a VNC client, such as TightVNC. The domain console access port with VNC is **192.168.20.125:5903**. If running from the live cd, then proceed to install the distro. If the distro is already installed and you're not running from the live cd, then the linux distro is already installed and you can check the network ip so you can ssh. Open a new terminal and type the **\> ifconfig** command. Read the ip number. In this case we have **192.168.20.136**. Then you can proceed to configure your new domain.
 
 ### Configuration
 
@@ -121,6 +121,7 @@ iptables> -A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
 
 From the X environment, open up the System-->Administration-->Firewall. Then open up the ports **22**(ssh), **21**(ftp), **80**(http), **443**(https) and **8080**(tomcat).
 
+```
 #### Enable sshd
 
 ```

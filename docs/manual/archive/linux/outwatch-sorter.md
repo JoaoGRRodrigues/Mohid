@@ -14,7 +14,7 @@ $ Outwatch_sortall.bat
 
 ## Code
 
-### Outwatch\_sortall.bat
+### Outwatch_sortall.bat
 
 ```
 @echo off
@@ -25,7 +25,7 @@ for /F %%i in ('dir /B Outwatch*.txt') do @Outwatch_sorter.bat %%i > Sorted_%%
 @echo on
 ```
 
-### Outwatch\_sorter.bat
+### Outwatch_sorter.bat
 
 ```
 @echo off

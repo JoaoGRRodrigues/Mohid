@@ -6,13 +6,7 @@
 
 1. Run MOHID GUI (usually you can find it in the StartMenu->Programs->MOHID)
 2. Choose Menu **Project** and then **New**
-3. Name the project, the filename and give the project folder (usually in ../Aplica/MohidLand/
-
-$$
-ApplicationName
-$$
-
-/
+3. Name the project, the filename and give the project folder (usually in ../Aplica/MohidLand/\[ApplicationName\]/
 4. Insert a new simulation right clicking the project icon in the left, as shown in the Figure 1. The simulation aggregates model runs with the same topography.
 5. Define the simulation name (that you can easilly identify) and define MOHID Land radio button defined in Figure 2
 6. Insert a new run right clicking the simulation icon in the left, as shown in the Figure 3. The run is each model simulation.
@@ -137,7 +131,7 @@ Also define minimum layer depth:
 MINIMUMDEPTH            : 0.1
 ```
 
-### Basin\_Geometry data file
+### Basin_Geometry data file
 
 Here you define the delineation of your watershed inside the model grid.
 
@@ -216,13 +210,13 @@ EVAPOTRANSPIRATION_METHOD: 1/2 (1-Global Evapotranspiration; 2-Transpiration and
 
 The default value is 1 (if the keyword is not entered).
 
-### Drainage\_Network data file
+### Drainage_Network data file
 
 - A drainage network file containing nodes and cross sections is needed. See [How to create a drainage network](../water/modules/drainagenetwork.md).
 
 - Please follow [Module Drainage Network](../water/modules/drainagenetwork.md) for more details on processes and data file keywords.
 
-### Run\_Off data file
+### Run_Off data file
 
 - Manning coefficients must be provided. See [How to generate Manning coefficients](modules/runoff.md).
 - Please follow [Module Runoff](modules/runoff.md) for more details on processes and data file keywords.
@@ -311,4 +305,4 @@ Check Mohid Studio Manual inside Studio
 Frequent Issues
 
 1. If Porous Media taking too long to run: Check that you are using last executable. Geometry changes improved model perfomance.
-2. If Porous Media or Drainage Network is taking too long to run and if your project is in Geographic Coordinates, check GEO\_CONVERSATION\_FACTOR in drainage network data file: it is the metric to degrees relation at your latitude.
+2. If Porous Media or Drainage Network is taking too long to run and if your project is in Geographic Coordinates, check GEO_CONVERSATION_FACTOR in drainage network data file: it is the metric to degrees relation at your latitude.

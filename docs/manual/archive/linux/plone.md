@@ -6,7 +6,7 @@
 
 ### Linux
 
-- Download and install <goto>plone</goto> for linux.
+- Download and install [plone](plone.md) for linux.
 
 ```
 > tar -xvf plone.tar.gz
@@ -42,4 +42,4 @@ The account has full 'Manager' privileges.
 
 ## External references
 
-- <goto>Plone</goto>
+- [Plone](plone.md)

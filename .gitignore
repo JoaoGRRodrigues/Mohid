@@ -288,3 +288,7 @@ Solutions/VisualStudio2017_IntelFortran18/MOHIDNumerics/PhreeqC/PhreeqC.vcxproj
 Solutions/VisualStudio2019_IntelFortran19/MOHIDNumerics/OceanColor/OceanColor.vcxproj
 Solutions/VisualStudio2019_IntelFortran19/MOHIDNumerics/PhreeqC/PhreeqC.vcxproj
 ExternalLibs/SWMM.zip
+
+# docs/manual/development/build is a documentation section, not a build output
+!docs/manual/development/build/
+!docs/manual/development/build/**

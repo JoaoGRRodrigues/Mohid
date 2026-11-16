@@ -49,5 +49,5 @@ Alternatively you can convert by hand the world file to Mohid GIS img file,
 
 - WIDTH (HEIGHT) = number of width (height) pixels time pixels/unit distance X (Y). The pixel information of the image can be seen in [GIMP](http://www.gimp.org/), for example.
 - The Y coordinate must be decreased by *height pixels times pixels/unit distance Y* to go from Upper Left Corner (ESRI) to Lower Left Corner (Mohid GIS)
-- Write the path to the file in IMAGE\_FILE
+- Write the path to the file in IMAGE_FILE
 - open the .img file created in MOHID GIS as a background image (file type).

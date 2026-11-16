@@ -21,11 +21,11 @@ The essencial calibration to perform to the ADCP is to its compass. Indeed the A
 ## Documentation
 
 - The laboratory manual is available [here](http://intranet.mohid.com/campanhas/Manual%20Instrumentação/Manual_Laboratorio_ADCP.doc),
-- The RDI manuals are available at **\\\\kepler\\DataCenter\\Software\\ADCP\_RDI\\docs**.
+- The RDI manuals are available at **\\\\kepler\\DataCenter\\Software\\ADCP_RDI\\docs**.
 
 ## Software
 
-- The Workhorse Sentinel software is available at **\\\\kepler\\DataCenter\\Software\\ADCP\_RDI**.
+- The Workhorse Sentinel software is available at **\\\\kepler\\DataCenter\\Software\\ADCP_RDI**.
 
 ## External References
 

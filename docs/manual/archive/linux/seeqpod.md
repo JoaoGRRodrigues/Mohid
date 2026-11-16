@@ -17,7 +17,7 @@ flashvars="playlistXMLPath=http://www.seeqpod.com/api/music/getPlaylist?playlist
 
 Here are some experimental scripts in python and bash that would allow one to extract the mp3 files to the local harddrive:
 
-### xspf\_scrap.py
+### xspf_scrap.py
 
 This script returns you a nice list of mp3 urls from any xspf playlist:
 
@@ -38,7 +38,7 @@ for location in locations:
         print track_url
 ```
 
-### xspf\_scrap.sh
+### xspf_scrap.sh
 
 This script builds up on its python homonym to *wget* the files to the local harddrive:
 
@@ -69,7 +69,7 @@ rm $file
 cd ..
 ```
 
-### seeq\_scrap.sh
+### seeq_scrap.sh
 
 This script downloads the files contained in a seeqpod playlist url. (It requires both previous scripts above):
 

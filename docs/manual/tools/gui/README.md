@@ -4,7 +4,6 @@ Graphical interfaces and MATLAB/GIS helpers distributed with MOHID.
 
 ## Pages
 
-- [Calendar](calendar.md) — Mohid (un)official calendar.
 - [How to configure a 2D model forced with tide with MOHID](how-to-configure-a-2d-model-forced-with-tide-with-mohid.md) — Before you start creating your own simulation, you may want to create a bathymetry and tidal gauges first.
 - [How to create a model gridded bathymetry?](how-to-create-a-model-gridded-bathymetry.md) — How to create a model gridded bathymetry?
 - [How to create discharges in MOHID](how-to-create-discharges-in-mohid.md) — In this tutorial we will continue to work on the simulation we built on the previous tutorial and we will show how to add an instantaneous discharge a…

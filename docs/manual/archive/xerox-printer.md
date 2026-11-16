@@ -4,7 +4,7 @@
 
 ## Installing Printer
 
-1. Get the drivers in \\\\davinci\\Software\\ImpressoraXerox\_Drivers\\Windows 2K XP 03 Vista PS and depending on 32-bit or 64-bit choose the adequate folder and save the content to your computer (e.g. Softwate\\XeroxPrinterDriver),
+1. Get the drivers in \\\\davinci\\Software\\ImpressoraXerox_Drivers\\Windows 2K XP 03 Vista PS and depending on 32-bit or 64-bit choose the adequate folder and save the content to your computer (e.g. Softwate\\XeroxPrinterDriver),
 2. From the control panelgo to"Printer and Faxes", delete the old printer,
 3. In the same place, do an "Add printer",
 4. Select "Local Printer Attached to This Computer". Uncheck "automatically detect my printer's drivers",

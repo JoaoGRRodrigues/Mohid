@@ -1,12 +1,6 @@
 # Profiling
 
-Is is possible to profile code compiled with the Intel Fortran compiler using gprof [
-
-$$
-1
-$$
-
-](http://www.cs.utah.edu/dept/old/texinfo/as/gprof_toc.html). Intel Fortran's current release (9.1) requires Linux to generate profiling information.
+Is is possible to profile code compiled with the Intel Fortran compiler using gprof [\[1\]](http://www.cs.utah.edu/dept/old/texinfo/as/gprof_toc.html). Intel Fortran's current release (9.1) requires Linux to generate profiling information.
 
 ## Quick dive
 
@@ -26,18 +20,6 @@ To profile Mohid open the Makefiles used on [\*NIX platforms](nix-platforms.md).
 
 ## Usefull links
 
-NCSA [
+NCSA [\[2\]](http://www.ncsa.uiuc.edu/UserInfo/Resources/Hardware/IBMp690/Doc/Timing_Profiling.html).
 
-$$
-2
-$$
-
-](http://www.ncsa.uiuc.edu/UserInfo/Resources/Hardware/IBMp690/Doc/Timing_Profiling.html).
-
-GNU prof [
-
-$$
-3
-$$
-
-](http://www.cs.utah.edu/dept/old/texinfo/as/gprof_toc.html).
+GNU prof [\[3\]](http://www.cs.utah.edu/dept/old/texinfo/as/gprof_toc.html).

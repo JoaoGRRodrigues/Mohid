@@ -8,9 +8,7 @@ Regional scale models and large scale models can't reproduce accurately estuary 
 
 Let 
 
-$$
-Q=Q(t)
-$$
+$Q=Q(t)$
 
  be the water flux exchanged between the estuary and the coastal region. Let A be the surface of the estuary. Let H be the mean tidal deviation from neap-tide to spring-tide inside the estuary. Let 
 
@@ -29,7 +27,7 @@ $$
 
 
 $$
-V=\\int\_0^{\\tau/2} \\, Q(t) \\, dt
+V=\\int_0^{\\tau/2} \\, Q(t) \\, dt
 $$
 
 
@@ -39,7 +37,7 @@ We can further argument that the water flux is sinusoidal for the M2 tidal perio
 
 
 $$
-Q(t) = Q\_0 \\, \\sin\\left(\\frac{2\\,\\pi}{\\tau}\\,\\left(t - t\_0\\right)\\right)
+Q(t) = Q_0 \\, \\sin\\left(\\frac{2\\,\\pi}{\\tau}\\,\\left(t - t_0\\right)\\right)
 $$
 
 
@@ -49,5 +47,5 @@ Solving the system we obtain
 
 
 $$
-Q(t) = \\frac{V\\,\\pi}{\\tau}\\,\\sin\\left( \\frac{2\\,\\pi}{\\tau}\\,\\left(t - t\_0\\right) \\right)
+Q(t) = \\frac{V\\,\\pi}{\\tau}\\,\\sin\\left( \\frac{2\\,\\pi}{\\tau}\\,\\left(t - t_0\\right) \\right)
 $$

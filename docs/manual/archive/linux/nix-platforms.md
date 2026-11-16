@@ -14,13 +14,7 @@ This is a tutorial on how to install MOHID in linux and derived other platforms.
 
 #### HDF5 libraries
 
-To compile Mohid it is mandatory to have the HDF5 [
-
-$$
-1
-$$
-
-](http://hdf.ncsa.uiuc.edu/HDF5/) libraries compiled.
+To compile Mohid it is mandatory to have the HDF5 [\[1\]](http://hdf.ncsa.uiuc.edu/HDF5/) libraries compiled.
 
 ##### Extract from Codeplex
 
@@ -39,7 +33,7 @@ In HDF5's web page it is possible to obtain both binary distribuitions and the s
 > make install</code>
 ```
 
-Detailed information may be found in file ./release\_docs/INSTALL.
+Detailed information may be found in file ./release_docs/INSTALL.
 
 #### Zlib libraries
 
@@ -116,9 +110,9 @@ A:Here's a list of what could be causing these errors:
 
 A: Probably you have to rename
 
-GOTM**V**ariables\_in.**f90** ---> GOTM**v**ariables\_in.**f90**
+GOTM**V**ariables_in.**f90** ---> GOTM**v**ariables_in.**f90**
 
-GOTM**V**ariables\_out.**f90** ---> GOTM**v**ariables\_out.**f90**.
+GOTM**V**ariables_out.**f90** ---> GOTM**v**ariables_out.**f90**.
 
 This error shows up in linux because it's case-sensitive whereas windows isn't. Also, make sure that the extension is written in lower case.
 

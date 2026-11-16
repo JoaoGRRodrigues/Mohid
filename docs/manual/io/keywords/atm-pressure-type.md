@@ -2,12 +2,12 @@
 
 ## Overview
 
-**ATM\_PRESSURE\_TYPE** defines the type of Atmospheric pressure field to include. It allows currently allows two flavours: [Atmospheric pressure](http://en.wikipedia.org/wiki/Mean_Sea_Level_Pressure) and [Mslp](http://en.wikipedia.org/wiki/Mean_Sea_Level_Pressure) or Mean Sea-Level pressure.
+**ATM_PRESSURE_TYPE** defines the type of Atmospheric pressure field to include. It allows currently allows two flavours: [Atmospheric pressure](http://en.wikipedia.org/wiki/Mean_Sea_Level_Pressure) and [Mslp](http://en.wikipedia.org/wiki/Mean_Sea_Level_Pressure) or Mean Sea-Level pressure.
 
 ## Usage
 
 - Activate Atmospheric pressure [keyword](atm-pressure.md) in the [module Hydrodynamic](../../water/modules/hydrodynamic.md),
-- Active **ATM\_PRESSURE\_TYPE** keyword in the [module Hydrodynamic](../../water/modules/hydrodynamic.md),
+- Active **ATM_PRESSURE_TYPE** keyword in the [module Hydrodynamic](../../water/modules/hydrodynamic.md),
 - Include a new property in the [module Atmosphere](../../water/modules/atmosphere.md) called **atmospheric pressure** or
 
 **mslp**, or both (though only one will actually be used). The new property can be an ASCII file, a constant value, an HDF file, ...
@@ -48,9 +48,9 @@ Here some other related modules:
 
 ### Dependent keywords
 
-Here's a list of mandatory keywords to use with the **ATM\_PRESSURE\_TYPE** keyword:
+Here's a list of mandatory keywords to use with the **ATM_PRESSURE_TYPE** keyword:
 
-- [ATM\_PRESSURE](atm-pressure.md)
+- [ATM_PRESSURE](atm-pressure.md)
 
 ## Sample
 
@@ -98,9 +98,9 @@ NOTE: Only one of the above properties will actually be used. They were written 
 
 ## See also
 
-- [ATM\_PRESSURE](atm-pressure.md)
+- [ATM_PRESSURE](atm-pressure.md)
 - WIND
-- WIND\_SMOOTH\_PERIOD
+- WIND_SMOOTH_PERIOD
 - RAMP
-- INERTIAL\_PERIODS
+- INERTIAL_PERIODS
 - [Mohid Keywords Online DataBase](http://www.mohid.com/IHS)

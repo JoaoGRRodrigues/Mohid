@@ -17,7 +17,7 @@ Configuration of the **TidePrevInput.dat** file:
 <endtideprev>
 ```
 
-Sample IN\_TIDES file:
+Sample IN_TIDES file:
 
 ```
 <begingauge>

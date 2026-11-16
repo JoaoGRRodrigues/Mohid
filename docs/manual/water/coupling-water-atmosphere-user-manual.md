@@ -22,11 +22,11 @@ If one wants to simulate wind stress on water interface and account its role in 
 
 #### InterfaceWaterAir Data File
 
-- **Property “wind stress X”** and **Property “wind stress Y”** must be defined. These properties can be a constant value, entered as timeserie or computed by the model (REMAIN\_CONSTANT : 0).
+- **Property “wind stress X”** and **Property “wind stress Y”** must be defined. These properties can be a constant value, entered as timeserie or computed by the model (REMAIN_CONSTANT : 0).
 
 #### Atmosphere Data File
 
-- If Properties “wind stress X” and “wind stress Y” in InterfaceWaterAir data file are to be computed, then **Property “wind velocity X”** and **Property “wind velocity Y”** must occur in atmosphere data file. These properties can be a constant value, entered as timeserie or computed by the model (REMAIN\_CONSTANT : 0).
+- If Properties “wind stress X” and “wind stress Y” in InterfaceWaterAir data file are to be computed, then **Property “wind velocity X”** and **Property “wind velocity Y”** must occur in atmosphere data file. These properties can be a constant value, entered as timeserie or computed by the model (REMAIN_CONSTANT : 0).
 - If Property “wind velocity X” and Property “wind velocity Y” are to be computed, this is done with wind modulus and wind angle. Then **Property “wind modulus”** and **Property “wind angle”** must occur in atmosphere data file. These properties can be a constant value or entered as timeserie.
 
 ### Heat Fluxes
@@ -47,29 +47,29 @@ Water-Atmosphere heat fluxes and related properties in MOHID
 
 #### WaterProperties Data File
 
-- **Property “temperature”** must be defined because it is the state variable in water column affected by heat fluxes. Inside this property, block **keyword “SURFACE\_FLUXES”** value has to be equal 1 (one) so that water-air fluxes can be considered.
+- **Property “temperature”** must be defined because it is the state variable in water column affected by heat fluxes. Inside this property, block **keyword “SURFACE_FLUXES”** value has to be equal 1 (one) so that water-air fluxes can be considered.
 
 #### InterfaceWaterAir Data File
 
-- **Property “surface radiation”** must be defined in InterfaceWaterAir data file. This property accounts for solar flux trough the water surface and can be a constant value, entered as timeserie or computed by the model (REMAIN\_CONSTANT : 0).
-- **Property “non solar flux”** must be defined in InterfaceWaterAir data file. This property accounts for non solar flux (latent heat, sensible heat, etc) trough the water surface and can be a constant value, entered as timeserie or computed by the model (REMAIN\_CONSTANT : 0).
-    -   If Property “non solar flux” has to be computed than this is a balance between latent heat, sensible heat and long wave radiation trough the water surface. Thus **Property “latent heat”**, **Property “sensible heat”** and **Property “net long wave radiation”** must be defined in InterfaceWaterAir data file. These properties can be a constant value, entered as timeserie or computed by the model (REMAIN\_CONSTANT : 0).
+- **Property “surface radiation”** must be defined in InterfaceWaterAir data file. This property accounts for solar flux trough the water surface and can be a constant value, entered as timeserie or computed by the model (REMAIN_CONSTANT : 0).
+- **Property “non solar flux”** must be defined in InterfaceWaterAir data file. This property accounts for non solar flux (latent heat, sensible heat, etc) trough the water surface and can be a constant value, entered as timeserie or computed by the model (REMAIN_CONSTANT : 0).
+    -   If Property “non solar flux” has to be computed than this is a balance between latent heat, sensible heat and long wave radiation trough the water surface. Thus **Property “latent heat”**, **Property “sensible heat”** and **Property “net long wave radiation”** must be defined in InterfaceWaterAir data file. These properties can be a constant value, entered as timeserie or computed by the model (REMAIN_CONSTANT : 0).
     -   **Remark**: latent heat and sensible heat depend on water temperature so they should be computed by the model. Net long wave radiation is a balance between downward long wave radiation (emission from the atmosphere) and upward long wave radiation (emission from water) and should be computed by the model.
-        -   If Property “net long wave radiation” has to be computed than **Property "downward long wave radiation"** and **Property "upward long wave radiation"** must be defined in InterfaceWaterAir data file. These properties can be a constant value, entered as timeserie or computed by the model (REMAIN\_CONSTANT : 0).
+        -   If Property “net long wave radiation” has to be computed than **Property "downward long wave radiation"** and **Property "upward long wave radiation"** must be defined in InterfaceWaterAir data file. These properties can be a constant value, entered as timeserie or computed by the model (REMAIN_CONSTANT : 0).
         -   **Remark**: upward long wave radiation depends on water temperature so it should be computed by the model.
 
 #### Atmosphere Data File
 
-- If Property “surface radiation” in InterfaceWaterAir is to be computed by the model, **Property “solar radiation”** must be defined in Atmosphere data file. This property can be a constant value, entered as timeserie or computed by the model (REMAIN\_CONSTANT : 0). If this property is to be computed by the model, in Atmosphere data file **keyword RADIATION\_METHOD** (global variable) must define if it is MOHID method (value 1 - by default) or CE-QUAL based (value 2). See Solar Radiation theory for more details.
-    -   If Property “solar radiation” is to be computed also **Property “cloud cover”** is needed in Atmosphere data file. If Cloud Cover is computed, **Keyword CLOUD\_COVER\_METHOD** (global variable) must define if it is computed from sun hours (value 1), from radiation (value 3) or from random values (value 2 - by default).
+- If Property “surface radiation” in InterfaceWaterAir is to be computed by the model, **Property “solar radiation”** must be defined in Atmosphere data file. This property can be a constant value, entered as timeserie or computed by the model (REMAIN_CONSTANT : 0). If this property is to be computed by the model, in Atmosphere data file **keyword RADIATION_METHOD** (global variable) must define if it is MOHID method (value 1 - by default) or CE-QUAL based (value 2). See Solar Radiation theory for more details.
+    -   If Property “solar radiation” is to be computed also **Property “cloud cover”** is needed in Atmosphere data file. If Cloud Cover is computed, **Keyword CLOUD_COVER_METHOD** (global variable) must define if it is computed from sun hours (value 1), from radiation (value 3) or from random values (value 2 - by default).
     -   **Remark**: Solar Radiation is a common property in INAG meteorological stations so, if available, data should be entered in timeserie format instead of computing with the model. Notice that if radiation is computed the model needs cloud cover and if cloud cover is computed (from radiation)it needs radiation.
 - If Property “sensible heat” in InterfaceWaterAir is to be computed it is needed air temperature and wind velocity for the formulation . Thus, **Property “air temperature”** and **Property “wind velocity X”** and **Property “wind velocity Y”** must be defined in Atmosphere data file. These properties can be a constant value or entered as timeserie; wind velocity X and wind velocity Y can in addition be computed from Property “wind modulus” and Property “wind angle”, as stated previously (see 2.1.3). These last properties can be a constant value or entered as timeserie.
 - If Property “latent heat” in InterfaceWaterAir is to be computed properties needed are the same as in Property “sensible heat” plus humidity. Thus, **also Property “humidity”** has to be added in Atmosphere data file. This property can be a constant value or entered as timeserie.
-- If Property “downward long wave radiation” in InterfaceWaterAir is to be computed, then **Property “air temperature”** and **Property “cloud cover”** need to be defined in Atmosphere data file. These properties can be a constant value or entered as timeserie; cloud cover can in addition be computed by the model. If cloud cover is computed, **Keyword CLOUD\_COVER\_METHOD** (global variable) must define if it is computed from sun hours (value 1), from radiation (value 3). Until June 2015 there was the option to compute cloud cover from random values (value 2) but this option was removed.
+- If Property “downward long wave radiation” in InterfaceWaterAir is to be computed, then **Property “air temperature”** and **Property “cloud cover”** need to be defined in Atmosphere data file. These properties can be a constant value or entered as timeserie; cloud cover can in addition be computed by the model. If cloud cover is computed, **Keyword CLOUD_COVER_METHOD** (global variable) must define if it is computed from sun hours (value 1), from radiation (value 3). Until June 2015 there was the option to compute cloud cover from random values (value 2) but this option was removed.
 
-- **Property cloud cover** if defined with **Keyword CLOUD\_COVER\_METHOD** 3 (from radiation) now has two optional keywords for customization:
-    -   **keyword CLOUD\_COVER\_NIGHT** inside property block allows to define the cloud cover value at night (by default if the keyword is not present the value will be 0.595 - the old value that was hardcoded; this value is consistent with "FAO Irrigation and Draianage Paper Report 56" suggested values)
-    -   **keyword CLOUD\_COVER\_MIN\_DAY** inside property block allows to define the minimum cloud cover during day (to remove very low values during sunrise that appear from the computation) and the default value if the keyword is not present is 0.3 (from "FAO Irrigation and Draianage Paper Report 56" suggested values).
+- **Property cloud cover** if defined with **Keyword CLOUD_COVER_METHOD** 3 (from radiation) now has two optional keywords for customization:
+    -   **keyword CLOUD_COVER_NIGHT** inside property block allows to define the cloud cover value at night (by default if the keyword is not present the value will be 0.595 - the old value that was hardcoded; this value is consistent with "FAO Irrigation and Draianage Paper Report 56" suggested values)
+    -   **keyword CLOUD_COVER_MIN_DAY** inside property block allows to define the minimum cloud cover during day (to remove very low values during sunrise that appear from the computation) and the default value if the keyword is not present is 0.3 (from "FAO Irrigation and Draianage Paper Report 56" suggested values).
 
 ### Mass Fluxes
 
@@ -315,8 +315,8 @@ OUTPUT_HDF              : 0
 
 ## Links
 
-- [Light\_extinction](../reference/light-extinction.md)
-- [Module\_Atmosphere](modules/atmosphere.md)
-- [Module\_InterfaceWaterAir](modules/interfacewaterair.md)
+- [Light_extinction](../reference/light-extinction.md)
+- [Module_Atmosphere](modules/atmosphere.md)
+- [Module_InterfaceWaterAir](modules/interfacewaterair.md)
 - [ConvertToHDF5](../tools/converttohdf5.md)
 - [Meteo](../reference/meteo.md) - Available meteorological data

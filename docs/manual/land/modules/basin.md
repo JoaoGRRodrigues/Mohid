@@ -55,113 +55,35 @@ Mohid Land has a sub-daily time step. According with FAO-56 [Hourly Time Step ET
 
 $\ ET_o=\frac{ \left  0.408\Delta(R_n - G)   +   \gamma \frac{37}{T_h+273}u_2 \left ( e^{o}*T_h-e_a \right )} {    \Delta  + \gamma \left (1 + 0.34u_2) }$
 
-ETo = reference evapotranspiration 
+ETo = reference evapotranspiration \[mm hour-1\]
 
-$$
-mm hour-1
-$$
+Rn = net radiation at the grass surface \[MJ m-2 hour-1\]
 
+G = soil heat flux density \[MJ m-2 hour-1\]
 
+T~h~ = mean hourly air temperature at 2m hight \[°C\]
 
-Rn = net radiation at the grass surface 
+Δ = saturation slope vapour pressure curve at Th \[kPa °C-1\]
 
-$$
-MJ m-2 hour-1
-$$
+*γ* = psychrometric constant \[kPa °C-1\]
 
+e°(Th) = saturation vapour pressure at air temperature Th \[kPa\]
 
+e~a~ = average hourly actual vapour pressure \[kPa\]
 
-G = soil heat flux density 
-
-$$
-MJ m-2 hour-1
-$$
-
-
-
-T~h~ = mean hourly air temperature at 2m hight 
-
-$$
-°C
-$$
-
-
-
-Δ = saturation slope vapour pressure curve at Th 
-
-$$
-kPa °C-1
-$$
-
-
-
-*γ* = psychrometric constant 
-
-$$
-kPa °C-1
-$$
-
-
-
-e°(Th) = saturation vapour pressure at air temperature Th 
-
-$$
-kPa
-$$
-
-
-
-e~a~ = average hourly actual vapour pressure 
-
-$$
-kPa
-$$
-
-
-
-u~2~ = average hourly wind speed at 2m hight 
-
-$$
-m s-1
-$$
-
-.
+u~2~ = average hourly wind speed at 2m hight \[m s-1\].
 
 Calculate Psicrometric constant:
 
 $\gamma =\frac{ \left( c_p \right)_{air} *  P }{ \lambda_v * MW_{ratio} }$
 
-$\gamma =$ psychrometric constant 
+$\gamma =$ psychrometric constant \[kPa °C^\-1^\],
 
-$$
-kPa °C^\-1^
-$$
+P = atmospheric pressure \[kPa\],
 
-,
+$\lambda_v =$ latent heat of water vaporization, 2.45 \[MJ kg^\-1^\],
 
-P = atmospheric pressure 
-
-$$
-kPa
-$$
-
-,
-
-$\lambda_v =$ latent heat of water vaporization, 2.45 
-
-$$
-MJ kg^\-1^
-$$
-
-,
-
-$c_p =$ specific heat of air at constant pressure, 1.013 10-3 
-
-$$
-MJ kg^\-1^ °C^\-1^
-$$
-
-,
+$c_p =$ specific heat of air at constant pressure, 1.013 10-3 \[MJ kg^\-1^ °C^\-1^\],
 
 $MW_{ratio} =$ ratio molecular weight of water vapor/dry air = 0.622.
 
@@ -199,13 +121,7 @@ The actual vapour pressure can also be calculated from the relative humidity.
 
 $e_a = RH_h * e_{0}(T_h)$
 
-$RH_h$ = Relative Humidity 
-
-$$
--
-$$
-
-
+$RH_h$ = Relative Humidity \[-\]
 
 The Penman Montheith Potential Evapotranspiration computation will be active if in basin file
 
@@ -253,125 +169,35 @@ If they are used, Potential transpiration computed in Module Basin is given to M
 
 ### .srb TimeSeries
 
-water\_column\_
+water_column_\[m\] - runoff water column height in top of soil (height from soil surface)
 
-$$
-m
-$$
+water_level_\[m\] - runoff water altitude (in reference to mean sea level)
 
- - runoff water column height in top of soil (height from soil surface)
+Infil._Rate_\[mm/hour\] - infiltration rate in the selected cell
 
-water\_level\_
+Precipitation_Rate_\[mm/hour\] - precipitation rate in the selected cell
 
-$$
-m
-$$
+Throughfall_Rate_\[mm/hour\] - precipitation rate that arrives to soil surface (after leaf interception) in the selected cell
 
- - runoff water altitude (in reference to mean sea level)
+Canopy_Capacity_\[m\] - leaf capacity to accumulate water (in height) in the selected cell
 
-Infil.\_Rate\_
+Canopy_Storage_\[m\] - leaf accumulated water (in height) in the selected cell
 
-$$
-mm/hour
-$$
+Canopy_Drainage_\[m\] - leaf dip water (in height) in the selected cell
 
- - infiltration rate in the selected cell
+Reference_Evapotranspiration_\[mm/h\] - reference evapotranspiration (computed by Penman Motheith or given by the user)
 
-Precipitation\_Rate\_
+Potential_Crop_EVTP_\[mm/h\] - reference evapotranspiration \* Kc
 
-$$
-mm/hour
-$$
+Potential_Evaporation_\[mm/h\] - potential crop EVTP separated in evaporation (potential as may not occur depending on soil water availability)
 
- - precipitation rate in the selected cell
+Potential_Transpiration_\[mm/h\] - potential crop EVTP separated in transpiration (potential as may not occur depending on soil water availability)
 
-Throughfall\_Rate\_
+EvapoTranspiration_Rate_\[mm/hour\] - actual evapotranspiration in the selected cell (the effevtive water removed)
 
-$$
-mm/hour
-$$
+Actual_Evaporation_\[mm/h\] - effective evaporation removed (from potential evaporation) - in surface soil
 
- - precipitation rate that arrives to soil surface (after leaf interception) in the selected cell
-
-Canopy\_Capacity\_
-
-$$
-m
-$$
-
- - leaf capacity to accumulate water (in height) in the selected cell
-
-Canopy\_Storage\_
-
-$$
-m
-$$
-
- - leaf accumulated water (in height) in the selected cell
-
-Canopy\_Drainage\_
-
-$$
-m
-$$
-
- - leaf dip water (in height) in the selected cell
-
-Reference\_Evapotranspiration\_
-
-$$
-mm/h
-$$
-
- - reference evapotranspiration (computed by Penman Motheith or given by the user)
-
-Potential\_Crop\_EVTP\_
-
-$$
-mm/h
-$$
-
- - reference evapotranspiration \* Kc
-
-Potential\_Evaporation\_
-
-$$
-mm/h
-$$
-
- - potential crop EVTP separated in evaporation (potential as may not occur depending on soil water availability)
-
-Potential\_Transpiration\_
-
-$$
-mm/h
-$$
-
- - potential crop EVTP separated in transpiration (potential as may not occur depending on soil water availability)
-
-EvapoTranspiration\_Rate\_
-
-$$
-mm/hour
-$$
-
- - actual evapotranspiration in the selected cell (the effevtive water removed)
-
-Actual\_Evaporation\_
-
-$$
-mm/h
-$$
-
- - effective evaporation removed (from potential evaporation) - in surface soil
-
-Actual\_Transpiration\_
-
-$$
-mm/h
-$$
-
- - effective transpiration removed (from potential transpiration) - along vegetation roots
+Actual_Transpiration_\[mm/h\] - effective transpiration removed (from potential transpiration) - along vegetation roots
 
 [Check Mohid Land Heights and Levels to understand the difference between level and height results](http://screencast.com/t/I8We0B4j2uJ)
 
@@ -398,7 +224,7 @@ OL_Volume_To_Channels_m3/s              - flow from runoff to river (positive fr
 GW_Volume_To_Channels_m3/s              - flow from porous media to river (positive from porousmedia to river, negative from river to porousmedia)
 ```
 
-The accumulation in the watershed would be a difference between the inputs to the watershed and outputs from the watershed Accumulation = Sum ((In – Out)\*LocalTimeStep) In -> Rain (Rain\_Above\_Leafs) + Discharges IN (there is no global output of the discharges, if you have input discharges you have to compute it with the values inserted) Out-> Water loss from soil or surface - Evapotranspiration (Evap\_From\_Vegetation + Evap\_From\_Ground + Evap\_From\_Soil) plus water lost from river (Out\_Volume\_Channel) pus water lost from runoff (Out\_Volume\_Overland)
+The accumulation in the watershed would be a difference between the inputs to the watershed and outputs from the watershed Accumulation = Sum ((In – Out)\*LocalTimeStep) In -> Rain (Rain_Above_Leafs) + Discharges IN (there is no global output of the discharges, if you have input discharges you have to compute it with the values inserted) Out-> Water loss from soil or surface - Evapotranspiration (Evap_From_Vegetation + Evap_From_Ground + Evap_From_Soil) plus water lost from river (Out_Volume_Channel) pus water lost from runoff (Out_Volume_Overland)
 
 Note: Negative discharges in river or discharges in runoff are not yet accounted in the mass balance (for mass error results). All that discharges have to be accounted if doing the accumulation computation yourself.
 

@@ -9,13 +9,7 @@ Welcome to the 1st Workshop in programming for MOHID. Except maybe for the first
 - Date: **21-05-2010**, opening at 9:30.
 - Place: **Sala P1**, no piso1 do departamento de Matemática. Da parte da tarde: sala de reuniões do DEM, no pav. Mecânica III . ~salão de reuniões at MARETEC, pav. Mecânica I, 1st floor, IST-UTL.~
 - Wifi internet access: eduroam or eduroam-guest (**login: mohidcode, pass: VSm6Z2**).
-- Computers and software: Each participant is expected to bring their laptops with wifi, with VS 2008, Intel Fortran
-
-$$
-\\\\kepler\\Software
-$$
-
- and an [svn client](../../tools/tortoisesvn.md) already installed. Having already compiled the latest version of the MOHID code from [codeplex](../../archive/web/codeplex.md) is a plus.
+- Computers and software: Each participant is expected to bring their laptops with wifi, with VS 2008, Intel Fortran\[\\\\kepler\\Software\] and an [svn client](../../archive/windows/tortoisesvn.md) already installed. Having already compiled the latest version of the MOHID code from [codeplex](../../archive/web/codeplex.md) is a plus.
 
 ### Registered participants
 
@@ -37,10 +31,10 @@ $$
 ## Program
 
 - 9:30 - 10:00, [Mohid programming](mohid-programming.md): History and primer by G.Riflet
-- 10:00 - 10:30, [Getting the latest version](../../tools/tortoisesvn.md), making a simple edit, comenting, committing, and reporting by G.Riflet
+- 10:00 - 10:30, [Getting the latest version](../../archive/windows/tortoisesvn.md), making a simple edit, comenting, committing, and reporting by G.Riflet
 - 10:30 - 11:00, The [modular object-oriented philosophy](object-oriented-programming.md) in MOHID in the code, by G.Riflet
 - 11:00 - 11:30, [Fortran](fortran.md) primer ~The fillmatrix module~, by G.Riflet
-- 11:30 - 11:45, [Continuous integration server for MOHID](../../tools/hudson.md), by Eduardo Aires
+- 11:30 - 11:45, [Continuous integration server for MOHID](../../archive/web/hudson.md), by Eduardo Aires
 - 11:45 - 12:00, Adding new features in an existing module: creating a new property~keyword~ in module Benthos, by G.Riflet
 - 12:00 - 12:30, Continuing the latter~Creating a new tool in MOHID~, by G.Riflet
 

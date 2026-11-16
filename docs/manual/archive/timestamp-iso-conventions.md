@@ -18,7 +18,7 @@ And here's the same set's alphabetical sorting (this is the default sorting when
 - 12-10-2006
 - 13-08-2006
 
-The alphabetical and chronological sorting don't match! This is a nuisance, especially when dealing with timestamped files (ex: *11-09-2006\_myfile.dat*). Thus, the best suited Timestamp Convention in computerized systems is one that matches alphabetical sorting with chronological sorting. The simplest one is the *20060813* convention. Here's the same set's alphabetical sorting:
+The alphabetical and chronological sorting don't match! This is a nuisance, especially when dealing with timestamped files (ex: *11-09-2006_myfile.dat*). Thus, the best suited Timestamp Convention in computerized systems is one that matches alphabetical sorting with chronological sorting. The simplest one is the *20060813* convention. Here's the same set's alphabetical sorting:
 
 - 20060811
 - 20060812

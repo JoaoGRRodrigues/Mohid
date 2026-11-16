@@ -6,7 +6,7 @@ XYZ points are use do define discrete geo-referenced information. This informati
 
 ## XYZ Points file
 
-XYZ Points items are stored in an ASCII text file. The default extension for XYZ Points files in [MohidGIS](../../tools/gui/mohid-gis.md) is **\*.xyz**. This file is organized in [blocks](../keywords/blocks.md), each containing the coordinates for a certain attribute. One block is defined by the following keywords: **<begin\_xyz>** and **<end\_xyz>**. Note that these keywords are case sensitive. One file can contain an infinite number of blocks. Inside each block there at least 3 columns. The left column represents the XX coordinates of the polygon vertices and the right one to the YY coordinates of the polygon vertices. The third column contains the attribute value. A fourth column can be optionally included and it is handled as a character string which can also be used as a legend for each point.
+XYZ Points items are stored in an ASCII text file. The default extension for XYZ Points files in [MohidGIS](../../tools/gui/mohid-gis.md) is **\*.xyz**. This file is organized in [blocks](../keywords/blocks.md), each containing the coordinates for a certain attribute. One block is defined by the following keywords: **<begin_xyz>** and **<end_xyz>**. Note that these keywords are case sensitive. One file can contain an infinite number of blocks. Inside each block there at least 3 columns. The left column represents the XX coordinates of the polygon vertices and the right one to the YY coordinates of the polygon vertices. The third column contains the attribute value. A fourth column can be optionally included and it is handled as a character string which can also be used as a legend for each point.
 
 ## Example
 

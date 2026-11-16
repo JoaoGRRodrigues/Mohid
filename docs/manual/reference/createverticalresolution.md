@@ -10,7 +10,7 @@ Allows the user to choose between providing the desired layer number or the desi
 
 Main features:
 
-- interaction with input file is performed through a nomfich file (input file indicated in IN\_MODEL; reference path is indicated in ROOT\_SRT);
+- interaction with input file is performed through a nomfich file (input file indicated in IN_MODEL; reference path is indicated in ROOT_SRT);
 
 - input file:
 
@@ -24,7 +24,7 @@ OUTPUTFILENAME : ...
 
 - vertical domain type intended (not mandatory):
 
-DOMAIN\_TYPE : ... (only current option and default is CARTESIAN)
+DOMAIN_TYPE : ... (only current option and default is CARTESIAN)
 
 - maximum bathymetry depth:
 
@@ -32,21 +32,21 @@ MAXIMUMDEPTH : ...
 
 - required property change per layer (specified instead of LAYERS keyword)
 
-PROPERTY\_STEP : ...
+PROPERTY_STEP : ...
 
-- required number of layers (specified instead of PROPERTY\_STEP keyword)
+- required number of layers (specified instead of PROPERTY_STEP keyword)
 
 LAYERS : ...
 
-(mandatory to provide one of LAYERS or PROPERTY\_STEP)
+(mandatory to provide one of LAYERS or PROPERTY_STEP)
 
-- maximum depth for surface layer (not mandatory, used only if PROPERTY\_STEP):
+- maximum depth for surface layer (not mandatory, used only if PROPERTY_STEP):
 
-MAXDEPTH\_SURFACE : ... (default is 100.0m)
+MAXDEPTH_SURFACE : ... (default is 100.0m)
 
-- maximum depth for bottom layer (not mandatory, used only if PROPERTY\_STEP):
+- maximum depth for bottom layer (not mandatory, used only if PROPERTY_STEP):
 
-MAXDEPTH\_BOTTOM : ... (default is 500.0m)
+MAXDEPTH_BOTTOM : ... (default is 500.0m)
 
 - profile file:
 
@@ -60,8 +60,8 @@ MAXDEPTH\_BOTTOM : ... (default is 500.0m)
 
 Some notes:
 
-- in case the surface layer exceeds the maximum depth for surface layer for PROPERTY\_STEP option the layer is divided till sublayers have depth smaller than maximum depth; the surface layer depth is for the check added to the first profile depth (the one most near surface);
+- in case the surface layer exceeds the maximum depth for surface layer for PROPERTY_STEP option the layer is divided till sublayers have depth smaller than maximum depth; the surface layer depth is for the check added to the first profile depth (the one most near surface);
 
 - if maximum depth of bathymetry exceeds the deeper profile depth then exceeding depth is considered in the last layer (the one most in bottom);
 
-- in case the bottom layer exceeds the maximum depth for bottom layer for PROPERTY\_STEP option the layer is divided till sublayers have depth smaller than maximum depth.
+- in case the bottom layer exceeds the maximum depth for bottom layer for PROPERTY_STEP option the layer is divided till sublayers have depth smaller than maximum depth.

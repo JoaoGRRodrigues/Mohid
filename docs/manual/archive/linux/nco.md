@@ -1,6 +1,6 @@
 # NCO
 
-They are [netcdf](netcdf.md) files averagers, concateners and renamer operators that act on a netcdf dataset [hyperslab](../../reference/README.md#hyperslab#hyperslab) or an ensemble of netcdf datasets [hyperslabs](../../reference/README.md#hyperslab#hyperslab).
+They are [netcdf](netcdf.md) files averagers, concateners and renamer operators that act on a netcdf dataset [hyperslab](../../reference/README.md#hyperslab) or an ensemble of netcdf datasets [hyperslabs](../../reference/README.md#hyperslab).
 
 ## Installing
 
@@ -44,7 +44,7 @@ Rename the variable p to pressure and t to temperature in netCDF ‘in.nc’. In
 > ncrename -v p,pressure -v .t,temperature in.nc
 ```
 
-Rename the attribute long\_name to largo\_nombre in the variable u, and no other variables in netCDF ‘in.nc’.
+Rename the attribute long_name to largo_nombre in the variable u, and no other variables in netCDF ‘in.nc’.
 
 ```
 > ncrename -a u:long_name,largo_nombre in.nc
@@ -92,7 +92,7 @@ The following command performs the time average over an ensemble of files (they 
 
 ### Renaming variables names
 
-Renames the Vel.\_X variables to Vel\_X. This is because the "." character isn't a very good idea to be present in a netcdf variable name, or in any variable at all. The matlab scripts don't read such variables.
+Renames the Vel._X variables to Vel_X. This is because the "." character isn't a very good idea to be present in a netcdf variable name, or in any variable at all. The matlab scripts don't read such variables.
 
 ```
 >  for i in `find . | grep 'Portugal_Hydrodynamic'`;
@@ -136,13 +136,13 @@ for> done
 
 ### PCOMS renaming a variable in all files
 
-Rename variable *vm* into CF compliant variable name *sea\_water\_speed*:
+Rename variable *vm* into CF compliant variable name *sea_water_speed*:
 
 ```
 > time for i in `ls -1 | grep U_V`; do sudo ncrename -v vm,sea_water_speed $i; echo . ; done
 ```
 
-Rename attribute long\_name into CF compliant attribute
+Rename attribute long_name into CF compliant attribute
 
 ```
 > time for i in `ls -1 | grep U_V`;

@@ -1,53 +1,17 @@
 # Actor Model
 
-According to the Wikipedia[
-
-$$
-1
-$$
-
-](http://en.wikipedia.org/wiki/Actor_model) "the actor model in computer science is a mathematical model of concurrent computation that treats "actors" as the universal primitives of concurrent digital computation: in response to a message that it receives, an actor can make local decisions, create more actors, send more messages, and determine how to respond to the next message received" (changing state). The actor model is a special form of [Reactive Programming](../development/programming/reactive-programming.md).
+According to the Wikipedia[\[1\]](http://en.wikipedia.org/wiki/Actor_model) "the actor model in computer science is a mathematical model of concurrent computation that treats "actors" as the universal primitives of concurrent digital computation: in response to a message that it receives, an actor can make local decisions, create more actors, send more messages, and determine how to respond to the next message received" (changing state). The actor model is a special form of [Reactive Programming](../development/programming/reactive-programming.md).
 
 There are several resources in the Internet explaining the Actor Model and Reactive Programing. Some videos and interesting interviews:
 
-- Hewitt, Meijer and Szyperski: The Actor Model (everything you wanted to know, but were afraid to ask)[
-
-$$
-2
-$$
-
-](http://channel9.msdn.com/Shows/Going+Deep/Hewitt-Meijer-and-Szyperski-The-Actor-Model-everything-you-wanted-to-know-but-were-afraid-to-ask);
-- Francesco Cesarini and Viktor Klang on the Reactive Manifesto[
-
-$$
-3
-$$
-
-](http://www.infoq.com/interviews/cesarini-klang-reactive-manifesto); and
-- Up And Out Scaling Software With Akka - Jonas Bonér[
-
-$$
-4
-$$
-
-](http://www.youtube.com/watch?v=t4KxWDqGfcs)
+- Hewitt, Meijer and Szyperski: The Actor Model (everything you wanted to know, but were afraid to ask)[\[2\]](http://channel9.msdn.com/Shows/Going+Deep/Hewitt-Meijer-and-Szyperski-The-Actor-Model-everything-you-wanted-to-know-but-were-afraid-to-ask);
+- Francesco Cesarini and Viktor Klang on the Reactive Manifesto[\[3\]](http://www.infoq.com/interviews/cesarini-klang-reactive-manifesto); and
+- Up And Out Scaling Software With Akka - Jonas Bonér[\[4\]](http://www.youtube.com/watch?v=t4KxWDqGfcs)
 
 To read on-line:
 
-- The Reactive Manifesto[
-
-$$
-5
-$$
-
-](http://www.reactivemanifesto.org/); and
-- Learn You Some Erlang for great good![
-
-$$
-6
-$$
-
-](http://learnyousomeerlang.com/content);
+- The Reactive Manifesto[\[5\]](http://www.reactivemanifesto.org/); and
+- Learn You Some Erlang for great good![\[6\]](http://learnyousomeerlang.com/content);
 
 The actor model makes it easier to reason about distributed programming. All MPI directives will be packed up in a set of well defined modules. Communication among actors takes place through clear and standard interfaces with well defined behaviors. This software architecture is proven to provide scalability, resilience and responsiveness. There is no central management and no points of synchronism so actors just react to events; this is a simpler way of reasoning about concurrency and parallelism.
 

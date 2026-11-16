@@ -9,7 +9,7 @@ MohidWater is the software that runs the Mohid Water modeling tool. Designed in 
 
 ### Linux platforms
 
-If you're using Linux, you can send an e-mail to **general@mohid.com** asking for source files package. Refer to [\*NIX\_platforms](../archive/linux/nix-platforms.md) on how to build it and install it.
+If you're using Linux, you can send an e-mail to **general@mohid.com** asking for source files package. Refer to [\*NIX_platforms](../archive/linux/nix-platforms.md) on how to build it and install it.
 
 ## How to setup a simulation
 

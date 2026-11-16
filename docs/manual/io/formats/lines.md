@@ -6,7 +6,7 @@ Lines items are defined by the starting point and ending point. Lines items can 
 
 ## Lines file
 
-Lines items are stored in an ASCII text file. The default extension for Lines files in [MohidGIS](../../tools/gui/mohid-gis.md) is **\*.lin**. This file is organized in [blocks](../keywords/blocks.md), each containing the vertices for a determined polygon. One block is defined by the following [keywords](../keywords/keywords.md): **<begin\_line>** and **<end\_line>**. Note that these keywords are case sensitive. One file can contain an infinite number of blocks. Inside each block there are 2 columns and 2 rows: the first row is relative to the line starting point. The second row is relative to the line ending point. The left column relates to the XX coordinates of a point and the right one to the YY coordinates.
+Lines items are stored in an ASCII text file. The default extension for Lines files in [MohidGIS](../../tools/gui/mohid-gis.md) is **\*.lin**. This file is organized in [blocks](../keywords/blocks.md), each containing the vertices for a determined polygon. One block is defined by the following [keywords](../keywords/keywords.md): **<begin_line>** and **<end_line>**. Note that these keywords are case sensitive. One file can contain an infinite number of blocks. Inside each block there are 2 columns and 2 rows: the first row is relative to the line starting point. The second row is relative to the line ending point. The left column relates to the XX coordinates of a point and the right one to the YY coordinates.
 
 ## Sample file
 

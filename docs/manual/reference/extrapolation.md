@@ -26,7 +26,7 @@ $w_{ki} = \frac{1}{d^2\left(X_i,\;Y_k\right)}$
 
 A [gaussian](http://en.wikipedia.org/wiki/Gaussian_function) weighted average allows to determine characteristic radius of influence, $\sigma$, where, within that radius, the points of $I$ will have a total weight of 68% in the average relative to the other points of $I$. This radius of influence parameter is useful to parameterize the interpolation/extrapolation. Choices can be made such as choosing a shorter radius when the interpolating dataset shows greater variability or such as choosing a larger radius when the interpolating dataset displays a smoother variability. The isotropic gaussian function is given by:
 
-**w\_{ki} = \\e{\\left(-\\frac{ d^2\\left(X\_i,\\;Y\_k\\right)}{\\sigma^2}\\right)}**
+** w_{ki} = \\e{\\left(-\\frac{ d^2\\left(X_i,\\;Y_k\\right)}{\\sigma^2}\\right)}**
 
 Of course, non-isotropic elliptical gaussian could be used instead, but being more complex, a physical rationale to use them would also be expected. The rationale behind the use of the simple isotropic gaussian is that the user intuitively wants to define a circle of influence of the extrapolating field in the extrapolated points. And this radius is a function of the specific characteristics of the field to extrapolate (smoothness, constrast, periodicity, etc...).
 
@@ -45,7 +45,7 @@ Of course, non-isotropic elliptical gaussian could be used instead, but being mo
 
 - ![](../assets/images/Extrapol_gaussian.png)
 
-    Gaussian extrapolation with $\sigma=5\%$ of the domain characteristic length (average of the width and height), **w\_{ki} = \\e{\\left(-\\frac{ d^2\\left(X\_i,\\;Y\_k\\right)}{\\sigma^2}\\right)}**
+    Gaussian extrapolation with $\sigma=5\%$ of the domain characteristic length (average of the width and height), ** w_{ki} = \\e{\\left(-\\frac{ d^2\\left(X_i,\\;Y_k\\right)}{\\sigma^2}\\right)}**
 
 ## See also
 

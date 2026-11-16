@@ -1,6 +1,6 @@
 # Authors and contributions
 
-[Mohid Water Modelling System](../overview/README.md#mohid-water-modelling-system#mohid-water-modelling-system) is currently developed by [MARETEC](http://www.maretec.mohid.com/), a research group at [Instituto Superior Técnico](http://www.ist.utl.pt/), Technical University of Lisbon, Portugal, in cooperation with ([Hidromod](http://www.hidromod.pt/)).
+[Mohid Water Modelling System](../overview/README.md#mohid-water-modelling-system) is currently developed by [MARETEC](http://www.maretec.mohid.com/), a research group at [Instituto Superior Técnico](http://www.ist.utl.pt/), Technical University of Lisbon, Portugal, in cooperation with ([Hidromod](http://www.hidromod.pt/)).
 
 The architecture of the model is presently coordinated by Ramiro Neves, Paulo Leitão ([Hidromod](http://www.hidromod.pt/)), Frank Braunschweig and Luis Fernandes. The engineering of the model is mainly a responsibility of Ricardo Miranda (software concepts and architecture), Paulo Leitão (numerical algorithms), Frank Braunschweig (software architecture / implementation and GUI development) and Luis Fernandes (software architecture / implementation and GUI development).
 
@@ -15,13 +15,7 @@ A lot of other people gave contributions that all together have strongly influen
 ## Source code from other projects included in Mohid
 
 > -   [GOTM](http://www.gotm.net/) - turbulence model library included in [Module Turbulence](../water/modules/turbulence.md)
-> -   WGS84 to NLRD coordinate conversion C code written by E.J.O Schrama 
-
-$$
-e.j.o.schrama@lr.tudelft.nl
-$$
-
- was ported to FORTRAN95 into [Module HorizontalGrid](../water/modules/README.md#module-horizontalgrid#module-horizontalgrid).
+> -   WGS84 to NLRD coordinate conversion C code written by E.J.O Schrama \[e.j.o.schrama@lr.tudelft.nl\] was ported to FORTRAN95 into [Module HorizontalGrid](../water/modules/README.md#module-horizontalgrid).
 
 ## Software used in Mohid
 

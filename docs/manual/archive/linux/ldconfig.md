@@ -22,7 +22,7 @@ Here's how to solve the problem. In order to add a shared library in your linux 
 > cd /usr/lib
 ```
 
-- Make a [symbolic link](README.md#ln#ln) to it:
+- Make a [symbolic link](README.md#ln) to it:
 
 ```
 > ln -s $LOCATION/lib.so.0.0.0 lib.so

@@ -6,12 +6,12 @@ The EPSON is a fine printer, but installing the drivers in Win XP 64 can be trou
 
 ## Installing drivers
 
-1. Get the drivers *\\\\Davinci\\Software\\ImpressoraEpson\_Drivers* and copy the folder to somewhere in your computer (e.g. Software\\ImpressoraEPSON\_Drivers),
+1. Get the drivers *\\\\Davinci\\Software\\ImpressoraEpson_Drivers* and copy the folder to somewhere in your computer (e.g. Software\\ImpressoraEPSON_Drivers),
 2. From the control panel do an Add printer,
 3. Select *Local Printer Attached to This Computer*. Uncheck *automatically detect my printer's drivers*,
 4. *Create a New Port*\-->*Standard TCP/IP*,
 5. Printer IP --> 192.168.20.128,
-6. *Have disk ...* and select the .INF file in the folder in your computer where you saved the drivers (e.g. Software\\ImpressoraEPSON\_Drivers),
+6. *Have disk ...* and select the .INF file in the folder in your computer where you saved the drivers (e.g. Software\\ImpressoraEPSON_Drivers),
 7. Say *ok* to everything,
 8. That's it!
 

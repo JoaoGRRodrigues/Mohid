@@ -37,7 +37,7 @@ Options:
   -u, --uid UID                 force use the UID for the new user account
 ```
 
-## Adding users in Dual\_64
+## Adding users in Dual_64
 
 ```
 > adduser -m USERNAME

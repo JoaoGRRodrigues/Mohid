@@ -25,5 +25,5 @@
 ## External References
 
 - [Download here](http://batch.fcodersoft.com/2jpeg/)
-- [jpeg2ps](README.md#jpeg2ps#jpeg2ps)
+- [jpeg2ps](README.md#jpeg2ps)
 - [2gif](../../tools/2gif.md)

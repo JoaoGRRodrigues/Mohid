@@ -132,7 +132,7 @@ Bottom fluxes do not need for a boundary property definition (water exiting doma
 
 #### Lateral Boundary
 
-The keyword in property block in PorousMediaProperties\_X.dat that allows to define the boundary condition method is:
+The keyword in property block in PorousMediaProperties_X.dat that allows to define the boundary condition method is:
 
 ```
 <beginproperty>
@@ -170,7 +170,7 @@ In Modification phase, the discharges are explicit and computed before transport
 
 ### Keywords
 
-For positive discharges the discharge concentration is read from Discharges\_X.dat and the following keyword needs to exist in the PorousMedia Properties\_X.dat inside the property block of the discharged property:
+For positive discharges the discharge concentration is read from Discharges_X.dat and the following keyword needs to exist in the PorousMedia Properties_X.dat inside the property block of the discharged property:
 
 ```
 DISCHARGES : 1

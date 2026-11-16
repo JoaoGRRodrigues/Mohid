@@ -1,6 +1,6 @@
 # Get NASA DEM for SWAT
 
-This is a 3 step task and for simplification a structure as the one in \\\\Datacenter\\Albufeiras\_Eutrofizacao\\ComoFazer\\EstruturaDirectoriasAlbufeiras\\1.PreparaInputs\\3.SWAT\\1.MDT is advised
+This is a 3 step task and for simplification a structure as the one in \\\\Datacenter\\Albufeiras_Eutrofizacao\\ComoFazer\\EstruturaDirectoriasAlbufeiras\\1.PreparaInputs\\3.SWAT\\1.MDT is advised
 
 ## Get the DEM from NASA
 
@@ -38,4 +38,4 @@ Por vezes o DEM pode vir sem dados em alguns pixeis. Este processo é para os re
 
 ## Change the coordinate system from Geographic to Militares Portuguesas
 
-Check second part of the video ComoObterMDTParaSWAT.swf at \\\\\\Datacenter\\Albufeiras\_Eutrofizacao\\Produtos\\Apresentacoes\\Videos
+Check second part of the video ComoObterMDTParaSWAT.swf at \\\\\\Datacenter\\Albufeiras_Eutrofizacao\\Produtos\\Apresentacoes\\Videos

@@ -86,7 +86,7 @@ With X the concentration, b,λ, m & n the model parameters. We can choose betwee
 
 - Pure Water, Raleigh diffusion phase function (elastic scattering of light,diam << λ)
 
-- Average particle, [Petzold phase - function](../reference/README.md#petzold-phase-function#petzold-phase-function)
+- Average particle, [Petzold phase - function](../reference/README.md#petzold-phase-function)
 
 - USER - SUPPLIED file containing the discretised phase function
 

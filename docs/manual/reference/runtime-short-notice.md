@@ -1,12 +1,6 @@
 # Runtime short notice
 
-the GNU page, [
-
-$$
-1
-$$
-
-](http://www.gnu.org/copyleft/gpl.html#SEC3), recomends that if the program is interactive, a short notice like this should apear when it starts:
+the GNU page, [\[1\]](http://www.gnu.org/copyleft/gpl.html#SEC3), recomends that if the program is interactive, a short notice like this should apear when it starts:
 
 ---
 

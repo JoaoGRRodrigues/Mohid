@@ -12,24 +12,12 @@ cs267 Spring 2009
 
 #### Videocasts
 
-1. [mms://media.citris.berkeley.edu/cs267\_1-21-08](mms://media.citris.berkeley.edu/cs267_1-21-08)
+1. [mms://media.citris.berkeley.edu/cs267_1-21-08](mms://media.citris.berkeley.edu/cs267_1-21-08)
 
 #### Presentations
 
-1. [
-
-$$
-1
-$$
-
-](http://www.cs.berkeley.edu/~demmel/cs267_Spr09/Lectures/lecture01_intro_jwd09.ppt)
-2. [
-
-$$
-2
-$$
-
-](http://www.cs.berkeley.edu/~demmel/cs267_Spr09/Lectures/lecture02_memhier_jwd09.ppt)
+1. [\[1\]](http://www.cs.berkeley.edu/~demmel/cs267_Spr09/Lectures/lecture01_intro_jwd09.ppt)
+2. [\[2\]](http://www.cs.berkeley.edu/~demmel/cs267_Spr09/Lectures/lecture02_memhier_jwd09.ppt)
 
 ## External links
 

@@ -302,7 +302,7 @@ PV         VG          Fmt  Attr PSize  PFree
 bash-4.2>lvm pvresize /dev/sda3 --setphysicalvolumesize 300G
 ```
 
-need to delete and create lv\_swap to move it from the end of the PV to the beggining. or it does not allow to do the pvresize
+need to delete and create lv_swap to move it from the end of the PV to the beggining. or it does not allow to do the pvresize
 
 ```
 bash-4.2>lvm lvs            (to know the size of swap to create a new with the same size

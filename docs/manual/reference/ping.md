@@ -127,7 +127,7 @@ program ping
        STAT_CALL = startGame(pingPong)
 ```
 
-if1 : if (STAT\_CALL .NE. SUCCESS) then
+if1 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -205,7 +205,7 @@ do1 : do I = -10, aux
        STAT_CALL = setCounting(pingPong, counting = counting)
 ```
 
-if2 : if (STAT\_CALL .NE. SUCCESS) then
+if2 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                print*, "STAT_CALL = ", STAT_CALL
@@ -217,7 +217,7 @@ if2 : if (STAT\_CALL .NE. SUCCESS) then
        STAT_CALL = sendBall1(pingPong)
 ```
 
-if3 : if (STAT\_CALL .NE. SUCCESS) then
+if3 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -250,7 +250,7 @@ if3 : if (STAT\_CALL .NE. SUCCESS) then
        call MPI_INIT(IERROR = STAT_CALL)
 ```
 
-if1 : if (STAT\_CALL .NE. SUCCESS) then
+if1 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -264,7 +264,7 @@ if1 : if (STAT\_CALL .NE. SUCCESS) then
                           IERROR = STAT_CALL)
 ```
 
-if2 : if (STAT\_CALL .NE. SUCCESS) then
+if2 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -276,7 +276,7 @@ if2 : if (STAT\_CALL .NE. SUCCESS) then
        STAT_CALL = setMyMPI_id(pingPong, myMPI_id)
 ```
 
-if21 : if (STAT\_CALL .NE. SUCCESS) then
+if21 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -290,7 +290,7 @@ if21 : if (STAT\_CALL .NE. SUCCESS) then
                           IERROR = STAT_CALL)
 ```
 
-if3 : if (STAT\_CALL .NE. SUCCESS) then
+if3 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -302,13 +302,13 @@ if3 : if (STAT\_CALL .NE. SUCCESS) then
        print *, 'Process ', myMPI_id, ' of ', numprocs, ' is alive'
 ```
 
-if5 : if (getMyMPI\_id(pingPong) .EQ. 0) then
+if5 : if (getMyMPI_id(pingPong) .EQ. 0) then
 
 ```
            STAT_CALL = setOtherMPI_id(pingPong, otherMPI_id = 1)
 ```
 
-if51 : if (STAT\_CALL .NE. SUCCESS) then
+if51 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                print*, "STAT_CALL = ", STAT_CALL
@@ -318,7 +318,7 @@ if51 : if (STAT\_CALL .NE. SUCCESS) then
            STAT_CALL = setOtherMPI_id(pingPong, otherMPI_id = 0)
 ```
 
-if52 : if (STAT\_CALL .NE. SUCCESS) then
+if52 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                print*, "STAT_CALL = ", STAT_CALL
@@ -555,7 +555,7 @@ if52 : if (STAT\_CALL .NE. SUCCESS) then
                       STAT_CALL)
 ```
 
-if25 : if (STAT\_CALL .NE. SUCCESS) then
+if25 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -563,13 +563,13 @@ if25 : if (STAT\_CALL .NE. SUCCESS) then
        end if if25
 ```
 
-if41 : if (STATUS(MPI\_SOURCE) .EQ. getOtherMPI\_id(pingPong)) then if42 : if (STATUS(MPI\_TAG) .EQ. getMsgPlayBall3Tag()) then
+if41 : if (STATUS(MPI_SOURCE) .EQ. getOtherMPI_id(pingPong)) then if42 : if (STATUS(MPI_TAG) .EQ. getMsgPlayBall3Tag()) then
 
 ```
                STAT_CALL = receiveBall(pingPong, STATUS(MPI_TAG))
 ```
 
-if4 : if (STAT\_CALL .NE. SUCCESS) then
+if4 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                    print*, "STAT_CALL = ", STAT_CALL
@@ -582,7 +582,7 @@ if4 : if (STAT\_CALL .NE. SUCCESS) then
                STAT_CALL = killPingPong(pingPong)
 ```
 
-if2 : if (STAT\_CALL .NE. SUCCESS) then
+if2 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                    print*, "STAT_CALL = ", STAT_CALL
@@ -627,7 +627,7 @@ if2 : if (STAT\_CALL .NE. SUCCESS) then
                      STAT_CALL)
 ```
 
-if5 : if (STAT\_CALL .NE. SUCCESS) then
+if5 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -639,7 +639,7 @@ if5 : if (STAT\_CALL .NE. SUCCESS) then
        STAT_CALL = setOtherCounting(pingPong, otherCounting = counting)
 ```
 
-if6 : if (STAT\_CALL .NE. SUCCESS) then
+if6 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -663,7 +663,7 @@ if71 : if (getCounting(pingPong) .GT. 0) then if70 : if ( mod(getCounting(ping
                STAT_CALL = sendBall1(pingPong)
 ```
 
-if7 : if (STAT\_CALL .NE. SUCCESS) then
+if7 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                    print*, "STAT_CALL = ", STAT_CALL
@@ -677,7 +677,7 @@ if7 : if (STAT\_CALL .NE. SUCCESS) then
                STAT_CALL = sendBall2(pingPong)
 ```
 
-if75 : if (STAT\_CALL .NE. SUCCESS) then
+if75 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                    print*, "STAT_CALL = ", STAT_CALL
@@ -690,7 +690,7 @@ if75 : if (STAT\_CALL .NE. SUCCESS) then
                STAT_CALL = sendBall3(pingPong)
 ```
 
-if76 : if (STAT\_CALL .NE. SUCCESS) then
+if76 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                    print*, "STAT_CALL = ", STAT_CALL
@@ -702,7 +702,7 @@ if76 : if (STAT\_CALL .NE. SUCCESS) then
            STAT_CALL = sendKillGame(pingPong)
 ```
 
-if3 : if (STAT\_CALL .NE. SUCCESS) then
+if3 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                print*, "STAT_CALL = ", STAT_CALL
@@ -714,7 +714,7 @@ if3 : if (STAT\_CALL .NE. SUCCESS) then
            STAT_CALL = killPingPong(pingPong)
 ```
 
-if2 : if (STAT\_CALL .NE. SUCCESS) then
+if2 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
                print*, "STAT_CALL = ", STAT_CALL
@@ -774,7 +774,7 @@ do1 : do i=1,1000 do2 : do j=1,1000 do3 : do k=1,1000
        STAT_CALL = decreaseCounting(pingPong)
 ```
 
-if1 : if (STAT\_CALL .NE. SUCCESS) then
+if1 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -792,7 +792,7 @@ if1 : if (STAT\_CALL .NE. SUCCESS) then
                      STAT_CALL)
 ```
 
-if16 : if (STAT\_CALL .NE. SUCCESS) then
+if16 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -823,7 +823,7 @@ if16 : if (STAT\_CALL .NE. SUCCESS) then
        STAT_CALL = decreaseCounting(pingPong)
 ```
 
-if1 : if (STAT\_CALL .NE. SUCCESS) then
+if1 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -841,7 +841,7 @@ if1 : if (STAT\_CALL .NE. SUCCESS) then
                      STAT_CALL)
 ```
 
-if16 : if (STAT\_CALL .NE. SUCCESS) then
+if16 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -872,7 +872,7 @@ if16 : if (STAT\_CALL .NE. SUCCESS) then
        STAT_CALL = decreaseCounting(pingPong)
 ```
 
-if1 : if (STAT\_CALL .NE. SUCCESS) then
+if1 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -890,7 +890,7 @@ if1 : if (STAT\_CALL .NE. SUCCESS) then
                      STAT_CALL)
 ```
 
-if16 : if (STAT\_CALL .NE. SUCCESS) then
+if16 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -927,7 +927,7 @@ if16 : if (STAT\_CALL .NE. SUCCESS) then
                      STAT_CALL)
 ```
 
-if16 : if (STAT\_CALL .NE. SUCCESS) then
+if16 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -958,7 +958,7 @@ if16 : if (STAT\_CALL .NE. SUCCESS) then
        STAT_CALL = stopMPI()
 ```
 
-if2 : if (STAT\_CALL .NE. SUCCESS) then
+if2 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -974,7 +974,7 @@ if2 : if (STAT\_CALL .NE. SUCCESS) then
        STAT_CALL = setGameOFF(pingPong)
 ```
 
-if3 : if (STAT\_CALL .NE. SUCCESS) then
+if3 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -1002,7 +1002,7 @@ if3 : if (STAT\_CALL .NE. SUCCESS) then
                         IERROR = STAT_CALL)
 ```
 
-if6 : if (STAT\_CALL .NE. SUCCESS) then
+if6 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL
@@ -1014,7 +1014,7 @@ if6 : if (STAT\_CALL .NE. SUCCESS) then
        call MPI_FINALIZE(STAT_CALL)
 ```
 
-if2 : if (STAT\_CALL .NE. SUCCESS) then
+if2 : if (STAT_CALL .NE. SUCCESS) then
 
 ```
            print*, "STAT_CALL = ", STAT_CALL

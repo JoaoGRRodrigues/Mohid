@@ -18,7 +18,7 @@
   h5totxt -. 6 -x i -y j -d "/Grid/Bathymetry" 2006/MM5_Tejo200m_2006-01-01_2006-04-01.hdf5
 ```
 
-where (i,j) start in 0 and correspond to MOHID (LOCATION\_J - 1, LOCATION\_I - 1).
+where (i,j) start in 0 and correspond to MOHID (LOCATION_J - 1, LOCATION_I - 1).
 
 This is the alternative to:
 

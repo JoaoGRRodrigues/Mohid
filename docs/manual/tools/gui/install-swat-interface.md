@@ -8,9 +8,9 @@ SWAT interface runs as an extension of ArcView or [MapWindow](http://www.mapwind
 
 SWAT interface also needs Arcview Spatial Analyst functions, for the Watershed Delineation and Landuse and Soil Definition components. You can read more details on SWAT interface on [AVSWAT](http://www.brc.tamus.edu/swat/avswat.html).
 
-- Install Arcview 3.1 or higher (\\\\Kepler\\Software\\AVSWAT-X\\Step\_1 **or get it from** ArcView CD)
-- Install Arcview extensions: 3D Analyst, Network Analyst, Spatial Analyst (\\\\Kepler\\Software\\AVSWAT-X\\Step\_2 **or get it from** ArcView CD)
-- Install AvSWAT-X (\\\\Kepler\\Software\\AVSWAT-X\\Step\_3 **or get it from** the site [AVSWAT](http://www.brc.tamus.edu/swat/avswat.html))
+- Install Arcview 3.1 or higher (\\\\Kepler\\Software\\AVSWAT-X\\Step_1 **or get it from** ArcView CD)
+- Install Arcview extensions: 3D Analyst, Network Analyst, Spatial Analyst (\\\\Kepler\\Software\\AVSWAT-X\\Step_2 **or get it from** ArcView CD)
+- Install AvSWAT-X (\\\\Kepler\\Software\\AVSWAT-X\\Step_3 **or get it from** the site [AVSWAT](http://www.brc.tamus.edu/swat/avswat.html))
     -   Unzip the avswatx.zip
     -   Double click the **Start.apr** project file or use ArcView to open it (**do NOT run the instalation file AVSWATX.msi**).
     -   The opening project starts the AVSWATX Install Wizard driving through the remainder of the installation process.

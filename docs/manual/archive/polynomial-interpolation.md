@@ -4,35 +4,25 @@
 
 Given 
 
-$$
-n
-$$
+$n$
 
  nodes of known values of any real function 
 
-$$
-f
-$$
+$f$
 
 , the **unisolvence theorem** states that there exists a unique polynomial of degree 
 
-$$
-n-1
-$$
+$n-1$
 
  that interpolates the nodes. Such a polynomial 
 
-$$
-P
-$$
+$P$
 
  is easily constructed for low degrees and is easily generalized to any degree.
 
 ## Polynomial interpolation of real function 
 
-$$
-f
-$$
+$f$
 
 
 
@@ -41,14 +31,14 @@ By increasing degree:
 - 
 
 $$
-P^{1}(x) = f(x\_1) \\frac{ \\left( x - x\_2 \\right) }{ \\left( x\_1 - x\_2 \\right) } + f(x\_2) \\frac{ \\left( x - x\_1 \\right) }{ \\left( x\_2 - x\_1 \\right) }
+P^{1}(x) = f(x_1) \\frac{ \\left( x - x_2 \\right) }{ \\left( x_1 - x_2 \\right) } + f(x_2) \\frac{ \\left( x - x_1 \\right) }{ \\left( x_2 - x_1 \\right) }
 $$
 
 
 - 
 
 $$
-P^{2}(x) = f(x\_1) \\frac{ \\left( x - x\_2 \\right) \\left( x - x\_3 \\right) }{ \\left( x\_1 - x\_2 \\right) \\left( x\_1 - x\_3 \\right)} + f(x\_2) \\frac{ \\left( x - x\_1 \\right) \\left( x - x\_3 \\right) }{ \\left( x\_2 - x\_1 \\right) \\left( x\_2 - x\_3 \\right) } + f(x\_3) \\frac{ \\left( x - x\_1 \\right) \\left( x - x\_2 \\right) }{ \\left( x\_3 - x\_1 \\right) \\left( x\_3 - x\_2 \\right) }
+P^{2}(x) = f(x_1) \\frac{ \\left( x - x_2 \\right) \\left( x - x_3 \\right) }{ \\left( x_1 - x_2 \\right) \\left( x_1 - x_3 \\right)} + f(x_2) \\frac{ \\left( x - x_1 \\right) \\left( x - x_3 \\right) }{ \\left( x_2 - x_1 \\right) \\left( x_2 - x_3 \\right) } + f(x_3) \\frac{ \\left( x - x_1 \\right) \\left( x - x_2 \\right) }{ \\left( x_3 - x_1 \\right) \\left( x_3 - x_2 \\right) }
 $$
 
 
@@ -56,7 +46,7 @@ $$
 - 
 
 $$
-P^{n-1}(x) = \\sum\_{i=1}^{n} \\frac{ f(x\_i) \\prod\_{j \\neq i}^n \\left( x - x\_j \\right) }{ \\prod\_{j \\neq i}^n \\left( x\_i - x\_j \\right) }
+P^{n-1}(x) = \\sum_{i=1}^{n} \\frac{ f(x_i) \\prod_{j \\neq i}^n \\left( x - x_j \\right) }{ \\prod_{j \\neq i}^n \\left( x_i - x_j \\right) }
 $$
 
 
@@ -64,49 +54,43 @@ $$
 Where 
 
 $$
-x\_1,\\, x\_2,\\, \\ldots \\, x\_n,
+x_1,\\, x_2,\\, \\ldots \\, x_n,
 $$
 
  are the nodes where 
 
-$$
-f
-$$
+$f$
 
  is known.
 
 ## 
 
-$$
-p
-$$
+$p$
 
 -th derivative of polynomial interpolation of real function 
 
-$$
-f
-$$
+$f$
 
 
 
 - 
 
 $$
-P^{1}(x)^{(1)} = f(x\_1) \\frac{ 1 }{ \\left( x\_1 - x\_2 \\right) } + f(x\_2) \\frac{ 1 }{ \\left( x\_2 - x\_1 \\right) }
+P^{1}(x)^{(1)} = f(x_1) \\frac{ 1 }{ \\left( x_1 - x_2 \\right) } + f(x_2) \\frac{ 1 }{ \\left( x_2 - x_1 \\right) }
 $$
 
 
 - 
 
 $$
-P^{2}(x)^{(1)} = f(x\_1) \\frac{ \\left( x - x\_2 \\right) + \\left( x - x\_3 \\right) }{ \\left( x\_1 - x\_2 \\right) \\left( x\_1 - x\_3 \\right)} + f(x\_2) \\frac{ \\left( x - x\_1 \\right) + \\left( x - x\_3 \\right) }{ \\left( x\_2 - x\_1 \\right) \\left( x\_2 - x\_3 \\right) } + f(x\_3) \\frac{ \\left( x - x\_1 \\right) + \\left( x - x\_2 \\right) }{ \\left( x\_3 - x\_1 \\right) \\left( x\_3 - x\_2 \\right) }
+P^{2}(x)^{(1)} = f(x_1) \\frac{ \\left( x - x_2 \\right) + \\left( x - x_3 \\right) }{ \\left( x_1 - x_2 \\right) \\left( x_1 - x_3 \\right)} + f(x_2) \\frac{ \\left( x - x_1 \\right) + \\left( x - x_3 \\right) }{ \\left( x_2 - x_1 \\right) \\left( x_2 - x_3 \\right) } + f(x_3) \\frac{ \\left( x - x_1 \\right) + \\left( x - x_2 \\right) }{ \\left( x_3 - x_1 \\right) \\left( x_3 - x_2 \\right) }
 $$
 
 
 - 
 
 $$
-P^{2}(x)^{(2)} = f(x\_1) \\frac{ 2 }{ \\left( x\_1 - x\_2 \\right) \\left( x\_1 - x\_3 \\right)} + f(x\_2) \\frac{ 2 }{ \\left( x\_2 - x\_1 \\right) \\left( x\_2 - x\_3 \\right) } + f(x\_3) \\frac{ 2 }{ \\left( x\_3 - x\_1 \\right) \\left( x\_3 - x\_2 \\right) }
+P^{2}(x)^{(2)} = f(x_1) \\frac{ 2 }{ \\left( x_1 - x_2 \\right) \\left( x_1 - x_3 \\right)} + f(x_2) \\frac{ 2 }{ \\left( x_2 - x_1 \\right) \\left( x_2 - x_3 \\right) } + f(x_3) \\frac{ 2 }{ \\left( x_3 - x_1 \\right) \\left( x_3 - x_2 \\right) }
 $$
 
 
@@ -114,33 +98,31 @@ $$
 - 
 
 $$
-P^{n-1}(x)^{(p)} = \\sum\_{\\alpha\_1=1}^{n} \\frac{ f(x\_{\\alpha\_1}) \\sum\_{\\alpha\_{i+1} \\neq \\alpha\_i,\\,(i)}^{n,\\,(p)} \\prod\_{\\alpha\_{p+2} \\neq \\alpha\_{p+1}}^n \\left( x - x\_{\\alpha\_{p+2}} \\right) }{ \\prod\_{\\alpha\_2 \\neq \\alpha\_1}^n \\left( x\_{\\alpha\_1} - x\_{\\alpha\_2} \\right) }
+P^{n-1}(x)^{(p)} = \\sum_{\\alpha_1=1}^{n} \\frac{ f(x_{\\alpha_1}) \\sum_{\\alpha_{i+1} \\neq \\alpha_i,\\,(i)}^{n,\\,(p)} \\prod_{\\alpha_{p+2} \\neq \\alpha_{p+1}}^n \\left( x - x_{\\alpha_{p+2}} \\right) }{ \\prod_{\\alpha_2 \\neq \\alpha_1}^n \\left( x_{\\alpha_1} - x_{\\alpha_2} \\right) }
 $$
 
 
 
 In particular, if 
 
-$$
-n-1 = p
-$$
+$n-1 = p$
 
  we have,
 
 - 
 
 $$
-P^{p}(x)^{(p)} = \\sum\_{i=1}^{n} f(x\_{i}) \\frac{ p }{ \\prod\_{j \\neq i}^n \\left( x\_{i} - x\_{j} \\right) }
+P^{p}(x)^{(p)} = \\sum_{i=1}^{n} f(x_{i}) \\frac{ p }{ \\prod_{j \\neq i}^n \\left( x_{i} - x_{j} \\right) }
 $$
 
 
 
-### [Compound sum](../reference/README.md#compound-sum#compound-sum)
+### [Compound sum](../reference/README.md#compound-sum)
 
 - 
 
 $$
-\\sum^{(p)} = \\underbrace{ \\sum \\circ \\sum \\circ \\ldots \\circ \\sum }\_{p-\\text{times}}
+\\sum^{(p)} = \\underbrace{ \\sum \\circ \\sum \\circ \\ldots \\circ \\sum }_{p-\\text{times}}
 $$
 
 ,
@@ -154,7 +136,7 @@ $$
 - 
 
 $$
-\\sum^{n,\\,(p)}\_{\\alpha\_{i+1}=1,\\,(i)} = \\underbrace{ \\sum^{n}\_{\\alpha\_2=1} \\circ \\sum^{n}\_{\\alpha\_3=1} \\circ \\ldots \\circ \\sum^{n}\_{\\alpha\_{p+1}=1} }\_{p-\\text{times}}
+\\sum^{n,\\,(p)}_{\\alpha_{i+1}=1,\\,(i)} = \\underbrace{ \\sum^{n}_{\\alpha_2=1} \\circ \\sum^{n}_{\\alpha_3=1} \\circ \\ldots \\circ \\sum^{n}_{\\alpha_{p+1}=1} }_{p-\\text{times}}
 $$
 
 ,

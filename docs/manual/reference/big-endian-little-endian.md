@@ -4,9 +4,9 @@ The Intel Fortran Compiler can write unformatted sequential files in big-endian 
 
 Both on IA-32-based processors and on Itanium®-based processors, Intel Fortran handles internal data in little-endian format. The little-endian-to-big-endian conversion feature is intended for Fortran unformatted input/output operations in unformatted sequential files. The feature enables:
 
-In order to use the little-endian-to-big-endian conversion feature, specify the numbers of the units to be used for conversion purposes by setting the F\_UFMTENDIAN environment variable. Then, the READ/WRITE statements that use these unit numbers, will perform relevant conversions. Other READ/WRITE statements will work in the usual way.
+In order to use the little-endian-to-big-endian conversion feature, specify the numbers of the units to be used for conversion purposes by setting the F_UFMTENDIAN environment variable. Then, the READ/WRITE statements that use these unit numbers, will perform relevant conversions. Other READ/WRITE statements will work in the usual way.
 
-In the general case, the variable consists of two parts divided by a semicolon. No spaces are allowed inside the F\_UFMTENDIAN value. The variable has the following syntax:
+In the general case, the variable consists of two parts divided by a semicolon. No spaces are allowed inside the F_UFMTENDIAN value. The variable has the following syntax:
 
 ```
 F_UFMTENDIAN=MODE | [MODE;] EXCEPTION

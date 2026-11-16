@@ -32,7 +32,7 @@ To configure gems on your system you need to set the environment variable RUBYOP
 
 ### xmpp4r
 
-xmpp is the open protocol behind the [jabber](README.md#jabber#jabber) service.
+xmpp is the open protocol behind the [jabber](README.md#jabber) service.
 
 ```
 > sudo apt-get install libopenssl-ruby

@@ -24,5 +24,5 @@ The reading procedure is similar to the [keywords](keywords.md), but this time t
 
 - [MOHID keyword Database](keyword-list.md)
 - [Keywords](keywords.md)
-- [New\_Keyword](new-keyword.md)
+- New_Keyword
 - [Module EnterData](../../base/module-enterdata.md)

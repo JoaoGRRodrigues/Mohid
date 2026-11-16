@@ -4,7 +4,7 @@
 
 In MOHID the distribution of contaminants is parameterized by using the ratio between the adsorbed particulate concentration and the dissolved concentration (see [Adsorption/Desorption](../water/adsorption-desorption.md) ). Physically, the partition coefficient (Johansson et al., 2001) illustrates particle affinity and represents the chemical equilibrium of numerous processes such adsorption onto particulate matter, precipitation and dissolution. Pollutants transport in the adsorbed phase is strongly connected with cohesive sediment transport due to the affinity of many contaminants for the solid phase. Once adsorbed to the sediments, these substances are transported by the sediments (Fernandes L., 2005).
 
-In MOHID the partition coefficient is defined through a keyword (keyword PARTITION\_FRACTION). The concentration of the contaminant in the water is described by the following equations (1) and (2):
+In MOHID the partition coefficient is defined through a keyword (keyword PARTITION_FRACTION). The concentration of the contaminant in the water is described by the following equations (1) and (2):
 
 ```
             (1)
@@ -20,13 +20,13 @@ Cd is the concentration of the contaminant in the dissolved phase (mol/l)
 
 Cp is the concentration of the contaminant in the particulate phase (mol/l)
 
-r is the transfer rate from particulate to dissolved phase (1/sec) (keyword PARTITION\_RATE)
+r is the transfer rate from particulate to dissolved phase (1/sec) (keyword PARTITION_RATE)
 
 pd is the dissolved fraction (dimensionless)
 
 ps is the solid fraction (dimensionless)
 
-For each contaminant phase it is necessary to specify opposite phase through the keyword PARTITION\_COUPLE. For example, for the contaminant dissolved arsenic, the opposite phase is particulate arsenic. It is assumed that particulate and dissolved phases must have equal partition rates. Also, the sum of particulate and dissolved phases’ fractions must be equal to 1.
+For each contaminant phase it is necessary to specify opposite phase through the keyword PARTITION_COUPLE. For example, for the contaminant dissolved arsenic, the opposite phase is particulate arsenic. It is assumed that particulate and dissolved phases must have equal partition rates. Also, the sum of particulate and dissolved phases’ fractions must be equal to 1.
 
 In MOHID, the transfer rate depends on the cohesive sediment concentration. A coefficient Rs is defined as (eq.3):
 
@@ -34,13 +34,13 @@ In MOHID, the transfer rate depends on the cohesive sediment concentration. A co
           (3)
 ```
 
-SedimentRefConcentration is a cohesive sediment reference concentration (keyword SED\_REF\_CONC). Particulate and dissolved phases of the same contaminant must have equal cohesive sediment reference concentration. The transfer rate is equal to r for Rs > 1 and equal to r x Rs for Rs<1
+SedimentRefConcentration is a cohesive sediment reference concentration (keyword SED_REF_CONC). Particulate and dissolved phases of the same contaminant must have equal cohesive sediment reference concentration. The transfer rate is equal to r for Rs > 1 and equal to r x Rs for Rs<1
 
 ## Eulerian Applications
 
 ### Example input files
 
-#### File WaterProperty\_X.dat
+#### File WaterProperty_X.dat
 
 ```
 OUTPUT_TIME               : 0.  3600.
@@ -214,7 +214,7 @@ OUTPUT_TIME               : 0.  3600.
 <endproperty>
 ```
 
-#### File InterfaceSedimentWater\_X.dat
+#### File InterfaceSedimentWater_X.dat
 
 ```
 OUTPUT_TIME                  : 0  3600
@@ -308,7 +308,7 @@ OUTPUT_TIME                  : 0  3600
 <endproperty>
 ```
 
-#### File FreeVerticalMovement\_X.dat
+#### File FreeVerticalMovement_X.dat
 
 ```
 <beginproperty>
@@ -340,7 +340,7 @@ OUTPUT_TIME                  : 0  3600
 <endproperty>
 ```
 
-#### File Discharges\_X.dat
+#### File Discharges_X.dat
 
 ```
 <begindischarge>
@@ -400,7 +400,7 @@ OUTPUT_TIME                  : 0  3600
 
 ### Example input files
 
-#### File Model\_X.dat
+#### File Model_X.dat
 
 ```
 START                         : 2008 6 1 12 0 0
@@ -413,7 +413,7 @@ LAGRANGEANE                   : 1
 LAGRANGIAN                    : 1
 ```
 
-#### File Lagrangian\_X.dat
+#### File Lagrangian_X.dat
 
 ```
 OUTPUT_TIME             : 0 3600.

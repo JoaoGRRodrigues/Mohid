@@ -2,17 +2,17 @@
 
 The program Consolidate Domain Decomposition uses the actor model to parallelize file processing tasks. For instance, suppose there are hydrodynamic and water quality files from 2 sub-domains:
 
-- hyd\_submod\_1.hdf and wq\_submod\_1.hdf; and
-- hyd\_submod\_2.hdf and wq\_submod\_2.hdf.
+- hyd_submod_1.hdf and wq_submod_1.hdf; and
+- hyd_submod_2.hdf and wq_submod_2.hdf.
 
 The desired consolidated files are hyd.hdf and wq.hdf, resulting form the concatenation of:
 
-- hyd\_submod\_1.hdf and hyd\_submod\_2.hdf to produce hyd.hdf; and
-- wq\_submod\_1.hdf and wq\_submod\_2.hdf for the wq.hdf
+- hyd_submod_1.hdf and hyd_submod_2.hdf to produce hyd.hdf; and
+- wq_submod_1.hdf and wq_submod_2.hdf for the wq.hdf
 
 ## Run the program
 
-Both Windows and \*NIX systems run the same way. This application runs from the command line. To run the program go to the directory where the file "Tree.dat" is. Most likely you will run on a single machine, the number of Parsers must be 1, the number of Workers can be any number greater then 1. There should be a balance between the number of available cores and the number of files to join. The application parses the "MPI\_\*\_DecomposedFiles.dat" produced by Mohid. The consolidated files are placed in the same directory where the decomposed files are. The command to run the application is:
+Both Windows and \*NIX systems run the same way. This application runs from the command line. To run the program go to the directory where the file "Tree.dat" is. Most likely you will run on a single machine, the number of Parsers must be 1, the number of Workers can be any number greater then 1. There should be a balance between the number of available cores and the number of files to join. The application parses the "MPI_\*_DecomposedFiles.dat" produced by Mohid. The consolidated files are placed in the same directory where the decomposed files are. The command to run the application is:
 
 - mpiexec.exe -localonly -n 1 DDCParser.exe : -n 2 DDCWorker.exe
 

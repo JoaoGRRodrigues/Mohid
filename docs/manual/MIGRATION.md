@@ -3,7 +3,7 @@
 This manual was migrated from the MediaWiki installation at `wiki.mohid.com` (MediaWiki 1.28, MARETEC / Instituto Superior Técnico), which is being retired.
 
 - Pages in the original wiki (main namespace): 913
-- Pages migrated: 588 (500 standalone pages, 88 short entries folded into section indexes)
+- Pages migrated: 589 (501 standalone pages, 88 short entries folded into section indexes)
 - Images migrated: 192
 
 ## What changed

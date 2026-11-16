@@ -10,7 +10,7 @@ The reservoirs do not have a explicit geometry and are located in a given Draina
 
 ### Hydrology
 
-The reservoirs minimum parameter is maximum volume (keyword MAX\_VOLUME) and optionally minimum volume (keyword MIN\_VOLUME, default is 0.0). Below minimum volume the reservoir does not discharge and above maximum volume the reservoir discharges the remainder so that volume does not get higher than maximum.
+The reservoirs minimum parameter is maximum volume (keyword MAX_VOLUME) and optionally minimum volume (keyword MIN_VOLUME, default is 0.0). Below minimum volume the reservoir does not discharge and above maximum volume the reservoir discharges the remainder so that volume does not get higher than maximum.
 
 #### Inflows
 
@@ -32,19 +32,19 @@ The outflows can be computed by defining several options:
 
 1) If the maximum volume is the only information available, the reservoir will not discharge until complete full and thereafter will discharge the volume above maximum divided by time step.
 
-2) There is the option to define unmanaged reservoir as a weir (by keyword IS\_WEIR : 1) and the reservoir outflow is defined by the weir equation (also defined in ModuleDischarges). Then the crest elevation and width need to be defined.
+2) There is the option to define unmanaged reservoir as a weir (by keyword IS_WEIR : 1) and the reservoir outflow is defined by the weir equation (also defined in ModuleDischarges). Then the crest elevation and width need to be defined.
 
 **Outflow Managed Reservoirs**
 
-1) If beside the maximum volume only an environmental flow (keyword MIN\_OUTFLOW) is defined, then above minimum volume the environmental flow will be discharged until it reaches the maximum volume and thereafter will discharge the volume above maximum divided by time step.
+1) If beside the maximum volume only an environmental flow (keyword MIN_OUTFLOW) is defined, then above minimum volume the environmental flow will be discharged until it reaches the maximum volume and thereafter will discharge the volume above maximum divided by time step.
 
-2) If an operation curve is given (keyword OPERATION\_TYPE), on the form of:
+2) If an operation curve is given (keyword OPERATION_TYPE), on the form of:
 
-1. level - outflow - OPERATION\_TYPE : 1
-2. level - outflow = percentage of inflow - OPERATION\_TYPE : 2
-3. percentage of res volume - outflow - OPERATION\_TYPE : 3
-4. percentage of res volume - outflow = percentage of inflow - OPERATION\_TYPE : 4
-5. percentage of res volume - outflow = percentage of max outflow - OPERATION\_TYPE : 5
+1. level - outflow - OPERATION_TYPE : 1
+2. level - outflow = percentage of inflow - OPERATION_TYPE : 2
+3. percentage of res volume - outflow - OPERATION_TYPE : 3
+4. percentage of res volume - outflow = percentage of inflow - OPERATION_TYPE : 4
+5. percentage of res volume - outflow = percentage of max outflow - OPERATION_TYPE : 5
 
 then the curve is read and the outflow computed based on actual reservoir volume or level. The outflow can be given directly from volume or level or the curve can define a percentage of inflow, where the outflow will be a percentage of the inflow at that instant or a percentage of maximum outflow (usually at maximum volume).
 
@@ -54,16 +54,16 @@ If at any given instant the volume/level of the reservoir is below the lowest po
 
 **Reminder:** if level is used an accumulated volumes curve is required (volume - elevation)) through a <<beginaccvolumecurve>> <<endaccvolumecurve>> block where first column is reservoir volume and second is elevation.
 
-3) There is also the option to impose the outflow (e.g. from measured data) where this is done via Module Discharges but the discharge needs to be negative and a keyword in discharge present (IS\_OUTFLOW)
+3) There is also the option to impose the outflow (e.g. from measured data) where this is done via Module Discharges but the discharge needs to be negative and a keyword in discharge present (IS_OUTFLOW)
 
 This management option will be given priority and will be used even that environmental flow or operation curves are defined.
 
 ### Water Properties
 
-Concentrations are computed based on two available methods (keyword PROP\_COMPUTE\_METHOD):
+Concentrations are computed based on two available methods (keyword PROP_COMPUTE_METHOD):
 
-1. Instant Mixing - PROP\_COMPUTE\_METHOD : 1
-2. Mixing occurs at retention time - PROP\_COMPUTE\_METHOD : 2
+1. Instant Mixing - PROP_COMPUTE_METHOD : 1
+2. Mixing occurs at retention time - PROP_COMPUTE_METHOD : 2
 
 The instant mixing method computes the new concentration as the mixing in all reservoir would occur in the given time step being a mass balance between the existing and the entering mass divided by total volume
 

@@ -65,7 +65,7 @@ To add a samba password:
 root@dual_64# smbpasswd -a fedora
 ```
 
-Henceforth, the \\\\Dual\_64 share is available from a windows NT environment to user *fedora*.
+Henceforth, the \\\\Dual_64 share is available from a windows NT environment to user *fedora*.
 
 ## Accessing windows shares
 

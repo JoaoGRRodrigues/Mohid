@@ -14,11 +14,11 @@ In particular $f \, \star \, f$ is designated the [autocorrelation](http://mathw
 
 ### Normalized
 
-**\\widehat{C}\_{fg}(\\tau) \\equiv \\frac{\\int\_{-\\infty}^{\\infty} F^{\*}(t) \\, G(\\tau+t) \\,dt}{\\int\_{-\\infty}^{\\infty} F^{\*}(t) \\, F(t) \\,dt \\, \\int\_{-\\infty}^{\\infty} G^{\*}(t) \\, G(t) \\,dt} = \\left< \\frac{F(t)}{\\|F\\|} ,\\, \\frac{G(\\tau+t)}{\\|G\\|} \\right>** , where $F \equiv f - \overline{f}$. The idea is to remove the average and, optionally, other linear or physical trends from $f$.
+** \\widehat{C}_{fg}(\\tau) \\equiv \\frac{\\int_{-\\infty}^{\\infty} F^{\*}(t) \\, G(\\tau+t) \\,dt}{\\int_{-\\infty}^{\\infty} F^{\*}(t) \\, F(t) \\,dt \\, \\int_{-\\infty}^{\\infty} G^{\*}(t) \\, G(t) \\,dt} = \\left< \\frac{F(t)}{\\|F\\|} ,\\, \\frac{G(\\tau+t)}{\\|G\\|} \\right>** , where $F \equiv f - \overline{f}$. The idea is to remove the average and, optionally, other linear or physical trends from $f$.
 
 In particular we have
 
-**\\widehat{C}\_{fg}(0) = \\left< \\frac{F}{\\|F\\|} ,\\, \\frac{G}{\\|G\\|} \\right>** .
+$\widehat{C}_{fg}(0) = \left< \frac{F}{\|F\|} ,\, \frac{G}{\|G\|} \right>$ .
 
 $\widehat{C}_{ff}(0) = 1$.
 

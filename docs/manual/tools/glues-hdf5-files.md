@@ -1,5 +1,7 @@
 # GLUES HDF5 FILES
 
+The GLUES HDF5 FILES action combines the data stored in several HDF5 files into a single output file. It reads the HDF5 files listed in the block and writes the result to the file named by the OUTPUTFILENAME keyword.
+
 ```
 <begin_file>
 ACTION                    : GLUES HDF5 FILES

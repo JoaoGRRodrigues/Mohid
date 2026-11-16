@@ -2,25 +2,7 @@
 
 ## Article Tasks
 
-
-
-$$
-Task
-$$
-
- 
-
-$$
-Priority
-$$
-
- 
-
-$$
-MonthToFinish
-$$
-
-
+\[Task\] \[Priority\] \[MonthToFinish\]
 
 1. Validate Model with analitical solutions - porous media and runoff
 2. Validate Model with erosion/deposition data (Jose)
@@ -41,13 +23,13 @@ $$
 
 ### Geometry
 
-1. Rewrite of bottom file should be a warning and should be used the good file (and for instance saved the user original \_.old in order not to create inconsistency between Porous Media data file (BOTTOM\_FILE) and file effectively used).
+1. Rewrite of bottom file should be a warning and should be used the good file (and for instance saved the user original _.old in order not to create inconsistency between Porous Media data file (BOTTOM_FILE) and file effectively used).
 2. When geometry depth is lower than maximum domain depth the warning should be more explicit to say to the user to increase geometry depth.
 
 ### Module Basin
 
 1. Compute Mass Balance for each property CHECK
-2. Take WATER\_COLUMN\_COEF from module and data file CHECK
+2. Take WATER_COLUMN_COEF from module and data file CHECK
 3. Water and Mass from rain should be updated after atmosphere processes and so it does not need to compute infilcolconc for porous media properties (it is the water column) CHECK
 4. If evaporation removes all leaf water then mass should be kept - use mass instead of concentration - CHECK
 5. If evaporation removes all water column then mass should be kept - use mass instead of concentration.
@@ -75,7 +57,7 @@ $$
 
 ### Module RunoffProperties
 
-1. Construct bottom fluxes for properties - follow "BOTTOM\_FLUXES" in DrainageNetwork. Property will have a water matrix and bottom matrix. First approach can be only transport, concentrate when part of water infiltrates and deposition when all water infiltrates. Then after, erosion and deposition can be programmed (see Drainage Network again). CHECK
+1. Construct bottom fluxes for properties - follow "BOTTOM_FLUXES" in DrainageNetwork. Property will have a water matrix and bottom matrix. First approach can be only transport, concentrate when part of water infiltrates and deposition when all water infiltrates. Then after, erosion and deposition can be programmed (see Drainage Network again). CHECK
 2. Construct partition between dissolved and particulate - follow "PARTICULATE" in water properties. CHECK. Need tests
 3. Construct log to screen with properties CHECK
 4. Add the Possibility to use implicit advection diffusion (thomas3D). CHECK
@@ -89,7 +71,7 @@ $$
 ### Module Vegetation
 
 1. Remove warnings from screen (root depth lower than soil) and write them for example in error and messages. Left just one comment that something happended
-2. In the simplest case where there is no gowth model there is no need for <begin\_agricultural\_practices>....
+2. In the simplest case where there is no gowth model there is no need for <begin_agricultural_practices>....
 3. Solve Continuous computation problem in properties - CHECK
 4. Nutrient uptake may not be linked to flow\*conc (SWAT based) and in porous media properties it is uptaked as sink. CHECK - removed it from advection diffusion routine and put it as sink before transport computations.
 5. the time that vegetation checked nutrient amount and the time is taken may pass one day and transport may remove the material. Think about that. CHECK for now if concentration negative mass creation matrix produced and warning print.

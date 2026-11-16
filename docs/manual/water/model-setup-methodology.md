@@ -34,7 +34,7 @@ S and T fields are waterproperties. Mohid allows several ways to initialize S an
 
 - PROFILE
 - LAYERS
-- ASCII\_FILE
+- ASCII_FILE
 - etc...
 
 You should refer to waterproperties.dat to learn how to initialize S and T.

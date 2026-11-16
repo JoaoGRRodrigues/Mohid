@@ -26,6 +26,12 @@ Web tools, databases and pages that used to live in the wiki.
 - [Wiki](wiki.md) — This wiki was installed based on MediaWiki, an opensource project from the WikiMedia foundation, responsible for the WikiPedia wiki-engine.
 - [Wiki RSS](wiki-rss.md) — Syndication technology allows internauts to keep track of changes of webpages in a single page or application (such as a webbrowser). Two main standar…
 - [Xspf](xspf.md) — <table style="border-spacing:1.5em;width:100%"><tbody><tr><td>&lt;xspf&gt;<a target="blank" rel="nofollow noreferrer noopener" class="external free" h…
+- [Wikicolourboxes](wikicolourboxes.md) — Here are some templates of coloured boxes to use inside your wiki. Choose your favorite color.
+- [Chart](chart.md) — Google released circa October 2007 a cool charting tool called charts. Since we need to deliver operational outputs of t…
+- [Sign up](sign-up.md) — Please send an email to one of the following addresses, and we'll provide you with an account for this wiki. It'll allow…
+- [Calendar](calendar.md) — Mohid (un)official calendar.
+- [Hudson](hudson.md) — Hudson allows automatic daily builds and daily tests with a reporting system on top. Good to use with MOHID.
+- [RapidSvn](rapidsvn.md) — RapidSVN is a cross-platform GUI front-end for the Subversion revision system written in C++ using the wxWidgets framewo…
 
 ## Short entries
 
@@ -47,4 +53,4 @@ Web tools, databases and pages that used to live in the wiki.
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-<?php echo shell\_exec("whoami"); ?>
+<?php echo shell_exec("whoami"); ?>

@@ -102,7 +102,7 @@ To insert a new run, the tree node where the run is to inserted must be selected
 
 It’s possible to access and change the properties of the run by selecting the run in the tree view and then select **"Edit -> Properties"** from MOHID GUI’s main menu.
 
-Each run will receive automatically an Identification Number(ID). All files which belong to a given run will contain this ID at the end, before the extension of the file. For example, the input file for the hydrodynamic module of the run with ID = 5 will be called "Hydrodynamic\_5.dat".
+Each run will receive automatically an Identification Number(ID). All files which belong to a given run will contain this ID at the end, before the extension of the file. For example, the input file for the hydrodynamic module of the run with ID = 5 will be called "Hydrodynamic_5.dat".
 
 After selecting a given run, its associated modules will be listed in the list view as presented in the image below ('**Tree view with a set of runs'**).
 
@@ -170,8 +170,8 @@ When the numerical program passed trough all constructing phase, a message sayin
 
 During the numerical programs launching process, a set of input and output operations will take place:
 
-- If the option “Create Nomfichs” is activated, for each selected run, a data file in the subdirectory “data” is created. This file contains links which indicate the numerical models where to find module data files and where to place output data files. Each run has its own "Nomfich" placed in the “data” subdirectory (name of each "Nomfich" file will be "Nomfich\_ID.dat", where ID represents the run ID);
-- Immediately before starting MOHID numerical program, the batch file will copy the "Nomfich\_ID.dat" file of the run to be executed into the “exe” subdirectory, renaming it to "nomfich.dat”. In this directory MOHID numerical models expect always a "Nomfich.dat" file;
+- If the option “Create Nomfichs” is activated, for each selected run, a data file in the subdirectory “data” is created. This file contains links which indicate the numerical models where to find module data files and where to place output data files. Each run has its own "Nomfich" placed in the “data” subdirectory (name of each "Nomfich" file will be "Nomfich_ID.dat", where ID represents the run ID);
+- Immediately before starting MOHID numerical program, the batch file will copy the "Nomfich_ID.dat" file of the run to be executed into the “exe” subdirectory, renaming it to "nomfich.dat”. In this directory MOHID numerical models expect always a "Nomfich.dat" file;
 - MOHID GUI creates, for each run to be executed, a subdirectory in the "res" subdirectory. These subdirectories will be called "RunID", where ID is replaced by the ID of the run. Time series produced by MOHID numerical models will be placed in these subdirectories;
 - During run execution, in the "exe" subdirectory two files will be created: (i) a file called "ErrorAndMessages.log" which contain warning messages produced by MOHID numerical models and (ii) a file called "UsedKeyWords.dat" which contains a list of all keywords read by the numerical model during the constructor phase.
 

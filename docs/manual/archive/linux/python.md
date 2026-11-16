@@ -35,9 +35,9 @@ $ python --version
 
 If the output returns the expected version of python then chances are that all is well. (For example, the cygwin installation would return python 2.6.5 when the python installation would return python 2.7.2).
 
-### Easy\_install
+### Easy_install
 
-Otherwise, the easy\_install utility is great because it installs the module AND it resolves all the dependencies for you!
+Otherwise, the easy_install utility is great because it installs the module AND it resolves all the dependencies for you!
 
 ```
 > sudo easy_install module
@@ -95,7 +95,7 @@ Once the binary are installed, test them with
 
 ### Not a root user?
 
-Should you not be granted root to the machine and still need to install a python module then add in your .bash\_profile file the following code
+Should you not be granted root to the machine and still need to install a python module then add in your .bash_profile file the following code
 
 ```
 > vim ~/.bash_profile
@@ -123,7 +123,7 @@ When defining **method attributes**:
 
 ### Debugging
 
-Import the module pdb (python debugging) then set breakpoints in the code with the pdb.set\_trace() method. `[python,Y]`
+Import the module pdb (python debugging) then set breakpoints in the code with the pdb.set_trace() method. `[python,Y]`
 
 ```
 import pdb

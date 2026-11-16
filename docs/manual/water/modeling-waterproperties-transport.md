@@ -6,11 +6,9 @@ Check the [bathymetry](../io/formats/bathymetry.md):
 
 1\. See if there are channels "closed" by intertidal or land cells
 
-```
     2. Filter the bathymetry at least for the intertidal area
        a. Create the Filter.dat input file
        b. Run the FilterBathymetry.exe program
-```
 
 Use [Module FillMatrix](../base/module-fillmatrix.md) specifications to initialize all water properties. It is critical to know all the initialization options available.
 
@@ -26,24 +24,18 @@ Verify the options to compute transport processes:
 
 5\. [Land boundary condition](../io/land-boundary-condition.md)
 
-```
     6. For particulate properties:
        a. Settling velocity
        b. Bottom boundary condition
-```
 
-```
     7. Delete all the keywords that you aren't using.
        Too many keywords make it difficult to read the input files and
        to find errors.
-```
 
-[Choose the model time step](../reference/README.md#choose-the-model-time-step#choose-the-model-time-step)
+[Choose the model time step](../reference/README.md#choose-the-model-time-step)
 
-```
     1. In a 2D case choose a semi-implicit approach to compute the horizontal transport.
        In the 3D case, an explicit one must be chosen due to stability problems;
-```
 
 2\. By default the vertical transport is always implicit (don't change);
 
@@ -69,7 +61,6 @@ $Cr = Q outflow * dt / V$
 
 Common errors
 
-```
     1. Type of errors: Pontual instabilities in the mass balance
        can occour usually in the wetting and drying process. These instabilities can have
        several degrees. These degrees are enumerated in a descending order:
@@ -103,4 +94,3 @@ Common errors
           mass_created and the mass_destroyed matrixes and verify the total mass created and
           destroyed in the run. Be carefull in your analysis the values are
           in Property x Volume.
-```

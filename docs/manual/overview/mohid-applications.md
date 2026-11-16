@@ -20,13 +20,7 @@ The Mohid Water Modelling System has been applied to several coastal and estuari
 
 
 
-In order to present the modelling sites where the Mohid modelling system has been applied and the institutions using it, a Google Map has been developed and is open for collaboration. It can be found 
-
-$$
-[here](http://g.co/maps/evxpr)
-$$
-
-.
+In order to present the modelling sites where the Mohid modelling system has been applied and the institutions using it, a Google Map has been developed and is open for collaboration. It can be found [here](http://g.co/maps/evxpr).
 
 Three different pointers are shown,
 

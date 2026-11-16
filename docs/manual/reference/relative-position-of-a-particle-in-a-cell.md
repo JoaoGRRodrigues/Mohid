@@ -34,14 +34,14 @@ endif
 
 $y_i  = {{y_e  + \left( {a_1  - x_e } \right)Tg\beta } \over {1 - b_1 Tg\beta }} \wedge x_i  = a_1  + b_1 y_i$
 
-$seg\_ac = \sqrt {\left( {x_a  - x_c } \right)^2  + \left( {y_a  - y_c } \right)^2 }$
+$seg_ac = \sqrt {\left( {x_a  - x_c } \right)^2  + \left( {y_a  - y_c } \right)^2 }$
 
-$seg\_dc = \sqrt {\left( {x_d  - x_c } \right)^2  + \left( {y_d  - y_c } \right)^2 }$
+$seg_dc = \sqrt {\left( {x_d  - x_c } \right)^2  + \left( {y_d  - y_c } \right)^2 }$
 
-$seg\_ic = \sqrt {\left( {x_i  - x_c } \right)^2  + \left( {y_i  - y_c } \right)^2 }$
+$seg_ic = \sqrt {\left( {x_i  - x_c } \right)^2  + \left( {y_i  - y_c } \right)^2 }$
 
-$seg\_hc = \sqrt {\left( {x_h  - x_c } \right)^2  + \left( {y_h  - y_c } \right)^2 }$
+$seg_hc = \sqrt {\left( {x_h  - x_c } \right)^2  + \left( {y_h  - y_c } \right)^2 }$
 
-$x_e^'  = {{Seg\_ic} \over {Seg\_dc}}$
+$x_e^'  = {{Seg_ic} \over {Seg_dc}}$
 
-$y_e^'  = {{Seg\_hc} \over {Seg\_ac}}$
+$y_e^'  = {{Seg_hc} \over {Seg_ac}}$

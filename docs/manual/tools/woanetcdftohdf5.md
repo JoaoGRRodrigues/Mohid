@@ -2,9 +2,9 @@
 
 This program converts the NetCDF files of the [World Ocean Atlas 2005](http://www.nodc.noaa.gov/OC5/WOA05/pr_woa05.html) (WOA05) into HDF5, it allows to create HDF5 files for Mohid using the Module LIFE (mmol/m3) or the Module WaterQuality (mg/l). The user will be prompted when the software is ran.
 
-Running options for this application are specified by the user in a input file named PARAMETER\_READ.dat.
+Running options for this application are specified by the user in a input file named PARAMETER_READ.dat.
 
-## Input file (PARAMETER\_READ.dat)
+## Input file (PARAMETER_READ.dat)
 
 ```
 ACTION                   : CONVERT LEVITUS FORMAT

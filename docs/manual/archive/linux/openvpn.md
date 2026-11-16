@@ -6,8 +6,8 @@
 
 From the client perspective, it requires the openvpn client to be installed. It also requires a configuration file, some certificates, a key file and a personal user-defined password:
 
-- **maretec\_ist.ovpn**
-- **MARETEC\_VPN\_CA.crt**
+- **maretec_ist.ovpn**
+- **MARETEC_VPN_CA.crt**
 - **usr.MARETEC.crt**
 - **usr.MARETEC.key**
 

@@ -2,7 +2,7 @@
 
 > **Archived page.** This content is kept for historical reference only. It may be out of date, incomplete or unrelated to the current MOHID documentation, and it is not maintained.
 
-[CiteULike](http://www.citeulike.org) is a web-based service that keeps bookmarks of citations following the same philosophy [del.icio.us](http://del.icio.us) does regarding hyperlinks. Like [del.icio.us](http://del.icio.us), it is the ideal tool to share citations between collaborators and colleagues. "See what your colleagues are reading and let see them what you're reading ...". It exports to <goto>Endnote</goto> and to [Bibtex](linux/latex.md). These citations can then be used with [latex](linux/latex.md) or [openoffice](linux/openoffice-bibliography.md).
+[CiteULike](http://www.citeulike.org) is a web-based service that keeps bookmarks of citations following the same philosophy [del.icio.us](http://del.icio.us) does regarding hyperlinks. Like [del.icio.us](http://del.icio.us), it is the ideal tool to share citations between collaborators and colleagues. "See what your colleagues are reading and let see them what you're reading ...". It exports to Endnote and to [Bibtex](linux/latex.md). These citations can then be used with [latex](linux/latex.md) or [openoffice](linux/openoffice-bibliography.md).
 
 ## Famous Maretecer's CiteULike feeds
 

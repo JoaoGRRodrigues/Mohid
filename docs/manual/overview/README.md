@@ -24,7 +24,7 @@ What MOHID is, how it is structured, who develops it and where it is used.
 
 ### Mohid GIS Overview
 
-Mohid GIS is a [GIS](http://en.wikipedia.org/wiki/Gis) specifically designed to support [Mohid Water Modelling System](README.md#mohid-water-modelling-system#mohid-water-modelling-system).
+Mohid GIS is a [GIS](http://en.wikipedia.org/wiki/Gis) specifically designed to support [Mohid Water Modelling System](README.md#mohid-water-modelling-system).
 
 ### Mohid Water Biogeochemistry
 
@@ -38,7 +38,7 @@ Mohid GIS is a [GIS](http://en.wikipedia.org/wiki/Gis) specifically designed to 
 
 [Module MacroAlgae](../water/modules/macroalgae.md)
 
-[Module Bivalve](../water/modules/README.md#module-bivalve#module-bivalve)
+[Module Bivalve](../water/modules/README.md#module-bivalve)
 
 ### Mohid Water Modelling System
 

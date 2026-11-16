@@ -6,14 +6,14 @@ Mohid River Network (MRN) is a standalone version of Mohid Land that computes fl
 
 ## Keywords
 
-When running properties with T90 decay, solar radiation is needed. Put it in the Discharges format and add the following keywords to the [Model\_X.dat](../land/how-to-create-a-mohid-river-project-step-by-step.md) input file:
+When running properties with T90 decay, solar radiation is needed. Put it in the Discharges format and add the following keywords to the [Model_X.dat](../land/how-to-create-a-mohid-river-project-step-by-step.md) input file:
 
 ```
 SOLARRADIATION_FILE     : ..\..\GeneralData\SolarRadiation.dat
 SOLARRADIATION_COLUMN   : 2
 ```
 
-If runnig properties with SURFACE\_FLUXES, other atmospheric variables should also be given with the following keywords:
+If runnig properties with SURFACE_FLUXES, other atmospheric variables should also be given with the following keywords:
 
 ```
 AIR_TEMPERATURE_FILE     : ..\..\GeneralData\MeteoData.dat
