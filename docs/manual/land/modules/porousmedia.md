@@ -21,9 +21,11 @@ $v=-K\left ( \theta  \right )\left ( \frac{\partial H}{\partial x_i}  \right )\,
 where:
 
   
-{\|
-
-\|*v* \|\| is the water velocity at the cell interface (m/s) \|- \| *H* \|\| is the hydraulic head (m) \|- \| *θ* \|\| is the water content (m<sup>3</sup>/m<sup>3</sup>) \|- \| *K*\|\| is the hydraulic conductivity (m/s) \|- \| *x_i*\|\| is direction i \|}
+- *v* — the water velocity at the cell interface (m/s)
+- *H* — the hydraulic head (m)
+- *θ* — the water content (m<sup>3</sup>/m<sup>3</sup>)
+- *K* — the hydraulic conductivity (m/s)
+- *x_i* — direction i
 
 The hydraulic head is given by the formula:
 
@@ -32,9 +34,9 @@ $H=h+p+z\,\,\,\,(1.2)$
 where:
 
   
-{\|
-
-\|- \| *h* \|\| is the hydraulic head (m) \|- \| *p* \|\| is hydrostatic pressure (m) \|- \| *z*\|\| is the topography (m) \|- \|}
+- *h* — the hydraulic head (m)
+- *p* — hydrostatic pressure (m)
+- *z* — the topography (m)
 
 When in saturated conditions, hydraulic head is zero and hydrostatic pressure may occur (if water is at rest or decelerating). In unsaturated conditions, hydrostatic pressure is zero and hydraulic head exists.
 
@@ -67,9 +69,11 @@ V_T = V_s + V_v = V_s + V_w + V_a\,\,\,\,(1.4)
 where:
 
   
-{\|
-
-\| *$\theta$* \|\| is water content (m <sup>3</sup>/m <sup>3</sup>) \|- \|*$V_w$* \|\| is the volume of water (m s<sup>3</sup>) \|- \| *$V_T$* \|\| is the total volume (m <sup>3</sup>) \|- \| *$V_s$* \|\| is the soil volume (m <sup>3</sup>) \|- \| *$V_a$* \|\| is the air space (m <sup>3</sup>) \|}
+- *$\theta$* — water content (m <sup>3</sup>/m <sup>3</sup>)
+- *$V_w$* — the volume of water (m s<sup>3</sup>)
+- *$V_T$* — the total volume (m <sup>3</sup>)
+- *$V_s$* — the soil volume (m <sup>3</sup>)
+- *$V_a$* — the air space (m <sup>3</sup>)
 
 ### Initial Condition
 
@@ -91,9 +95,8 @@ Once determined the aquifer level (**water table**) the water content is associa
 where:
 
   
-{\|
-
-\| *$\theta=\theta_{s}$* \|\| is the water content in the saturated soil (m<sup>3</sup>/m<sup>3</sup>) \|- \| *$\theta=\theta_{ns}$* \|\| is the water content in the non saturated soil (m<sup>3</sup>/m<sup>3</sup>) \|- \|}
+- *$\theta=\theta_{s}$* — the water content in the saturated soil (m<sup>3</sup>/m<sup>3</sup>)
+- *$\theta=\theta_{ns}$* — the water content in the non saturated soil (m<sup>3</sup>/m<sup>3</sup>)
 
 In order to calculate field capacity by the equation (1.7) the evaluation of the suction head is needed :
 
@@ -131,9 +134,13 @@ S_{E}=\frac{\theta-\theta_{r}}{\theta_{s}-\theta_{r}}\,\,\,\,(1.8)
 where:
 
   
-{\|
-
-\|*$\theta(h)$* \|\| is the the water retention curve (m <sup>3</sup>/m <sup>3</sup>) \|- \| *$\theta_s$* \|\| is the saturated water content (m <sup>3</sup>/m <sup>3</sup>) \|- \| *$\theta_r$* \|\| is the residual water content (m <sup>3</sup>/m <sup>3</sup>) \|- \| *h*\|\| is the suction head (m) \|- \| *$\alpha$* \|\| is related to the inverse of the air entry (m <sub>-1</sub>) \|- \| *n*\|\| is a measure of the pore-size distribution n>1 (dimensionless) \|- \| *$S_{E}$*\|\| is the effective saturation (dimensionless) \|}
+- *$\theta(h)$* — the the water retention curve (m <sup>3</sup>/m <sup>3</sup>)
+- *$\theta_s$* — the saturated water content (m <sup>3</sup>/m <sup>3</sup>)
+- *$\theta_r$* — the residual water content (m <sup>3</sup>/m <sup>3</sup>)
+- *h* — the suction head (m)
+- *$\alpha$* — related to the inverse of the air entry (m <sub>-1</sub>)
+- *n* — a measure of the pore-size distribution n>1 (dimensionless)
+- *$S_{E}$* — the effective saturation (dimensionless)
 
 ### Saturated and Unsaturated Conductivity
 
@@ -144,9 +151,10 @@ $K(\theta)=K_{s}\cdot Se^{L}\cdot (1-(1-Se^{1/m})^{m})^{2}$ (1.9)
 where:
 
   
-{\|
-
-\|*$K(\theta)$* \|\| is the unsaturated conductivity (m/s) \|- \| *$K_{s}$* \|\| is the saturated conductivity(m/s) \|- \| *L* \|\| empirical pore-connectivity (m) \|- \| *m*\|\| m=1-1/n(dimensionless) \|}
+- *$K(\theta)$* — the unsaturated conductivity (m/s)
+- *$K_{s}$* — the saturated conductivity(m/s)
+- *L* — empirical pore-connectivity (m)
+- *m* — m=1-1/n(dimensionless)
 
 ### Evapotranspiration
 
@@ -189,9 +197,18 @@ $\theta=(\theta\cdot V_{cell}-(UnsatK\cdot Area_{cell}\cdot(1-Imp) \Delta t)\cdo
 where:
 
   
-{\|
-
-\|*$\theta$* \|\| is the water content (m <sup>3</sup>/m <sup>3</sup>) \|- \|*$V_{cell}$* \|\| is the cell volume (m <sup>3</sup>) \|- \|*$Area_{cell}$* \|\| is the cell area (m <sup>2</sup>) \|- \|*ComputeFace* \|\| is the computed face (dimensionless) \|- \|*$\Delta t$* \|\| is the time step (s) \|- \|*FluxX* \|\| is the flux in X direction (m <sup>3</sup>/s) \|- \|*FluxV* \|\| is the flux in Y direction (m <sup>3</sup>/s) \|- \|*FluxW* \|\| is the flux in W direction (m <sup>3</sup>/s) \|- \|*TranspFlux* \|\| is the transpiration flux (m <sup>3</sup>/s) \|- \|*EvapFlux* \|\| is the evaporation flux (m <sup>3</sup>/s) \|- \|*UnsatK* \|\| is unsaturated conductivity (m /s) \|- \|*Imp* \|\| is the percentage of impermeable soil of the cell (dimensionless) \|}
+- *$\theta$* — the water content (m <sup>3</sup>/m <sup>3</sup>)
+- *$V_{cell}$* — the cell volume (m <sup>3</sup>)
+- *$Area_{cell}$* — the cell area (m <sup>2</sup>)
+- *ComputeFace* — the computed face (dimensionless)
+- *$\Delta t$* — the time step (s)
+- *FluxX* — the flux in X direction (m <sup>3</sup>/s)
+- *FluxV* — the flux in Y direction (m <sup>3</sup>/s)
+- *FluxW* — the flux in W direction (m <sup>3</sup>/s)
+- *TranspFlux* — the transpiration flux (m <sup>3</sup>/s)
+- *EvapFlux* — the evaporation flux (m <sup>3</sup>/s)
+- *UnsatK* — unsaturated conductivity (m /s)
+- *Imp* — the percentage of impermeable soil of the cell (dimensionless)
 
 The value of $\theta$ so obtained is compared with one used in the volumes calculation and the iterative process stop when:
 
@@ -200,9 +217,7 @@ $(\theta^{'})-(\theta^{new})< Tolerance$ (1.10)
 where:
 
   
-{\|
-
-\|*$\theta^{'}$* \|\| is the water content of the previous iteration (m <sup>3</sup>/m <sup>3</sup>) \|}
+- *$\theta^{'}$* — the water content of the previous iteration (m <sup>3</sup>/m <sup>3</sup>)
 
 If the equation (1.10) is not satisfy the temporal step is divided in half and the new value of $\theta$ is used for solving the equation (1.7) for restarting the calculation process. The iteration process is stoped when the tolerance desired is reached.
 

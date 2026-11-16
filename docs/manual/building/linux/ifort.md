@@ -65,7 +65,7 @@ source /opt/intel/fc/current/bin/ifortvars.sh
 source /opt/intel/idb/current/bin/idbvars.sh
 ```
 
-**Resources**: \[[| 1](http://www.intel.com/cd/software/products/asmo-na/eng/219771.htm)\] \[[| 2](http://groups.google.de/group/comp.lang.fortran/browse_thread/thread/d5efc992211e517b/25331fb8ea8ec01a?lnk=st&q=ifortvars%20%20%20%20.sh+debian+installdir&rnum=1&hl=en#25331fb8ea8ec01a)\] \[[| 3](http://groups.google.de/group/linux.debian.user/browse_thread/thread/9076eb8ca951f0ce/6408013d92230ca1?lnk=st&q=Debian.te%20%20%20%20sting+Intel.Fortran&rnum=1&hl=en#6408013d92230ca1)\]
+**Resources**: [1](http://www.intel.com/cd/software/products/asmo-na/eng/219771.htm) [2](http://groups.google.de/group/comp.lang.fortran/browse_thread/thread/d5efc992211e517b/25331fb8ea8ec01a?lnk=st&q=ifortvars%20%20%20%20.sh+debian+installdir&rnum=1&hl=en#25331fb8ea8ec01a) [3](http://groups.google.de/group/linux.debian.user/browse_thread/thread/9076eb8ca951f0ce/6408013d92230ca1?lnk=st&q=Debian.te%20%20%20%20sting+Intel.Fortran&rnum=1&hl=en#6408013d92230ca1)
 
 ## Tools for linking
 

@@ -163,7 +163,6 @@ Afin de regrouper toutes les pages francophones relatives au MOHID, nous proposo
 #### Syntaxe correcte pour l'éditeur wiki
 
 ```
-[[Category:Français]]
 ```
 
 ### HydrodynamicAnalyser

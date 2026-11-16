@@ -62,7 +62,7 @@ Optional physical, biogeochemical and numerical modules that extend the base mod
 
 ### Module Bivalve
 
-For more information please download the Module Bivalve Manual \[[Download](http://www.mohid.com/PublicData/Products/Manuals/MOHID_Module_Bivalve_Manual.pdf)\]
+For more information please download the Module Bivalve Manual [Download](http://www.mohid.com/PublicData/Products/Manuals/MOHID_Module_Bivalve_Manual.pdf)
 
 ### Module GridData
 

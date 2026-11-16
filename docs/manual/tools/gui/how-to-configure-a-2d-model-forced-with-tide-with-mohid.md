@@ -23,7 +23,7 @@ In order to choose an adequate time-step, $\Delta t$, we recommend to aim to a 1
 $c$
 
 , with $c = \sqrt{g\,H} </mathtex>
-where <math>H$ is the maximum depth of your domain and $g$ is local gravitational field (approximately worth 10 m/s2). For example, with a 200 m resolution domain where maximum depth is 400 m, the approximate time step would be around 50 s.
+where $H$ is the maximum depth of your domain and $g$ is local gravitational field (approximately worth 10 m/s2). For example, with a 200 m resolution domain where maximum depth is 400 m, the approximate time step would be around 50 s.
 
 ## Step 3 - Configure the modules
 

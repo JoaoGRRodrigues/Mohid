@@ -121,6 +121,7 @@ iptables> -A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
 
 From the X environment, open up the System-->Administration-->Firewall. Then open up the ports **22**(ssh), **21**(ftp), **80**(http), **443**(https) and **8080**(tomcat).
 
+```
 #### Enable sshd
 
 ```

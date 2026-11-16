@@ -29,9 +29,11 @@ Q_i=\frac{1}{n}\cdot A\cdot R_{h}^{2/3}\cdot s_i^{1/2}\,\,\,\,\,\,\,\,\,\,\,\,(1
 where:
 
   
-{\|
-
-\| *Qi* \|\| is the overland flow in each direction (m<sup>3</sup>/s) \|- \| *A* \|\| is the area of the cross-section (m<sup>2</sup>) \|- \| *n* \|\| is the Manning coefficient (s/m<sup>1/3</sup>) \|- \| *R<sub>h</sub>*\|\| is the hydraulic radius (m) \|- \| *Si* \|\| is the slope of the water surface (m/m) \|}
+- *Qi* — the overland flow in each direction (m<sup>3</sup>/s)
+- *A* — the area of the cross-section (m<sup>2</sup>)
+- *n* — the Manning coefficient (s/m<sup>1/3</sup>)
+- *R<sub>h</sub>* — the hydraulic radius (m)
+- *Si* — the slope of the water surface (m/m)
 
 #### Hydraulic radius
 
@@ -64,9 +66,11 @@ H(i,j)= h(i,j)+T(i,j)\,\,\,\,\,\,\,\,\,\,\,\,(1.4)
 where:
 
   
-{\|
-
-\|- \|*H* \|\| is the water level (m) \|- \| *h(i,j)* \|\| is the water column (m) \|- \| *T(i,j)* \|\| is the Topography (m) \|- \| *j* \|\| is X direction \|- \| *i* \|\| is Y direction \|}
+- *H* — the water level (m)
+- *h(i,j)* — the water column (m)
+- *T(i,j)* — the Topography (m)
+- *j* — X direction
+- *i* — Y direction
 
 ``` math
 s_{x}=\frac{H(i,j-1)-H(i,j)}{DZX}\,\,\,\,\,\,\,\,(1.5)
@@ -75,9 +79,10 @@ s_{x}=\frac{H(i,j-1)-H(i,j)}{DZX}\,\,\,\,\,\,\,\,(1.5)
 where:
 
   
-{\|
-
-\|- \|*s<sub>x</sub>* \|\| is the slope in the X direction (m) \|- \| *H(i,j-1)* \|\| is the water column at the left face of the cell (m) \|- \| *H(i,j)* \|\| is the water column at the right face of the cell (m) \|- \| *DZX* \|\| is width of the cell in the X direction (m) \|}
+- *s<sub>x</sub>* — the slope in the X direction (m)
+- *H(i,j-1)* — the water column at the left face of the cell (m)
+- *H(i,j)* — the water column at the right face of the cell (m)
+- *DZX* — width of the cell in the X direction (m)
 
 ``` math
 s_{y}=\frac{H(i-1,j)-H(i,j)}{DZY}\,\,\,\,\,\,\,\,(1.6)
@@ -86,9 +91,10 @@ s_{y}=\frac{H(i-1,j)-H(i,j)}{DZY}\,\,\,\,\,\,\,\,(1.6)
 where:
 
   
-{\|
-
-\|*s<sub>y</sub>* \|\| is the slope in the Y direction (m) \|- \| *H(i-1,j)* \|\| is the water column at the left face of the cell (m) \|- \| *H(i,j)* \|\| is the water column at the right face of the cell (m) \|- \| *DZY* \|\| is width of the cell in the X direction (m) \|}
+- *s<sub>y</sub>* — the slope in the Y direction (m)
+- *H(i-1,j)* — the water column at the left face of the cell (m)
+- *H(i,j)* — the water column at the right face of the cell (m)
+- *DZY* — width of the cell in the X direction (m)
 
 In order to take in account the limitation given by the Manning's equation (1.1) that tends to overestimate the flow velocity when solpe > 0.04, the slope value obtained by the formulas (1.5) and (1.6) it is subsequently adjusted by the following function: [Slope correction given by City of Albuquerque, 1997, p.22-26](http://www.hkh-friend.net.np/rhdc/training/lectures/HEGGEN/Tc_3.pdf)
 
@@ -99,9 +105,7 @@ s= 0.05247 + 0.06363 \cdot s - 0.182\cdot e^{(-62.38\cdot s)}\,\,\,\,\,\,\,\,\,\
 where:
 
   
-{\|
-
-\|*s* \|\| is the slope (m) \|}
+- *s* — the slope (m)
 
 ### Manning cofficient
 
